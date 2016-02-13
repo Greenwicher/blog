@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greenwicher.com/"/>
-  <updated>2016-02-13T12:50:10.000Z</updated>
+  <updated>2015-04-04T11:49:17.000Z</updated>
   <id>http://blog.greenwicher.com/</id>
   
   <author>
@@ -14,67 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://blog.greenwicher.com/2016/02/13/test/"/>
-    <id>http://blog.greenwicher.com/2016/02/13/test/</id>
-    <published>2016-02-13T00:00:00.000Z</published>
-    <updated>2016-02-13T12:50:10.000Z</updated>
-    
-    <content type="html">
-
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; Simple Test for Emacs Blog Admin&lt;/h2&gt;
-&lt;/div&gt;
-
-&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; TEST 2&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
-&lt;/div&gt;&lt;div id=&quot;outline-container-sec-2-1&quot; class=&quot;outline-3&quot;&gt;
-&lt;h3 id=&quot;sec-2-1&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;2.1&lt;/span&gt; TEST 3&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div id=&quot;outline-container-sec-2-2&quot; class=&quot;outline-3&quot;&gt;
-&lt;h3 id=&quot;sec-2-2&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;2.2&lt;/span&gt; TEST 4&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content>
-    
-    <summary type="html">
-    
-      
-
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; Simple Test
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>今晚看什么电影，明天看什么书</title>
-    <link href="http://blog.greenwicher.com/2016/02/12/%E8%B1%86%E7%93%A3%E7%88%AC%E8%99%AB%E5%91%8A%E8%AF%89%E6%88%91%E4%BB%8A%E6%99%9A%E7%9C%8B%E4%BB%80%E4%B9%88%E7%94%B5%E5%BD%B1%EF%BC%8C%E6%98%8E%E5%A4%A9%E8%AF%BB%E4%BB%80%E4%B9%88%E4%B9%A6/"/>
-    <id>http://blog.greenwicher.com/2016/02/12/豆瓣爬虫告诉我今晚看什么电影，明天读什么书/</id>
-    <published>2016-02-12T02:17:17.000Z</published>
-    <updated>2016-02-12T06:03:51.000Z</updated>
-    
-    <content type="html">&lt;p&gt;你的生命非常有限，所以，不要浪费在重复他人的生活上。从今天起，告别无聊的电影，迎接有料的图书，豆瓣爬虫（&lt;a href=&quot;https://github.com/Greenwicher/DoubanCrawler）将告诉你今晚看什么电影，明天看什么书。&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/Greenwicher/DoubanCrawler）将告诉你今晚看什么电影，明天看什么书。&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;你的生命非常有限，所以，不要浪费在重复他人的生活上。从今天起，告别无聊的电影，迎接有料的图书，豆瓣爬虫（&lt;a href=&quot;https://github.com/Greenwicher/DoubanCrawler）将告诉你今晚看什么电影，明天看什么书。&quot; target=&quot;_b
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>神奇公式，并不神奇</title>
