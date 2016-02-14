@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greenwicher.com/"/>
-  <updated>2016-02-14T06:58:15.000Z</updated>
+  <updated>2016-02-14T15:07:27.000Z</updated>
   <id>http://blog.greenwicher.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>codeforces598c</title>
+    <title>Codeforces - 598C Nearest Vectors</title>
     <link href="http://blog.greenwicher.com/2016/02/14/codeforces598c/"/>
     <id>http://blog.greenwicher.com/2016/02/14/codeforces598c/</id>
     <published>2016-02-14T00:00:00.000Z</published>
-    <updated>2016-02-14T06:58:15.000Z</updated>
+    <updated>2016-02-14T15:07:27.000Z</updated>
     
     <content type="html">
 
@@ -56,15 +56,18 @@
     
     <summary type="html">
     
-      
-
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &amp;#x9898;&amp;#x
+      Codeforces - 598C Nearest Vectors 解题报告
     
     </summary>
     
+      <category term="如何写算法" scheme="http://blog.greenwicher.com/categories/%E5%A6%82%E4%BD%95%E5%86%99%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="codeforces" scheme="http://blog.greenwicher.com/tags/codeforces/"/>
+    
+      <category term="算法" scheme="http://blog.greenwicher.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="高精度" scheme="http://blog.greenwicher.com/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
     
   </entry>
   
