@@ -1,150 +1,48 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  <title>神奇公式，并不神奇 | Greenwicher</title>
-  <meta name="author" content="LIU Weizhi">
-  
-  <meta name="description" content="关于《股市稳赚》的读书笔记">
+<?xml version="1.0" encoding="utf-8"?>
+<search>
   
   
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <entry>
+      <title><![CDATA[codeforces598c]]></title>
+      <url>http://blog.greenwicher.com/2016/02/14/codeforces598c/</url>
+      <content type="html"><![CDATA[
 
-  <meta property="og:title" content="神奇公式，并不神奇"/>
-  <meta property="og:site_name" content="Greenwicher"/>
+<a id="more"></a>
 
-  
-    <meta property="og:image" content="undefined"/>
-  
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> &#x9898;&#x76EE;&#x63CF;&#x8FF0;</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 1</h3>
+</div>
 
-  
-    <link rel="alternative" href="/atom.xml" title="Greenwicher" type="application/atom+xml">
-  
-  
-    <link href="/favicon.png" rel="icon">
-  
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 2</h3>
+</div>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/themes/bootstrap.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> 3</h3>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> &#x601D;&#x8003;</h2>
+</div>
 
-  <script src="/js/jquery-2.0.3.min.js"></script>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> &#x89E3;&#x7B54;</h2>
+</div>
 
-  <!-- analytics -->
-  
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-42890116-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
-
-
-
-</head>
-
- <body>  
-  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	<span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-       <a class="navbar-brand" href="http://greenwicher.com">Greenwicher</a>
-      <div class="collapse navbar-collapse nav-menu">
-		<ul class="nav navbar-nav">
-		  
-		  <li>
-			<a href= "/" title="Blog homepage"> 
-			  <i class="fa fa-home"></i>首页
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href= "/archives" title="All the articles."> 
-			  <i class="fa fa-archive"></i>归档
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href= "/categories" title="All the categories."> 
-			  <i class="fa fa-folder"></i>分类
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href= "/tags" title="All the tags."> 
-			  <i class="fa fa-tags"></i>标签
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href= "/douban" title="Readling list"> 
-			  <i class="fa fa-book"></i>读书
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href= "/atom.xml" title="RSS Subscription"> 
-			  <i class="fa fa-rss"></i>RSS
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href= "http://greenwicher.com/me/cv.pdf" title="Me"> 
-			  <i class="fa fa-user"></i>关于我
-			</a>			
-	          </li>
-		</ul>
-      </div>
-    </div> <!-- container -->
-</nav>
-<div class="clearfix"></div>
-
-  <div class="container">
-  	<div class="content">
-    	 
-
-
-	
-		<div class="page-header page-header-inverse ">		
-			<h1 class="title title-inverse "> 神奇公式，并不神奇</h1>
-		</div>		
-	
-
-
-
-
-
-
-<div class="row post">
-	<!-- cols -->
-	
-	<div id="top_meta"></div>
-	<div class="col-md-9">
-	
-
-	<!-- content -->
-	<div class="mypage">		
-	  
-		 <div class="alert alert-success description">
-			<i class="fa fa-info-circle"></i> <p>关于《股市稳赚》的读书笔记</p>
-			
-		 </div> <!-- alert -->
-	  		
-
-	  <p>万物之始，大道至简，衍化至繁。后来者的我们面对纷繁的股票市场，如何才能把握最初的本质？神奇公式试图回答这一问题，通过投资回报率发现一家质优的好公司，通过收益率发现一家价低的好股票，然后持有直至市场恢复理性给予质优价低股票合理的价格为止。通过历史回测，作者确实发现利用神奇公式可以跑赢大盘不少，但神奇公式的一个原则是你要深信不疑的相信，直到市场恢复理性的那一天。面对神奇公式是有效的这个不可证伪的命题，我们不经疑问，作者为什么要公布这一有效可以持续获利的秘密呢？</p>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> &#x53CD;&#x601D;</h2>
+</div>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[神奇公式，并不神奇]]></title>
+      <url>http://blog.greenwicher.com/2014/12/06/%E7%A5%9E%E5%A5%87%E5%85%AC%E5%BC%8F%EF%BC%8C%E5%B9%B6%E4%B8%8D%E7%A5%9E%E5%A5%87/</url>
+      <content type="html"><![CDATA[<p>万物之始，大道至简，衍化至繁。后来者的我们面对纷繁的股票市场，如何才能把握最初的本质？神奇公式试图回答这一问题，通过投资回报率发现一家质优的好公司，通过收益率发现一家价低的好股票，然后持有直至市场恢复理性给予质优价低股票合理的价格为止。通过历史回测，作者确实发现利用神奇公式可以跑赢大盘不少，但神奇公式的一个原则是你要深信不疑的相信，直到市场恢复理性的那一天。面对神奇公式是有效的这个不可证伪的命题，我们不经疑问，作者为什么要公布这一有效可以持续获利的秘密呢？</p>
 <a id="more"></a>
 <h1 id="u611F_u609F"><a href="#u611F_u609F" class="headerlink" title="感悟"></a>感悟</h1><p>神奇公式，并不神奇</p>
 <p>万物之始，大道至简，衍化至繁。任何高度复杂化的体系都是由最基础的要素逐渐丰富构建所得的，而当越来越多的新手打算进入一个『世界』当中之时，这个『世界』一定是产生了某种有趣的东西足以吸引越来越多的新手。换句话说，这时的『世界』已经具有一定的复杂性了。复杂的『世界』不容易理解，而当你把它拆分还原为最初的形态，把握最本质的东西，问题便变得简单了。不仅如此，如果可能的话，进行进一步推衍，可以试图重现已有的元素和发现未知的元素。信息、知识以几何增长的速度充斥着这个世界，若迷乱于这复杂的表象之中，以有涯随无涯，则殆矣。有些问题，不是你想的不够复杂，而是你想的不够简单。技术分析，量化投资无疑增加了投资的复杂度，同时敏感度又十分大，但这并不是说他们就不是好的方法。万变不离其宗，条条大路通罗马，这也增加了这个世界的趣味性。但各种大路之中，目的一定最终都是朝向罗马的，大部分路径可能都有着相同的特征，而把握的本质便是去伪存真找出最关键的因素出来。具体到股票投资而言，选股选时是最基本但最重要的两个决策。《股市稳赚》主要介绍了如何利用神奇公式进行选股，具体本书的思维框架请见<a href="http://goo.gl/hNTLCr" target="_blank" rel="external">http://goo.gl/hNTLCr</a>。</p>
@@ -291,193 +189,34 @@
 <li>【P143】如果你明白所投资的25美分能在你人到中年时变成200美元，你就不会把钱浪费在一片口香糖上了！你不会把钱花在很多事情上，反而会开始考虑尽量攒钱，花时间找到好的投资方法，这就是我想说的。</li>
 <li>【P161】为了成功的利用神奇公式投资策略，你只需要了解两个基本原则。首先，以低价买入优质股是有意义的。一般来说，神奇公式能做到这一点。第二，市场先生需要几年时间才能认识什么是低价。因此，利用神奇公式投资策略需要有耐心。</li>
 </ul>
-	  
-	</div>
-
-	<div>
-  	<center>
-	<div class="pagination">
-<ul class="pagination">
-	 
-				
-    	<li class="prev"><a href="/2016/02/14/codeforces598c/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
-  		
-
-        <li><a href="/"><i class="fa fa-archive"></i>Archive</a></li>
-
-		
-		   <li class="next"><a href="/2014/12/04/毕设开题不会写，怎么破？快试试BiblioPy吧！/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
-        
-	
-</ul>
-</div>
-
-    </center>
-	</div>
-
-    <!-- share -->
+]]></content>
+    </entry>
     
-        
-    <div class="bdsharebuttonbox">
-        <a href="#" class="bds_more" data-cmd="more"></a>
-        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
-        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
-        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
-        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-    </div>
-    <script>
-        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
-        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-    </script>
-
-
-        
-
+    <entry>
+      <title><![CDATA[毕设开题不会写，怎么破？快试试BiblioPy吧！]]></title>
+      <url>http://blog.greenwicher.com/2014/12/04/%E6%AF%95%E8%AE%BE%E5%BC%80%E9%A2%98%E4%B8%8D%E4%BC%9A%E5%86%99%EF%BC%8C%E6%80%8E%E4%B9%88%E7%A0%B4%EF%BC%9F%E5%BF%AB%E8%AF%95%E8%AF%95BiblioPy%E5%90%A7%EF%BC%81/</url>
+      <content type="html"><![CDATA[<p>春花秋月何时了，毕设开题开不了。导师昨夜又催稿，学渣不堪回首发呆中。学长论文应犹在，只是用不了。问君能有几多愁？恰似一江春水向东流。怎么破！怎么破！快来试试<a href="https://github.com/Greenwicher/BiblioPy" target="_blank" rel="external"><strong>BiblioPy</strong></a>吧！</p>
+<a id="more"></a>
+<h1 id="BiblioPy_u7B80_u4ECB"><a href="#BiblioPy_u7B80_u4ECB" class="headerlink" title="BiblioPy简介"></a>BiblioPy简介</h1><p>本科时我的毕业论文题目是『生产与运作管理研究趋势分析』，也就是对研究本身的研究啦，隶属文献计量学与自然语言处理范畴。<strong>主要目的是为生产与运作管理领域的研究者提供该领域的核心研究话题群以及话题演变动态模式。核心研究话题群可以为初涉该领域的人员提供宏观的鸟瞰，话题演变动态模式可以为久扎某个领域的人员提供新的研究方向。</strong>本人对Sebastian Grauwin的<a href="http://www.sebastian-grauwin.com/?page_id=492" target="_blank" rel="external">BiblioTools2</a>进行了部分修改重写，使之能按照文献计量学的主流方法co-citation来进行分析，目前只完成了核心研究话题群的识别。因为整套方法论基本适用于所有学科的分析，因此希望自己写的这个小脚本对大家学术研究入门之路能有所帮助，也希望大家能给我提些建议。</p>
+<h1 id="u5DE5_u4F5C_u539F_u7406"><a href="#u5DE5_u4F5C_u539F_u7406" class="headerlink" title="工作原理"></a>工作原理</h1><p>因为牵涉到一些专业术语，我就简单的说明一下<a href="https://github.com/Greenwicher/BiblioPy" target="_blank" rel="external"><strong>BiblioPy</strong></a>的工作原理。</p>
+<h2 id="step1__u6587_u732E_u6570_u636E_u83B7_u53D6"><a href="#step1__u6587_u732E_u6570_u636E_u83B7_u53D6" class="headerlink" title="step1 文献数据获取"></a>step1 文献数据获取</h2><p>据相应搜索条件从web of science核心数据库上下载文献数据（包括文章的标题、关键词、摘要、引文等等），文献数据格式为制表符分割的UTF8纯文本文件。因为web of science一次最多下载500条记录，如果记录过多的话，只能多次下载获得。</p>
+<p><img src="http://greenwicher.qiniudn.com/20141204-BiblioPy-Intro/wos-txt.jpg" alt=""></p>
+<h2 id="step2__u5EFA_u7ACB_u6587_u7AE0-_u5F15_u6587_u77E9_u9635"><a href="#step2__u5EFA_u7ACB_u6587_u7AE0-_u5F15_u6587_u77E9_u9635" class="headerlink" title="step2 建立文章-引文矩阵"></a>step2 建立文章-引文矩阵</h2><p>文章-引文矩阵的行标代表所有文章标号，列标代表所有引文标号。矩阵中的元素表示该行标所代表的文章是否引用了该列标所代表的引文，取值0或1，1表示二者存在引用关系。</p>
+<h2 id="step3__u5EFA_u7ACB_u540C_u88AB_u5F15_u7F51_u7EDC"><a href="#step3__u5EFA_u7ACB_u540C_u88AB_u5F15_u7F51_u7EDC" class="headerlink" title="step3 建立同被引网络"></a>step3 建立同被引网络</h2><p>根据上述的文章-引文矩阵，以每篇引文作为网络中的结点，网络中边的权重表示相应结点的相似性（即都引用了这两篇引文的文章的数目），建立同被引网络（co-citation networks）。</p>
+<p><img src="http://greenwicher.qiniudn.com/20141204-BiblioPy-Intro/co-citation-network.jpg" alt=""></p>
+<h2 id="step4__u5BF9_u7F51_u7EDC_u8FDB_u884C_u805A_u7C7B"><a href="#step4__u5BF9_u7F51_u7EDC_u8FDB_u884C_u805A_u7C7B" class="headerlink" title="step4 对网络进行聚类"></a>step4 对网络进行聚类</h2><p>其实在step2结束之后，可以利用PCA或MDS进行降维处理，但是为了体现网络的结构特性，这里用了网络聚类。就是指利用网络的拓扑结构将网络中的结点分成不同的几个群体，不同的群体有不同的研究话题。</p>
+<p><img src="http://greenwicher.qiniudn.com/20141204-BiblioPy-Intro/co-citation-network-cluster.jpg" alt=""></p>
+<h2 id="step5__u53D1_u73B0_u8BDD_u9898"><a href="#step5__u53D1_u73B0_u8BDD_u9898" class="headerlink" title="step5 发现话题"></a>step5 发现话题</h2><p>目前使用的方法是自然语言处理中的TextRank，TF-IDF算法来对每一聚类中的关键词代表性进行排序。这里除了给出每个聚类的top关键词外，还给出了top reference和top author等，并利用LaTex生成了相应的聚类分析报告，如下图所示。</p>
+<p><img src="http://greenwicher.qiniudn.com/20141204-BiblioPy-Intro/report.jpg" alt=""></p>
+<p><img src="http://greenwicher.qiniudn.com/20141204-BiblioPy-Intro/graph.jpg" alt=""></p>
+<h1 id="u7ACB_u523B_u5C1D_u8BD5"><a href="#u7ACB_u523B_u5C1D_u8BD5" class="headerlink" title="立刻尝试"></a>立刻尝试</h1><p>文献综述的撰写可以根据上述报告中的Top Keyword和Top Reference部分综合得出，Keyword体现了该话题下的研究人员们之前都做了什么（相当于综述啦），而Reference部分则体现了他们是怎么做的（大概搜下文献，稍微看下abstract就可以了）。也欢迎对学术有所兴趣，但不知道自己所学专业重要方向的同学来试试<a href="https://github.com/Greenwicher/BiblioPy" target="_blank" rel="external"><strong>BiblioPy</strong></a>~ 目前的脚本只是个demo，并且web of science的下载受到IP限制，后续有时间和精力的话，会把完善的<a href="https://github.com/Greenwicher/BiblioPy" target="_blank" rel="external"><strong>BiblioPy</strong></a>以网页版呈现并开发动态性话题变迁以及趋势发现的功能。因此目前，只能人工从web of science下载数据，然后自己运行脚本和LaTeX来分析和生成报告了。</p>
+<p>对文献计量软件感兴趣的同学也可以试试类似的软件：</p>
+<p>BiblioTools2.x: <a href="http://www.sebastian-grauwin.com/?page_id=492" target="_blank" rel="external">http://www.sebastian-grauwin.com/?page_id=492</a></p>
+<p>CiteSpace: <a href="http://cluster.cis.drexel.edu/~cchen/citespace/" target="_blank" rel="external">http://cluster.cis.drexel.edu/~cchen/citespace/</a></p>
+<p>HistCite: <a href="http://histcite.com" target="_blank" rel="external">http://histcite.com</a></p>
+]]></content>
+    </entry>
     
-	
-	<!-- comment -->
-	
-<section id="comment">
-  <h2 class="title">留言</h2>
-
   
-  	 <div class="ds-thread" data-thread-key="2014/12/06/神奇公式，并不神奇/" data-title="神奇公式，并不神奇" data-url="http://blog.greenwicher.com/2014/12/06/神奇公式，并不神奇/"></div>  
   
-</section>
-
-	</div> <!-- col-md-9/col-md-12 -->
-		
-	
-	<div id="side_meta">
-		<div class="col-md-3" id="post_meta"> 
-
-	<!-- date -->
-	
-	<div class="meta-widget">
-	<i class="fa fa-clock-o"></i>
-	Dec 6 2014 
-	</div>
-	
-
-	<!-- categories -->
-    
-	<div class="meta-widget">
-	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
-    <ul id="categorys" class="tag_box list-unstyled collapse in">
-          
-  <li>
-    <li><a href="/categories/如何做投资/">如何做投资<span>1</span></a></li>
-  </li>
-
-    </ul>
-	</div>
-	
-
-	<!-- tags -->
-	
-	<div class="meta-widget">
-	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
-    <ul id="tags" class="tag_box list-unstyled collapse in">	  
-	    
-  <li><a href="/tags/书评/">书评<span>1</span></a></li> <li><a href="/tags/投资/">投资<span>1</span></a></li>
-    </ul>
-	</div>
-		
-
-	<!-- toc -->
-	<div class="meta-widget">
-	
-	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
-	   <div id="toc" class="toc collapse in">
-			<ol class="toc-article"><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#u611F_u609F"><span class="toc-article-text">感悟</span></a></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#u6982_u89C8"><span class="toc-article-text">概览</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u5143_u6570_u636E"><span class="toc-article-text">元数据</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u7EB2_u8981"><span class="toc-article-text">纲要</span></a></li></ol></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#u6846_u67B6"><span class="toc-article-text">框架</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u4E00_u5802_u6295_u8D44_u542F_u8499_u8BFE"><span class="toc-article-text">一堂投资启蒙课</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u6700_u57FA_u672C_u7684_u56DB_u79CD_u6295_u8D44_u6E20_u9053"><span class="toc-article-text">最基本的四种投资渠道</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u80A1_u7968_u7A76_u7ADF_u662F_u600E_u4E48_u56DE_u4E8B"><span class="toc-article-text">股票究竟是怎么回事</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u4EF7_u683C_u3001_u4EF7_u503C_u548C_u5B89_u5168_u7A7A_u95F4"><span class="toc-article-text">价格、价值和安全空间</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u6295_u8D44_u56DE_u62A5_u7387_u4E0E_u6536_u76CA_u7387"><span class="toc-article-text">投资回报率与收益率</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u9009_u62E9_u8D28_u4F18_u4EF7_u4F4E_u7684_u80A1_u7968"><span class="toc-article-text">选择质优价低的股票</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u795E_u5947_u516C_u5F0F"><span class="toc-article-text">神奇公式</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u795E_u5947_u516C_u5F0F_u5E76_u4E0D_u662F_u65F6_u523B_u6709_u6548"><span class="toc-article-text">神奇公式并不是时刻有效</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u4F18_u8D28_u516C_u53F8_u4F18_u8D28_u5728_u54EA_u513F"><span class="toc-article-text">优质公司优质在哪儿</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u5E02_u573A_u603B_u4F1A_u90A3_u4E48_u60C5_u7EEA_u5316_u4E48"><span class="toc-article-text">市场总会那么情绪化么</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u5927_u591A_u6570_u4EBA_u6CA1_u6709_u80FD_u529B_u72EC_u7ACB_u9009_u62E9_u4E2A_u80A1"><span class="toc-article-text">大多数人没有能力独立选择个股</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u80A1_u7968_u5E02_u573A_u91CC_u6CA1_u6709_u7259_u4ED9"><span class="toc-article-text">股票市场里没有牙仙</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u8D5A_u94B1_u4E4B_u540E"><span class="toc-article-text">赚钱之后</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u5E94_u7528_u6307_u5BFC"><span class="toc-article-text">应用指导</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u9644_u5F55"><span class="toc-article-text">附录</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#u795E_u5947_u516C_u5F0F-1"><span class="toc-article-text">神奇公式</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#u6709_u6548_u5E02_u573A_u7406_u8BBA"><span class="toc-article-text">有效市场理论</span></a></li></ol></li></ol></li><li class="toc-article-item toc-article-level-1"><a class="toc-article-link" href="#u6458_u6284"><span class="toc-article-text">摘抄</span></a></li></ol>
-		</div>
-	
-	</div>
-	
-    <hr>
-	
-</div><!-- col-md-3 -->
-
-	</div>
-		
-
-</div><!-- row -->
-
-<script type="text/javascript">
-  var duoshuoQuery = { short_name: 'greenwicher' };
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';
-    ds.async = true;
-    ds.src = 'http://static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script>
-
-
-
-	</div>
-  </div>
-  <div class="container-narrow">
-  <footer> <p>
-  &copy; 2016 LIU Weizhi
-  
-      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
-</p> </footer>
-</div> <!-- container-narrow -->
-  
-
-
-  
-<a id="gotop" href="#">   
-  <span>▲</span> 
-</a>
-
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/search.js"></script> 
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
-
-
-
-   <script type="text/javascript">      
-     var search_path = "search.xml";
-	 if (search_path.length == 0) {
-	 	search_path = "search.xml";
-	 }
-	 var path = "/" + search_path;
-     searchFunc(path, 'local-search-input', 'local-search-result');
-   </script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
-   </html>
+</search>

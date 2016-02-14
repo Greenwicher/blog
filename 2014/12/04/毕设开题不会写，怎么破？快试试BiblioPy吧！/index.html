@@ -61,40 +61,51 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-       <a class="navbar-brand" href="/">Greenwicher</a>
+       <a class="navbar-brand" href="http://greenwicher.com">Greenwicher</a>
       <div class="collapse navbar-collapse nav-menu">
 		<ul class="nav navbar-nav">
 		  
 		  <li>
-			<a href="/archives" title="All the articles.">
+			<a href= "/" title="Blog homepage"> 
+			  <i class="fa fa-home"></i>首页
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/archives" title="All the articles."> 
 			  <i class="fa fa-archive"></i>归档
 			</a>
 		  </li>
 		  
 		  <li>
-			<a href="/categories" title="All the categories.">
+			<a href= "/categories" title="All the categories."> 
 			  <i class="fa fa-folder"></i>分类
 			</a>
 		  </li>
 		  
 		  <li>
-			<a href="/tags" title="All the tags.">
+			<a href= "/tags" title="All the tags."> 
 			  <i class="fa fa-tags"></i>标签
 			</a>
 		  </li>
 		  
 		  <li>
-			<a href="/about" title="About me.">
-			  <i class="fa fa-user"></i>关于
+			<a href= "/douban" title="Readling list"> 
+			  <i class="fa fa-book"></i>读书
 			</a>
 		  </li>
 		  
 		  <li>
-			<a href="/atom.xml" title="RSS Subscription">
+			<a href= "/atom.xml" title="RSS Subscription"> 
 			  <i class="fa fa-rss"></i>RSS
 			</a>
 		  </li>
 		  
+		  <li>
+			<a href= "http://greenwicher.com/me/cv.pdf" title="Me"> 
+			  <i class="fa fa-user"></i>关于我
+			</a>			
+	          </li>
 		</ul>
       </div>
     </div> <!-- container -->
@@ -164,7 +175,7 @@
     	<li class="prev"><a href="/2014/12/06/神奇公式，并不神奇/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
   		
 
-        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+        <li><a href="/"><i class="fa fa-archive"></i>Archive</a></li>
 
 		
           <li class="next disabled"><a>下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>
@@ -315,6 +326,15 @@
 </script>
 
 
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
 
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
