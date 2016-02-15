@@ -137,182 +137,6 @@
 	
 	<!-- display as entry -->	
 		<h3 class="title">
-			<div class="date"> Feb 15 2016 </div>
-			<div class="article-title"><a href="/2016/02/15/CF-598C/" ></a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<title>Codeforces - 598C Nearest vectors</title>
-<!-- 2016-02-15 Mon 10:09 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="LiuWeizhi" />
-<meta  name="description" content="Codeforces - 598C Nearest Vectors 解题报告"
- />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  /*]]>*/-->
-</style>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
-</head>
-<body>
-<div id="content">
-<h1 class="title">Codeforces - 598C Nearest vectors</h1>
-<p>
-从系统的角度来看，给定一个算法问题和输入，要使得计算机输出正确的结果，那么至少必须保证下面三个环节是正确无误的。
-</p>
-<ul class="org-ul">
-<li>算法设计 （思维上的构建）
-</li>
-<li>算法实施 （代码上的构建）
-</li>
-<li>算法运行 （计算机硬件上的构建）
-</li>
-</ul>
-<p>
-这其中的任一环节出现了错误，都无法保证最终的正确结果。前两个环节主要取决于人的能力（理解问题，解决问题）与细心程度，而最后一个环节重点在于人对计算机的底层理解。换句话说，即使问题在我们的脑海中已被完美解决，但在算法运行时，计算机对该问题的重新表达可能会出现偏差。最常见的偏差就是计算机精度问题，毕竟是以离散来逼近连续，出现『精确的错误』是在所难免的。但正确性和高精度只能二选一时，显然没有人会选择高精度而追求精确的错误。这篇文章就以<a href="http://codeforces.com/contest/598/problem/C#">Codeforces 598C</a>这道题来探讨第三个环节算法运行中的精度问题。这道题目本身并不难，但在正式比赛中只有57个人AC，仅低于F题。说其不难，是因为算法设计以及算法实施环节太显而易见了，但这么低的AC率就是因为大多数人在这道题精度上出了问题（第119号测试数据）。
-</p>
-	
-	</div>
-  <a type="button" href="/2016/02/15/CF-598C/#more" class="btn btn-default more">阅读此文</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
 			<div class="date"> Feb 14 2016 </div>
 			<div class="article-title"><a href="/2016/02/14/CF-598C/" title="Codeforces - 598C Nearest Vectors 解题报告">Codeforces - 598C Nearest vectors</a></div>						
 		</h3>
@@ -453,25 +277,25 @@ for the JavaScript code in this tag.
 		<h4>标签云</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/高精度/">高精度<span>1</span></a></li>
-		
-			<li><a href="/tags/算法运行/">算法运行<span>1</span></a></li>
-		
-			<li><a href="/tags/算法/">算法<span>1</span></a></li>
-		
 			<li><a href="/tags/BiblioPy/">BiblioPy<span>1</span></a></li>
 		
 			<li><a href="/tags/开源项目/">开源项目<span>1</span></a></li>
 		
-			<li><a href="/tags/文献分析/">文献分析<span>1</span></a></li>
-		
 			<li><a href="/tags/投资/">投资<span>1</span></a></li>
+		
+			<li><a href="/tags/等价表达/">等价表达<span>1</span></a></li>
+		
+			<li><a href="/tags/算法/">算法<span>1</span></a></li>
+		
+			<li><a href="/tags/高精度/">高精度<span>1</span></a></li>
+		
+			<li><a href="/tags/算法运行/">算法运行<span>1</span></a></li>
+		
+			<li><a href="/tags/文献分析/">文献分析<span>1</span></a></li>
 		
 			<li><a href="/tags/codeforces/">codeforces<span>1</span></a></li>
 		
 			<li><a href="/tags/书评/">书评<span>1</span></a></li>
-		
-			<li><a href="/tags/等价表达/">等价表达<span>1</span></a></li>
 		
 		 
 		</ul>
@@ -483,10 +307,6 @@ for the JavaScript code in this tag.
 <div class="widget">
   <h4>最新文章</h4>
   <ul class="entry list-unstyled">
-    
-      <li>
-        <a href="/2016/02/15/CF-598C/" ><i class="fa fa-file-o"></i>...</a>
-      </li>
     
       <li>
         <a href="/2016/02/14/CF-598C/"  title="Codeforces - 598C Nearest Vectors 解题报告" ><i class="fa fa-file-o"></i>Codeforces - 598C Nearest v...</a>
