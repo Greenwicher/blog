@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greenwicher.com/"/>
-  <updated>2016-02-14T15:07:27.000Z</updated>
+  <updated>2016-02-15T02:09:35.000Z</updated>
   <id>http://blog.greenwicher.com/</id>
   
   <author>
@@ -16,13 +16,388 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Codeforces - 598C Nearest Vectors</title>
-    <link href="http://blog.greenwicher.com/2016/02/14/codeforces598c/"/>
-    <id>http://blog.greenwicher.com/2016/02/14/codeforces598c/</id>
+    <title></title>
+    <link href="http://blog.greenwicher.com/2016/02/15/CF-598C/"/>
+    <id>http://blog.greenwicher.com/2016/02/15/CF-598C/</id>
+    <published>2016-02-15T02:09:35.000Z</published>
+    <updated>2016-02-15T02:09:35.000Z</updated>
+    
+    <content type="html">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en&quot; xml:lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;Codeforces - 598C Nearest vectors&lt;/title&gt;
+&lt;!-- 2016-02-15 Mon 10:09 --&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;
+&lt;meta name=&quot;generator&quot; content=&quot;Org-mode&quot;&gt;
+&lt;meta name=&quot;author&quot; content=&quot;LiuWeizhi&quot;&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Codeforces - 598C Nearest Vectors 解题报告&quot;&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+ &lt;!--/*--&gt;&lt;![CDATA[/*&gt;&lt;!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: &#39;sh&#39;; }
+  pre.src-bash:before  { content: &#39;sh&#39;; }
+  pre.src-emacs-lisp:before { content: &#39;Emacs Lisp&#39;; }
+  pre.src-R:before     { content: &#39;R&#39;; }
+  pre.src-perl:before  { content: &#39;Perl&#39;; }
+  pre.src-java:before  { content: &#39;Java&#39;; }
+  pre.src-sql:before   { content: &#39;SQL&#39;; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]&gt;*/--&gt;
+&lt;/style&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+&lt;!--/*--&gt;&lt;![CDATA[/*&gt;&lt;!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = &quot;code-highlighted&quot;;
+     elem.className   = &quot;code-highlighted&quot;;
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]&gt;*///--&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;content&quot;&gt;
+&lt;h1 class=&quot;title&quot;&gt;Codeforces - 598C Nearest vectors&lt;/h1&gt;
+&lt;p&gt;
+从系统的角度来看，给定一个算法问题和输入，要使得计算机输出正确的结果，那么至少必须保证下面三个环节是正确无误的。
+&lt;/p&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;算法设计 （思维上的构建）
+&lt;/li&gt;
+&lt;li&gt;算法实施 （代码上的构建）
+&lt;/li&gt;
+&lt;li&gt;算法运行 （计算机硬件上的构建）
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+这其中的任一环节出现了错误，都无法保证最终的正确结果。前两个环节主要取决于人的能力（理解问题，解决问题）与细心程度，而最后一个环节重点在于人对计算机的底层理解。换句话说，即使问题在我们的脑海中已被完美解决，但在算法运行时，计算机对该问题的重新表达可能会出现偏差。最常见的偏差就是计算机精度问题，毕竟是以离散来逼近连续，出现『精确的错误』是在所难免的。但正确性和高精度只能二选一时，显然没有人会选择高精度而追求精确的错误。这篇文章就以&lt;a href=&quot;http://codeforces.com/contest/598/problem/C#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Codeforces 598C&lt;/a&gt;这道题来探讨第三个环节算法运行中的精度问题。这道题目本身并不难，但在正式比赛中只有57个人AC，仅低于F题。说其不难，是因为算法设计以及算法实施环节太显而易见了，但这么低的AC率就是因为大多数人在这道题精度上出了问题（第119号测试数据）。
+&lt;/p&gt;
+
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; 题目描述&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;/div&gt;&lt;div id=&quot;outline-container-sec-1-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-1-1&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;1.1&lt;/span&gt; 1&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-1-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-1-2&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;1.2&lt;/span&gt; 2&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-1-3&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-1-3&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;1.3&lt;/span&gt; 3&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; 思考&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; 解答&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;4&lt;/span&gt; 反思&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en&quot; xml:lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;Codeforces - 598C Nearest vectors&lt;/title&gt;
+&lt;!-- 2016-02-15 Mon 10:09 --&gt;
+&lt;meta  http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;
+&lt;meta  name=&quot;generator&quot; content=&quot;Org-mode&quot; /&gt;
+&lt;meta  name=&quot;author&quot; content=&quot;LiuWeizhi&quot; /&gt;
+&lt;meta  name=&quot;description&quot; content=&quot;Codeforces - 598C Nearest Vectors 解题报告&quot;
+ /&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+ &lt;!--/*--&gt;&lt;![CDATA[/*&gt;&lt;!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: &#39;sh&#39;; }
+  pre.src-bash:before  { content: &#39;sh&#39;; }
+  pre.src-emacs-lisp:before { content: &#39;Emacs Lisp&#39;; }
+  pre.src-R:before     { content: &#39;R&#39;; }
+  pre.src-perl:before  { content: &#39;Perl&#39;; }
+  pre.src-java:before  { content: &#39;Java&#39;; }
+  pre.src-sql:before   { content: &#39;SQL&#39;; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]&gt;*/--&gt;
+&lt;/style&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+&lt;!--/*--&gt;&lt;![CDATA[/*&gt;&lt;!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = &quot;code-highlighted&quot;;
+     elem.className   = &quot;code-highlighted&quot;;
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]&gt;*///--&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;content&quot;&gt;
+&lt;h1 class=&quot;title&quot;&gt;Codeforces - 598C Nearest vectors&lt;/h1&gt;
+&lt;p&gt;
+从系统的角度来看，给定一个算法问题和输入，要使得计算机输出正确的结果，那么至少必须保证下面三个环节是正确无误的。
+&lt;/p&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;算法设计 （思维上的构建）
+&lt;/li&gt;
+&lt;li&gt;算法实施 （代码上的构建）
+&lt;/li&gt;
+&lt;li&gt;算法运行 （计算机硬件上的构建）
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+这其中的任一环节出现了错误，都无法保证最终的正确结果。前两个环节主要取决于人的能力（理解问题，解决问题）与细心程度，而最后一个环节重点在于人对计算机的底层理解。换句话说，即使问题在我们的脑海中已被完美解决，但在算法运行时，计算机对该问题的重新表达可能会出现偏差。最常见的偏差就是计算机精度问题，毕竟是以离散来逼近连续，出现『精确的错误』是在所难免的。但正确性和高精度只能二选一时，显然没有人会选择高精度而追求精确的错误。这篇文章就以&lt;a href=&quot;http://codeforces.com/contest/598/problem/C#&quot;&gt;Codeforces 598C&lt;/a&gt;这道题来探讨第三个环节算法运行中的精度问题。这道题目本身并不难，但在正式比赛中只有57个人AC，仅低于F题。说其不难，是因为算法设计以及算法实施环节太显而易见了，但这么低的AC率就是因为大多数人在这道题精度上出了问题（第119号测试数据）。
+&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Codeforces - 598C Nearest vectors</title>
+    <link href="http://blog.greenwicher.com/2016/02/14/CF-598C/"/>
+    <id>http://blog.greenwicher.com/2016/02/14/CF-598C/</id>
     <published>2016-02-14T00:00:00.000Z</published>
-    <updated>2016-02-14T15:07:27.000Z</updated>
+    <updated>2016-02-15T02:09:31.000Z</updated>
     
     <content type="html">
+
+&lt;p&gt;
+&amp;#x4ECE;&amp;#x7CFB;&amp;#x7EDF;&amp;#x7684;&amp;#x89D2;&amp;#x5EA6;&amp;#x6765;&amp;#x770B;&amp;#xFF0C;&amp;#x7ED9;&amp;#x5B9A;&amp;#x4E00;&amp;#x4E2A;&amp;#x7B97;&amp;#x6CD5;&amp;#x95EE;&amp;#x9898;&amp;#x548C;&amp;#x8F93;&amp;#x5165;&amp;#xFF0C;&amp;#x8981;&amp;#x4F7F;&amp;#x5F97;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x8F93;&amp;#x51FA;&amp;#x6B63;&amp;#x786E;&amp;#x7684;&amp;#x7ED3;&amp;#x679C;&amp;#xFF0C;&amp;#x90A3;&amp;#x4E48;&amp;#x81F3;&amp;#x5C11;&amp;#x5FC5;&amp;#x987B;&amp;#x4FDD;&amp;#x8BC1;&amp;#x4E0B;&amp;#x9762;&amp;#x4E09;&amp;#x4E2A;&amp;#x73AF;&amp;#x8282;&amp;#x662F;&amp;#x6B63;&amp;#x786E;&amp;#x65E0;&amp;#x8BEF;&amp;#x7684;&amp;#x3002;
+&lt;/p&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&amp;#x7B97;&amp;#x6CD5;&amp;#x8BBE;&amp;#x8BA1; &amp;#xFF08;&amp;#x601D;&amp;#x7EF4;&amp;#x4E0A;&amp;#x7684;&amp;#x6784;&amp;#x5EFA;&amp;#xFF09;
+&lt;/li&gt;
+&lt;li&gt;&amp;#x7B97;&amp;#x6CD5;&amp;#x5B9E;&amp;#x65BD; &amp;#xFF08;&amp;#x4EE3;&amp;#x7801;&amp;#x4E0A;&amp;#x7684;&amp;#x6784;&amp;#x5EFA;&amp;#xFF09;
+&lt;/li&gt;
+&lt;li&gt;&amp;#x7B97;&amp;#x6CD5;&amp;#x8FD0;&amp;#x884C; &amp;#xFF08;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x786C;&amp;#x4EF6;&amp;#x4E0A;&amp;#x7684;&amp;#x6784;&amp;#x5EFA;&amp;#xFF09;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&amp;#x8FD9;&amp;#x5176;&amp;#x4E2D;&amp;#x7684;&amp;#x4EFB;&amp;#x4E00;&amp;#x73AF;&amp;#x8282;&amp;#x51FA;&amp;#x73B0;&amp;#x4E86;&amp;#x9519;&amp;#x8BEF;&amp;#xFF0C;&amp;#x90FD;&amp;#x65E0;&amp;#x6CD5;&amp;#x4FDD;&amp;#x8BC1;&amp;#x6700;&amp;#x7EC8;&amp;#x7684;&amp;#x6B63;&amp;#x786E;&amp;#x7ED3;&amp;#x679C;&amp;#x3002;&amp;#x524D;&amp;#x4E24;&amp;#x4E2A;&amp;#x73AF;&amp;#x8282;&amp;#x4E3B;&amp;#x8981;&amp;#x53D6;&amp;#x51B3;&amp;#x4E8E;&amp;#x4EBA;&amp;#x7684;&amp;#x80FD;&amp;#x529B;&amp;#xFF08;&amp;#x7406;&amp;#x89E3;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x89E3;&amp;#x51B3;&amp;#x95EE;&amp;#x9898;&amp;#xFF09;&amp;#x4E0E;&amp;#x7EC6;&amp;#x5FC3;&amp;#x7A0B;&amp;#x5EA6;&amp;#xFF0C;&amp;#x800C;&amp;#x6700;&amp;#x540E;&amp;#x4E00;&amp;#x4E2A;&amp;#x73AF;&amp;#x8282;&amp;#x91CD;&amp;#x70B9;&amp;#x5728;&amp;#x4E8E;&amp;#x4EBA;&amp;#x5BF9;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x7684;&amp;#x5E95;&amp;#x5C42;&amp;#x7406;&amp;#x89E3;&amp;#x3002;&amp;#x6362;&amp;#x53E5;&amp;#x8BDD;&amp;#x8BF4;&amp;#xFF0C;&amp;#x5373;&amp;#x4F7F;&amp;#x95EE;&amp;#x9898;&amp;#x5728;&amp;#x6211;&amp;#x4EEC;&amp;#x7684;&amp;#x8111;&amp;#x6D77;&amp;#x4E2D;&amp;#x5DF2;&amp;#x88AB;&amp;#x5B8C;&amp;#x7F8E;&amp;#x89E3;&amp;#x51B3;&amp;#xFF0C;&amp;#x4F46;&amp;#x5728;&amp;#x7B97;&amp;#x6CD5;&amp;#x8FD0;&amp;#x884C;&amp;#x65F6;&amp;#xFF0C;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x5BF9;&amp;#x8BE5;&amp;#x95EE;&amp;#x9898;&amp;#x7684;&amp;#x91CD;&amp;#x65B0;&amp;#x8868;&amp;#x8FBE;&amp;#x53EF;&amp;#x80FD;&amp;#x4F1A;&amp;#x51FA;&amp;#x73B0;&amp;#x504F;&amp;#x5DEE;&amp;#x3002;&amp;#x6700;&amp;#x5E38;&amp;#x89C1;&amp;#x7684;&amp;#x504F;&amp;#x5DEE;&amp;#x5C31;&amp;#x662F;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x7CBE;&amp;#x5EA6;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x6BD5;&amp;#x7ADF;&amp;#x662F;&amp;#x4EE5;&amp;#x79BB;&amp;#x6563;&amp;#x6765;&amp;#x903C;&amp;#x8FD1;&amp;#x8FDE;&amp;#x7EED;&amp;#xFF0C;&amp;#x51FA;&amp;#x73B0;&amp;#x300E;&amp;#x7CBE;&amp;#x786E;&amp;#x7684;&amp;#x9519;&amp;#x8BEF;&amp;#x300F;&amp;#x662F;&amp;#x5728;&amp;#x6240;&amp;#x96BE;&amp;#x514D;&amp;#x7684;&amp;#x3002;&amp;#x4F46;&amp;#x6B63;&amp;#x786E;&amp;#x6027;&amp;#x548C;&amp;#x9AD8;&amp;#x7CBE;&amp;#x5EA6;&amp;#x53EA;&amp;#x80FD;&amp;#x4E8C;&amp;#x9009;&amp;#x4E00;&amp;#x65F6;&amp;#xFF0C;&amp;#x663E;&amp;#x7136;&amp;#x6CA1;&amp;#x6709;&amp;#x4EBA;&amp;#x4F1A;&amp;#x9009;&amp;#x62E9;&amp;#x9AD8;&amp;#x7CBE;&amp;#x5EA6;&amp;#x800C;&amp;#x8FFD;&amp;#x6C42;&amp;#x7CBE;&amp;#x786E;&amp;#x7684;&amp;#x9519;&amp;#x8BEF;&amp;#x3002;&amp;#x8FD9;&amp;#x7BC7;&amp;#x6587;&amp;#x7AE0;&amp;#x5C31;&amp;#x4EE5;&lt;a href=&quot;http://codeforces.com/contest/598/problem/C#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Codeforces 598C&lt;/a&gt;&amp;#x8FD9;&amp;#x9053;&amp;#x9898;&amp;#x6765;&amp;#x63A2;&amp;#x8BA8;&amp;#x7B2C;&amp;#x4E09;&amp;#x4E2A;&amp;#x73AF;&amp;#x8282;&amp;#x7B97;&amp;#x6CD5;&amp;#x8FD0;&amp;#x884C;&amp;#x4E2D;&amp;#x7684;&amp;#x7CBE;&amp;#x5EA6;&amp;#x95EE;&amp;#x9898;&amp;#x3002;&amp;#x8FD9;&amp;#x9053;&amp;#x9898;&amp;#x76EE;&amp;#x672C;&amp;#x8EAB;&amp;#x5E76;&amp;#x4E0D;&amp;#x96BE;&amp;#xFF0C;&amp;#x4F46;&amp;#x5728;&amp;#x6B63;&amp;#x5F0F;&amp;#x6BD4;&amp;#x8D5B;&amp;#x4E2D;&amp;#x53EA;&amp;#x6709;57&amp;#x4E2A;&amp;#x4EBA;AC&amp;#xFF0C;&amp;#x4EC5;&amp;#x4F4E;&amp;#x4E8E;F&amp;#x9898;&amp;#x3002;&amp;#x8BF4;&amp;#x5176;&amp;#x4E0D;&amp;#x96BE;&amp;#xFF0C;&amp;#x662F;&amp;#x56E0;&amp;#x4E3A;&amp;#x7B97;&amp;#x6CD5;&amp;#x8BBE;&amp;#x8BA1;&amp;#x4EE5;&amp;#x53CA;&amp;#x7B97;&amp;#x6CD5;&amp;#x5B9E;&amp;#x65BD;&amp;#x73AF;&amp;#x8282;&amp;#x592A;&amp;#x663E;&amp;#x800C;&amp;#x6613;&amp;#x89C1;&amp;#x4E86;&amp;#xFF0C;&amp;#x4F46;&amp;#x8FD9;&amp;#x4E48;&amp;#x4F4E;&amp;#x7684;AC&amp;#x7387;&amp;#x5C31;&amp;#x662F;&amp;#x56E0;&amp;#x4E3A;&amp;#x5927;&amp;#x591A;&amp;#x6570;&amp;#x4EBA;&amp;#x5728;&amp;#x8FD9;&amp;#x9053;&amp;#x9898;&amp;#x7CBE;&amp;#x5EA6;&amp;#x4E0A;&amp;#x51FA;&amp;#x4E86;&amp;#x95EE;&amp;#x9898;&amp;#xFF08;&amp;#x7B2C;119&amp;#x53F7;&amp;#x6D4B;&amp;#x8BD5;&amp;#x6570;&amp;#x636E;&amp;#xFF09;&amp;#x3002;
+&lt;/p&gt;
 
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 
@@ -65,7 +440,11 @@
     
       <category term="codeforces" scheme="http://blog.greenwicher.com/tags/codeforces/"/>
     
+      <category term="等价表达" scheme="http://blog.greenwicher.com/tags/%E7%AD%89%E4%BB%B7%E8%A1%A8%E8%BE%BE/"/>
+    
       <category term="算法" scheme="http://blog.greenwicher.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="算法运行" scheme="http://blog.greenwicher.com/tags/%E7%AE%97%E6%B3%95%E8%BF%90%E8%A1%8C/"/>
     
       <category term="高精度" scheme="http://blog.greenwicher.com/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
     
