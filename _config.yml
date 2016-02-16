@@ -4,7 +4,7 @@
 
 # Site
 title: Greenwicher
-subtitle: Notes
+subtitle: Blog
 description: 嚼得菜根，做得大事
 author: LIU Weizhi
 email: weizhiliu2009@gmail.com
@@ -77,11 +77,16 @@ pagination_dir: page
 # Disqus
 disqus_shortname:
 
+# Douban
+douban:
+  user: 500429364
+
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 plugins:
   - hexo-generator-feed
   - hexo-generator-sitemap
+  - hexo-generator-douban
 org:
   emacs: '/Applications/Emacs.app/Contents/MacOS/Emacs'
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
