@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greenwicher.com/"/>
-  <updated>2016-02-18T02:56:29.000Z</updated>
+  <updated>2016-03-12T09:41:46.000Z</updated>
   <id>http://blog.greenwicher.com/</id>
   
   <author>
@@ -14,6 +14,92 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Codeforces - 598D Igor In the Museum</title>
+    <link href="http://blog.greenwicher.com/2016/03/12/CF-598D/"/>
+    <id>http://blog.greenwicher.com/2016/03/12/CF-598D/</id>
+    <published>2016-03-12T00:00:00.000Z</published>
+    <updated>2016-03-12T09:41:46.000Z</updated>
+    
+    <content type="html">
+
+&lt;p&gt;
+&lt;a href=&quot;http://blog.greenwicher.com/2016/02/15/CF-598C/&quot;&gt;&amp;#x524D;&amp;#x6587;&lt;/a&gt; &amp;#x66FE;&amp;#x63D0;&amp;#x5230;&amp;#x8FC7;&amp;#x89E3;&amp;#x51B3;&amp;#x4E00;&amp;#x4E2A;&amp;#x7B97;&amp;#x6CD5;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x5927;&amp;#x6982;&amp;#x53EF;&amp;#x4EE5;&amp;#x5212;&amp;#x5206;&amp;#x4E3A;&amp;#x4E09;&amp;#x4E2A;&amp;#x9636;&amp;#x6BB5;&amp;#x3002;&amp;#x7B2C;&amp;#x4E00;&amp;#x9636;&amp;#x6BB5;&amp;#x662F;&amp;#x7B97;&amp;#x6CD5;&amp;#x8BBE;&amp;#x8BA1;&amp;#xFF0C;&amp;#x5373;&amp;#x4EBA;&amp;#x8111;&amp;#x51C6;&amp;#x786E;&amp;#x65E0;&amp;#x8BEF;&amp;#x7406;&amp;#x89E3;&amp;#x7B97;&amp;#x6CD5;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x5E76;&amp;#x8BBE;&amp;#x8BA1;&amp;#x7B97;&amp;#x6CD5;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E00;&amp;#x9636;&amp;#x6BB5;&amp;#x5C5E;&amp;#x4E8E;&amp;#x6A21;&amp;#x578B;&amp;#x5728;&amp;#x601D;&amp;#x7EF4;&amp;#x4E0A;&amp;#x7684;&amp;#x6784;&amp;#x5EFA;&amp;#x3002;&amp;#x7B2C;&amp;#x4E8C;&amp;#x9636;&amp;#x6BB5;&amp;#x662F;&amp;#x7B97;&amp;#x6CD5;&amp;#x5B9E;&amp;#x65BD;&amp;#xFF0C;&amp;#x5373;&amp;#x7A0B;&amp;#x5E8F;&amp;#x5458;&amp;#x7528;&amp;#x81EA;&amp;#x5DF1;&amp;#x949F;&amp;#x7231;&amp;#x7684;&amp;#x8BED;&amp;#x8A00;&amp;#x5BF9;&amp;#x601D;&amp;#x7EF4;&amp;#x4E0A;&amp;#x7684;&amp;#x6A21;&amp;#x578B;&amp;#x8FDB;&amp;#x884C;&amp;#x73B0;&amp;#x5B9E;&amp;#x5316;&amp;#xFF0C;&amp;#x4F9D;&amp;#x9760;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x6765;&amp;#x83B7;&amp;#x5F97;&amp;#x7ED3;&amp;#x679C;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E00;&amp;#x9636;&amp;#x6BB5;&amp;#x5C5E;&amp;#x4E8E;&amp;#x6A21;&amp;#x578B;&amp;#x5728;&amp;#x4EE3;&amp;#x7801;&amp;#x4E0A;&amp;#x7684;&amp;#x6784;&amp;#x5EFA;&amp;#x3002;&amp;#x6700;&amp;#x540E;&amp;#x4E00;&amp;#x9636;&amp;#x6BB5;&amp;#xFF0C;&amp;#x5373;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x6267;&amp;#x884C;&amp;#x7A0B;&amp;#x5E8F;&amp;#x5458;&amp;#x7ED9;&amp;#x5B9A;&amp;#x7684;&amp;#x547D;&amp;#x4EE4;&amp;#xFF0C;&amp;#x5E76;&amp;#x8FD4;&amp;#x56DE;&amp;#x5176;&amp;#x6240;&amp;#x5E0C;&amp;#x671B;&amp;#x7684;&amp;#x7ED3;&amp;#x679C;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E00;&amp;#x9636;&amp;#x6BB5;&amp;#x5C5E;&amp;#x4E8E;&amp;#x6A21;&amp;#x578B;&amp;#x5728;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x786C;&amp;#x4EF6;&amp;#x4E0A;&amp;#x7684;&amp;#x6784;&amp;#x5EFA;&amp;#x3002;&amp;#x4E3A;&amp;#x4E86;&amp;#x4FDD;&amp;#x8BC1;&amp;#x6700;&amp;#x7EC8;&amp;#x8F93;&amp;#x51FA;&amp;#x7684;&amp;#x6B63;&amp;#x786E;&amp;#x6027;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E09;&amp;#x4E2A;&amp;#x9636;&amp;#x6BB5;&amp;#x4E0D;&amp;#x80FD;&amp;#x53D1;&amp;#x751F;&amp;#x4EFB;&amp;#x4F55;&amp;#x53EF;&amp;#x9884;&amp;#x89C1;&amp;#x7684;&amp;#x9519;&amp;#x8BEF;&amp;#x6216;&amp;#x8005;&amp;#x610F;&amp;#x60F3;&amp;#x4E0D;&amp;#x5230;&amp;#x7684;&amp;#x9519;&amp;#x8BEF;&amp;#x3002;&amp;#x7B97;&amp;#x6CD5;&amp;#x8FD0;&amp;#x884C;&amp;#x4E2D;&amp;#x7684;&amp;#x7CBE;&amp;#x5EA6;&amp;#x95EE;&amp;#x9898;&amp;#x5728;&lt;a href=&quot;http://blog.greenwicher.com/2016/02/15/CF-598C/&quot;&gt;&amp;#x524D;&amp;#x6587;&amp;#x4E2D;&amp;#x6709;&amp;#x6240;&amp;#x63CF;&amp;#x8FF0;&lt;/a&gt;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E00;&amp;#x6B21;&amp;#x6211;&amp;#x4EEC;&amp;#x6765;&amp;#x8C08;&amp;#x8C08;&amp;#x7B97;&amp;#x6CD5;&amp;#x5B9E;&amp;#x65BD;&amp;#x9636;&amp;#x6BB5;&amp;#xFF0C;&amp;#x5E76;&amp;#x4EE5;&lt;a href=&quot;http://codeforces.com/contest/598/problem/D&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Codeforces 598D&amp;#x4E3A;&amp;#x4F8B;&amp;#x6765;&amp;#x8BF4;&amp;#x660E;&lt;/a&gt;&amp;#x5982;&amp;#x4F55;&amp;#x5199;&amp;#x66F4;&amp;#x7CBE;&amp;#x7B80;&amp;#x7684;&amp;#x4EE3;&amp;#x7801;&amp;#x3002;
+&lt;/p&gt;
+
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&amp;#x95EE;&amp;#x9898;&amp;#x63CF;&amp;#x8FF0;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+&lt;div class=&quot;figure&quot;&gt;&lt;p&gt;&lt;center&gt;&lt;img src=&quot;CF-598C/cf598d.jpg&quot; alt=&quot;cf598d.jpg&quot; width=&quot;80%&quot;&gt;&lt;figcaption&gt;cf598d.jpg&lt;/figcaption&gt;&lt;/center&gt;&lt;/p&gt;&lt;/div&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&amp;#x521D;&amp;#x6B65;&amp;#x601D;&amp;#x8003;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;Version 1&amp;#x4EE5;&amp;#x53CA;&amp;#x9012;&amp;#x5F52;&amp;#x4E2D;&amp;#x5199;&amp;#x7684;return value
+&lt;/li&gt;
+&lt;li&gt;&amp;#x672A;&amp;#x505A;&amp;#x7D22;&amp;#x5F15;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&amp;#x751F;&amp;#x6210;&amp;#x7D22;&amp;#x5F15;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&amp;#x8BB0;&amp;#x5F55;&amp;#x7D22;&amp;#x5F15;
+&lt;/li&gt;
+&lt;li&gt;&amp;#x4EC5;&amp;#x9760;&amp;#x5FAA;&amp;#x73AF;&amp;#x6C42;&amp;#x6700;&amp;#x4F18;&amp;#xFF1A;&amp;#x9519;&amp;#x8BEF;&amp;#xFF01;&amp;#xFF01;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&amp;#x5168;&amp;#x65B9;&amp;#x4F4D;&amp;#x7684;&amp;#x6DF1;&amp;#x5EA6;&amp;#x4F18;&amp;#x5148;&amp;#x641C;&amp;#x7D22;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&amp;#x9012;&amp;#x5F52;&amp;#x7684;&amp;#x540C;&amp;#x65F6;&amp;#x8FDB;&amp;#x884C;&amp;#x533A;&amp;#x5757;&amp;#x6807;&amp;#x8BB0;&amp;#x4EE5;&amp;#x53CA;&amp;#x8BA1;&amp;#x7B97;&amp;#x6700;&amp;#x4F18;&amp;#x503C;
+&lt;/li&gt;
+&lt;li&gt;C++&amp;#x7684;&amp;#x5FEB;&amp;#x901F;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-5&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-5&quot;&gt;&amp;#x53CD;&amp;#x601D;&lt;/h2&gt;
+&lt;/div&gt;
+</content>
+    
+    <summary type="html">
+    
+      Codeforces - 598D Igor In the Museum 解题报告
+    
+    </summary>
+    
+      <category term="如何写算法" scheme="http://blog.greenwicher.com/categories/%E5%A6%82%E4%BD%95%E5%86%99%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="codeforces" scheme="http://blog.greenwicher.com/tags/codeforces/"/>
+    
+      <category term="深度优先搜索" scheme="http://blog.greenwicher.com/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/"/>
+    
+      <category term="算法" scheme="http://blog.greenwicher.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="算法实施" scheme="http://blog.greenwicher.com/tags/%E7%AE%97%E6%B3%95%E5%AE%9E%E6%96%BD/"/>
+    
+      <category term="缓存" scheme="http://blog.greenwicher.com/tags/%E7%BC%93%E5%AD%98/"/>
+    
+  </entry>
   
   <entry>
     <title>部署个性化子域名网站到Github</title>
