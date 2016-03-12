@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Greenwicher</title>
+  <title>Greenwicher&#39;s Blog</title>
   <subtitle>Blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greenwicher.com/"/>
-  <updated>2016-03-12T13:35:10.000Z</updated>
+  <updated>2016-03-12T14:33:38.000Z</updated>
   <id>http://blog.greenwicher.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.greenwicher.com/2016/03/12/CF-598D/"/>
     <id>http://blog.greenwicher.com/2016/03/12/CF-598D/</id>
     <published>2016-03-12T00:00:00.000Z</published>
-    <updated>2016-03-12T13:35:10.000Z</updated>
+    <updated>2016-03-12T14:33:38.000Z</updated>
     
     <content type="html">
 
@@ -34,7 +34,7 @@
 &lt;h2 id=&quot;sec-1&quot;&gt;&amp;#x95EE;&amp;#x9898;&amp;#x63CF;&amp;#x8FF0;&lt;/h2&gt;
 &lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
 &lt;p&gt;
-&lt;div class=&quot;figure&quot;&gt;&lt;p&gt;&lt;center&gt;&lt;img src=&quot;CF-598D/cf598d.jpg&quot; alt=&quot;cf598d.jpg&quot; width=&quot;80%&quot;&gt;&lt;figcaption&gt;cf598d.jpg&lt;/figcaption&gt;&lt;/center&gt;&lt;/p&gt;&lt;/div&gt; 
+&lt;div class=&quot;figure&quot;&gt;&lt;p&gt;&lt;center&gt;&lt;img src=&quot;cf598d.jpg&quot; alt=&quot;cf598d.jpg&quot; width=&quot;80%&quot;&gt;&lt;figcaption&gt;cf598d.jpg&lt;/figcaption&gt;&lt;/center&gt;&lt;/p&gt;&lt;/div&gt; 
 &amp;#x8FD9;&amp;#x9053;&amp;#x9898;&amp;#x7684;&amp;#x57FA;&amp;#x672C;&amp;#x610F;&amp;#x601D;&amp;#x662F;&amp;#x8BF4;&amp;#xFF0C;&amp;#x7ED9;&amp;#x5B9A;&amp;#x4E00;&amp;#x4E2A;&amp;#x535A;&amp;#x7269;&amp;#x9986;&amp;#x4E8C;&amp;#x7EF4;&amp;#x5E73;&amp;#x9762;&amp;#x7A7A;&amp;#x95F4;&amp;#x5E03;&amp;#x7F6E;&amp;#xFF0C;&amp;#x5176;&amp;#x4E2D; &lt;code&gt;.&lt;/code&gt; &amp;#x8868;&amp;#x793A;&amp;#x901A;&amp;#x9053;&amp;#xFF0C; &lt;code&gt;*&lt;/code&gt; &amp;#x8868;&amp;#x793A;&amp;#x4E00;&amp;#x5835;&amp;#x5899;&amp;#xFF0C;&amp;#x6BCF;&amp;#x4E00;&amp;#x5835;&amp;#x5899;&amp;#x7684;&amp;#x4E24;&amp;#x9762;&amp;#x90FD;&amp;#x6302;&amp;#x7740;&amp;#x753B;&amp;#x3002;&amp;#x7136;&amp;#x540E;&amp;#x95EE;&amp;#x7ED9;&amp;#x5B9A;Igor&amp;#x7684;&amp;#x8D77;&amp;#x59CB;&amp;#x4F4D;&amp;#x7F6E;&amp;#xFF0C;&amp;#x4ED6;&amp;#x6700;&amp;#x591A;&amp;#x80FD;&amp;#x591F;&amp;#x89C2;&amp;#x8D4F;&amp;#x591A;&amp;#x5C11;&amp;#x526F;&amp;#x753B;&amp;#x3002;
 &lt;/p&gt;
 &lt;/div&gt;
@@ -94,7 +94,7 @@ Igor&amp;#x53EA;&amp;#x80FD;&amp;#x5728;&amp;#x8FDE;&amp;#x901A;&amp;#x7684;&amp
 &lt;/div&gt;
 &lt;p&gt;
 &amp;#x7136;&amp;#x800C;&amp;#x5373;&amp;#x4F7F;&amp;#x8FD9;&amp;#x6837;&amp;#x64CD;&amp;#x4F5C;&amp;#x4E86;&amp;#xFF0C;&amp;#x8FD9;&amp;#x6BB5;&amp;#x7B97;&amp;#x6CD5;&amp;#x8FD8;&amp;#x662F;&amp;#x5361;&amp;#x5728;&amp;#x4E86;&amp;#x7B2C;11&amp;#x53F7;&amp;#x6D4B;&amp;#x8BD5;&amp;#x6570;&amp;#x636E;&amp;#x4E0A;&amp;#xFF08;&amp;#x540E;&amp;#x6765;&amp;#x53D1;&amp;#x73B0;&amp;#x662F; &lt;code&gt;Python3&lt;/code&gt; &amp;#x7684;&amp;#x6548;&amp;#x7387;&amp;#x7F18;&amp;#x6545;&amp;#xFF0C;&amp;#x6362;&amp;#x505A; &lt;code&gt;C++&lt;/code&gt; &amp;#x540E;&amp;#xFF0C;&amp;#x4E00;&amp;#x6B21;AC&amp;#xFF09;&amp;#x3002;
-&lt;div class=&quot;figure&quot;&gt;&lt;p&gt;&lt;center&gt;&lt;img src=&quot;CF-598D/ac.jpg&quot; alt=&quot;ac.jpg&quot; width=&quot;80%&quot;&gt;&lt;figcaption&gt;ac.jpg&lt;/figcaption&gt;&lt;/center&gt;&lt;/p&gt;&lt;/div&gt; 
+&lt;div class=&quot;figure&quot;&gt;&lt;p&gt;&lt;center&gt;&lt;img src=&quot;ac.jpg&quot; alt=&quot;ac.jpg&quot; width=&quot;80%&quot;&gt;&lt;figcaption&gt;ac.jpg&lt;/figcaption&gt;&lt;/center&gt;&lt;/p&gt;&lt;/div&gt; 
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -189,7 +189,7 @@ Igor&amp;#x53EA;&amp;#x80FD;&amp;#x5728;&amp;#x8FDE;&amp;#x901A;&amp;#x7684;&amp
     <link href="http://blog.greenwicher.com/2016/02/15/%E9%83%A8%E7%BD%B2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%AD%90%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99%E5%88%B0Github/"/>
     <id>http://blog.greenwicher.com/2016/02/15/部署个性化子域名网站到Github/</id>
     <published>2016-02-15T00:00:00.000Z</published>
-    <updated>2016-02-18T02:56:29.000Z</updated>
+    <updated>2016-03-12T14:25:11.000Z</updated>
     
     <content type="html">
 
@@ -389,7 +389,7 @@ git push origin gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt
     <link href="http://blog.greenwicher.com/2016/02/15/CF-598C/"/>
     <id>http://blog.greenwicher.com/2016/02/15/CF-598C/</id>
     <published>2016-02-15T00:00:00.000Z</published>
-    <updated>2016-02-15T07:15:06.000Z</updated>
+    <updated>2016-03-12T14:24:30.000Z</updated>
     
     <content type="html">
 
@@ -607,7 +607,7 @@ $$ (abs(a \cdot b) a \cdot b) (\Vert c \Vert \Vert d \Vert)^{2} \ge  (abs(c \cdo
     <link href="http://blog.greenwicher.com/2014/12/06/%E7%A5%9E%E5%A5%87%E5%85%AC%E5%BC%8F%EF%BC%8C%E5%B9%B6%E4%B8%8D%E7%A5%9E%E5%A5%87/"/>
     <id>http://blog.greenwicher.com/2014/12/06/神奇公式，并不神奇/</id>
     <published>2014-12-06T09:33:12.000Z</published>
-    <updated>2015-04-04T11:49:17.000Z</updated>
+    <updated>2016-03-12T14:25:32.000Z</updated>
     
     <content type="html">&lt;p&gt;万物之始，大道至简，衍化至繁。后来者的我们面对纷繁的股票市场，如何才能把握最初的本质？神奇公式试图回答这一问题，通过投资回报率发现一家质优的好公司，通过收益率发现一家价低的好股票，然后持有直至市场恢复理性给予质优价低股票合理的价格为止。通过历史回测，作者确实发现利用神奇公式可以跑赢大盘不少，但神奇公式的一个原则是你要深信不疑的相信，直到市场恢复理性的那一天。面对神奇公式是有效的这个不可证伪的命题，我们不经疑问，作者为什么要公布这一有效可以持续获利的秘密呢？&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -778,7 +778,7 @@ $$ (abs(a \cdot b) a \cdot b) (\Vert c \Vert \Vert d \Vert)^{2} \ge  (abs(c \cdo
     <link href="http://blog.greenwicher.com/2014/12/04/%E6%AF%95%E8%AE%BE%E5%BC%80%E9%A2%98%E4%B8%8D%E4%BC%9A%E5%86%99%EF%BC%8C%E6%80%8E%E4%B9%88%E7%A0%B4%EF%BC%9F%E5%BF%AB%E8%AF%95%E8%AF%95BiblioPy%E5%90%A7%EF%BC%81/"/>
     <id>http://blog.greenwicher.com/2014/12/04/毕设开题不会写，怎么破？快试试BiblioPy吧！/</id>
     <published>2014-12-04T09:12:04.000Z</published>
-    <updated>2014-12-08T04:06:45.000Z</updated>
+    <updated>2016-03-12T14:25:46.000Z</updated>
     
     <content type="html">&lt;p&gt;春花秋月何时了，毕设开题开不了。导师昨夜又催稿，学渣不堪回首发呆中。学长论文应犹在，只是用不了。问君能有几多愁？恰似一江春水向东流。怎么破！怎么破！快来试试&lt;a href=&quot;https://github.com/Greenwicher/BiblioPy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;BiblioPy&lt;/strong&gt;&lt;/a&gt;吧！&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
