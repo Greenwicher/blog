@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greenwicher.com/"/>
-  <updated>2016-03-12T14:33:38.000Z</updated>
+  <updated>2016-04-23T13:29:36.000Z</updated>
   <id>http://blog.greenwicher.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.greenwicher.com/2016/03/12/CF-598D/"/>
     <id>http://blog.greenwicher.com/2016/03/12/CF-598D/</id>
     <published>2016-03-12T00:00:00.000Z</published>
-    <updated>2016-03-12T14:33:38.000Z</updated>
+    <updated>2016-04-23T13:29:36.000Z</updated>
     
     <content type="html">
 
@@ -140,6 +140,7 @@ Igor&amp;#x53EA;&amp;#x80FD;&amp;#x5728;&amp;#x8FDE;&amp;#x901A;&amp;#x7684;&amp
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt; 1: //version 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 2: #include&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 3: #include&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 4: #include&amp;lt;vector&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 5: using namespace std;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 6: int n,m,k;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 7: char museum[1001][1001];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 8: int region[1001][1001];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 9: int search(int x, int y, int i)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10: {&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11:   if (museum[x][y]==&amp;apos;*&amp;apos;) return 1;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12:   if (region[x][y]) return 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13:   region[x][y] = i;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14:   return search(x,y-1,i)+search(x,y+1,i)+search(x-1,y,i)+search(x+1,y,i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15: }&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17: int main()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18: {&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19:   cin&amp;gt;&amp;gt;n&amp;gt;&amp;gt;m&amp;gt;&amp;gt;k;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20:   int region_id=0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21:   vector&amp;lt;int&amp;gt; ans;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22:   ans.push_back(0);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23:   for(int i=1;i&amp;lt;=n;i++) scanf(&amp;quot;%s&amp;quot;, museum[i]+1);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24:   for(int i=0;i&amp;lt;k;++i){&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25:     int x,y;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26:     scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;x,&amp;amp;y);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27:     if (!region[x][y]){&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28: 	region_id++;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29: 	ans.push_back(search(x,y,region_id));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30:     }&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31:     printf(&amp;quot;%d\n&amp;quot;,ans[region[x][y]]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32:   }&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33: }&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
+
 &lt;p&gt;
 &amp;#x4EE3;&amp;#x7801;&amp;#x91CF;&amp;#x662F;&amp;#x4E0D;&amp;#x662F;&amp;#x6BD4;&amp;#x4E4B;&amp;#x524D;&amp;#x8981;&amp;#x5C11;&amp;#x591A;&amp;#x4E86;&amp;#x554A;~
 &lt;/p&gt;
@@ -756,6 +757,7 @@ $$ (abs(a \cdot b) a \cdot b) (\Vert c \Vert \Vert d \Vert)^{2} \ge  (abs(c \cdo
 &lt;li&gt;【P143】如果你明白所投资的25美分能在你人到中年时变成200美元，你就不会把钱浪费在一片口香糖上了！你不会把钱花在很多事情上，反而会开始考虑尽量攒钱，花时间找到好的投资方法，这就是我想说的。&lt;/li&gt;
 &lt;li&gt;【P161】为了成功的利用神奇公式投资策略，你只需要了解两个基本原则。首先，以低价买入优质股是有意义的。一般来说，神奇公式能做到这一点。第二，市场先生需要几年时间才能认识什么是低价。因此，利用神奇公式投资策略需要有耐心。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;作者：Greenwicher &lt;a href=&quot;http://blog.greenwicher.com/2014/12/06/神奇公式，并不神奇/&quot;&gt;http://blog.greenwicher.com/2014/12/06/神奇公式，并不神奇/&lt;/a&gt; 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -799,6 +801,7 @@ $$ (abs(a \cdot b) a \cdot b) (\Vert c \Vert \Vert d \Vert)^{2} \ge  (abs(c \cdo
 &lt;p&gt;BiblioTools2.x: &lt;a href=&quot;http://www.sebastian-grauwin.com/?page_id=492&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.sebastian-grauwin.com/?page_id=492&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;CiteSpace: &lt;a href=&quot;http://cluster.cis.drexel.edu/~cchen/citespace/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://cluster.cis.drexel.edu/~cchen/citespace/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;HistCite: &lt;a href=&quot;http://histcite.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://histcite.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者：Greenwicher &lt;a href=&quot;http://blog.greenwicher.com/2014/12/04/毕设开题不会写，怎么破？快试试BiblioPy吧！/&quot;&gt;http://blog.greenwicher.com/2014/12/04/毕设开题不会写，怎么破？快试试BiblioPy吧！/&lt;/a&gt; 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处&lt;/p&gt;
 </content>
     
     <summary type="html">

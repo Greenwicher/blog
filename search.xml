@@ -124,6 +124,7 @@ Igor&#x53EA;&#x80FD;&#x5728;&#x8FDE;&#x901A;&#x7684;&#x901A;&#x9053;&#x91CC;&#x7
 
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line"> 1: //version 1</span><br><span class="line"> 2: #include&lt;cstdio&gt;</span><br><span class="line"> 3: #include&lt;iostream&gt;</span><br><span class="line"> 4: #include&lt;vector&gt;</span><br><span class="line"> 5: using namespace std;</span><br><span class="line"> 6: int n,m,k;</span><br><span class="line"> 7: char museum[1001][1001];</span><br><span class="line"> 8: int region[1001][1001];</span><br><span class="line"> 9: int search(int x, int y, int i)</span><br><span class="line">10: {</span><br><span class="line">11:   if (museum[x][y]==&apos;*&apos;) return 1;</span><br><span class="line">12:   if (region[x][y]) return 0;</span><br><span class="line">13:   region[x][y] = i;</span><br><span class="line">14:   return search(x,y-1,i)+search(x,y+1,i)+search(x-1,y,i)+search(x+1,y,i);</span><br><span class="line">15: }</span><br><span class="line">16: </span><br><span class="line">17: int main()</span><br><span class="line">18: {</span><br><span class="line">19:   cin&gt;&gt;n&gt;&gt;m&gt;&gt;k;</span><br><span class="line">20:   int region_id=0;</span><br><span class="line">21:   vector&lt;int&gt; ans;</span><br><span class="line">22:   ans.push_back(0);</span><br><span class="line">23:   for(int i=1;i&lt;=n;i++) scanf(&quot;%s&quot;, museum[i]+1);</span><br><span class="line">24:   for(int i=0;i&lt;k;++i){</span><br><span class="line">25:     int x,y;</span><br><span class="line">26:     scanf(&quot;%d%d&quot;,&amp;x,&amp;y);</span><br><span class="line">27:     if (!region[x][y]){</span><br><span class="line">28: 	region_id++;</span><br><span class="line">29: 	ans.push_back(search(x,y,region_id));</span><br><span class="line">30:     }</span><br><span class="line">31:     printf(&quot;%d\n&quot;,ans[region[x][y]]);</span><br><span class="line">32:   }</span><br><span class="line">33: }</span><br></pre></td></tr></table></figure>
 </div>
+
 <p>
 &#x4EE3;&#x7801;&#x91CF;&#x662F;&#x4E0D;&#x662F;&#x6BD4;&#x4E4B;&#x524D;&#x8981;&#x5C11;&#x591A;&#x4E86;&#x554A;~
 </p>
@@ -672,6 +673,7 @@ $$ (abs(a \cdot b) a \cdot b) (\Vert c \Vert \Vert d \Vert)^{2} \ge  (abs(c \cdo
 <li>【P143】如果你明白所投资的25美分能在你人到中年时变成200美元，你就不会把钱浪费在一片口香糖上了！你不会把钱花在很多事情上，反而会开始考虑尽量攒钱，花时间找到好的投资方法，这就是我想说的。</li>
 <li>【P161】为了成功的利用神奇公式投资策略，你只需要了解两个基本原则。首先，以低价买入优质股是有意义的。一般来说，神奇公式能做到这一点。第二，市场先生需要几年时间才能认识什么是低价。因此，利用神奇公式投资策略需要有耐心。</li>
 </ul>
+<p>作者：Greenwicher <a href="http://blog.greenwicher.com/2014/12/06/神奇公式，并不神奇/">http://blog.greenwicher.com/2014/12/06/神奇公式，并不神奇/</a> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处</p>
 ]]></content>
     </entry>
     
@@ -697,6 +699,7 @@ $$ (abs(a \cdot b) a \cdot b) (\Vert c \Vert \Vert d \Vert)^{2} \ge  (abs(c \cdo
 <p>BiblioTools2.x: <a href="http://www.sebastian-grauwin.com/?page_id=492" target="_blank" rel="external">http://www.sebastian-grauwin.com/?page_id=492</a></p>
 <p>CiteSpace: <a href="http://cluster.cis.drexel.edu/~cchen/citespace/" target="_blank" rel="external">http://cluster.cis.drexel.edu/~cchen/citespace/</a></p>
 <p>HistCite: <a href="http://histcite.com" target="_blank" rel="external">http://histcite.com</a></p>
+<p>作者：Greenwicher <a href="http://blog.greenwicher.com/2014/12/04/毕设开题不会写，怎么破？快试试BiblioPy吧！/">http://blog.greenwicher.com/2014/12/04/毕设开题不会写，怎么破？快试试BiblioPy吧！/</a> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处</p>
 ]]></content>
     </entry>
     
