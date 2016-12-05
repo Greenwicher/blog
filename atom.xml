@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greenwicher.com/"/>
-  <updated>2016-12-04T09:26:12.000Z</updated>
+  <updated>2016-12-05T04:12:47.000Z</updated>
   <id>http://blog.greenwicher.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.greenwicher.com/2016/12/04/my_liqi/"/>
     <id>http://blog.greenwicher.com/2016/12/04/my_liqi/</id>
     <published>2016-12-04T00:00:00.000Z</published>
-    <updated>2016-12-04T09:26:12.000Z</updated>
+    <updated>2016-12-05T04:12:47.000Z</updated>
     
     <content type="html">
 
@@ -292,7 +292,7 @@
     <link href="http://blog.greenwicher.com/2016/03/12/CF-598D/"/>
     <id>http://blog.greenwicher.com/2016/03/12/CF-598D/</id>
     <published>2016-03-12T00:00:00.000Z</published>
-    <updated>2016-12-03T12:16:08.000Z</updated>
+    <updated>2016-12-05T04:12:47.000Z</updated>
     
     <content type="html">
 
@@ -462,7 +462,7 @@ Igor&amp;#x53EA;&amp;#x80FD;&amp;#x5728;&amp;#x8FDE;&amp;#x901A;&amp;#x7684;&amp
     <link href="http://blog.greenwicher.com/2016/02/15/%E9%83%A8%E7%BD%B2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%AD%90%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99%E5%88%B0Github/"/>
     <id>http://blog.greenwicher.com/2016/02/15/部署个性化子域名网站到Github/</id>
     <published>2016-02-15T00:00:00.000Z</published>
-    <updated>2016-03-12T14:25:11.000Z</updated>
+    <updated>2016-12-05T04:12:47.000Z</updated>
     
     <content type="html">
 
@@ -662,7 +662,7 @@ git push origin gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt
     <link href="http://blog.greenwicher.com/2016/02/15/CF-598C/"/>
     <id>http://blog.greenwicher.com/2016/02/15/CF-598C/</id>
     <published>2016-02-15T00:00:00.000Z</published>
-    <updated>2016-03-12T14:24:30.000Z</updated>
+    <updated>2016-12-05T04:12:47.000Z</updated>
     
     <content type="html">
 
@@ -880,7 +880,7 @@ $$ (abs(a \cdot b) a \cdot b) (\Vert c \Vert \Vert d \Vert)^{2} \ge  (abs(c \cdo
     <link href="http://blog.greenwicher.com/2014/12/06/%E7%A5%9E%E5%A5%87%E5%85%AC%E5%BC%8F%EF%BC%8C%E5%B9%B6%E4%B8%8D%E7%A5%9E%E5%A5%87/"/>
     <id>http://blog.greenwicher.com/2014/12/06/神奇公式，并不神奇/</id>
     <published>2014-12-06T09:33:12.000Z</published>
-    <updated>2016-03-12T14:25:32.000Z</updated>
+    <updated>2016-12-05T04:12:47.000Z</updated>
     
     <content type="html">&lt;p&gt;万物之始，大道至简，衍化至繁。后来者的我们面对纷繁的股票市场，如何才能把握最初的本质？神奇公式试图回答这一问题，通过投资回报率发现一家质优的好公司，通过收益率发现一家价低的好股票，然后持有直至市场恢复理性给予质优价低股票合理的价格为止。通过历史回测，作者确实发现利用神奇公式可以跑赢大盘不少，但神奇公式的一个原则是你要深信不疑的相信，直到市场恢复理性的那一天。面对神奇公式是有效的这个不可证伪的命题，我们不经疑问，作者为什么要公布这一有效可以持续获利的秘密呢？&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -1051,7 +1051,7 @@ $$ (abs(a \cdot b) a \cdot b) (\Vert c \Vert \Vert d \Vert)^{2} \ge  (abs(c \cdo
     <link href="http://blog.greenwicher.com/2014/12/04/%E6%AF%95%E8%AE%BE%E5%BC%80%E9%A2%98%E4%B8%8D%E4%BC%9A%E5%86%99%EF%BC%8C%E6%80%8E%E4%B9%88%E7%A0%B4%EF%BC%9F%E5%BF%AB%E8%AF%95%E8%AF%95BiblioPy%E5%90%A7%EF%BC%81/"/>
     <id>http://blog.greenwicher.com/2014/12/04/毕设开题不会写，怎么破？快试试BiblioPy吧！/</id>
     <published>2014-12-04T09:12:04.000Z</published>
-    <updated>2016-03-12T14:25:46.000Z</updated>
+    <updated>2016-12-05T04:12:47.000Z</updated>
     
     <content type="html">&lt;p&gt;春花秋月何时了，毕设开题开不了。导师昨夜又催稿，学渣不堪回首发呆中。学长论文应犹在，只是用不了。问君能有几多愁？恰似一江春水向东流。怎么破！怎么破！快来试试&lt;a href=&quot;https://github.com/Greenwicher/BiblioPy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;BiblioPy&lt;/strong&gt;&lt;/a&gt;吧！&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -1096,7 +1096,7 @@ $$ (abs(a \cdot b) a \cdot b) (\Vert c \Vert \Vert d \Vert)^{2} \ge  (abs(c \cdo
     <link href="http://blog.greenwicher.com/2014/12/03/%E5%9A%BC%E5%BE%97%E8%8F%9C%E6%A0%B9%EF%BC%8C%E5%81%9A%E5%BE%97%E5%A4%A7%E4%BA%8B/"/>
     <id>http://blog.greenwicher.com/2014/12/03/嚼得菜根，做得大事/</id>
     <published>2014-12-03T00:00:00.000Z</published>
-    <updated>2016-12-03T04:18:32.000Z</updated>
+    <updated>2016-12-05T04:12:47.000Z</updated>
     
     <content type="html">
 
