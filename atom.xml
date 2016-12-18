@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greenwicher.com/"/>
-  <updated>2016-12-18T13:28:25.000Z</updated>
+  <updated>2016-12-18T13:58:18.000Z</updated>
   <id>http://blog.greenwicher.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/"/>
     <id>http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/</id>
     <published>2016-12-18T00:00:00.000Z</published>
-    <updated>2016-12-18T13:28:25.000Z</updated>
+    <updated>2016-12-18T13:58:18.000Z</updated>
     
     <content type="html">
 
@@ -237,7 +237,7 @@ Reinforcement Learning defines the objective. Deep Learning gives the mechanism.
 &lt;h3 id=&quot;sec-4-5&quot;&gt;&amp;#x5B66;&amp;#x4F1A;&amp;#x8D70;&amp;#x8DEF;&lt;/h3&gt;
 &lt;div class=&quot;outline-text-3&quot; id=&quot;text-4-5&quot;&gt;
 &lt;center&gt;
-  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://openai-kubernetes-prod-scoreboard.s3.amazonaws.com/v1/evaluations/eval_i3x1JpReRukTZrznxypCw/training_episode_batch_video.mp4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/eFopkAceTGs&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/center&gt;
 &lt;/div&gt;
 &lt;/div&gt;
