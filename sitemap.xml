@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/</loc>
+    
+    <lastmod>2016-12-18T13:28:25.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.greenwicher.com/2016/12/04/my_liqi/</loc>
     
-    <lastmod>2016-12-06T09:32:34.000Z</lastmod>
+    <lastmod>2016-12-16T07:41:02.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.greenwicher.com/2016/02/15/CF-598C/</loc>
-    
-    <lastmod>2016-12-05T04:12:47.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.greenwicher.com/2014/12/04/%E6%AF%95%E8%AE%BE%E5%BC%80%E9%A2%98%E4%B8%8D%E4%BC%9A%E5%86%99%EF%BC%8C%E6%80%8E%E4%B9%88%E7%A0%B4%EF%BC%9F%E5%BF%AB%E8%AF%95%E8%AF%95BiblioPy%E5%90%A7%EF%BC%81/</loc>
+    <loc>http://blog.greenwicher.com/2016/03/12/CF-598D/</loc>
     
     <lastmod>2016-12-05T04:12:47.000Z</lastmod>
     
@@ -37,7 +37,7 @@
   </url>
   
   <url>
-    <loc>http://blog.greenwicher.com/2016/03/12/CF-598D/</loc>
+    <loc>http://blog.greenwicher.com/2014/12/04/%E6%AF%95%E8%AE%BE%E5%BC%80%E9%A2%98%E4%B8%8D%E4%BC%9A%E5%86%99%EF%BC%8C%E6%80%8E%E4%B9%88%E7%A0%B4%EF%BC%9F%E5%BF%AB%E8%AF%95%E8%AF%95BiblioPy%E5%90%A7%EF%BC%81/</loc>
     
     <lastmod>2016-12-05T04:12:47.000Z</lastmod>
     
@@ -45,6 +45,13 @@
   
   <url>
     <loc>http://blog.greenwicher.com/2014/12/06/%E7%A5%9E%E5%A5%87%E5%85%AC%E5%BC%8F%EF%BC%8C%E5%B9%B6%E4%B8%8D%E7%A5%9E%E5%A5%87/</loc>
+    
+    <lastmod>2016-12-05T04:12:47.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.greenwicher.com/2016/02/15/CF-598C/</loc>
     
     <lastmod>2016-12-05T04:12:47.000Z</lastmod>
     

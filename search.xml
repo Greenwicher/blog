@@ -4,6 +4,350 @@
   
     
     <entry>
+      <title><![CDATA[深度增强学习【1】走向通用人工智能之路]]></title>
+      <url>http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/</url>
+      <content type="html"><![CDATA[
+
+<p>
+&#x73B0;&#x5728;&#x4F46;&#x51E1;&#x5199;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x5FC5;&#x63D0;<a href="https://deepmind.com/research/alphago/" target="_blank" rel="external">Alpha Go</a>&#x3002;&#x4E5F;&#x6B63;&#x662F;&#x56E0;&#x4E3A;Alpha Go&#x5728;&#x56F4;&#x68CB;&#x4EBA;&#x673A;&#x5927;&#x6218;&#x4E2D;&#x91CC;&#x7A0B;&#x7891;&#x5F0F;&#x7684;&#x80DC;&#x5229;&#xFF0C;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x8FCE;&#x6765;&#x4E86;&#x65B0;&#x7684;&#x6625;&#x5929;&#x3002; <b>&#x672C;&#x6587;&#x4E5F;&#x4E0D;&#x514D;&#x4FD7;&#x5957;&#xFF0C;&#x4ECE;Alpha Go&#x8BF4;&#x8D77;&#xFF0C;&#x4F46;&#x5E0C;&#x671B;&#x80FD;&#x6307;&#x660E;&#x4E00;&#x4E9B;&#x88AB;&#x5FFD;&#x89C6;&#x7684;&#x4F46;&#x5BF9;Alpha Go&#x68CB;&#x529B;&#x6709;&#x6DF1;&#x8FDC;&#x5F71;&#x54CD;&#x7684;&#x6280;&#x672F;&#x3002;</b> &#x56F4;&#x68CB;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x5927;&#x81F4;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E09;&#x4E2A;&#x9636;&#x6BB5;<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup> &#xFF1A;&#x7B2C;&#x4E00;&#x9636;&#x6BB5;&#x4EE5;&#x542F;&#x53D1;&#x5F0F;&#x7B97;&#x6CD5;&#x4E3A;&#x4E3B;&#xFF0C;&#x6C34;&#x5E73;&#x4F4E;&#x4E8E;&#x4E1A;&#x4F59;&#x521D;&#x6BB5;&#xFF0C;&#x4EE3;&#x8868;&#x8F6F;&#x4EF6;&#x5373;&#x4EE5;&#x9759;&#x6001;&#x52BF;&#x529B;&#x51FD;&#x6570;&#x4E3A;&#x5F3A;&#x9879;&#x7684;<a href="https://zh.wikipedia.org/wiki/%E9%99%88%E5%BF%97%E8%A1%8C" target="_blank" rel="external">&#x624B;&#x8C08;</a>&#xFF1B; &#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x4EE5;<a href="https://zh.wikipedia.org/zh-sg/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91%E6%90%9C%E7%B4%A2" target="_blank" rel="external">&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;&#x7B97;&#x6CD5; </a>&#x4E3A;&#x4EE3;&#x8868;&#xFF0C;&#x6C34;&#x5E73;&#x6700;&#x9AD8;&#x8FBE;&#x5230;&#x4E1A;&#x4F59;5&#x6BB5;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4; <a href="http://senseis.xmp.net/?ZenGoProgram" target="_blank" rel="external">Zen</a> &#xFF0C;<a href="https://www.remi-coulom.fr/CrazyStone/" target="_blank" rel="external">Crazy Stone</a> &#xFF1B;&#x7B2C;&#x4E09;&#x9636;&#x6BB5;&#x4EE5; <code>&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;</code> &#xFF08;<a href="https://en.wikipedia.org/wiki/Deep_learning" target="_blank" rel="external">Deep Learning</a>&#xFF09;&#x4EE5;&#x53CA; <code>&#x589E;&#x5F3A;&#x5B66;&#x4E60;</code> &#xFF08;<a href="https://en.wikipedia.org/wiki/Reinforcement_learning" target="_blank" rel="external">Reinforcement Learning</a>&#xFF0C;&#x4E5F;&#x79F0;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#xFF09;&#x7B97;&#x6CD5;&#x4E3A;&#x7A81;&#x7834;&#xFF0C;&#x5E76;&#x6218;&#x80DC;&#x4E86;&#x4EBA;&#x7C7B;&#x804C;&#x4E1A;&#x4E5D;&#x6BB5;&#x68CB;&#x624B;&#x674E;&#x4E16;&#x4E6D;&#xFF0C;&#x8FD9;&#x4E5F;&#x5C31;&#x662F;Alpha Go&#x7684;&#x6545;&#x4E8B;&#x4E86;&#x3002;&#x6BCF;&#x6BCF;&#x63D0;&#x5230;Alpha Go&#x5353;&#x8D8A;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x5F80;&#x5F80;&#x5F52;&#x548E;&#x4E8E;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x7684;&#x5F3A;&#x5927;&#xFF0C;&#x4F46;&#x5B9E;&#x9645;&#x4E0A;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x4E5F;&#x529F;&#x4E0D;&#x53EF;&#x6CA1;&#x3002;&#x8FD9;&#x4E8C;&#x8005;&#x7684;&#x7ED3;&#x5408;&#x88AB;&#x79F0;&#x4E4B;&#x4E3A; <code>&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;</code> &#xFF08;<a href="https://deepmind.com/blog/deep-reinforcement-learning/" target="_blank" rel="external">Deep Reinforcement Learning</a>&#xFF0C;DRL&#xFF09;&#xFF0C;&#x6700;&#x521D;&#x89C1;&#x4E8E;DeepMind&#x5728;Nature&#x4E0A;&#x53D1;&#x8868;&#x7684;<a href="http://www.nature.com/nature/journal/v518/n7540/abs/nature14236.html" target="_blank" rel="external">Human-level control through deep reinforcement learning</a>&#x3002; <b>&#x672C;&#x6587;&#x8BD5;&#x56FE;&#x4ECE;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x63A2;&#x8BA8;&#x901A;&#x7528;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5E76;&#x7B80;&#x8981;&#x4ECB;&#x7ECD;&#x4E86;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x7684;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x3001;&#x5E38;&#x89C1;&#x7B97;&#x6CD5;&#x4EE5;&#x53CA;&#x76F8;&#x5173;&#x5E94;&#x7528;&#x3002;</b>
+</p>
+
+<a id="more"></a>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">&#x5982;&#x4F55;&#x89E3;&#x51B3;&#x901A;&#x7528;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x7684;&#x96BE;&#x70B9;</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">&#x4E09;&#x5EA7;&#x5927;&#x5C71;</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+&#x521B;&#x9020;&#x51FA;&#x50CF;&#x4F60;&#x6211;&#x4E00;&#x6837;&#x5177;&#x6709;&#x81EA;&#x6211;&#x610F;&#x8BC6;&#x548C;&#x601D;&#x8003;&#x7684;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x4F30;&#x8BA1;&#x662F;&#x4EBA;&#x4E16;&#x95F4;&#x6700;&#x8FF7;&#x4EBA;&#x7684;&#x95EE;&#x9898;&#x4E4B;&#x4E00;&#x4E86;&#x5427;&#xFF0C;&#x65B0;&#x7684;&#x5B58;&#x5728;&#x603B;&#x662F;&#x60F3;&#x7AA5;&#x63A2;&#x9020;&#x7269;&#x4E3B;&#x7684;&#x79D8;&#x5BC6;&#x3002;&#x540C; <code>P=NP</code> &#x95EE;&#x9898;&#x4E00;&#x6837;&#xFF0C;&#x9A8C;&#x8BC1;&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x662F;&#x5426;&#x5177;&#x6709;&#x81EA;&#x6211;&#x610F;&#x8BC6;&#x7684;&#x96BE;&#x5EA6;&#xFF08;&#x89C1;<a href="https://zh.wikipedia.org/zh-sg/%E5%9B%BE%E7%81%B5%E6%B5%8B%E8%AF%95" target="_blank" rel="external">&#x56FE;&#x7075;&#x6D4B;&#x8BD5;</a> &#x4EE5;&#x53CA; <a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E6%96%87%E6%88%BF%E9%97%B4" target="_blank" rel="external">&#x4E2D;&#x6587;&#x623F;&#x95F4;&#x95EE;&#x9898;</a>&#xFF09; &#x540C;&#x521B;&#x9020;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x81EA;&#x6211;&#x610F;&#x8BC6;&#x7684;&#x5B58;&#x5728;&#x7684;&#x96BE;&#x5EA6;&#x7A76;&#x7ADF;&#x5173;&#x7CFB;&#x5982;&#x4F55;&#xFF0C;&#x6050;&#x6015;&#x53EF;&#x4EE5;&#x770B;&#x505A;&#x662F;&#x5224;&#x65AD;&#x81EA;&#x6211;&#x610F;&#x8BC6;&#x662F;&#x5426;&#x80FD;&#x6D8C;&#x73B0;&#x7684;&#x5173;&#x952E;&#x4E86;&#x5427;&#x3002;&#x672C;&#x6587;&#x4E0D;&#x8BB2;&#x90A3;&#x4E48;&#x4E0A;&#x5C42;&#x6B21;&#x7684;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#xFF0C;&#x5148;&#x6765;&#x8C08;&#x8C08; <code>&#x901A;&#x7528;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;</code> &#x3002;&#x6309;&#x7167;&#x7EF4;&#x57FA;&#x767E;&#x79D1;&#x7684;&#x89E3;&#x91CA;&#xFF0C;
+</p>
+<blockquote>
+<p>
+&#x5F3A;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x4E5F;&#x6307;&#x901A;&#x7528;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#xFF08;artificial general intelligence&#xFF0C;AGI&#xFF09;&#xFF0C;&#x6216;&#x5177;&#x5907;&#x6267;&#x884C;&#x4E00;&#x822C;&#x667A;&#x6167;&#x884C;&#x4E3A;&#x7684;&#x80FD;&#x529B;&#x3002;&#x5F3A;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x901A;&#x5E38;&#x628A;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x548C;&#x610F;&#x8BC6;&#x3001;&#x611F;&#x6027;&#x3001;&#x77E5;&#x8BC6;&#x548C;&#x81EA;&#x89C9;&#x7B49;&#x4EBA;&#x7C7B;&#x7684;&#x7279;&#x5F81;&#x4E92;&#x76F8;&#x8FDE;&#x7ED3;&#x3002;
+</p>
+</blockquote>
+<p>
+&#x672C;&#x6587;&#x6240;&#x6307;&#x7684;&#x901A;&#x7528;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#xFF0C;&#x4FBF;&#x662F;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x901A;&#x7528;&#x4EFB;&#x52A1;&#x7684;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x3002; <b>&#x5177;&#x4F53;&#x800C;&#x8A00;&#xFF0C;&#x6211;&#x8BA4;&#x4E3A;&#x901A;&#x7528;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x5E94;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x4E09;&#x5927;&#x7279;&#x70B9;&#x6216;&#x8005;&#x8BF4;&#x96BE;&#x70B9;&#xFF1A;</b>
+</p>
+<ul class="org-ul">
+<li>&#x901A;&#x7528;&#x4EFB;&#x52A1;&#xFF1A;&#x65E2;&#x80FD;&#x5531;&#x6B4C;&#x7ED8;&#x753B;&#x3001;&#x53C8;&#x80FD;&#x4E0B;&#x68CB;&#x5199;&#x8BD7;&#xFF0C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x662F;&#x8981;&#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x5BF9; <code>&#x9886;&#x57DF;&#x77E5;&#x8BC6;</code> &#xFF08;<a href="https://en.wikipedia.org/wiki/Domain_knowledge" target="_blank" rel="external">Domain Knowledge</a>&#xFF09;&#x7684;&#x4F9D;&#x8D56;&#x3002;
+</li>
+<li>&#x5B66;&#x4E60;&#x80FD;&#x529B;&#xFF1A;&#x65E0;&#x8BBA;&#x662F;&#x901A;&#x8FC7;&#x903B;&#x8F91;&#x63A8;&#x7406;&#x7684; <code>&#x6F14;&#x7ECE;&#x6CD5;</code> &#x6765;&#x5B66;&#x4E60;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x57FA;&#x4E8E;&#x7ECF;&#x9A8C;&#x548C;&#x8BB0;&#x5FC6;&#x7684; <code>&#x5F52;&#x7EB3;&#x6CD5;</code> &#x6765;&#x5B66;&#x4E60;&#xFF0C;&#x90FD;&#x8981;&#x901A;&#x8FC7;&#x5B66;&#x4E60;&#x6765;&#x63D0;&#x9AD8;&#x5904;&#x7406;&#x901A;&#x7528;&#x4EFB;&#x52A1;&#x7684;&#x9002;&#x7528;&#x6027;&#x3002;
+</li>
+<li>&#x81EA;&#x7701;&#x80FD;&#x529B;&#xFF1A;&#x4E5F;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x5173;&#x4E8E;&#x5B66;&#x4E60;&#x7684;&#x5B66;&#x4E60;&#xFF0C;&#x5373; <code>&#x5143;&#x8BA4;&#x77E5;</code> &#xFF0C;&#x901A;&#x8FC7;&#x81EA;&#x7701;&#x6765;&#x7EA0;&#x504F;&#x884C;&#x4E3A;&#x3002;&#x5C31;&#x50CF;&#x6CF0;&#x52D2;&#x5C55;&#x5F00;&#x4E00;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x5927;&#x53EF;&#x4EE5;&#x7528;&#x4F4E;&#x9636;&#x5BFC;&#x6570;&#x6765;&#x903C;&#x8FD1;&#x51FD;&#x6570;&#x503C;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x8003;&#x8651;&#x5143;&#x8BA4;&#x77E5;&#x7684;&#x5143;&#x8BA4;&#x77E5;&#x8FD9;&#x7C7B;&#x9AD8;&#x9636;&#x5BFC;&#x6570;&#x3002;
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">&#x89E3;&#x51B3;&#x4E4B;&#x9053;</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+David Silver&#xFF08;Alpha Go&#x7684;&#x7B2C;&#x4E00;&#x4F5C;&#x8005;&#xFF09;&#x66FE;&#x5728;ICML2016&#x7684;<a href="http://icml.cc/2016/tutorials/deep_rl_tutorial.pdf" target="_blank" rel="external">Tutorial: Deep Reinforcement Learning</a>&#x8BB2;&#x5230;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x7684;&#x524D;&#x666F;
+</p>
+<blockquote>
+<p>
+General Intelligence = Reinforcement Learning + Deep Learning = Deep Reinforcement Learning &#x2013; David Silver
+</p>
+</blockquote>
+<p>
+&#x66F4;&#x8FDB;&#x4E00;&#x6B65;&#xFF0C;&#x300E;Reinforcement Learning defines the objective&#x300F;&#xFF08;RL&#x4E2D;&#x6709;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#xFF09;&#xFF0C;&#x300E;Deep Learning gives the mechanism&#x300F;&#xFF08;DL&#x5982;&#x4F55;&#x5B66;&#x4E60;&#x7ED9;&#x5B9A;&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#xFF09;&#x3002; <b>&#x6211;&#x5F88;&#x540C;&#x610F;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x4FBF;&#x662F;&#x89E3;&#x51B3;&#x901A;&#x7528;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x96BE;&#x70B9;&#x7684;&#x6838;&#x5FC3;&#x3002;</b> &#x9996;&#x5148;&#x5173;&#x4E8E;&#x901A;&#x7528;&#x4EFB;&#x52A1;&#xFF0C;&#x51E0;&#x4E4E;&#x4EFB;&#x4F55;&#x4EFB;&#x52A1;&#x7684;&#x89E3;&#x51B3;&#x90FD;&#x53EF;&#x4EE5;&#x770B;&#x505A;&#x4E00;&#x4E2A;&#x4ECE;&#x5F62;&#x5F0F;&#x7F16;&#x7801;&#x7684;&#x8F93;&#x5165;&#x5230;&#x51B3;&#x7B56;&#x5206;&#x5E03;&#x8F93;&#x51FA;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x800C;&#x975E;&#x7EBF;&#x6027;&#x7684;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x4FBF;&#x662F;&#x5F88;&#x597D;&#x7684; <code>&#x8868;&#x5F81;</code> &#xFF08;<a href="https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning" target="_blank" rel="external">representation </a>&#xFF09;&#x5B66;&#x4E60;&#x5DE5;&#x5177;&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x5B66;&#x4E60;&#x80FD;&#x529B;&#x4E3B;&#x8981;&#x53EF;&#x5206;&#x4E3A;&#x6F14;&#x7ECE;&#x6CD5;&#x548C;&#x5F52;&#x7EB3;&#x6CD5;&#x3002;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x5C31;&#x50CF;&#x662F;&#x57FA;&#x4E8E;&#x5956;&#x8D4F;&#x7684;&#x6F14;&#x7ECE;&#x6CD5;&#xFF0C;&#x7ED9;&#x5B9A;&#x5916;&#x754C;&#x73AF;&#x5883;&#x548C;&#x76F8;&#x5E94;&#x7684;&#x5956;&#x8D4F;&#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x6700;&#x7EC8;&#x4EA7;&#x751F;&#x5408;&#x6CD5;&#x7684;&#x51B3;&#x7B56;&#x51FA;&#x6765;&#x3002;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x5C31;&#x50CF;&#x662F;&#x57FA;&#x4E8E;&#x7ECF;&#x9A8C;&#x4EE5;&#x53CA;&#x8BB0;&#x5FC6;&#x7684;&#x5F52;&#x7EB3;&#x6CD5;&#xFF0C;&#x7ED9;&#x5B9A;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x6765;&#x5B66;&#x4E60;&#x8868;&#x5F81;&#x3002;&#x6700;&#x540E;&#x5173;&#x4E8E;&#x81EA;&#x7701;&#x80FD;&#x529B;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x53EF;&#x4EE5;&#x4EA7;&#x751F;&#x81EA;&#x6211;&#x610F;&#x8BC6;&#x3001;&#x5E76;&#x72EC;&#x7ACB;&#x4E8E;&#x4EBA;&#x7C7B;&#x5B58;&#x5728;&#x7684;&#x5173;&#x952E;&#x3002;&#x81EA;&#x7701;&#x4ECE;&#x67D0;&#x79CD;&#x7A0B;&#x5EA6;&#x53EF;&#x4EE5;&#x4ECE;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x6765;&#x4E60;&#x5F97;&#xFF0C;&#x901A;&#x8FC7;&#x4E0D;&#x65AD;&#x8BD5;&#x9519;&#x4EE5;&#x53CA;&#x5956;&#x8D4F;&#xFF0C;&#x300E;&#x589E;&#x5F3A;/&#x5F3A;&#x5316;&#x300F;&#x81EA;&#x6211;&#x7684;&#x51B3;&#x7B56;&#x3002;&#x4F46;&#x8FD9;&#x79CD;&#x81EA;&#x7701;&#x53C8;&#x53D7;&#x9650;&#x4E8E;&#x5176;&#x5B58;&#x5728;&#x7684;&#x4E16;&#x754C;&#x89C2;&#xFF0C;&#x5C31;&#x50CF;&#x4E8C;&#x7EF4;&#x7EBF;&#x6BB5;&#x53EA;&#x80FD;&#x76F2;&#x4EBA;&#x6478;&#x8C61;&#x822C;&#x5730;&#x89C2;&#x6D4B;&#x5230;&#x4E09;&#x7EF4;&#x7403;&#x4F53;&#xFF0C;&#x800C;&#x4E09;&#x7EF4;&#x7403;&#x4F53;&#x5374;&#x53EF;&#x4EE5;&#x5B8C;&#x6574;&#x5730;&#x89C2;&#x6D4B;&#x4E8C;&#x7EF4;&#x7EBF;&#x6BB5;&#x3002;&#x4F46;&#x603B;&#x4E4B;&#xFF0C;&#x53EA;&#x8981;&#x5B9A;&#x4E49;&#x597D;&#x4E86;&#x4E16;&#x754C;&#x4EE5;&#x53CA;&#x5956;&#x8D4F;&#xFF0C;&#x6211;&#x8BA4;&#x4E3A;&#x76F8;&#x5E94;&#x7684;&#x81EA;&#x7701;&#x80FD;&#x529B;&#x5C31;&#x662F;&#x5728;&#x7ED9;&#x5B9A;&#x73AF;&#x5883;&#x4E0B;&#x4E0D;&#x65AD;&#x4F18;&#x5316;&#x81EA;&#x5DF1;&#x7684;&#x5B66;&#x4E60;&#x80FD;&#x529B;&#xFF08;&#x5373;&#x4E00;&#x9636;&#x5BFC;&#x6570;&#x5927;&#x4E8E;&#x96F6;&#xFF09;&#x3002;
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">&#x4EC0;&#x4E48;&#x662F;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;</h3>
+<div class="outline-text-3" id="text-2-1">
+<blockquote>
+<p>
+&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#xFF08;deep learning&#xFF09;&#x662F;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x62C9;&#x51FA;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x5B83;&#x8BD5;&#x56FE;&#x4F7F;&#x7528;&#x5305;&#x542B;&#x590D;&#x6742;&#x7ED3;&#x6784;&#x6216;&#x7531;&#x591A;&#x91CD;&#x975E;&#x7EBF;&#x6027;&#x53D8;&#x6362;&#x6784;&#x6210;&#x7684;&#x591A;&#x4E2A;&#x5904;&#x7406;&#x5C42;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x9AD8;&#x5C42;&#x62BD;&#x8C61;&#x7684;&#x7B97;&#x6CD5;&#x3002; &#x2013; &#x7EF4;&#x57FA;&#x767E;&#x79D1;
+</p>
+</blockquote>
+<p>
+<b>&#x6839;&#x636E;&#x7EF4;&#x57FA;&#x767E;&#x79D1;&#x7684;&#x89E3;&#x91CA;&#xFF0C;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x662F;&#x4E00;&#x79CD;&#x5229;&#x7528;&#x591A;&#x5C42;&#x975E;&#x7EBF;&#x6027;&#x53D8;&#x6362;&#x5904;&#x7406;&#x7F51;&#x7EDC;&#x7ED3;&#x6784;&#x6765;&#x8FDB;&#x884C;&#x8868;&#x5F81;&#x5B66;&#x4E60;&#x7684;&#x901A;&#x7528;&#x6846;&#x67B6;&#x3002;</b> &#x5F97;&#x76CA;&#x4E8E;&#x8BA1;&#x7B97;&#x673A;&#x6027;&#x80FD;&#x7684;&#x63D0;&#x5347;&#xFF0C;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x91CD;&#x65B0;&#x5BF9;&#x4EBA;&#x5DE5;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x54C1;&#x724C;&#x91CD;&#x5851;&#x3002;&#x5176;&#x6838;&#x5FC3;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x662F;&#xFF0C;&#x5982;&#x4F55;&#x7528;&#x5C3D;&#x53EF;&#x80FD;&#x5C11;&#x7684;&#x9886;&#x57DF;&#x77E5;&#x8BC6;&#xFF0C;&#x7ED9;&#x5B9A;&#x8F93;&#x5165; \(\boldsymbol{x}\) &#x548C;&#x8F93;&#x51FA; \(\boldsymbol{y}\) &#xFF0C;&#x6765;&#x5B66;&#x4E60;&#x4ECE;&#x8F93;&#x5165;&#x5230;&#x8F93;&#x51FA;&#x7684; <code>&#x6620;&#x5C04;</code>  \(\mathcal{DL}(\boldsymbol{x}, \boldsymbol{w})\) &#xFF0C;&#x5176;&#x4E2D; \(\boldsymbol{w}\) &#x662F;&#x9700;&#x8981;&#x4F18;&#x5316;&#x7684;&#x53C2;&#x6570;&#xFF0C; \(\mathcal{DL}(\cdot)\) &#x5728;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x91CC;&#x7531;&#x591A;&#x5C42;&#x975E;&#x7EBF;&#x6027;&#x7F51;&#x7EDC;&#x7ED3;&#x6784;&#x8FDB;&#x884C;&#x8868;&#x793A;&#xFF08;&#x4E0D;&#x540C;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x65B9;&#x6CD5;&#x4F1A;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x523B;&#x753B;&#xFF0C;&#x6BD4;&#x5982;&#x968F;&#x673A;&#x68EE;&#x6797;&#x3001;&#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;&#x7B49;&#x7B49;&#xFF09;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x67B6;&#x6784;&#x65B9;&#x5F0F;&#x5305;&#x62EC;&#x6DF1;&#x5EA6;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#xFF08;Deep Neural Networks&#xFF09;&#xFF0C;&#x6DF1;&#x5EA6;&#x4FE1;&#x5FF5;&#x7F51;&#x7EDC;&#xFF08;Deep Belief Networks&#xFF09;&#x3001;&#x5377;&#x79EF;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#xFF08;Convolutional Neural Networks&#xFF09;&#x3001;&#x9012;&#x5F52;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#xFF08;Recurrent/Recursice Neural Network&#xFF09;&#x7B49;&#x7B49;&#x3002;&#x4E0B;&#x56FE;&#x76F4;&#x89C2;&#x7684;&#x7ED9;&#x51FA;&#x4E86;&#x8FD9;&#x79CD;&#x9010;&#x5C42;&#x5D4C;&#x5957;&#x7684;&#x7F51;&#x7EDC;&#x7ED3;&#x6784;&#xFF0C;
+<div class="figure"><p><center><img src="Deep_Learning_Architecture.jpg" alt="Deep_Learning_Architecture.jpg" width=" 80%"><figcaption>Deep_Learning_Architecture.jpg</figcaption></center></p></div> 
+&#x5177;&#x4F53;&#x800C;&#x8A00;&#xFF0C;&#x6620;&#x5C04;&#x5B66;&#x4E60;&#x7684;&#x8FC7;&#x7A0B;&#x662F;&#x5BFB;&#x627E;&#x6700;&#x4F18;&#x7684;&#x53C2;&#x6570;$\boldsymbol{w}$&#x6765;&#x6700;&#x5C0F;&#x5316; <code>&#x635F;&#x5931;&#x51FD;&#x6570;</code> $\mathcal{L}(\mathcal{DL}(\boldsymbol{x}, \boldsymbol{w}), \boldsymbol{y})$&#x3002;&#x8FD9;&#x4E2A;&#x635F;&#x5931;&#x51FD;&#x6570;&#x8861;&#x91CF;&#x4E86;&#x771F;&#x5B9E;&#x548C;&#x9884;&#x6D4B;&#x8F93;&#x51FA;&#x503C;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x6BD4;&#x5982;&#x8BF4;&#x5BF9;&#x6570;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3001;&#x5E73;&#x65B9;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3001;&#x6307;&#x6570;&#x635F;&#x5931;&#x51FD;&#x6570;&#x3001;Hinge&#x635F;&#x5931;&#x51FD;&#x6570;&#x3001;&#x5404;&#x7C7B;Norm&#x7684;&#x635F;&#x5931;&#x51FD;&#x6570;&#x7B49;&#x7B49;<sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup>&#x3002; &#x540C;&#x65F6;&#x4E3A;&#x4E86;&#x63D0;&#x9AD8;&#x6A21;&#x578B;&#x7684;&#x6CDB;&#x5316;&#x80FD;&#x529B;&#xFF0C;&#x5F80;&#x5F80;&#x9700;&#x8981;&#x5BF9;&#x635F;&#x5931;&#x51FD;&#x6570;&#x8FDB;&#x884C; <code>&#x6B63;&#x5219;&#x5316;</code> &#xFF08;<a href="https://en.wikipedia.org/wiki/Regularization_(mathematics)" target="_blank" rel="external">regularization</a>&#xFF09;&#x5904;&#x7406;&#x3002;&#x4E00;&#x822C;&#x9700;&#x8981;&#x5C3D;&#x91CF;&#x628A;&#x635F;&#x5931;&#x51FD;&#x6570;&#x8F6C;&#x5316;&#x4E3A;&#x51F8;&#x51FD;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x51FD;&#x6570;&#x4E0D;&#x591F;&#x5149;&#x6ED1;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x5229;&#x7528;<a href="https://en.wikipedia.org/wiki/Moreau&apos;s_theorem" target="_blank" rel="external">Moreau-Yoshida regularization</a>&#x8FDB;&#x884C;&#x5904;&#x7406;&#x4EE5;&#x65B9;&#x4FBF;&#x68AF;&#x5EA6;&#x7684;&#x8BA1;&#x7B97;&#xFF0C;&#x6700;&#x7EC8;&#x5229;&#x7528; <code>&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x6CD5;</code> &#x6765;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#x800C;&#x5F97;&#x5230; \(\boldsymbol{w}^{*} =  \arg \min_{\boldsymbol{w}} \mathcal{L}(\mathcal{DL}(\boldsymbol{x}, \boldsymbol{w}), \boldsymbol{y})\) &#xFF0C;&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x5229;&#x7528; \(\mathcal{DL}(\boldsymbol{x}, \boldsymbol{w}^{*})\) &#x6765;&#x8FDB;&#x884C;&#x9884;&#x6D4B;&#x4E86;&#x3002;&#x4E0B;&#x56FE;&#x5C55;&#x793A;&#x4E86;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x7684;&#x4E00;&#x79CD;&#x67B6;&#x6784;&#xFF0C;&#x4EE5;&#x53CA;&#x5404;&#x4E2A;&#x9690;&#x542B;&#x5C42;&#x6240;&#x5B66;&#x4E60;&#x5230;&#x7684;&#x8868;&#x5F81;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E0D;&#x540C;&#x9690;&#x542B;&#x5C42;&#x6709;&#x4E0D;&#x540C;&#x5C42;&#x6B21;&#x7684;&#x62BD;&#x8C61;&#x5B66;&#x4E60;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x6709;&#x7684;&#x8D1F;&#x8D23;&#x989C;&#x8272;&#xFF0C;&#x6709;&#x7684;&#x8D1F;&#x8D23;&#x5F62;&#x72B6;&#xFF0C;&#x6709;&#x7684;&#x8D1F;&#x8D23;&#x90E8;&#x4EF6;&#x7B49;&#x7B49;&#x3002;
+<div class="figure"><p><center><img src="Neural_Networks_Layer_Explanation.jpg" alt="Neural_Networks_Layer_Explanation.jpg" width=" 80%"><figcaption>Neural_Networks_Layer_Explanation.jpg</figcaption></center></p></div> 
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">&#x589E;&#x5F3A;&#x5B66;&#x4E60;</h3>
+<div class="outline-text-3" id="text-2-2">
+<blockquote>
+<p>
+&#x5F3A;&#x5316;/&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x662F;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x9886;&#x57DF;&#xFF0C;&#x5F3A;&#x8C03;&#x5982;&#x4F55;&#x57FA;&#x4E8E;&#x73AF;&#x5883;&#x800C;&#x884C;&#x52A8;&#xFF0C;&#x4EE5;&#x53D6;&#x5F97;&#x6700;&#x5927;&#x5316;&#x7684;&#x9884;&#x671F;&#x5229;&#x76CA;&#x3002;&#x5176;&#x7075;&#x611F;&#x6765;&#x6E90;&#x4E8E;&#x5FC3;&#x7406;&#x5B66;&#x4E2D;&#x7684;&#x884C;&#x4E3A;&#x4E3B;&#x4E49;&#x7406;&#x8BBA;&#xFF0C;&#x5373;&#x6709;&#x673A;&#x4F53;&#x5982;&#x4F55;&#x5728;&#x73AF;&#x5883;&#x7ED9;&#x4E88;&#x7684;&#x5956;&#x52B1;&#x6216;&#x60E9;&#x7F5A;&#x7684;&#x523A;&#x6FC0;&#x4E0B;&#xFF0C;&#x9010;&#x6B65;&#x5F62;&#x6210;&#x5BF9;&#x523A;&#x6FC0;&#x7684;&#x9884;&#x671F;&#xFF0C;&#x4EA7;&#x751F;&#x80FD;&#x83B7;&#x5F97;&#x6700;&#x5927;&#x5229;&#x76CA;&#x7684;&#x4E60;&#x60EF;&#x6027;&#x884C;&#x4E3A;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5177;&#x6709;&#x666E;&#x9002;&#x6027;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x5176;&#x4ED6;&#x8BB8;&#x591A;&#x9886;&#x57DF;&#x90FD;&#x6709;&#x7814;&#x7A76;&#xFF0C;&#x4F8B;&#x5982;&#x535A;&#x5F08;&#x8BBA;&#x3001;&#x63A7;&#x5236;&#x8BBA;&#x3001;&#x8FD0;&#x7B79;&#x5B66;&#x3001;&#x4FE1;&#x606F;&#x8BBA;&#x3001;&#x4EFF;&#x771F;&#x4F18;&#x5316;&#x65B9;&#x6CD5;&#x3001;&#x591A;&#x4E3B;&#x4F53;&#x7CFB;&#x7EDF;&#x5B66;&#x4E60;&#x3001;&#x7FA4;&#x4F53;&#x667A;&#x80FD;&#x3001;&#x7EDF;&#x8BA1;&#x5B66;&#x4EE5;&#x53CA;&#x9057;&#x4F20;&#x7B97;&#x6CD5;&#x3002; &#x2013;&#x7EF4;&#x57FA;&#x767E;&#x79D1;
+</p>
+</blockquote>
+<p>
+<b>&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x662F;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x73AF;&#x5883;&#x53CD;&#x9988;&#x800C;&#x505A;&#x51B3;&#x7B56;&#x7684;&#x901A;&#x7528;&#x6846;&#x67B6;&#x3002;</b> &#x5177;&#x4F53;&#x5230;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x9886;&#x57DF;&#xFF0C;&#x5F88;&#x591A;&#x4EBA;&#x5F80;&#x5F80;&#x77E5;&#x9053; <code>&#x76D1;&#x7763;&#x5F0F;&#x5B66;&#x4E60;</code> &#x548C; <code>&#x975E;&#x76D1;&#x7763;&#x5F0F;&#x5B66;&#x4E60;</code> &#xFF08;&#x751A;&#x81F3;&#x534A;&#x76D1;&#x7763;&#x5F0F;&#x5B66;&#x4E60;&#xFF09;&#xFF0C;&#x4F46;&#x5374;&#x4E0D;&#x77E5;&#x9053;&#x7B2C;&#x4E09;&#x7C7B;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x65B9;&#x6CD5;&#xFF0C;&#x5373;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x3002; <b>&#x56E0;&#x4E3A;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x5F3A;&#x8C03;&#x4E0E;&#x73AF;&#x5883;&#x7684;&#x4EA4;&#x4E92;&#xFF0C;&#x6211;&#x8BA4;&#x4E3A;&#x662F;&#x79BB;&#x666E;&#x904D;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x66F4;&#x63A5;&#x8FD1;&#x7684;&#x4E00;&#x4E2A;&#x9886;&#x57DF;&#x3002;</b> &#x8FD9;&#x91CC;&#x300E;&#x589E;&#x5F3A;&#x300F;&#x6216;&#x8005;&#x300E;&#x5F3A;&#x5316;&#x300F;&#x7684;&#x610F;&#x601D;&#x662F;&#xFF0C;&#x6839;&#x636E;&#x4E0D;&#x65AD;&#x8BD5;&#x9519;&#x800C;&#x5F97;&#x5230;&#x7684;&#x5956;&#x60E9;&#x6765;&#x4E0D;&#x65AD;&#x589E;&#x5F3A;&#x5BF9;&#x8D8B;&#x5229;&#x51B3;&#x7B56;&#x7684;&#x4FE1;&#x5FF5;&#x3002;David Silver&#x4E0B;&#x9762;&#x8FD9;&#x5F20;&#x56FE;&#x5F88;&#x597D;&#x7684;&#x603B;&#x7ED3;&#x4E86;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x7684;&#x7814;&#x7A76;&#x4E3B;&#x4F53;&#xFF0C;&#x5373; <code>Agent</code> &#x3001; <code>Environment</code> &#x4EE5;&#x53CA; <code>State</code> &#x3002;
+<div class="figure"><p><center><img src="Reinforcement_Learning_Configurations.png" alt="Reinforcement_Learning_Configurations.png" width=" 40%"><figcaption>Reinforcement_Learning_Configurations.png</figcaption></center></p></div> 
+&#x9996;&#x5148;&#x5728; \(t\) &#x65F6;&#x523B;&#xFF0C; Agent&#x4F9D;&#x636E;&#x5F53;&#x524D;&#x7684;&#x72B6;&#x6001; \(s_{t}\) &#x4EE5;&#x53CA;&#x5386;&#x53F2;&#x4FE1;&#x606F;&#x6765;&#x51B3;&#x5B9A;&#x4E0B;&#x4E00;&#x8F6E;&#x7684;&#x51B3;&#x7B56;&#xFF08; <code>action</code> &#xFF09; \(a_{t+1}\) &#x3002;&#x7136;&#x540E;&#x7ED9;&#x5B9A;&#x5F53;&#x524D;&#x7684;&#x72B6;&#x6001; \(s_{t}\) &#x4EE5;&#x53CA; Agent&#x7684;&#x51B3;&#x7B56; \(a_{t+1}\) &#xFF0C;Environment&#x51B3;&#x5B9A;&#x4E0B;&#x4E00;&#x8F6E; \(t+1\) &#x7684;&#x72B6;&#x6001; \(s_{t+1}\) &#x3001;&#x7ED9;Agent&#x7684;&#x62A5;&#x916C;&#xFF08; <code>reward</code> &#xFF09; \(r_{t+1}\) &#x3001;&#x4EE5;&#x53CA;&#x5B83;&#x53EF;&#x89C2;&#x6D4B;&#x5230;&#x7684;&#x5176;&#x4ED6;&#x4FE1;&#x606F; \(o_{t+1}\) &#x3002;&#x6700;&#x540E;&#xFF0C;&#x5FAA;&#x73AF;&#x5F80;&#x590D;&#x76F4;&#x5230;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x3002;&#x4E0D;&#x540C;&#x4E8E;Planning&#xFF08;&#x89C4;&#x5212;&#xFF09;&#x95EE;&#x9898;&#xFF0C;Learning&#xFF08;&#x5B66;&#x4E60;&#xFF09;&#x95EE;&#x9898;&#x4E00;&#x5F00;&#x59CB;&#x5E76;&#x4E0D;&#x77E5;&#x9053;Environment&#x7684;&#x5168;&#x90E8;&#x60C5;&#x51B5;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x9010;&#x6B65;&#x8BD5;&#x9519;&#x5B66;&#x4E60;&#x73AF;&#x5883;&#x4EE5;&#x53CA;&#x8C03;&#x6574;&#x81EA;&#x8EAB;&#x51B3;&#x7B56;&#x3002; <b>&#x5173;&#x4E8E;&#x5956;&#x8D4F;&#x7684;&#x673A;&#x5236;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x5047;&#x8BBE;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x5047;&#x5B9A;&#x6240;&#x6709;&#x7684;&#x76EE;&#x6807;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x523B;&#x753B;&#x4E3A;&#x671F;&#x671B;&#x7D2F;&#x79EF;&#x6536;&#x76CA;&#x7684;&#x6700;&#x5927;&#x5316;&#x3002;</b> &#x4ECE;&#x4E0A;&#x9762;&#x7684;&#x63CF;&#x8FF0;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5173;&#x4E8E;Agent&#xFF0C;&#x6709;&#x4E09;&#x4E2A;&#x5F88;&#x5173;&#x952E;&#x7684;&#x7EC4;&#x6210;&#x8981;&#x7D20;&#xFF0C;
+</p>
+<ul class="org-ul">
+<li><code>Policy function</code> &#xFF08;&#x7B56;&#x7565;&#x51FD;&#x6570;&#xFF09;&#xFF1A;&#x4ECE;&#x72B6;&#x6001;&#x5230;&#x51B3;&#x7B56;&#x7684;&#x6620;&#x5C04;
+<ul class="org-ul">
+<li>Deterministic policy&#xFF1A; \(\pi(s_{t}) = a_{t+1}\)
+</li>
+<li>Stochastic policy&#xFF1A; \(\pi(s_{t}) = \mathbb{P}(a_{t+1} | s_{t})\)
+</li>
+</ul>
+</li>
+<li><code>Value function</code> &#xFF08;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#xFF09;&#xFF1A;&#x4ECE;&#x72B6;&#x6001;&#x4EE5;&#x53CA;&#x51B3;&#x7B56;&#x5230;&#x671F;&#x671B;&#x7D2F;&#x79EF;&#x6536;&#x76CA;&#x7684;&#x6620;&#x5C04;
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Bellman_equation" target="_blank" rel="external">Bellman equation</a> of <code>Q-value function</code> &#xFF1A; \(Q^{\pi}(s_{t}, a_{t+1}) = E^{\pi}[r_{t+1} + \gamma r_{t+2} + \gamma^{2} r_{t+3} + \dotsc | s_{t}, a_{t+1}] = E^{\pi}[r_{t+1} + \gamma Q^{\pi}(s_{t+1}, a_{t+2}) | s_{t}, a_{t+1}]\)
+</li>
+<li>Bellman equation of <code>Optimal value function</code> &#xFF1A;\(V(s_{t}) = Q^{*}(s_{t}, a_{t+1}) = \max_{\pi} Q^{\pi}(s_{t}, a_{t+1}) = E^{*}[r_{t+1} + \gamma \max_{a_{t+2}} Q^{*}(s_{t+1}, a_{t+2}) | s_{t}, a_{t+1}]\)
+</li>
+</ul>
+</li>
+<li><code>Model function</code> &#xFF08;&#x73AF;&#x5883;&#x51FD;&#x6570;&#xFF09;&#xFF1A;&#x4ECE;&#x72B6;&#x6001;&#x4EE5;&#x53CA;&#x51B3;&#x7B56;&#x5230;&#x73AF;&#x5883;&#x51B3;&#x7B56;&#x7684;&#x6620;&#x5C04;<sup><a id="fnr.3" name="fnr.3" class="footref" href="#fn.3">3</a></sup>
+<ul class="org-ul">
+<li>Deterministic environment&#xFF1A; \(e(s_{t}, a_{t+1}) = [s_{t+1}, r_{t+1}, o_{t+1}]\)
+</li>
+<li>Stochastic environment&#xFF1A; \(e(s_{t}, a_{t+1}) = \mathbb{P}([s_{t+1}, r_{t+1}, o_{t+1}] | s_{t}, a_{t+1})\)
+</li>
+</ul>
+</li>
+</ul>
+<p>
+&#x901A;&#x8FC7;&#x6298;&#x73B0;&#x56E0;&#x5B50; \(\gamma\) &#x7684;&#x5F15;&#x5165;&#xFF0C;Q-value function&#x4E00;&#x6765;&#x53EF;&#x4EE5;&#x8F6C;&#x5316;&#x4E3A;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;&#x5E76;&#x6EE1;&#x8DB3;&#x65E0;&#x540E;&#x6548;&#x6027;&#x4EE5;&#x53CA;&#x6700;&#x4F18;&#x5B50;&#x7ED3;&#x6784;&#x7684;&#x7279;&#x5F81;&#xFF1B;&#x5E76;&#x4E14;&#x591A;&#x671F;&#x7684;&#x6298;&#x73B0;&#x53C8;&#x6BD4;&#x5355;&#x7EAF;&#x7684;one-step lookahead&#x8D2A;&#x5A6A;&#x7B56;&#x7565;&#x66F4;&#x52A0;&#x5177;&#x6709;&#x8FDC;&#x89C1;&#x3002; <b>&#x603B;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x6C42;&#x89E3;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x95EE;&#x9898;&#x7684;&#x6838;&#x5FC3;&#x5B9E;&#x9645;&#x4E0A;&#x5728;&#x4E8E;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x91CC;&#x6807;&#x51C6;&#x7684;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x65B9;&#x7A0B;&#xFF0C;&#x5373;&#x5B9A;&#x4E49;&#x597D;&#x8FB9;&#x754C;&#x4EE5;&#x53CA;&#x8BE5;&#x65B9;&#x7A0B;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5012;&#x63A8;&#x6CD5;&#x6216;&#x8005;&#x5E26;&#x8BB0;&#x5FC6;&#x7684;&#x9012;&#x5F52;&#x4E88;&#x4EE5;&#x89E3;&#x51B3;&#x3002;</b> &#x4E0D;&#x8FC7;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x76F4;&#x63A5;&#x641C;&#x7D22;&#x6700;&#x4F18;&#x7B56;&#x7565;&#x6216;&#x8005;&#x5B66;&#x4E60;&#x73AF;&#x5883;&#x7684;&#x5956;&#x60E9;&#x5957;&#x8DEF;&#x6765;&#x89E3;&#x51B3;&#x3002; <b>&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x8FD9;&#x4E09;&#x4E2A;&#x8981;&#x7D20;&#x6B63;&#x662F;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x540C;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x7ED3;&#x5408;&#x7684;&#x5173;&#x952E;&#x3002;</b> &#x6B63;&#x5982;David Silver&#x6240;&#x8BF4; <sup><a id="fnr.4" name="fnr.4" class="footref" href="#fn.4">4</a></sup>&#xFF0C;
+</p>
+<blockquote>
+<p>
+Reinforcement Learning defines the objective. Deep Learning gives the mechanism. &#x2013; David Silver
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3">&#x4E8C;&#x8005;&#x7684;&#x878D;&#x5408;</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+&#x5BF9;&#x4E8E;&#x590D;&#x6742;&#x7684;&#x4EFB;&#x52A1;&#x4EE5;&#x53CA;&#x73AF;&#x5883;&#x800C;&#x8A00;&#xFF0C;Q-value function&#x5B9E;&#x9645;&#x4E0A;&#x5F88;&#x96BE;&#x7A77;&#x4E3E;&#x7684;&#x5B8C;&#x7684;&#xFF08;&#x9488;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x548C;&#x51B3;&#x7B56;&#x90FD;&#x8981;&#x7ED9;&#x4E00;&#x4E2A;&#x7D2F;&#x79EF;&#x671F;&#x671B;&#x6536;&#x76CA;&#x503C;&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#x4E00;&#x822C;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x5386;&#x53F2;&#x4FE1;&#x606F;&#x6765;&#x4F30;&#x8BA1;&#x8FD9;&#x4E00;&#x51FD;&#x6570;&#x3002;&#x540C;&#x6837;&#x7684;&#xFF0C;&#x5BF9;Policy function&#x548C;Model function&#x4E5F;&#x6709;&#x7C7B;&#x4F3C;&#x7684;&#x60C5;&#x51B5;&#x3002; <b>&#x6240;&#x4EE5;&#x5728;&#x7ED9;&#x5B9A;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x4E09;&#x5927;&#x6C42;&#x89E3;&#x76EE;&#x6807;&#xFF08;Policy-based, Value-based, Model-based&#xFF09;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x4FBF;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x6765;&#x5229;&#x7528;&#x5386;&#x53F2;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6765;&#x4F30;&#x8BA1;&#x8FD9;&#x4E09;&#x5927;&#x76EE;&#x6807;&#x51FD;&#x6570;&#x3002;</b>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">&#x600E;&#x4E48;&#x5229;&#x7528;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x89E3;&#x51B3;&#x95EE;&#x9898;</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+&#x6B63;&#x5982;&#x4E0A;&#x6587;&#x7684;&#x5206;&#x6790;&#xFF0C;David Silver&#x5C06;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x5206;&#x4E3A;&#x5982;&#x4E0B;&#x4E09;&#x5927;&#x7C7B;<sup><a id="fnr.5" name="fnr.5" class="footref" href="#fn.5">5</a></sup>&#x3002; &#x4E0B;&#x6587;&#x5C06;&#x5148;&#x4ECE;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x7684;&#x89D2;&#x5EA6;&#x5206;&#x6790;&#x5982;&#x4F55;&#x505A;&#x51B3;&#x7B56;&#xFF0C;&#x7136;&#x540E;&#x4ECE;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x5206;&#x6790;&#x5982;&#x4F55;&#x5B66;&#x4E60;&#x76F8;&#x5E94;&#x7684;&#x7B56;&#x7565;&#x51FD;&#x6570;&#x3001;&#x4F30;&#x503C;&#x51FD;&#x6570;&#x4EE5;&#x53CA;&#x73AF;&#x5883;&#x51FD;&#x6570;&#x3002;
+<div class="figure"><p><center><img src="RL_Agent_Taxonomy.png" alt="RL_Agent_Taxonomy.png" width=" 40%"><figcaption>RL_Agent_Taxonomy.png</figcaption></center></p></div> 
+</p>
+</div>
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">Policy-based DRL</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+&#x4E0B;&#x56FE;&#x5C55;&#x793A;&#x4E86;&#x5229;&#x7528; <code>Policy Iteration Algorithm</code> &#x6765;&#x89E3;&#x51B3;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x95EE;&#x9898;&#x7684;&#x601D;&#x8DEF;&#x3002;&#x5373;&#x7ED9;&#x5B9A;&#x4EFB;&#x610F;&#x521D;&#x59CB;&#x7B56;&#x7565; \(\pi_{0}(s)\) &#xFF0C;&#x7136;&#x540E;&#x5229;&#x7528;&#x4F30;&#x503C;&#x51FD;&#x6570; \(V_{0}(s)\) &#x5BF9;&#x5176;&#x8BC4;&#x4EF7;&#xFF0C;&#x57FA;&#x4E8E;&#x8BE5;&#x4F30;&#x503C;&#x51FD;&#x6570;&#x5BF9;&#x7B56;&#x7565;&#x8FDB;&#x4E00;&#x6B65;&#x4F18;&#x5316;&#x5F97;&#x5230; \(\pi_{1}(s)\) &#x3002;&#x5FAA;&#x73AF;&#x8FD9;&#x4E00;&#x8FC7;&#x7A0B;&#xFF0C;&#x76F4;&#x81F3;&#x7B56;&#x7565;&#x8FBE;&#x5230;&#x6700;&#x4F18;&#x800C;&#x4E0D;&#x80FD;&#x8FDB;&#x4E00;&#x6B65;&#x6539;&#x5584;&#x3002;
+<div class="figure"><p><center><img src="Policy_Iteration_Pseudo_Code.png" alt="Policy_Iteration_Pseudo_Code.png" width=" 60%"><figcaption>Policy_Iteration_Pseudo_Code.png</figcaption></center></p></div> 
+</p>
+<p>
+&#x81F3;&#x4E8E;&#x5728;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x65B9;&#x9762;&#xFF0C;&#x9996;&#x5148;&#x5BF9;policy function&#x8FDB;&#x884C;&#x53C2;&#x6570;&#x5316; $a = &#x3C0;(s, \boldsymbol{u})$&#xFF0C;&#x5176;&#x4E2D; \(\boldsymbol{u}\) &#x4E3A;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x7684;&#x53C2;&#x6570;&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x53C2;&#x6570;&#x5316;&#x540E;&#x7684;&#x7D2F;&#x79EF;&#x671F;&#x671B;&#x6536;&#x76CA;&#x51FD;&#x6570;&#x4E3A; \(V(\boldsymbol{u}) = E[r_{1} + \gamma r_{2} + \gamma^{2} r_{3} + \dotsc | \pi(\cdot, \boldsymbol{u})]\) &#x3002;&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x5F97;&#x5230; <code>&#x7B56;&#x7565;&#x68AF;&#x5EA6;</code> &#xFF08;Policy Gradients&#xFF09;&#xFF0C;&#x5728;&#x968F;&#x673A;&#x6027;&#x7B56;&#x7565;&#x51FD;&#x6570;&#x4E0B;&#x4E3A; \(\frac{\partial V(\boldsymbol{u})}{\partial \boldsymbol{u}} = E[\frac{\partial log \pi (a | s, \boldsymbol{u})}{\partial \boldsymbol{u}} Q^{\pi}(s, a)]\) &#xFF0C;&#x800C;&#x5728;&#x786E;&#x5B9A;&#x6027;&#x7B56;&#x7565;&#x51FD;&#x6570;&#x4E0B;&#x4E3A; \(\frac{\partial V(\boldsymbol{u})}{\partial \boldsymbol{u}} = E[\frac{\partial Q^{\pi}(s, a)}{\partial a} \frac{\partial a}{\partial \boldsymbol{u}}]\) &#x3002;&#x6700;&#x540E;&#xFF0C;&#x4FBF;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x7B97;&#x6CD5;&#x6765;&#x5BFB;&#x627E;&#x6700;&#x4F18;&#x7684;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x53C2;&#x6570; \(\boldsymbol{u}\) <sup><a id="fnr.6" name="fnr.6" class="footref" href="#fn.6">6</a></sup> &#x3002;
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">Value-based DRL</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+&#x4E0B;&#x56FE;&#x662F;&#x89E3;&#x51B3;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x95EE;&#x9898;&#x7684; <code>Value Iteration Algorithm</code> &#x7684;&#x4F2A;&#x4EE3;&#x7801;&#x3002;&#x5373;&#x7ED9;&#x5B9A;&#x4EFB;&#x610F;&#x521D;&#x59CB;&#x4F30;&#x503C;&#x51FD;&#x6570; \(V(s)\) &#xFF0C;&#x5229;&#x7528;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;&#x9012;&#x63A8;&#x5F97;&#x903C;&#x8FD1;&#x771F;&#x5B9E;&#x7684;&#x4F30;&#x503C;&#x51FD;&#x6570;&#x3002;&#x81F3;&#x4E8E;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x7684;&#x6536;&#x655B;&#x901F;&#x5EA6;&#x4EE5;&#x53CA;&#x662F;&#x5426;&#x6536;&#x655B;&#xFF0C;&#x6211;&#x8FD8;&#x4E0D;&#x662F;&#x592A;&#x6E05;&#x695A;&#xFF0C;&#x9700;&#x8981;&#x65E5;&#x540E;&#x518D;&#x505A;&#x603B;&#x7ED3;&#x3002;
+<div class="figure"><p><center><img src="Value_Iteration_Pseudo_Code.png" alt="Value_Iteration_Pseudo_Code.png" width=" 60%"><figcaption>Value_Iteration_Pseudo_Code.png</figcaption></center></p></div> 
+</p>
+<p>
+&#x81F3;&#x4E8E;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x65B9;&#x9762;&#xFF0C;&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;&#x5148;&#x5BF9;value function&#x8FDB;&#x884C;&#x53C2;&#x6570;&#x5316; \(Q(s, a, \boldsymbol{w}) \approx Q^{*}(s, a)\) &#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x627E; \(\boldsymbol{w}\) &#x3002;&#x7136;&#x540E;&#xFF0C;&#x5C31;&#x662F;&#x4F18;&#x5316;&#x635F;&#x5931;&#x51FD;&#x6570; \(L = (r + \gamma \max_{a} Q(s^{&apos;}, a^{&apos;}, \boldsymbol{w}) - Q(s, a, \boldsymbol{w}))^{2}\) <sup><a id="fnr.7" name="fnr.7" class="footref" href="#fn.7">7</a></sup>&#x3002;David Silver&#x5728;&#x8FD9;&#x91CC;&#x63D0;&#x5230;&#x5982;&#x679C;&#x6837;&#x672C;&#x4E4B;&#x95F4;&#x5B58;&#x5728;&#x76F8;&#x5173;&#x6027;&#x6216;&#x8005;&#x6536;&#x76CA;&#x51FD;&#x6570;&#x975E;&#x5E73;&#x7A33;&#xFF0C;&#x5BB9;&#x6613;&#x5BFC;&#x81F4;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x4E0D;&#x6536;&#x655B;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x673A;&#x5236;&#x6765;&#x4E88;&#x4EE5;&#x89E3;&#x51B3;&#x3002;
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3">Model-based DRL</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+&#x5173;&#x4E8E;Model-based DRL&#xFF0C;David Silver&#x8BB2;&#x7684;&#x6BD4;&#x8F83;&#x5C11;&#xFF0C;&#x4E3B;&#x8981;&#x4E3E;&#x4E86;Alpha Go&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5373;&#x6211;&#x4EEC;&#x5B8C;&#x7F8E;&#x77E5;&#x9053;&#x73AF;&#x5883;&#x7684;&#x4FE1;&#x606F;&#xFF08;&#x8D70;&#x5B50;&#x89C4;&#x5219;&#x3001;&#x80DC;&#x8D1F;&#x89C4;&#x5219;&#x7B49;&#x7B49;&#xFF09;&#x3002;&#x5927;&#x81F4;&#x610F;&#x601D;&#x8FD8;&#x662F;&#x5229;&#x7528;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x6765;&#x4EE3;&#x66FF;&#x771F;&#x5B9E;&#x7684;&#x73AF;&#x5883;&#x51FD;&#x6570;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BA9;Agent&#x6709;&#x80FD;&#x529B;&#x9884;&#x6D4B;&#x73AF;&#x5883;&#x4E0B;&#x4E00;&#x671F;&#x7684;&#x72B6;&#x6001;&#x4EE5;&#x53CA;&#x6536;&#x76CA;&#x7B49;&#x7B49;&#xFF0C;&#x57FA;&#x4E8E;&#x6B64;&#x6765;&#x4F18;&#x5316;Agent&#x7684;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;&#x3002;&#x4E0B;&#x56FE;&#x662F;&#x7F51;&#x4E0A;<sup><a id="fnr.8" name="fnr.8" class="footref" href="#fn.8">8</a></sup> &#x627E;&#x5230;&#x7684; <code>Model Iteration Algorithm</code> &#x7684;&#x4F2A;&#x4EE3;&#x7801;&#xFF0C;&#x57FA;&#x672C;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x5BF9;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x51FD;&#x6570;&#x4EE5;&#x53CA;&#x5956;&#x60E9;&#x51FD;&#x6570;&#x7684;&#x641C;&#x7D22;&#xFF0C;&#x6765;&#x4F30;&#x8BA1;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x3002;
+<div class="figure"><p><center><img src="Model_Iteration_Pseudo_Code.png" alt="Model_Iteration_Pseudo_Code.png" width=" 60%"><figcaption>Model_Iteration_Pseudo_Code.png</figcaption></center></p></div> 
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x6709;&#x54EA;&#x4E9B;&#x7528;&#x9014;</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+<b>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x51E1;&#x662F;&#x4EFB;&#x52A1;&#x5BFC;&#x5411;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x76EE;&#x6807;&#x53EF;&#x4EE5;&#x88AB;&#x5956;&#x60E9;&#x51FD;&#x6570;&#x523B;&#x753B;&#x7684;&#xFF0C;&#x5747;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x6765;&#x89E3;&#x51B3;&#xFF0C;&#x6240;&#x4EE5;&#x5176;&#x5E94;&#x7528;&#x8303;&#x56F4;&#x8FD8;&#x662F;&#x86EE;&#x5E7F;&#x7684;&#x3002;</b> &#x4EE5;&#x4E0B;&#x4E3E;&#x4E86;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x7684;&#x82E5;&#x5E72;&#x5E94;&#x7528;&#xFF0C;&#x89C6;&#x9891;&#x5747;&#x6765;&#x81EA;Youtube&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x79D1;&#x5B66;&#x4E0A;&#x7F51;&#x3002;
+</p>
+</div>
+<div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">&#x6E38;&#x620F;&#x7B56;&#x7565;</h3>
+<div class="outline-text-3" id="text-4-1">
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/L4KBBAwF_bE" frameborder="0" allowfullscreen></iframe>
+</center>
+</div>
+</div>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2">&#x673A;&#x5668;&#x4EBA;&#x63A7;&#x5236;</h3>
+<div class="outline-text-3" id="text-4-2">
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ZhsEKTo7V04" frameborder="0" allowfullscreen></iframe>
+</center>
+</div>
+</div>
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3">&#x65E0;&#x4EBA;&#x9A7E;&#x9A76;</h3>
+<div class="outline-text-3" id="text-4-3">
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/QK0LxA8FWq4" frameborder="0" allowfullscreen></iframe>
+</center>
+</div>
+</div>
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4">&#x63A2;&#x7D22;&#x73AF;&#x5883;</h3>
+<div class="outline-text-3" id="text-4-4">
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/nMR5mjCFZCw" frameborder="0" allowfullscreen></iframe>
+</center>
+</div>
+</div>
+<div id="outline-container-sec-4-5" class="outline-3">
+<h3 id="sec-4-5">&#x5B66;&#x4F1A;&#x8D70;&#x8DEF;</h3>
+<div class="outline-text-3" id="text-4-5">
+<center>
+  <iframe width="560" height="315" src="https://openai-kubernetes-prod-scoreboard.s3.amazonaws.com/v1/evaluations/eval_i3x1JpReRukTZrznxypCw/training_episode_batch_video.mp4" frameborder="0" allowfullscreen></iframe>
+</center>
+</div>
+</div>
+<div id="outline-container-sec-4-6" class="outline-3">
+<h3 id="sec-4-6">&#x5F00;&#x6E90;&#x6D4B;&#x8BD5;&#x5F00;&#x53D1;&#x5E73;&#x53F0;</h3>
+<div class="outline-text-3" id="text-4-6">
+<ul class="org-ul">
+<li><a href="https://gym.openai.com/" target="_blank" rel="external">OpenAI Gym</a>&#x4EE5;&#x53CA;<a href="https://universe.openai.com/" target="_blank" rel="external">OpenAI Universe</a>
+</li>
+<li><a href="https://github.com/deepmind/lab" target="_blank" rel="external">DeepMind Lab</a>
+</li>
+<li><a href="https://github.com/Microsoft/malmo#getting-started" target="_blank" rel="external">Malmo</a>
+</li>
+<li><a href="http://www.nature.com/news/tech-giants-open-virtual-worlds-to-bevy-of-ai-programs-1.21151" target="_blank" rel="external">Nature&#x5173;&#x4E8E;&#x4E09;&#x5927;&#x5F00;&#x6E90;&#x5E73;&#x53F0;&#x7684;&#x5BF9;&#x6BD4;&#xFF1A;Tech giants open virtual worlds to bevy of AI programs</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">&#x7ED3;&#x8BED;</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+<b>&#x5982;&#x679C;&#x8BF4;&#x8FBE;&#x5C14;&#x6587;&#x7684;&#x8FDB;&#x5316;&#x8BBA;&#x662F;&#x4EBA;&#x7C7B;&#x5173;&#x4E8E;&#x81EA;&#x8EAB;&#x8D77;&#x6E90;&#x7684;&#x4E00;&#x6B21;&#x51B2;&#x51FB;&#xFF0C;&#x90A3;&#x4E48;&#x901A;&#x7528;&#x578B;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x7684;&#x8BDE;&#x751F;&#x4FBF;&#x662F;&#x5BF9;&#x4EBA;&#x7C7B;&#x672A;&#x6765;&#x7684;&#x53E6;&#x4E00;&#x6B21;&#x51B2;&#x51FB;&#x3002;</b> &#x5728;Alpha Go&#x4E4B;&#x524D;&#xFF0C;&#x4EBA;&#x4EEC;&#x8BA4;&#x4E3A;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x6218;&#x80DC;&#x4EBA;&#x7C7B;&#x56F4;&#x68CB;&#x9AD8;&#x624B;&#x5927;&#x6982;&#x8FD8;&#x9700;&#x8981;&#x5341;&#x591A;&#x5E74;&#x7684;&#x6837;&#x5B50;&#xFF0C;&#x7136;&#x800C;&#x6280;&#x672F;&#x7684;&#x53D1;&#x5C55;&#x901F;&#x5EA6;&#x5B9E;&#x5728;&#x662F;&#x4E0D;&#x53EF;&#x60F3;&#x60F3;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x6269;&#x5927;&#x65F6;&#x95F4;&#x7684;&#x5C3A;&#x5EA6;&#xFF0C;&#x60F3;&#x60F3;&#x5341;&#x5E74;&#x524D;&#x3001;&#x767E;&#x5E74;&#x524D;&#x3001;&#x5343;&#x5E74;&#x524D;&#x4E2D;&#x56FD;&#x7684;&#x6837;&#x5B50;&#xFF0C;&#x5728;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x7684;&#x751F;&#x6D3B;&#xFF0C;&#x4E0D;&#x80FD;&#x8BF4;&#x662F;&#x5929;&#x7FFB;&#x5730;&#x8986;&#xFF0C;&#x4F46;&#x663E;&#x7136;&#x5F97;&#x76CA;&#x4E8E;&#x6280;&#x672F;&#x7684;&#x53D1;&#x5C55;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x751F;&#x6D3B;&#x6709;&#x4E86;&#x66F4;&#x591A;&#x7684;&#x4FBF;&#x6377;&#x3002; <b>&#x4E5F;&#x4E0D;&#x7981;&#x7545;&#x60F3;&#x672A;&#x6765;&#xFF0C;&#x8BF4;&#x4E0D;&#x5B9A;&#x4E0B;&#x4E2A;&#x6280;&#x672F;&#x5F15;&#x7206;&#x70B9;&#x6CA1;&#x6709;&#x60F3;&#x8C61;&#x4E2D;&#x7684;&#x90A3;&#x4E48;&#x8FDC;&#xFF0C;&#x6216;&#x8BB8;&#x660E;&#x5E74;&#x6216;&#x8BB8;&#x660E;&#x5929;&#x3002;</b> &#x6240;&#x4EE5;&#xFF0C;&#x5BF9;&#x4E8E;&#x5927;&#x591A;&#x6570;&#x4EBA;&#x800C;&#x8A00;&#xFF0C;&#x8FD8;&#x662F;&#x6709;&#x5FC5;&#x8981;&#x63D0;&#x524D;&#x63A5;&#x89E6;&#x8FD9;&#x4E9B;&#x524D;&#x6CBF;&#x7684;&#x9886;&#x57DF;&#xFF0C;&#x4E00;&#x6765;&#x4E0D;&#x81F3;&#x4E8E;&#x81EA;&#x5DF1;&#x5230;&#x4E86;&#x672A;&#x6765;&#x6210;&#x4E3A;&#x65B0;&#x300E;&#x6587;&#x76F2;&#x300F;&#xFF0C;&#x4E8C;&#x6765;&#x4E5F;&#x4E0D;&#x4F1A;&#x6CA6;&#x843D;&#x5230;&#x88AB;&#x9AD8;&#x65B0;&#x6280;&#x672F;&#x9769;&#x4E86;&#x547D;&#x3002;
+</p>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">&#x5173;&#x4E8E;&#x3010;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x3011;&#x7CFB;&#x5217;&#x7684;&#x8BF4;&#x660E;</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+<div class="alert alert-info"><i class="fa fa-info"></i>  &#x5BF9;&#x4E8E;&#x6211;&#x81EA;&#x5DF1;&#x800C;&#x8A00;&#xFF0C;&#x5199;&#x3010;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x3011;&#x8FD9;&#x4E00;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#xFF0C;&#x9664;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x5174;&#x8DA3;&#x4E4B;&#x5916;&#xFF0C;&#x5176;&#x5B9E;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x548C;&#x6211;&#x7684;&#x7814;&#x7A76;&#x65B9;&#x5411;&#xFF08;&#x4EFF;&#x771F;&#x4F18;&#x5316;&#xFF09;&#x4E5F;&#x7565;&#x5FAE;&#x76F8;&#x5173;&#xFF0C;&#x5E0C;&#x671B;&#x80FD;&#x4ECE;&#x4E2D;&#x83B7;&#x53D6;&#x4E9B;&#x65B0;&#x77E5;&#x8BC6;&#x548C;&#x65B0;&#x60F3;&#x6CD5;&#x3002;&#x521D;&#x6B65;&#x6253;&#x7B97;&#x672C;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#x4EE5;<a href="http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html" target="_blank" rel="external">David Silver&#x7684;&#x516C;&#x5F00;&#x8BFE;</a> &#x4EE5;&#x53CA; <a href="http://rll.berkeley.edu/deeprlcourse/" target="_blank" rel="external">UC Berkeley&#x7684;CS294</a>&#x4E3A;&#x84DD;&#x672C;&#xFF0C;&#x7740;&#x91CD;&#x5728;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x9886;&#x57DF;&#xFF0C;&#x9646;&#x7EED;&#x4F1A;&#x8865;&#x5145;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x7684;&#x76F8;&#x5173;&#x63A2;&#x8BA8;&#x3002;&#x8BB0;&#x5F55;&#x81EA;&#x5DF1;&#x7684;&#x6240;&#x5B66;&#x6240;&#x601D;&#xFF0C;&#x529B;&#x56FE;&#x6293;&#x4F4F;&#x4E3B;&#x8981;&#x6838;&#x5FC3;&#x3002;&#x6BD5;&#x7ADF;&#x543E;&#x751F;&#x4E5F;&#x6709;&#x6DAF;&#xFF0C;&#x800C;&#x77E5;&#x4E5F;&#x65E0;&#x6DAF;&#x3002;&#x4EE5;&#x6709;&#x6DAF;&#x968F;&#x65E0;&#x6DAF;&#xFF0C;&#x6B86;&#x5DF2;&#xFF01;&#x4F46;&#x5B66;&#x4E60;&#x662F;&#x4E00;&#x8F88;&#x5B50;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x6240;&#x4EE5;&#x65F6;&#x4E0D;&#x65F6;&#x4E5F;&#x4F1A;&#x91CD;&#x65B0;&#x8865;&#x5145;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x8FD9;&#x4E9B;&#x6587;&#x7AE0;&#x3002;&#x672C;&#x4EBA;&#x521D;&#x6D89;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x9886;&#x57DF;&#xFF0C;&#x8FD8;&#x5E0C;&#x671B;&#x5404;&#x4F4D;&#x5B66;&#x754C;&#x4E1A;&#x754C;&#x5927;&#x725B;&#x591A;&#x591A;&#x6307;&#x6B63;&#x6587;&#x7AE0;&#x4E2D;&#x4E0D;&#x5F53;&#x4E4B;&#x5904;&#xFF0C;&#x4E92;&#x76F8;&#x5207;&#x78CB;&#xFF0C;&#x8C22;&#x8C22;&#xFF01;</div>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">&#x5EF6;&#x4F38;&#x9605;&#x8BFB;</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>&#x516C;&#x5F00;&#x8BFE;
+<ul class="org-ul">
+<li><a href="http://rll.berkeley.edu/deeprlcourse/" target="_blank" rel="external">UCB CS294 Deep Reinforcement Learning</a>
+</li>
+<li><a href="http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html" target="_blank" rel="external">UCL Course on Reinforcement Learning</a>
+</li>
+</ul>
+</li>
+<li>&#x57FA;&#x7840;&#x4ECB;&#x7ECD;
+<ul class="org-ul">
+<li><a href="http://icml.cc/2016/tutorials/deep_rl_tutorial.pdf" target="_blank" rel="external">Tutorial: Deep Reinforcement Learning</a>
+</li>
+<li><a href="https://deepmind.com/blog/deep-reinforcement-learning/" target="_blank" rel="external">Deep Reinforcement Learning | DeepMind</a>
+</li>
+</ul>
+</li>
+<li>&#x4E66;&#x7C4D;
+<ul class="org-ul">
+<li><a href="https://webdocs.cs.ualberta.ca/~sutton/book/bookdraft2016sep.pdf" target="_blank" rel="external">&#x300A;Reinforcement Learning: An Introduction&#x300B;</a>
+</li>
+<li><a href="https://sites.ualberta.ca/~szepesva/RLBook.html" target="_blank" rel="external">&#x300A;Algorithms for Reinforcement Learning&#x300B;</a>
+</li>
+<li><a href="http://www.deeplearningbook.org/" target="_blank" rel="external">&#x300A;Deep Learning&#x300B;</a>
+</li>
+</ul>
+</li>
+<li>&#x8BBA;&#x6587;
+<ul class="org-ul">
+<li><a href="https://sites.google.com/site/deeprlnips2016/" target="_blank" rel="external">Deep Reinforcement Learning Workshop, NIPS 2016</a>
+</li>
+<li><a href="http://rll.berkeley.edu/deeprlworkshop/" target="_blank" rel="external">Deep Reinforcement Learning Workshop, NIPS 2015</a>
+</li>
+<li><a href="https://github.com/muupan/deep-reinforcement-learning-papers" target="_blank" rel="external">Deep Reinforcement Learning Papers</a>
+</li>
+<li><a href="https://github.com/junhyukoh/deep-reinforcement-learning-papers" target="_blank" rel="external">Deep Reinforcement Learning Papers CONT&apos;D</a>
+</li>
+<li><a href="https://github.com/HFTrader/DeepLearningBook/blob/master/DeepLearningPapers.md" target="_blank" rel="external">Deep Learning Papers</a>
+</li>
+</ul>
+</li>
+<li>&#x8D44;&#x6E90;&#x5217;&#x8868;
+<ul class="org-ul">
+<li><a href="https://github.com/aikorea/awesome-rl" target="_blank" rel="external">Awesome Reinforcement Learning List</a>
+</li>
+<li><a href="https://github.com/ChristosChristofidis/awesome-deep-learning" target="_blank" rel="external">Awesome Deep Learning List</a>
+</li>
+</ul>
+</li>
+<li>&#x5176;&#x4ED6;
+<ul class="org-ul">
+<li><a href="http://karpathy.github.io/2016/05/31/rl/" target="_blank" rel="external">Deep Reinforcement Learning: Pong from Pixels</a>
+</li>
+<li><a href="https://www.zhihu.com/question/49787932" target="_blank" rel="external">RL&#x4E24;&#x5927;&#x7C7B;&#x7B97;&#x6CD5;&#x7684;&#x672C;&#x8D28;&#x533A;&#x522B;&#xFF1F;&#xFF08;Policy Gradient &#x548C; Q-Learning)</a>
+</li>
+<li><a href="http://www.slideshare.net/tw_dsconf/ss-62245351" target="_blank" rel="external">DSC 2016 &#x7CFB;&#x5217;&#x6D3B;&#x52D5;&#xFF1A;&#x674E;&#x5B8F;&#x6BC5; / &#x4E00;&#x5929;&#x641E;&#x61C2;&#x6DF1;&#x5EA6;&#x5B78;&#x7FD2;</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p>&#x8BE6;&#x89C1;&#x77E5;&#x4E4E;Live&#xFF1A;<a href="https://www.zhihu.com/lives/784053023981719552" target="_blank" rel="external">&#x6DF1;&#x5165;&#x6D45;&#x51FA;&#x8BF4;&#x56F4;&#x68CB;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;</a></p></div>
+
+<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p>&#x5404;&#x7C7B;&#x635F;&#x5931;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x53CA;&#x5E94;&#x7528;&#x5177;&#x4F53;&#x8BF7;&#x89C1;<a href="http://www.csuldw.com/2016/03/26/2016-03-26-loss-function/" target="_blank" rel="external">http://www.csuldw.com/2016/03/26/2016-03-26-loss-function/</a></p></div>
+
+<div class="footdef"><sup><a id="fn.3" name="fn.3" class="footnum" href="#fnr.3">3</a></sup> <p>&#x5728;David Silver&#x7684;Tutorial&#x91CC;&#x5E76;&#x6CA1;&#x6709;&#x8BE6;&#x7EC6;&#x8BB2;Model&#x51FD;&#x6570;&#x7684;&#x523B;&#x753B;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x6620;&#x5C04;&#x4EC5;&#x4EC5;&#x662F;&#x6211;&#x81EA;&#x5DF1;&#x7684;&#x7406;&#x89E3;&#xFF0C;&#x5373;&#x901A;&#x8FC7;model&#x6765;&#x4F5C;&#x4E3A;&#x523B;&#x753B;&#x73AF;&#x5883;&#x7684;&#x5A92;&#x4ECB;</p></div>
+
+<div class="footdef"><sup><a id="fn.4" name="fn.4" class="footnum" href="#fnr.4">4</a></sup> <p>&#x8BE6;&#x89C1;<a href="http://icml.cc/2016/tutorials/deep_rl_tutorial.pdf" target="_blank" rel="external">http://icml.cc/2016/tutorials/deep_rl_tutorial.pdf</a></p></div>
+
+<div class="footdef"><sup><a id="fn.5" name="fn.5" class="footnum" href="#fnr.5">5</a></sup> <p>&#x8BE6;&#x89C1;<a href="http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/intro_RL.pdf" target="_blank" rel="external">http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/intro_RL.pdf</a></p></div>
+
+<div class="footdef"><sup><a id="fn.6" name="fn.6" class="footnum" href="#fnr.6">6</a></sup> <p>&#x8FD9;&#x4E2A;&#x5927;&#x6982;&#x5C31;&#x662F;Deep Policy Networks(DPN)&#x7684;&#x5927;&#x81F4;&#x601D;&#x8DEF;</p></div>
+
+<div class="footdef"><sup><a id="fn.7" name="fn.7" class="footnum" href="#fnr.7">7</a></sup> <p>&#x8FD9;&#x4E2A;&#x5927;&#x6982;&#x5C31;&#x662F;Deep Q-Networks(DQN)&#x7684;&#x5927;&#x81F4;&#x601D;&#x8DEF;</p></div>
+
+<div class="footdef"><sup><a id="fn.8" name="fn.8" class="footnum" href="#fnr.8">8</a></sup> <p>&#x8BE6;&#x89C1;<a href="http://mlg.eng.cam.ac.uk/mlss09/mlss_slides/Littman_1.pdf" target="_blank" rel="external">http://mlg.eng.cam.ac.uk/mlss09/mlss_slides/Littman_1.pdf</a></p></div>
+
+
+</div>
+</div>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[工欲善其事，必先利其器]]></title>
       <url>http://blog.greenwicher.com/2016/12/04/my_liqi/</url>
       <content type="html"><![CDATA[
