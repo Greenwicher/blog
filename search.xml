@@ -4,6 +4,360 @@
   
     
     <entry>
+      <title><![CDATA[深度增强学习【2】从多臂赌博机问题到蒙特卡洛树搜索]]></title>
+      <url>http://blog.greenwicher.com/2016/12/24/drl-from_mab_to_mcts/</url>
+      <content type="html"><![CDATA[
+
+<p>
+&#x6709;&#x7684;&#x4EBA;&#x82E6;&#x4E8E;&#x6CA1;&#x6709;&#x9009;&#x62E9;&#x53EF;&#x9009;&#xFF0C;&#x53EA;&#x80FD;&#x4E00;&#x6761;&#x8DEF;&#x8D70;&#x5230;&#x9ED1;&#xFF1B;&#x800C;&#x6709;&#x7684;&#x4EBA;&#x9009;&#x62E9;&#x8FC7;&#x591A;&#x3001;&#x6743;&#x8861;&#x8FC7;&#x591A;&#xFF0C;&#x53CD;&#x800C;&#x65E0;&#x4ECE;&#x4E0B;&#x624B;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x6CA1;&#x505A;&#x9009;&#x62E9;&#x3002;&#x7EA6;&#x675F;&#x592A;&#x591A;&#x6709;&#x7EA6;&#x675F;&#x592A;&#x591A;&#x7684;&#x70E6;&#x607C;&#xFF0C;&#x592A;&#x8FC7;&#x81EA;&#x7531;&#x6709;&#x592A;&#x8FC7;&#x81EA;&#x7531;&#x7684;&#x70E6;&#x607C;&#xFF0C;&#x8FD9;&#x4E5F;&#x7B97;&#x662F;&#x4E00;&#x79CD; <a href="http://wiki.mbalib.com/wiki/%E8%B5%84%E6%BA%90%E8%AF%85%E5%92%92" target="_blank" rel="external">&#x8D44;&#x6E90;&#x8BC5;&#x5492;</a> &#x5427;&#x3002; <b>&#x7136;&#x800C;&#x9762;&#x5BF9;&#x9009;&#x62E9;&#x56F0;&#x96BE;&#x75C7;&#xFF0C;&#x5230;&#x5E95;&#x6709;&#x6CA1;&#x6709;&#x7075;&#x4E39;&#x5999;&#x836F;&#x6765;&#x89E3;&#x51B3;&#x5B83;&#x3002;&#x79D1;&#x5B66;&#x5BB6;&#x8BF4;&#xFF0C;&#x5FC5;&#x987B;&#x6709;&#xFF01;</b> &#x5148;&#x6765;&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x67D0;&#x5929;&#x4F60;&#x8D70;&#x4E86;&#x72D7;&#x5C4E;&#x8FD0;&#x5929;&#x4E0A;&#x6389;&#x4E0B;&#x4E86;1000&#x5757;&#x94B1;&#xFF0C;&#x4F60;&#x89C9;&#x5F97;&#x81EA;&#x5DF1;&#x7684;&#x8FD0;&#x6C14;&#x6B63;&#x65FA;&#xFF0C;&#x800C;&#x4E14;&#x53CD;&#x6B63;&#x662F;&#x4E0D;&#x4E49;&#x4E4B;&#x8D22;&#xFF0C;&#x4E0D;&#x5982;&#x53BB;&#x8D4C;&#x573A;&#x6765;&#x4EE5;&#x5C0F;&#x535A;&#x5927;&#x3002;&#x8D5A;&#x4E86;&#x7B97;&#x81EA;&#x5DF1;&#x7684;&#xFF0C;&#x8D54;&#x4E86;&#x5C31;&#x5F53;&#x6CA1;&#x6361;&#x8FC7;&#x8FD9;&#x94B1;&#x3002;&#x4F60;&#x5174;&#x51B2;&#x51B2;&#x7684;&#x8DD1;&#x53BB;&#x4E86;&#x8D4C;&#x573A;&#x53BB;&#x73A9;&#x8001;&#x864E;&#x673A;&#xFF0C;&#x7136;&#x800C;&#x5230;&#x4E86;&#x8D4C;&#x573A;&#x5374;&#x50BB;&#x4E86;&#x773C;&#xFF0C;&#x7ADF;&#x7136;&#x6709;200&#x53F0;&#x8001;&#x864E;&#x673A;&#xFF01;&#x968F;&#x4FBF;&#x9009;&#x4E00;&#x4E2A;&#x8001;&#x864E;&#x673A;&#x53EF;&#x4E0D;&#x884C;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x542C;&#x4EBA;&#x8BF4;&#x8FC7;&#x6709;&#x7684;&#x8001;&#x864E;&#x673A;&#x8D62;&#x7387;&#x6BD4;&#x8F83;&#x9AD8;&#xFF0C;&#x6709;&#x7684;&#x6BD4;&#x8F83;&#x4F4E;&#x3002;&#x90A3;&#x4E48;&#x95EE;&#x9898;&#x6765;&#x4E86;&#xFF0C;&#x7ED9;&#x5B9A;&#x8FD9;1000&#x5757;&#x94B1;&#xFF0C;&#x5047;&#x5B9A;&#x73A9;&#x4E00;&#x6B21;&#x8001;&#x864E;&#x673A;&#x8981;&#x652F;&#x4ED8;1&#x5757;&#x94B1;&#xFF0C;&#x90A3;&#x4E48;&#x5E94;&#x8BE5;&#x73A9;&#x54EA;&#x4E9B;&#x8001;&#x864E;&#x673A;&#x3001;&#x4EE5;&#x600E;&#x6837;&#x7684;&#x987A;&#x5E8F;&#x53BB;&#x73A9;&#x624D;&#x80FD;&#x4F7F;&#x5F97;&#x81EA;&#x5DF1;&#x7684;&#x7D2F;&#x79EF;&#x6536;&#x76CA;&#x6700;&#x5927;&#xFF1F;&#x5728; <a href="http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/">&#x4E0A;&#x7BC7;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x7CFB;&#x5217;&#x6587;&#x7AE0;</a>&#xFF0C; &#x6211;&#x4EEC;&#x8BB2;&#x5230;&#x4E86;Alpha Go&#x4E2D;&#x7684;&#x4E24;&#x4E2A;&#x5173;&#x952E;&#x6280;&#x672F;&#xFF1A;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x548C;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x3002; <b>&#x672C;&#x6587;&#x5C06;&#x9996;&#x5148;&#x4ECB;&#x7ECD; <code>&#x591A;&#x81C2;&#x8D4C;&#x535A;&#x673A;&#x95EE;&#x9898;</code>  &#xFF08;<a href="https://en.wikipedia.org/wiki/Multi-armed_bandit" target="_blank" rel="external">Multi-armed Bandit Problem</a>&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x57FA;&#x4E8E;&#x6B64;&#xFF0C;&#x4ECB;&#x7ECD;Alpha Go&#x7684;&#x53E6;&#x4E00;&#x9879;&#x6838;&#x5FC3;&#x6280;&#x672F;&#xFF0C;&#x5373; <code>&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;</code> &#xFF08;<a href="https://en.wikipedia.org/wiki/Monte_Carlo_tree_search" target="_blank" rel="external">Monte Carlo Tree Search</a>&#xFF09;&#xFF0C;&#x6700;&#x540E;&#x4F1A;&#x7B80;&#x8981;&#x4ECB;&#x7ECD;&#x6211;&#x7684;&#x7814;&#x7A76;&#x65B9;&#x5411; <code>&#x4EFF;&#x771F;&#x4F18;&#x5316;</code> &#xFF08;<a href="https://en.wikipedia.org/wiki/Simulation-based_optimization" target="_blank" rel="external">Simulation Optimization</a>&#xFF09;&#x540C;&#x8FD9;&#x4E9B;&#x9886;&#x57DF;&#x7684;&#x5173;&#x7CFB;&#x3002;</b>
+</p>
+
+<a id="more"></a>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">&#x591A;&#x81C2;&#x8D4C;&#x535A;&#x673A;&#x95EE;&#x9898;</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">&#x95EE;&#x9898;&#x63CF;&#x8FF0;</h3>
+<div class="outline-text-3" id="text-1-1">
+<blockquote>
+<p>
+In probability theory, the multi-armed bandit problem (sometimes called the K- or N-armed bandit problem) is a problem in which a gambler at a row of slot machines (sometimes known as &quot;one-armed bandits&quot;) has to decide which machines to play, how many times to play each machine and in which order to play them. When played, each machine provides a random reward from a probability distribution specific to that machine. The objective of the gambler is to maximize the sum of rewards earned through a sequence of lever pulls. &#x2013;Wiki
+</p>
+</blockquote>
+<p>
+&#x7ED9;&#x5B9A; \(K\) &#x4E2A;&#x8001;&#x864E;&#x673A;&#xFF0C;&#x6BCF;&#x73A9;&#x4E00;&#x53F0;&#x8001;&#x864E;&#x673A;&#xFF0C;&#x5728;&#x635F;&#x5931;&#x4E00;&#x6B21;&#x673A;&#x4F1A;&#x7684;&#x540C;&#x65F6;&#x6211;&#x4EEC;&#x4EE5;&#x4E00;&#x5B9A;&#x7684;&#x6982;&#x7387;&#x6536;&#x5230;&#x62A5;&#x916C;&#x3002;&#x5047;&#x5B9A;&#x7B2C; \(i = 1, 2, 3, \dotsc K\) &#x4E2A;&#x8001;&#x864E;&#x673A;&#x7ED9;&#x6211;&#x4EEC;&#x62A5;&#x916C; \(r \in \mathbb{R}\) &#x7684;&#x6982;&#x7387;&#x662F; \(P_{i}(r)\) &#xFF0C;&#x4E14;&#x62A5;&#x916C;&#x7684;&#x5747;&#x503C;&#x4E3A; \(h_{i}\) &#x3002;&#x90A3;&#x4E48;&#x51B3;&#x7B56;&#x4FBF;&#x662F;&#xFF0C;&#x7ED9;&#x5B9A;&#x6709;&#x9650;&#x7684;&#x673A;&#x4F1A;&#x6B21;&#x6570; \(T\) &#xFF0C;&#x5982;&#x4F55;&#x73A9;&#x8FD9;&#x4E9B;&#x8001;&#x864E;&#x673A;&#x624D;&#x80FD;&#x4F7F;&#x5F97;&#x671F;&#x671B;&#x7D2F;&#x79EF;&#x6536;&#x76CA;&#x6700;&#x5927;&#x5316;&#x3002;&#x8BB0;&#x7B2C; \(t\) &#x8F6E;&#xFF0C;&#x8001;&#x864E;&#x673A;&#x7ED9;&#x6211;&#x4EEC;&#x7684;&#x62A5;&#x916C;&#x4E3A; \(r_{t}\) &#xFF0C;&#x90A3;&#x4E48;&#x81F3;&#x5C11;&#x6709;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x523B;&#x753B;&#x8FD9;&#x4E2A;&#x671F;&#x671B;&#x7D2F;&#x79EF;&#x6536;&#x76CA;&#x51FD;&#x6570;
+</p>
+<ul class="org-ul">
+<li>\(T\) &#x6B65;&#x7D2F;&#x79EF;&#x5956;&#x8D4F;&#xFF1A; \(E[\frac{1}{T} \sum_{t=1}^{T} r_{t}]\)
+</li>
+<li>\(\gamma\) &#x6298;&#x73B0;&#x7D2F;&#x79EF;&#x5956;&#x8D4F;&#xFF1A; \(E[\sum_{t=0}^{T-1} \gamma^{t} r_{t+1}]\)
+</li>
+<li>&#x7D2F;&#x79EF;&#x9057;&#x61BE;&#xFF1A; \(Th^{*} - E[\sum_{t=1}^{T} r_{t}]\) &#xFF0C;&#x5176;&#x4E2D; \(h^{*} = \max_{i=1,2,3,\dotsc,K} h_{i}\)
+</li>
+</ul>
+<p>
+<b>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x591A;&#x81C2;&#x8D4C;&#x535A;&#x673A;&#x95EE;&#x9898;&#x5176;&#x5B9E;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x5BBD;&#x6CDB;&#x7684;&#x6846;&#x67B6;&#xFF0C;&#x80FD;&#x591F;&#x5E94;&#x7528;&#x5230;&#x5404;&#x79CD; <code>&#x6392;&#x5E8F;&#x9009;&#x62E9;&#x95EE;&#x9898;</code> &#xFF08;<a href="http://castlelab.princeton.edu/ORF544/Readings/OptimalLearning_Chapter4.pdf" target="_blank" rel="external">Ranking &amp; Selection</a>&#xFF09;&#x4E0A;&#x3002;</b> &#x6BD4;&#x5982;&#x8BF4;&#x65B0;&#x836F;&#x7684;&#x7814;&#x53D1;&#x9700;&#x8981;&#x4E34;&#x5E8A;&#x68C0;&#x9A8C;&#xFF0C;&#x90A3;&#x4E48;&#x7ED9;&#x5B9A;&#x591A;&#x6B3E;&#x65B0;&#x836F;&#x4EE5;&#x53CA;&#x4E00;&#x6279;&#x53D7;&#x8BD5;&#x8005;&#xFF0C;&#x5982;&#x4F55;&#x5229;&#x7528;&#x6709;&#x9650;&#x7684;&#x673A;&#x4F1A;&#x9009;&#x62E9;&#x51FA;&#x6548;&#x679C;&#x6700;&#x597D;&#x7684;&#x65B0;&#x836F;&#x5E76;&#x51CF;&#x8F7B;&#x5BF9;&#x53D7;&#x8BD5;&#x8005;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x526F;&#x4F5C;&#x7528;&#xFF1B;&#x518D;&#x6BD4;&#x5982;&#x8BF4;&#x5546;&#x5BB6;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x4E0A;&#x6295;&#x653E;&#x5E7F;&#x544A;&#xFF0C;&#x90A3;&#x4E48;&#x7ED9;&#x5B9A;&#x51E0;&#x6B3E;&#x5E7F;&#x544A;&#x8BBE;&#x8BA1;&#x65B9;&#x6848;&#xFF0C;&#x5982;&#x4F55;&#x5C55;&#x793A;&#x8FD9;&#x4E9B;&#x4E0D;&#x540C;&#x7684;&#x5E7F;&#x544A;&#x7ED9;&#x4E0D;&#x540C;&#x7684;&#x7F51;&#x6C11;&#xFF0C;&#x4EE5;&#x81F4;&#x80FD;&#x591F;&#x5C3D;&#x5FEB;&#x7684;&#x6700;&#x5927;&#x5316;&#x5229;&#x6DA6;&#x5E76;&#x4E14;&#x4E0D;&#x6D41;&#x5931;&#x987E;&#x5BA2;&#x3002;&#x540E;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x6700;&#x7B80;&#x5355;&#x7684;&#x60C5;&#x51B5;&#x5C31;&#x662F; <code>A/B &#x6D4B;&#x8BD5;</code> &#xFF0C;<a href="https://support.google.com/analytics/answer/2844870?hl=zh-Hans" target="_blank" rel="external">&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;</a> &#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;&#x4E86;Google Analytics&#x5185;&#x5BB9;&#x5B9E;&#x9A8C;&#x80CC;&#x540E;&#x7684;&#x7EDF;&#x8BA1;&#x5F15;&#x64CE;&#xFF0C;&#x5373;&#x591A;&#x81C2;&#x8D4C;&#x535A;&#x673A;&#x5B9E;&#x9A8C;&#x3002;&#x56FD;&#x5916;&#x4E5F;&#x6709;&#x4E00;&#x4E9B;&#x521D;&#x521B;&#x516C;&#x53F8;&#x5728;&#x8BD5;&#x56FE;&#x5229;&#x7528;&#x591A;&#x81C2;&#x8D4C;&#x535A;&#x673A;&#x95EE;&#x9898;&#x7684;&#x601D;&#x60F3;&#x6765;&#x4F18;&#x5316;&#x4F01;&#x4E1A;&#x7684;&#x6536;&#x76CA;&#x7BA1;&#x7406;&#x95EE;&#x9898;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;<a href="https://www.optimizely.com/" target="_blank" rel="external">Optimizely</a> &#xFF0C;&#x4EE5;&#x53CA;&#x56FD;&#x5185;&#x7684; <a href="http://www.appadhoc.com/" target="_blank" rel="external">&#x5406;&#x559D;&#x79D1;&#x6280;</a>&#x3002;
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">&#x63A2;&#x7D22;&#xFF08;Exploration&#xFF09;vs &#x5229;&#x7528;&#xFF08;Exploitation&#xFF09;</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6709;&#x5148;&#x77E5;&#x7684;&#x672C;&#x9886;&#xFF0C;&#x90A3;&#x4E48;&#x4E3A;&#x4E86;&#x6700;&#x5927;&#x5316;&#x671F;&#x671B;&#x7D2F;&#x79EF;&#x6536;&#x76CA;&#xFF0C;&#x6BCF;&#x4E00;&#x6B21;&#x9009;&#x62E9;&#x62A5;&#x916C;&#x5747;&#x503C; \(h_{i}\) &#x6700;&#x5927;&#x7684;&#x90A3;&#x4E2A;&#x8001;&#x864E;&#x673A;&#x5C31;&#x597D;&#x4E86;&#x3002; <b>&#x7136;&#x800C;&#xFF0C;&#x6B63;&#x56E0;&#x4E3A;&#x4FE1;&#x606F;&#x7684;&#x7F3A;&#x4E4F;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x624B;&#x4E0A;&#x7684;&#x8D44;&#x6E90;&#x6765;&#x9010;&#x6B65;&#x83B7;&#x53D6;&#x4FE1;&#x606F;&#x3002;</b>
+</p>
+
+<p>
+&#x5148;&#x8003;&#x8651;&#x4E00;&#x79CD;&#x6781;&#x7AEF;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x5747;&#x5300;&#x7684;&#x73A9;&#x6BCF;&#x53F0;&#x8001;&#x864E;&#x673A;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x5BF9;&#x6BCF;&#x53F0;&#x8001;&#x864E;&#x673A;&#x7684;&#x6536;&#x76CA;&#x60C5;&#x51B5;&#x6211;&#x4EEC;&#x90FD;&#x80FD;&#x8DB3;&#x591F;&#x4E86;&#x89E3;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x8FD9;&#x5F80;&#x5F80;&#x4F1A;&#x6D6A;&#x8D39;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x8D44;&#x6E90;&#x5728;&#x592A;&#x5DEE;&#x7684;&#x8001;&#x864E;&#x673A;&#x4E0A;&#xFF0C;&#x5C31;&#x50CF;&#x65E0;&#x5934;&#x82CD;&#x8747;&#x4E00;&#x6837;&#x3002;&#x8FD9;&#x79CD;&#x7B56;&#x7565;&#x88AB;&#x79F0;&#x4E4B;&#x4E3A; <code>&#x63A2;&#x7D22;</code> &#xFF08;exploration&#xFF09;&#xFF0C;&#x5F88;&#x663E;&#x7136;&#x5982;&#x679C;&#x4FE1;&#x606F;&#x592A;&#x8FC7;&#x4E8E;&#x532E;&#x4E4F;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x79CD;&#x7B56;&#x7565;&#x4E0D;&#x5931;&#x4E3A;&#x4E00;&#x79CD;&#x597D;&#x65B9;&#x6CD5;&#x3002;
+</p>
+
+<p>
+&#x518D;&#x8003;&#x8651;&#x53E6;&#x4E00;&#x4E2A;&#x6781;&#x7AEF;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x53EA;&#x73A9;&#x5F53;&#x524D;&#x7ED9;&#x6211;&#x4EEC;&#x6536;&#x76CA;&#x62A5;&#x916C;&#x6700;&#x9AD8;&#x7684;&#x90A3;&#x53F0;&#x8001;&#x864E;&#x673A;&#xFF0C;&#x663E;&#x7136;&#x8FD9;&#x4E00;&#x7B56;&#x7565;&#x53EF;&#x4EE5;&#x5728;&#x521D;&#x671F;&#x8F83;&#x5FEB;&#x7684;&#x83B7;&#x5F97;&#x66F4;&#x9AD8;&#x7684;&#x56DE;&#x62A5;&#xFF0C;&#x7136;&#x800C;&#x5374;&#x56E0;&#x4E3A;&#x8FC7;&#x5EA6;&#x8D2A;&#x5A6A;&#x6361;&#x4E86;&#x829D;&#x9EBB;&#x4E22;&#x4E86;&#x897F;&#x74DC;&#xFF0C;&#x4EE5;&#x81F3;&#x4E8E;&#x957F;&#x8FDC;&#x9519;&#x8FC7;&#x771F;&#x6B63;&#x597D;&#x7684;&#x8001;&#x864E;&#x673A;&#xFF0C;&#x5C31;&#x50CF;&#x8F9B;&#x52E4;&#x7684;&#x871C;&#x8702;&#x4E00;&#x6837;&#x3002;&#x8FD9;&#x79CD;&#x7B56;&#x7565;&#x88AB;&#x79F0;&#x4E4B;&#x4E3A; <code>&#x5229;&#x7528;</code> &#xFF08;exploitation&#xFF09;&#xFF0C;&#x5F88;&#x663E;&#x7136;&#x5982;&#x679C;&#x4FE1;&#x606F;&#x8DB3;&#x591F;&#x5145;&#x5206;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x79CD;&#x7B56;&#x7565;&#x4E0D;&#x5931;&#x4E3A;&#x4E00;&#x79CD;&#x597D;&#x65B9;&#x6CD5;&#x3002;
+</p>
+
+<p>
+&#x6700;&#x597D;&#x7684;&#x7B56;&#x7565;&#x663E;&#x7136;&#x4E0D;&#x662F;&#x8FD9;&#x4E8C;&#x8005;&#x4E4B;&#x4E00;&#xFF0C;&#x4E2D;&#x548C;&#x8FD9;&#x4E24;&#x79CD;&#x622A;&#x7136;&#x77DB;&#x76FE;&#x7684;&#x8D44;&#x6E90;&#x5206;&#x914D;&#x7B56;&#x7565;&#x53EF;&#x4EE5;&#x7ED9;&#x6211;&#x4EEC;&#x66F4;&#x597D;&#x7684;&#x601D;&#x8DEF;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x524D;&#x671F;&#x4FE1;&#x606F;&#x532E;&#x4E4F;&#xFF0C;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x66F4;&#x591A;&#x7684;&#x63A2;&#x7D22;&#xFF1B;&#x800C;&#x540E;&#x671F;&#xFF0C;&#x4FE1;&#x606F;&#x4E86;&#x89E3;&#x5DEE;&#x4E0D;&#x591A;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x8F6C;&#x5411;&#x5229;&#x7528;&#xFF0C;&#x8BF8;&#x5982;&#x9AD8;&#x4E2D;&#x751F;&#x4EE5;&#x53CA;&#x535A;&#x58EB;&#x751F;&#x7684;&#x5173;&#x7CFB;&#x3002;&#x518D;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x518D;&#x8FB9;&#x5229;&#x7528;&#x7684;&#x540C;&#x65F6;&#x4E5F;&#x8FDB;&#x884C;&#x63A2;&#x7D22;&#xFF0C;&#x8BF8;&#x5982;Google&#x7684;&#x4F20;&#x7EDF;&#x90E8;&#x95E8;&#x4EE5;&#x53CA;Google X&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x3002; <b>&#x4F46;&#x8FD9;&#x91CC;&#x503C;&#x5F97;&#x4E00;&#x63D0;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x95EE;&#x9898;&#x89C4;&#x6A21;&#x8FC7;&#x5927;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x8D44;&#x6E90;&#x7684;&#x6570;&#x91CF;&#x4E0D;&#x8DB3;&#x4EE5;&#x652F;&#x6491;&#x63A2;&#x7D22;&#x5C3D;&#x91CF;&#x591A;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x90A3;&#x4E48;&#x53CD;&#x800C;&#x5229;&#x7528;&#x662F;&#x4E00;&#x79CD;&#x66F4;&#x300E;&#x73B0;&#x5B9E;&#x300F;&#x7684;&#x7B56;&#x7565;&#x3002;</b> &#x91D1;&#x878D;&#x5371;&#x673A;&#x4E4B;&#x540E;&#xFF0C;&#x7ECF;&#x5E38;&#x6709;&#x4EBA;&#x8BF4;
+</p>
+<blockquote>
+<p>
+&#x5927;&#x800C;&#x4E0D;&#x80FD;&#x5012;&#x3002;Too big to fail.
+</p>
+</blockquote>
+<p>
+&#x867D;&#x7136;&#x8FD9;&#x53E5;&#x8BDD;&#x7684;&#x672C;&#x610F;&#x662F;&#x4E3A;&#x907F;&#x514D;&#x5927;&#x516C;&#x53F8;&#x7684;&#x5012;&#x95ED;&#x800C;&#x5F15;&#x53D1;&#x7CFB;&#x7EDF;&#x6027;&#x98CE;&#x9669;&#xFF0C;&#x653F;&#x5E9C;&#x4E0D;&#x80FD;&#x5750;&#x89C6;&#x4E0D;&#x7BA1;&#x3002;&#x4F46;&#x8BA9;&#x6211;&#x4EEC;&#x4ECE;&#x521B;&#x65B0;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x91CD;&#x65B0;&#x770B;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5F88;&#x591A;&#x77E5;&#x540D;&#x7684;&#x521D;&#x521B;&#x516C;&#x53F8;&#x5C31;&#x50CF;&#x4E00;&#x53EA;&#x72EC;&#x89D2;&#x517D;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EE3;&#x8868;&#x4E00;&#x79CD;[&#x76F8;&#x5BF9;]&#x7F55;&#x89C1;&#x7684;&#x65B0;&#x4E8B;&#x7269;&#xFF1B;&#x800C;&#x5927;&#x516C;&#x53F8;&#x5462;&#xFF0C;&#x4F30;&#x8BA1;&#x5C31;&#x662F;&#x9A86;&#x9A7C;&#x4E86;&#x5427;&#xFF0C;&#x867D;&#x8BF4;&#x7626;&#x6B7B;&#x7684;&#x9A86;&#x9A7C;&#x6BD4;&#x9A6C;&#x5927;&#xFF0C;&#x5E76;&#x4E14;&#x9A86;&#x9A7C;&#x51ED;&#x501F;&#x81EA;&#x5DF1;&#x79EF;&#x7D2F;&#x7684;&#x9A7C;&#x5CF0;&#x4FBF;&#x8DB3;&#x4EE5;&#x8BA9;&#x4ED6;&#x5728;&#x6C99;&#x6F20;&#x5F53;&#x4E2D;&#x751F;&#x5B58;&#xFF0C;&#x4F46;&#x53D7;&#x9650;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x4F18;&#x52BF;&#x53CD;&#x800C;&#x4E0D;&#x80FD;&#x5F00;&#x62D3;&#x65B0;&#x7684;&#x7586;&#x754C;&#x3002;&#x6B63;&#x5982;&#x4E07;&#x7EF4;&#x94A2;&#x8001;&#x5E08;&#x8BF4;&#x7684;&#xFF0C;<a href="http://www.geekonomics10000.com/291" target="_blank" rel="external">&#x300E;&#x521B;&#x65B0;&#x662F;&#x843D;&#x540E;&#x8005;&#x7684;&#x7279;&#x6743;&#x300F;</a> &#x3002;
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">&#x57FA;&#x672C;&#x7B97;&#x6CD5;</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+&#x5177;&#x4F53;&#x7684;&#x7B97;&#x6CD5;&#x5B9E;&#x65BD;&#x8BF7;&#x89C1;<a href="https://github.com/Greenwicher/Awsome-Project/tree/master/IE5504%20Systems%20Modeling%20and%20Advanced%20Simulation" target="_blank" rel="external">&#x6211;&#x7684;Github</a> &#x6216;&#x8005; <a href="https://book.douban.com/subject/20112875/" target="_blank" rel="external">Bandit Algorithms for Website Optimization</a> &#x8FD9;&#x672C;&#x4E66;&#xFF0C;&#x4E0B;&#x6587;&#x53EA;&#x662F;&#x7B80;&#x8981;&#x53D9;&#x8FF0;&#x6BCF;&#x79CD;&#x7B97;&#x6CD5;&#x7684;&#x601D;&#x8DEF;&#x3002;&#x5982;&#x65E5;&#x540E;&#x6709;&#x65F6;&#x95F4;&#xFF0C;&#x518D;&#x5C06;&#x5404;&#x81EA;&#x7684;&#x4EE3;&#x7801;&#x8865;&#x4E0A;&#x3002;&#x503C;&#x5F97;&#x4E00;&#x63D0;&#x7684;&#x662F;&#xFF0C;&#x8BE5;&#x9886;&#x57DF;&#x4E3B;&#x8981;&#x7684;&#x7406;&#x8BBA;&#x5728;&#x4E8E;&#x6C42;&#x89E3;&#x7D2F;&#x79EF;&#x9057;&#x61BE;&#x7684;&#x4E0A;&#x4E0B;&#x754C;&#x3002;
+</p>
+</div>
+
+<div id="outline-container-sec-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1">\(\epsilon-\) greedy&#x7B97;&#x6CD5;</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x5C31;&#x662F;&#x6BCF;&#x6B21;&#x9009;&#x62E9;&#x8001;&#x864E;&#x673A;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4EE5; \(\epsilon\) &#x7684;&#x6982;&#x7387;&#x8FDB;&#x884C;exploration&#xFF0C;&#x7136;&#x540E;&#x4EE5; \(1 - \epsilon\) &#x7684;&#x6982;&#x7387;&#x8FDB;&#x884C;exploitation&#x3002;&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;exploitation&#x548C;exploration&#x7684;&#x6BD4;&#x4F8B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x52A8;&#x6001;&#x7684;&#x8C03;&#x6574; \(\epsilon\) &#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x8BA9; \(\epsilon = 1 / \sqrt{t}\) &#xFF0C;&#x8FD9;&#x6837;&#x5728;&#x7B97;&#x6CD5;&#x521D;&#x671F;&#x5C06;&#x4E3B;&#x8981;&#x8FDB;&#x884C;exploration&#xFF0C;&#x800C;&#x5728;&#x7B97;&#x6CD5;&#x540E;&#x671F;&#x8FDB;&#x884C;exploitation&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x5904;&#x7406;&#x601D;&#x8DEF;&#x4E5F;&#x6BD4;&#x8F83;&#x7B26;&#x5408;&#x76F4;&#x89C9;&#x3002;
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3-2" class="outline-4">
+<h4 id="sec-1-3-2">Softmax&#x7B97;&#x6CD5;</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<p>
+&#x8FD9;&#x4E00;&#x7B97;&#x6CD5;&#x662F;&#x57FA;&#x4E8E;Softmax distribution<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup>&#x6765;&#x9009;&#x62E9;&#x8001;&#x864E;&#x673A;&#x7684;&#xFF0C;&#x503C;&#x5F97;&#x4E00;&#x63D0;&#x7684;&#x662F;Softmax distribution&#x53EF;&#x8C13;&#x5728;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x91CC;&#x968F;&#x5904;&#x53EF;&#x89C1;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x7684;&#x8F93;&#x51FA;&#x5C42;&#xFF0C;Logistic Regression&#x4EE5;&#x53CA;&#x6A21;&#x62DF;&#x9000;&#x706B;&#x7B97;&#x6CD5;&#xFF0C;&#x4E2A;&#x4EBA;&#x611F;&#x89C9;&#x662F;&#x56E0;&#x4E3A;softmax distribution&#x5B9E;&#x9645;&#x4E0A;&#x548C;&#x77E9;&#x6BCD;&#x51FD;&#x6570;&#x7684;&#x5173;&#x7CFB;&#x975E;&#x5E38;&#x7D27;&#x5BC6;&#xFF0C;&#x53E6;&#x5916;&#x4E5F;&#x7B97;&#x662F;&#x5BF9;max&#x51FD;&#x6570;&#x7684;&#x5149;&#x6ED1;&#x5904;&#x7406;&#x5427;<sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup>&#xFF0C;&#x6700;&#x540E;&#x6700;&#x76F4;&#x89C2;&#x662F;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;multi-choice model&#xFF08;&#x56E0;&#x800C;&#x5728;&#x7ECF;&#x6D4E;&#x7BA1;&#x7406;&#x9886;&#x57DF;&#x4E5F;&#x6709;&#x5E94;&#x7528;&#xFF09;&#x3002;&#x603B;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x8001;&#x864E;&#x673A; \(i\) &#x7684;&#x6982;&#x7387;&#x670D;&#x4ECE;Softmax&#x5206;&#x5E03;&#xFF0C;
+$$ P(\mbox{select arm } i)  = \frac{\exp(\bar{h_{i}} / \tau)}{ \sum_{j=1}^{K} \exp(\bar{h_{j}} / \tau)}$$
+&#x8FD9;&#x91CC;&#x7684; \(\tau &gt; 0\) &#x7C7B;&#x4F3C;&#x4E8E;&#x6A21;&#x62DF;&#x9000;&#x706B;&#x4E2D;&#x7684;&#x6E29;&#x5EA6;&#x53C2;&#x6570;&#xFF0C;&#x82E5; \(\tau \to 0\) &#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x53EA;&#x9009;&#x62E9;&#x6700;&#x597D;&#x7684;&#x90A3;&#x4E2A;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;exploitation&#xFF1B;&#x53CD;&#x4E4B;&#xFF0C;&#x82E5; \(\tau \to +\infty\) &#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x5747;&#x5300;&#x7684;&#x9009;&#x53D6;&#x8001;&#x864E;&#x673A;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;exploration&#x3002;&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x5BF9;&#x53C2;&#x6570; \(\tau\) &#x4E5F;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x9000;&#x706B;&#x5904;&#x7406;&#xFF08;&#x6E29;&#x5EA6;&#x9010;&#x6E10;&#x7684;&#x964D;&#x4F4E;&#xFF09;&#xFF0C;&#x5373; \(\tau = 1 / \sqrt{t}\) &#x3002;&#x53E6;&#x5916;&#xFF0C;&#x5173;&#x4E8E;&#x5747;&#x503C;&#x7684;&#x8BA1;&#x7B97;&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x5F53;&#x524D;&#x89C2;&#x6D4B;&#x503C;&#x4EE5;&#x53CA;&#x4E0A;&#x4E00;&#x671F;&#x7684;&#x5747;&#x503C;&#x6765;&#x8FDB;&#x884C;&#x589E;&#x91CF;&#x8BA1;&#x7B97;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x91CD;&#x590D;&#x8BA1;&#x7B97;&#x3002;
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3-3" class="outline-4">
+<h4 id="sec-1-3-3">Bayes Bandit&#x7B97;&#x6CD5;</h4>
+<div class="outline-text-4" id="text-1-3-3">
+<p>
+&#x8FD9;&#x4E00;&#x7B97;&#x6CD5;&#x7684;&#x57FA;&#x672C;&#x601D;&#x8DEF;&#x662F;&#x7ED9;&#x5B9A;&#x8001;&#x864E;&#x673A;&#x6536;&#x76CA;&#x7684;&#x5148;&#x9A8C;&#x5206;&#x5E03;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x8BE5;&#x5206;&#x5E03;&#x6765;&#x51B3;&#x5B9A;&#x73A9;&#x54EA;&#x4E2A;&#x8001;&#x864E;&#x673A;&#xFF0C;&#x6536;&#x96C6;&#x5230;&#x4FE1;&#x606F;&#x4E4B;&#x540E;&#x518D;&#x66F4;&#x65B0;&#x540E;&#x9A8C;&#x5206;&#x5E03;&#x3002;&#x4E3A;&#x4E86;&#x4FDD;&#x6301;&#x5148;&#x9A8C;&#x5206;&#x5E03;&#x548C;&#x540E;&#x9A8C;&#x5206;&#x5E03;&#x7684;&#x5F62;&#x5F0F;&#x4E00;&#x81F4;&#xFF0C;&#x5F80;&#x5F80;&#x9700;&#x8981; <code>&#x5171;&#x8F6D;&#x5206;&#x5E03;</code> &#xFF08;<a href="https://en.wikipedia.org/wiki/Conjugate_prior" target="_blank" rel="external">Conjugate Distribution</a>&#xFF09;&#x7684;&#x5E2E;&#x52A9;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#x5404;&#x4E2A;&#x8001;&#x864E;&#x673A;&#x7684;&#x56DE;&#x62A5;&#x670D;&#x4ECE;&#x4F2F;&#x52AA;&#x5229;&#x5206;&#x5E03;&#xFF0C;&#x4E3A;&#x4E86;&#x4F30;&#x8BA1;&#x4F2F;&#x52AA;&#x5229;&#x5206;&#x5E03;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x8D77;&#x521D;&#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x8BE5;&#x53C2;&#x6570;&#x5747;&#x5300;&#x5206;&#x5E03;&#x5728;[0,1]&#x4E4B;&#x95F4;&#xFF0C;&#x7136;&#x540E;&#x5176;&#x5171;&#x8F6D;&#x5206;&#x5E03;&#x4FBF;&#x662F;beta&#x5206;&#x5E03;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x66F4;&#x65B0;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x603B;&#x662F;&#x4FDD;&#x6301;beta&#x5206;&#x5E03;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x53EA;&#x662F;&#x76F8;&#x5E94;&#x7684;&#x53C2;&#x6570;&#x6709;&#x6240;&#x53D8;&#x5316;&#x3002;
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3-4" class="outline-4">
+<h4 id="sec-1-3-4">Upper Confidence Bound&#x7B97;&#x6CD5;</h4>
+<div class="outline-text-4" id="text-1-3-4">
+<p>
+&#x8FD9;&#x4E00;&#x7B97;&#x6CD5;&#x4E0D;&#x540C;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x4E09;&#x4E2A;&#x7B97;&#x6CD5;&#xFF0C;&#x6BCF;&#x6B21;&#x9009;&#x62E9;&#x8001;&#x864E;&#x673A;&#x4F9D;&#x636E;&#x7684;&#x6807;&#x51C6;&#x662F;&#x786E;&#x5B9A;&#x7684;&#xFF0C;&#x5373;&#x4E0A;&#x7F6E;&#x4FE1;&#x503C;&#xFF08;Upper Confidence Bound Value&#xFF09;&#xFF0C;&#x5373;&#x8001;&#x864E;&#x673A;&#x7ED9;&#x6211;&#x4EEC;&#x56DE;&#x62A5;&#x7684;&#x7F6E;&#x4FE1;&#x533A;&#x95F4;&#x4E0A;&#x754C;&#x503C;&#x3002;&#x5177;&#x4F53;&#x800C;&#x8A00;&#xFF0C;&#x8001;&#x864E;&#x673A; \(i\) &#x5728;&#x7B2C; \(t\) &#x8F6E;&#x7684;&#x8FD9;&#x4E00;&#x503C;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x516C;&#x5F0F;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#xFF0C;
+$$ \mbox{ucb(i)} = \bar{h_{i}(t)} + c \sqrt{\frac{\log t}{n_{i}(t)}} $$
+&#x5176;&#x4E2D; \(h_{i}(t)\) &#x548C; \(n_{i}(t)\) &#x662F;&#x8001;&#x864E;&#x673A; \(i\) &#x5728;&#x7B2C; \(t\) &#x8F6E;&#x7684;&#x6837;&#x672C;&#x5747;&#x503C;&#x4EE5;&#x53CA;&#x89C2;&#x6D4B;&#x6B21;&#x6570;&#xFF0C; \(c\) &#x51B3;&#x5B9A;&#x4E86;&#x7F6E;&#x4FE1;&#x6982;&#x7387;&#x3002;&#x7136;&#x540E;&#x5728;&#x6BCF;&#x4E00;&#x8F6E;&#xFF0C;&#x9009;&#x62E9;&#x4E0A;&#x7F6E;&#x4FE1;&#x503C;&#x6700;&#x5927;&#x7684;&#x8001;&#x864E;&#x673A;&#x53BB;&#x73A9;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3-5" class="outline-4">
+<h4 id="sec-1-3-5">&#x5176;&#x4ED6;&#x7B97;&#x6CD5;</h4>
+<div class="outline-text-4" id="text-1-3-5">
+<ul class="org-ul">
+<li>Exp3 / Exp4: <a href="https://cseweb.ucsd.edu/~yfreund/papers/bandits.pdf" target="_blank" rel="external">The Nonstochastic Multiarmed Bandit Prolem</a>
+</li>
+<li>Knowledge Gradient: <a href="http://epubs.siam.org/doi/abs/10.1137/070693424" target="_blank" rel="external">A knowledge-gradient policy for sequential information collection</a>
+</li>
+<li>Randomized Probability Matching: <a href="http://www.economics.uci.edu/~ivan/asmb.874.pdf" target="_blank" rel="external">A modern Bayesian look at the multiarmed bandit</a>
+</li>
+<li>Thompson Sampling: <a href="http://www.research.rutgers.edu/~lihong/pub/Chapelle12Empirical.pdf" target="_blank" rel="external">An Empirical Evaluation of Thompson Sampling</a>
+</li>
+<li>Gittins Index: <a href="https://people.eecs.berkeley.edu/~russell/classes/cs294/s11/readings/Gittins:1979.pdf" target="_blank" rel="external">Bandit Processes and Dynamic Allocation Indices</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4">Demo&#x5C55;&#x793A;</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+&#x4E0B;&#x9762;&#x7684;&#x5E7B;&#x706F;&#x7247;&#x662F;&#x6211;&#x535A;&#x4E00;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5728;IE5504 Systems Modeling and Adcanced Simulation&#x4E0A;&#x505A;&#x7684;&#x5C55;&#x793A;&#xFF0C;&#x5206;&#x6790;&#x6BD4;&#x8F83;&#x4E86;UCB&#x7B97;&#x6CD5;&#x3001;Bayes Bandit&#x7B97;&#x6CD5;&#x4EE5;&#x53CA;OCBA&#x7B97;&#x6CD5;&#x5728;&#x89E3;&#x51B3;Bernoulli Bandit&#x95EE;&#x9898;&#x4E0A;&#x7684;&#x5DEE;&#x5F02;&#x3002;&#x5177;&#x4F53;&#x7684;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x4EE5;&#x53CA;&#x6587;&#x6863;&#xFF0C;&#x8BF7;&#x89C1; <a href="https://github.com/Greenwicher/Awsome-Project/tree/master/IE5504%20Systems%20Modeling%20and%20Advanced%20Simulation" target="_blank" rel="external">&#x6211;&#x7684;Github</a>&#x3002;
+</p>
+<center><embed src="IE5504.pdf" width="600" height="600"></center>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">&#x95EE;&#x9898;&#x63CF;&#x8FF0;</h3>
+<div class="outline-text-3" id="text-2-1">
+<blockquote>
+<p>
+Monte Carlo Tree Search (MCTS) is a method for making optimal decisions in artificial intelligence (AI) problems, typically move planning in combinatorial games. MCTS combines the generality of random simulation with the precision of tree search.
+</p>
+
+<p>
+John von Neumann&apos;s 1928 minimax theorem paved the way for adversarial tree search methods that have formed the basis of decision making in computer science and AI almost since their inception. Monte Carlo methods were later formalised in the 1940s as a way to approach less well-defined problems unsuitable for tree search through the use of random sampling. R&#xE9;mi Coulomb combined these two ideas in 2006 to provide a new approach for move planning in Go now known as MCTS.
+</p>
+
+<p>
+Research interest in MCTS has risen sharply due to its spectacular success with computer Go and potential application to a number of other difficult problems. Its application extends beyond games, and MCTS can theoretically be applied to any domain that can be described in terms of {state, action} pairs and simulation used to forecast outcomes.
+</p>
+
+<p>
+&#x2013; <a href="http://www.cameronius.com/research/mcts/about/index.html" target="_blank" rel="external">http://www.cameronius.com/research/mcts/about/index.html</a>
+</p>
+</blockquote>
+<p>
+&#x5982;&#x679C;&#x8BF4;&#x591A;&#x81C2;&#x8D4C;&#x535A;&#x673A;&#x95EE;&#x9898;&#x88AB;&#x770B;&#x505A; <code>&#x5355;&#x6B65;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x4EFB;&#x52A1;</code> &#xFF08;&#x53EA;&#x7528;&#x4E00;&#x6B65;&#x51B3;&#x7B56;&#x73A9;&#x54EA;&#x4E2A;&#x8001;&#x864E;&#x673A;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x6536;&#x5230;&#x56DE;&#x62A5;&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;&#x53EF;&#x4EE5;&#x770B;&#x505A;&#x662F;&#x89E3;&#x51B3; <code>&#x591A;&#x6B65;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x4EFB;&#x52A1;</code> &#x7684;&#x5DE5;&#x5177;&#x3002; <b><code>&#x6811;</code> &#x662F;&#x4E00;&#x79CD;&#x5929;&#x7136;&#x7684;&#x7528;&#x6765;&#x523B;&#x753B;&#x6216;&#x8005;&#x5B58;&#x50A8;&#x591A;&#x6B65;&#x51B3;&#x7B56;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;&#x6B63;&#x5982;&#x6240;&#x6709;&#x7684;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x95EE;&#x9898;&#x53EF;&#x4EE5;&#x88AB;&#x8F6C;&#x5316;&#x4E3A;&#x56FE;&#x641C;&#x7D22;<sup><a id="fnr.3" name="fnr.3" class="footref" href="#fn.3">3</a></sup>&#xFF0C;&#x800C;&#x6240;&#x6709;&#x7684;&#x7EBF;&#x6027;&#x89C4;&#x5212;&#x95EE;&#x9898;&#x53EF;&#x4EE5;&#x88AB;&#x8F6C;&#x5316;&#x4E3A;&#x4E8C;&#x5206;&#x56FE;<sup><a id="fnr.4" name="fnr.4" class="footref" href="#fn.4">4</a></sup>&#x4E00;&#x6837;&#x3002;</b> &#x5728;&#x6811;&#x4E0A;&#x8FDB;&#x884C;&#x641C;&#x7D22;&#x518D;&#x5E38;&#x89C1;&#x4E0D;&#x8FC7;&#x4E86;&#xFF0C;&#x5229;&#x7528;&#x6811;&#x8FDB;&#x884C;&#x4EFF;&#x771F;&#x5176;&#x5B9E;&#x4E5F;&#x6CA1;&#x90A3;&#x4E48;&#x4E0D;&#x5E38;&#x89C1;&#xFF0C;&#x5B66;&#x91D1;&#x878D;&#x7684;&#x540C;&#x5B66;&#x52BF;&#x5FC5;&#x90FD;&#x66FE;&#x5229;&#x7528;&#x8FC7;&#x4E8C;&#x53C9;&#x6811;&#x6765;&#x4E3A;&#x5404;&#x7C7B;&#x5947;&#x5F02;&#x671F;&#x6743;&#x8FDB;&#x884C;&#x5B9A;&#x4EF7;&#x3002;&#x81F3;&#x4E8E;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x6B65;
+</p>
+<ul class="org-ul">
+<li>&#x5229;&#x7528;&#x6811;&#x7ED3;&#x6784;&#x6765;&#x91CD;&#x65B0;&#x8868;&#x8FBE;&#x51B3;&#x7B56;&#x95EE;&#x9898;
+</li>
+<li>&#x5229;&#x7528;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x65B9;&#x6CD5;&#x6765;&#x8FDB;&#x884C;&#x641C;&#x7D22;
+</li>
+</ul>
+<p>
+&#x4E0B;&#x9762;&#x5C06;&#x7B80;&#x8981;&#x7684;&#x4ECB;&#x7ECD;&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x9762;&#x3002;
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">&#x51B3;&#x7B56;&#x6811;&#x7ED3;&#x6784;</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+&#x5BF9;&#x4E8E;&#x591A;&#x6B65;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x4EFB;&#x52A1;&#x800C;&#x8A00;&#xFF0C;&#x6211;&#x4EEC;&#x505A;&#x5B8C;&#x4E00;&#x4E2A;&#x51B3;&#x7B56;&#x4E4B;&#x540E;&#xFF0C;&#x5C06;&#x4F9D;&#x636E;&#x8BE5;&#x51B3;&#x7B56;&#x548C;&#x5BFC;&#x81F4;&#x7684;&#x65B0;&#x72B6;&#x6001;&#x6765;&#x51B3;&#x5B9A;&#x6211;&#x4EEC;&#x4E0B;&#x4E00;&#x6B65;&#x7684;&#x51B3;&#x7B56;&#x96C6;&#x5408;&#x3002;&#x56E0;&#x6B64;&#x7ED9;&#x5B9A;&#x4E00;&#x6761;&#x51B3;&#x7B56;&#x8DEF;&#x5F84;&#xFF0C;&#x6211;&#x4EEC;&#x7AD9;&#x5728;&#x5F53;&#x524D;&#x7684;&#x51B3;&#x7B56;&#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x4E4B;&#x540E;&#x7684;&#x6240;&#x6709;&#x51B3;&#x7B56;&#x53EF;&#x4EE5;&#x5F62;&#x6210;&#x4E00;&#x68F5;&#x5B50;&#x6811;&#x3002;&#x4EFB;&#x610F;&#x4E00;&#x6761;&#x4ECE;&#x6839;&#x8282;&#x70B9;&#x5230;&#x53F6;&#x7ED3;&#x70B9;&#x7684;&#x8DEF;&#x5F84;&#x53D8;&#x5F62;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x51B3;&#x7B56;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x505A;&#x5B8C;&#x6700;&#x7EC8;&#x7684;&#x51B3;&#x7B56;&#xFF0C;&#x5C06;&#x5F97;&#x5230;&#x4E00;&#x5B9A;&#x7684;&#x56DE;&#x62A5;&#xFF0C;&#x6B63;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;
+<div class="figure"><p><center><img src="Decision_Tree.jpg" alt="Decision_Tree.jpg" width=" 80%"><figcaption>Decision_Tree.jpg</figcaption></center></p></div> 
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3">&#x8499;&#x7279;&#x5361;&#x6D1B;&#x65B9;&#x6CD5;</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+&#x8499;&#x7279;&#x5361;&#x6D1B;&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x4EFF;&#x771F;&#x6216;&#x8005;&#x8BF4;&#x91C7;&#x6837;&#x6765;&#x83B7;&#x53D6;&#x4FE1;&#x606F;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x7ED9;&#x5B9A;&#x51B3;&#x7B56;&#x6811;&#x7ED3;&#x6784;&#xFF0C;&#x5047;&#x60F3;&#x6211;&#x4EEC;&#x7AD9;&#x5728;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6709; \(K\) &#x4E2A;&#x9009;&#x62E9;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x9009;&#x62E9;&#x54EA;&#x4E00;&#x4E2A;&#xFF1F;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x4ECE;&#x8FD9; \(K\) &#x4E2A;&#x9009;&#x62E9;&#x4E2D;&#x7ED9;&#x5B9A;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#xFF0C;&#x5176;&#x4E4B;&#x540E;&#x7684;&#x51B3;&#x7B56;&#x6784;&#x6210;&#x4E86;&#x4E00;&#x68F5;&#x5B50;&#x6811;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x65B9;&#x6CD5;&#x6765;&#x5BF9;&#x8FD9;&#x8BFE;&#x6811;&#x7684;&#x6240;&#x6709;&#x8DEF;&#x5F84;&#x8FDB;&#x884C;&#x968F;&#x673A;&#x62BD;&#x6837;&#xFF08;Simulation&#xFF09;&#xFF0C;&#x6839;&#x636E;&#x5F97;&#x5230;&#x7684;&#x6837;&#x672C;&#x5747;&#x503C;&#x6765;&#x8BC4;&#x4F30;&#x8FD9;&#x4E2A;&#x5B50;&#x6811;&#x7684;&#x6839;&#x8282;&#x70B9;&#x9009;&#x62E9;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x5F97;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x4F20;&#x9012;&#x7ED9;&#x6240;&#x6709;&#x7684;&#x7236;&#x8282;&#x70B9;&#xFF08;Backpropagation&#xFF09;&#x3002;&#x7136;&#x540E;&#x786E;&#x5B9A;&#x597D;&#x4E0B;&#x4E00;&#x6B65;&#x7684;&#x9009;&#x62E9;&#x4E4B;&#x540E;&#xFF08;Selection&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x7EE7;&#x7EED;&#x57FA;&#x4E8E;&#x8BE5;&#x9009;&#x62E9;&#x6765;&#x5C55;&#x5F00;&#x672A;&#x6765;&#x7684;&#x9009;&#x62E9;&#x96C6;&#x5408;&#xFF08;Expansion&#xFF09;&#x3002;&#x4E0B;&#x56FE;&#x662F;&#x7ECF;&#x5178;&#x7684;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;&#x6982;&#x5FF5;&#x56FE;&#xFF0C;
+<div class="figure"><p><center><img src="Monte_Carlo_Tree_Search_Idea.png" alt="Monte_Carlo_Tree_Search_Idea.png" width=" 80%"><figcaption>Monte_Carlo_Tree_Search_Idea.png</figcaption></center></p></div> 
+</p>
+
+<p>
+&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x4ECE;&#x8FD9; \(K\) &#x4E2A;&#x9009;&#x62E9;&#x4E2D;&#x8FDB;&#x884C;&#x6289;&#x62E9;&#x5B9E;&#x9645;&#x4E0A;&#x53EF;&#x4EE5;&#x8F6C;&#x5316;&#x6210;&#x4E00;&#x4E2A;&#x591A;&#x81C2;&#x8D4C;&#x535A;&#x673A;&#x95EE;&#x9898;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x6700;&#x8457;&#x540D;&#x7684;Upper Confidence Bound 1 applied to trees &#xFF08;UCT&#xFF09;&#x7B97;&#x6CD5;&#x3002; <b>&#x597D;&#x73A9;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;&#x6765;&#x641C;&#x7D22;&#x66F4;&#x4F18;&#x79C0;&#x7684;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;<sup><a id="fnr.5" name="fnr.5" class="footref" href="#fn.5">5</a></sup>&#xFF0C;&#x8FD9;&#x6D53;&#x6D53;&#x7684;&#x81EA;&#x6307;&#x5473;&#x9053;&#x5B9E;&#x5728;&#x8BA9;&#x4EBA;&#x60CA;&#x53F9;&#xFF01;</b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4">Demo&#x5C55;&#x793A;</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+&#x8BF4;&#x8D77;&#x6765;&#x4E5F;&#x86EE;&#x5E78;&#x8FD0;&#x7684;&#xFF0C;&#x611F;&#x89C9;&#x51A5;&#x51A5;&#x4E4B;&#x4E2D;&#x81EA;&#x6709;&#x529B;&#x91CF;&#x3002;&#x535A;&#x4E00;&#x4E0A;&#x5B66;&#x671F;&#x5728;IVLE&#x91CC;&#x4E0D;&#x65AD;&#x641C;&#x81EA;&#x5DF1;&#x60F3;&#x8981;&#x4E0A;&#x4EC0;&#x4E48;&#x8BFE;&#x3002;&#x540E;&#x6765;&#x53D1;&#x73B0;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x5F00;&#x4E86;&#x4E00;&#x95E8;CS5330 Randomized Algorithms&#xFF0C;&#x4F46;&#x82E6;&#x4E8E;&#x627E;&#x4E0D;&#x5230;&#x5177;&#x4F53;&#x7684;&#x6388;&#x8BFE;&#x5927;&#x7EB2;&#xFF0C;&#x4E8E;&#x662F;&#x7ED9;&#x6388;&#x8BFE;&#x8001;&#x5E08;&#x53D1;&#x4E86;&#x90AE;&#x4EF6;&#xFF0C;&#x5927;&#x81F4;&#x4E86;&#x89E3;&#x4E86;&#x8FD9;&#x95E8;&#x8BFE;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x540E;&#x6765;&#x53D1;&#x73B0;&#x8FD9;&#x95E8;&#x8BFE;&#x867D;&#x7136;&#x53EB;Randomized Algorithms&#xFF0C;&#x4F46;&#x5176;&#x6838;&#x5FC3;&#x5185;&#x5BB9;&#x8FD8;&#x662F;&#x591A;&#x81C2;&#x8D4C;&#x535A;&#x673A;&#x95EE;&#x9898;&#x4EE5;&#x53CA;&#x5EF6;&#x4F38;&#x8FC7;&#x53BB;&#x7684;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;&#xFF0C;&#x5173;&#x4E8E;&#x5404;&#x79CD;&#x6982;&#x7387;&#x4E0D;&#x7B49;&#x5F0F;&#x4EE5;&#x53CA;&#x4E0A;&#x4E0B;&#x754C;&#x7684;&#x4ECB;&#x7ECD;&#x76F8;&#x5BF9;&#x8F83;&#x5C11;&#x3002;&#x4E86;&#x89E3;&#x4E86;&#x76F8;&#x5E94;&#x5185;&#x5BB9;&#x540E;&#xFF0C;&#x53D1;&#x73B0;&#x548C;&#x81EA;&#x5DF1;&#x7684;&#x7814;&#x7A76;&#x65B9;&#x5411;&#x8FD8;&#x86EE;&#x76F8;&#x5173;&#x7684;&#xFF08;&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x540E;&#x6765;&#x53D1;&#x73B0;&#x5176;&#x6388;&#x8BFE;&#x5185;&#x5BB9;&#x5176;&#x5B9E;&#x7B97;&#x662F;online learning&#xFF09;&#xFF0C;&#x4E8E;&#x662F;&#x5C31;&#x9009;&#x4E86;&#x8FD9;&#x95E8;&#x8BFE;&#x3002;
+</p>
+
+<p>
+&#x90A3;&#x4EE5;&#x4E0B;&#x7684;&#x5E7B;&#x706F;&#x7247;&#x5C31;&#x662F;&#x6211;&#x5728;&#x8FD9;&#x95E8;&#x8BFE;&#x4E0A;&#x7684;&#x5927;&#x4F5C;&#x4E1A;&#x5C55;&#x793A;&#xFF0C;&#x63CF;&#x8FF0;&#x4E86;&#x5982;&#x4F55;&#x5229;&#x7528;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;&#x6765;&#x89E3;&#x51B3;&#x4E00;&#x4E2A;&#x56FE;&#x67D3;&#x8272;&#x7684;&#x7EC4;&#x5408;&#x4F18;&#x5316;&#x95EE;&#x9898;&#x3002;&#x5177;&#x4F53;&#x800C;&#x8A00;&#xFF0C;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x65E0;&#x5411;&#x56FE;&#x548C;&#x4E00;&#x4E32;&#x7EA2;&#x84DD;&#x76F8;&#x95F4;&#x7684;&#x989C;&#x8272;&#x5E8F;&#x5217;&#xFF0C;&#x521D;&#x59CB;&#x7ED9;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x6309;&#x7167;&#x989C;&#x8272;&#x5E8F;&#x5217;&#x7684;&#x987A;&#x5E8F;&#x7ED9;&#x5176;&#x67D3;&#x8272;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x672A;&#x67D3;&#x8272;&#x5E76;&#x4E14;&#x662F;&#x5DF2;&#x67D3;&#x8272;&#x70B9;&#x7684;&#x76F8;&#x8FDE;&#x70B9;&#x8FDB;&#x884C;&#x67D3;&#x8272;&#xFF0C;&#x5E76;&#x4E14;&#x5FC5;&#x987B;&#x6309;&#x7167;&#x989C;&#x8272;&#x5E8F;&#x5217;&#x7684;&#x987A;&#x5E8F;&#x67D3;&#x8272;&#x3002;&#x5982;&#x679C;&#x989C;&#x8272;&#x5E8F;&#x5217;&#x7528;&#x5C3D;&#x6216;&#x8005;&#x6240;&#x6709;&#x7684;&#x70B9;&#x90FD;&#x88AB;&#x67D3;&#x4E0A;&#x8272;&#xFF0C;&#x90A3;&#x4E48;&#x4EFB;&#x52A1;&#x7ED3;&#x675F;&#x3002;&#x6700;&#x7EC8;&#x7684;&#x6536;&#x76CA;&#x4E3A;&#x8FDE;&#x63A5;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x989C;&#x8272;&#x70B9;&#xFF08;&#x5DF2;&#x67D3;&#x8272;&#xFF09;&#x7684;&#x8FB9;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x5E76;&#x4E14;&#x8D8A;&#x5927;&#x8D8A;&#x597D;&#x3002;
+</p>
+
+<p>
+&#x503C;&#x5F97;&#x4E00;&#x63D0;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x7684;&#x4EE3;&#x7801;&#x57FA;&#x4E8E;<a href="https://arxiv.org/abs/1208.4692" target="_blank" rel="external">Monte Carlo Search Algorithm Discovery for One Player Games</a>&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;&#x7ED9;&#x51FA;&#x4E86;&#x5B9E;&#x73B0;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;&#x7684;&#x901A;&#x7528;&#x6846;&#x67B6;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;&#x6846;&#x67B6;&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x7B80;&#x5355;&#x7684;&#x6784;&#x9020;&#x51FA;&#x4EFB;&#x610F;&#x7C7B;&#x578B;&#x7684;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;&#x7B97;&#x6CD5;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4ECE;&#x67D0;&#x79CD;&#x7A0B;&#x5EA6;&#x4E0A;&#x8BF4;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x7B97;&#x6CD5;&#x6765;&#x751F;&#x6210;&#x7B97;&#x6CD5;&#xFF08;&#x5C06;&#x4EE3;&#x7801;&#x4F5C;&#x4E3A;&#x6570;&#x636E;&#xFF0C;&#x6216;&#x8005;&#x8BF4;&#x4E00;&#x5207;&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x7684;&#x601D;&#x60F3;&#xFF09;&#x3002;&#x5177;&#x4F53;&#x800C;&#x8A00;&#xFF0C;&#x6211;&#x5BF9;&#x6BD4;&#x4E86;Reflexive Monte Carlo&#x641C;&#x7D22;&#x7B97;&#x6CD5;&#x3001;Nested Monte Carlo&#x641C;&#x7D22;&#x7B97;&#x6CD5;&#x4EE5;&#x53CA;&#x8457;&#x540D;&#x7684;Upper Confidence Bound 1 applied to trees&#x641C;&#x7D22;&#x7B97;&#x6CD5;&#x3002;
+</p>
+
+<p>
+&#x5173;&#x4E8E;&#x8FD9;&#x4E2A;&#x7EC4;&#x5408;&#x4F18;&#x5316;&#x95EE;&#x9898;&#xFF0C;&#x5F53;&#x65F6;&#x8BFE;&#x4E0A;&#x540C;&#x5B66;&#x6709;&#x4E24;&#x4E2A;&#x601D;&#x8DEF;&#x8BA9;&#x6211;&#x8BB0;&#x5FC6;&#x72B9;&#x6DF1;&#xFF1A;
+</p>
+<ul class="org-ul">
+<li>&#x6709;&#x4EBA;&#x7528;Wolfram Mathematica&#x53EF;&#x89C6;&#x5316;&#x4E86;&#x4E0D;&#x540C;&#x6570;&#x636E;&#x96C6;&#x7684;&#x65E0;&#x5411;&#x56FE;&#xFF0C;&#x57FA;&#x4E8E;&#x6B64;&#x6765;&#x627E;&#x89C4;&#x5F8B;&#xFF0C;&#x6709;&#x70B9;&#x7C7B;&#x4F3C;&#x4E8E;&#x9886;&#x57DF;&#x77E5;&#x8BC6;&#x7684;&#x63A2;&#x7D22;
+</li>
+<li>&#x6709;&#x4EBA;&#x6CA1;&#x7528;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;&#xFF0C;&#x800C;&#x662F;&#x7528;&#x4E86;&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#xFF0C;&#x8003;&#x8651;&#x5230;&#x6709;&#x7684;&#x65E0;&#x5411;&#x56FE;&#x89C4;&#x6A21;&#x592A;&#x5927;&#xFF0C;&#x53CD;&#x800C;&#x53D6;&#x5F97;&#x4E86;&#x4E0D;&#x9519;&#x7684;&#x6210;&#x7EE9;
+</li>
+</ul>
+<p>
+&#x5177;&#x4F53;&#x7684;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x4EE5;&#x53CA;&#x6587;&#x6863;&#xFF0C;&#x8BF7;&#x89C1;<a href="https://github.com/Greenwicher/Awsome-Project/tree/master/CS5330%20Randomized%20Algorithms" target="_blank" rel="external">&#x6211;&#x7684;Github</a>&#x3002;
+</p>
+<center><embed src="CS5330.pdf" width="600" height="600"></center>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">&#x4F5C;&#x4E3A;&#x540C;&#x6784;&#x7684;&#x4EFF;&#x771F;&#x4F18;&#x5316;</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+&#x7C7B;&#x4F3C;&#x7684;&#x95EE;&#x9898;&#x5728;&#x8FD0;&#x7B79;&#x5B66;/&#x7BA1;&#x7406;&#x79D1;&#x5B66;&#x9886;&#x57DF;&#x88AB;&#x79F0;&#x4E4B;&#x4E3A; <a href="https://en.wikipedia.org/wiki/Simulation-based_optimization" target="_blank" rel="external">&#x4EFF;&#x771F;&#x4F18;&#x5316;</a> &#x3002;&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x5C31;&#x662F;&#x5982;&#x4F55;&#x5229;&#x7528;&#x9AD8;&#x6548;&#x7684;&#x4EFF;&#x771F;&#x6765;&#x89E3;&#x51B3;&#x968F;&#x673A;&#x4F18;&#x5316;&#x95EE;&#x9898;&#x3002;&#x5E38;&#x89C1;&#x7684;&#x5206;&#x7C7B;&#x5305;&#x62EC;
+</p>
+<ul class="org-ul">
+<li>Ranking &amp; Selection
+</li>
+<li>Discrete Optimization via Simulation (Heuristic methods / Random Search)
+</li>
+<li>Response Surface Methodology
+</li>
+<li>Stochastic Approximation
+</li>
+<li>Sample Average Approximation
+</li>
+<li>Stochastic Gradient Estimation
+</li>
+<li>Variance Reduction Techniques
+</li>
+</ul>
+<p>
+&#x66F4;&#x591A;&#x8BE6;&#x7EC6;&#x7684;&#x4ECB;&#x7ECD;&#x8BF7;&#x89C1;<a href="http://www.springer.com/us/book/9781493913831" target="_blank" rel="external">Handbook of Simulation Optimization</a>&#x3002;&#x4E0B;&#x9762;&#x5C06;&#x5927;&#x6982;&#x4ECB;&#x7ECD;Ranking &amp; Selection&#x4EE5;&#x53CA;Discrete Optimization via Simulation&#xFF0C;&#x540C;&#x591A;&#x81C2;&#x8D4C;&#x535A;&#x673A;&#x95EE;&#x9898;&#x4EE5;&#x53CA;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;&#x4E4B;&#x95F4;&#x7684;&#x540C;&#x6784;&#x5173;&#x7CFB;&#x4EE5;&#x53CA;&#x5DEE;&#x5F02;&#x3002;
+</p>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">Ranking &amp; Selection</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+&#x7C7B;&#x4F3C;&#x4E8E;&#x591A;&#x81C2;&#x8D4C;&#x535A;&#x673A;&#x95EE;&#x9898;&#xFF0C;&#x90FD;&#x662F;&#x7ED9;&#x5B9A;&#x6709;&#x9650;&#x4E2A;&#x9009;&#x62E9;&#xFF0C;&#x4E00;&#x822C;&#x6570;&#x91CF;&#x4E0D;&#x591A;&#xFF0C;&#x4F46;&#x6BCF;&#x4E2A;&#x9009;&#x62E9;&#x7684;&#x4EFF;&#x771F;&#x65F6;&#x95F4;&#x76F8;&#x5F53;&#x957F;&#xFF0C;&#x56E0;&#x800C;&#x9700;&#x8981;&#x5408;&#x7406;&#x7684;&#x5206;&#x914D;&#x4EFF;&#x771F;&#x8D44;&#x6E90;&#xFF1B;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x591A;&#x81C2;&#x8D4C;&#x535A;&#x673A;&#x95EE;&#x9898;&#x66F4;&#x5728;&#x4E4E;&#x7D2F;&#x79EF;&#x6536;&#x76CA;&#xFF0C;&#x800C;Ranking &amp; Selection&#x4E3B;&#x8981;&#x662F;&#x8981;&#x5C3D;&#x91CF;&#x4EE5;&#x9AD8;&#x6982;&#x7387;&#x627E;&#x5230;&#x6700;&#x597D;&#x7684;&#x9009;&#x62E9;&#x51FA;&#x6765;&#xFF0C;&#x5E76;&#x4E0D;&#x5728;&#x4E4E;&#x4EFF;&#x771F;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x6536;&#x76CA;&#x6216;&#x635F;&#x5931;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5728;Ranking &amp; Selection&#x8FD9;&#x4E2A;&#x9886;&#x57DF;&#xFF0C;&#x4E3B;&#x8981;&#x7684;&#x76EE;&#x6807;&#x662F;&#x5982;&#x4F55;&#x901A;&#x8FC7;&#x5206;&#x914D;&#x4EFF;&#x771F;&#x8D44;&#x6E90;&#xFF08;&#x5373;&#x600E;&#x4E48;&#x73A9;&#x8001;&#x864E;&#x673A;&#xFF09;&#xFF0C;&#x4EE5;&#x4F7F;&#x5F97;&#x6700;&#x7EC8;&#x9009;&#x51FA;&#x6700;&#x597D;&#x8001;&#x864E;&#x673A;&#x7684;&#x6982;&#x7387;&#x6700;&#x5927;&#x3002;&#x8FD9;&#x4E2A;&#x6982;&#x7387;&#x88AB;&#x79F0;&#x4E4B;&#x4E3A; <code>Probability of Correct Selection</code> &#x3002;&#x4E0B;&#x56FE;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x8981;&#x7684;&#x6587;&#x732E;&#x6587;&#x7C7B;&#xFF0C;&#x6211;&#x76EE;&#x524D;&#x5728;&#x505A;&#x7684;&#x4E3B;&#x8981;&#x662F;OCBA&#x8FD9;&#x4E00;&#x5757;&#x3002;
+<div class="figure"><p><center><img src="Ranking_Selection_Literature.png" alt="Ranking_Selection_Literature.png" width=" 80%"><figcaption>Ranking_Selection_Literature.png</figcaption></center></p></div> 
+OCBA&#x7684;&#x6838;&#x5FC3;&#x601D;&#x8DEF;&#x662F;&#x5229;&#x7528;&#x4FE1;&#x566A;&#x6BD4;&#x6765;&#x5206;&#x914D;&#x4EFF;&#x771F;&#x8D44;&#x6E90;&#xFF0C;&#x5373;&#x4EFF;&#x771F;&#x8D44;&#x6E90;&#x5E94;&#x8BE5;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x5206;&#x914D;&#x7ED9;&#x566A;&#x58F0;&#x5927;&#xFF08;&#x6BD4;&#x5982;&#x6837;&#x672C;&#x65B9;&#x5DEE;&#xFF09;&#x7684;&#x9009;&#x62E9;&#x4EE5;&#x53CA;&#x4FE1;&#x53F7;&#x6BD4;&#x8F83;&#x5F3A;&#x70C8;&#xFF08;&#x540C;&#x5F53;&#x524D;&#x6700;&#x4F18;&#x9009;&#x62E9;&#x6BD4;&#x8F83;&#x63A5;&#x8FD1;&#xFF09;&#x7684;&#x9009;&#x62E9;&#x3002;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4ECE;&#x591A;&#x81C2;&#x8D4C;&#x535A;&#x673A;&#x95EE;&#x9898;&#x7684;&#x89D2;&#x5EA6;&#x51FA;&#x53D1;&#xFF0C;OCBA&#x76F8;&#x5BF9;&#x66F4;&#x503E;&#x5411;&#x4E8E;exploration&#xFF0C;&#x56E0;&#x4E3A;&#x5176;&#x76EE;&#x7684;&#x53EA;&#x662F;&#x5173;&#x5FC3;&#x300E;&#x6700;&#x7EC8;&#x300F;&#x80FD;&#x9009;&#x62E9;&#x51FA;&#x6700;&#x597D;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x800C;&#x4E0D;&#x5728;&#x4E4E;&#x6BCF;&#x6B21;&#x4EFF;&#x771F;&#x5F97;&#x5230;&#x7684;&#x6536;&#x76CA;&#x3002;
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">Discrete Optimization via Simulation</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+&#x8FD9;&#x4E00;&#x95EE;&#x9898;&#x76F8;&#x5BF9;Ranking &amp; Selection&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x9009;&#x62E9;&#x6570;&#x91CF;&#x8FC7;&#x591A;&#xFF0C;&#x7136;&#x800C;&#x9488;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x7684;&#x4EFF;&#x771F;&#x65F6;&#x95F4;&#x5F88;&#x77ED;&#xFF0C;&#x56E0;&#x6B64;&#x91CD;&#x70B9;&#x5728;&#x4E8E;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x641C;&#x7D22;&#x3002;&#x4E0B;&#x56FE;&#x7ED9;&#x51FA;&#x4E86;&#x8FD9;&#x4E00;&#x9886;&#x57DF;&#x7684;&#x6587;&#x732E;&#x5206;&#x7C7B;&#xFF0C;
+<div class="figure"><p><center><img src="Discrete_Optimization_via_Simulation_Literature.png" alt="Discrete_Optimization_via_Simulation_Literature.png" width=" 80%"><figcaption>Discrete_Optimization_via_Simulation_Literature.png</figcaption></center></p></div> 
+&#x7C7B;&#x4F3C;&#x4E8E;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6811;&#x641C;&#x7D22;&#x7684;&#x7B97;&#x6CD5;&#x5728;&#x8BE5;&#x9886;&#x57DF;&#x79F0;&#x4E4B;&#x4E3A;Nested Partition&#x6216;&#x8005;Partition-based Random Search&#xFF0C;&#x5373;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x9AD8;&#x7EF4;&#x5B9E;&#x6570;&#x57DF;&#x4E0A;&#x7684;&#x8FDE;&#x7EED;&#x641C;&#x7D22;&#x7A7A;&#x95F4;&#xFF0C;&#x901A;&#x8FC7;&#x4E0D;&#x65AD;&#x7684;&#x5BF9;&#x641C;&#x7D22;&#x7A7A;&#x95F4;&#x8FDB;&#x884C;&#x7EC6;&#x5206;&#x5F62;&#x6210;&#x6811;&#x72B6;&#x7ED3;&#x6784;&#x8FDB;&#x884C;&#x6709;&#x504F;&#x91C7;&#x6837;&#xFF08;biased sampling&#xFF09;&#x3002;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;&#x4F8D;&#x4E50;&#x5A9B;&#x8001;&#x5E08;&#x7684;&#x6587;&#x7AE0;&#xFF0C;<a href="http://pubsonline.informs.org/doi/abs/10.1287/opre.48.3.390.12436?journalCode=opre" target="_blank" rel="external">Nested Partitions Method for Global Optimization</a>&#x3002;&#x4E0B;&#x56FE;&#x662F;&#x76EE;&#x524D;&#x6211;&#x6B63;&#x5728;&#x505A;&#x7684;&#x5229;&#x7528;Partition-based Random Search&#x6765;&#x89E3;&#x51B3;&#x591A;&#x76EE;&#x6807;&#x968F;&#x673A;&#x4F18;&#x5316;&#x95EE;&#x9898;&#x7684;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x3002;
+<div class="figure"><p><center><img src="FON_Deterministic.png" alt="FON_Deterministic.png" width=" 80%"><figcaption>FON_Deterministic.png</figcaption></center></p></div> 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">&#x7ED3;&#x8BED;</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+&#x867D;&#x7136;&#xFF0C;&#x770B;&#x5B8C;&#x672C;&#x6587;&#x7AE0;&#xFF0C;&#x8BE5;&#x9009;&#x62E9;&#x56F0;&#x96BE;&#x7684;&#x4F60;&#x8FD8;&#x662F;&#x7EE7;&#x7EED;&#x300E;&#x9009;&#x62E9;&#x300E;&#x9009;&#x62E9;&#x300E;&#x56F0;&#x54EA;&#x300F;&#x300F;&#x300F;&#xFF0C;&#x6BD5;&#x7ADF;&#x54EA;&#x6709;&#x90A3;&#x4E48;&#x591A;&#x8D44;&#x6E90;&#x53BB;&#x4E00;&#x4E00;&#x5C1D;&#x8BD5;&#xFF0C;&#x90A3;&#x5C31;&#x8D2A;&#x5FC3;&#x4E00;&#x70B9;&#x5427;&#xFF0C;&#x6267;&#x5FF5;&#x4E8E;&#x5F53;&#x524D;&#x6700;&#x597D;&#x7684;&#xFF0C;&#x5C31;&#x884C;&#x5566;&#xFF01;&#x5C11;&#x5373;&#x662F;&#x591A;&#xFF0C;&#x65E0;&#x5373;&#x662F;&#x6709;&#xFF0C;&#x505A;&#x4E00;&#x4E2A;&#x6781;&#x7B80;&#x4E3B;&#x4E49;&#x8005;&#xFF0C;&#x65AD;&#x820D;&#x79BB;&#xFF01;
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">&#x5173;&#x4E8E;&#x3010;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x3011;&#x7CFB;&#x5217;&#x7684;&#x8BF4;&#x660E;</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+<div class="alert alert-info"><i class="fa fa-info"></i>  &#x5BF9;&#x4E8E;&#x6211;&#x81EA;&#x5DF1;&#x800C;&#x8A00;&#xFF0C;&#x5199;&#x3010;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x3011;&#x8FD9;&#x4E00;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#xFF0C;&#x9664;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x5174;&#x8DA3;&#x4E4B;&#x5916;&#xFF0C;&#x5176;&#x5B9E;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x548C;&#x6211;&#x7684;&#x7814;&#x7A76;&#x65B9;&#x5411;&#xFF08;&#x4EFF;&#x771F;&#x4F18;&#x5316;&#xFF09;&#x4E5F;&#x7565;&#x5FAE;&#x76F8;&#x5173;&#xFF0C;&#x5E0C;&#x671B;&#x80FD;&#x4ECE;&#x4E2D;&#x83B7;&#x53D6;&#x4E9B;&#x65B0;&#x77E5;&#x8BC6;&#x548C;&#x65B0;&#x60F3;&#x6CD5;&#x3002;&#x521D;&#x6B65;&#x6253;&#x7B97;&#x672C;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#x4EE5;<a href="http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html" target="_blank" rel="external">David Silver&#x7684;&#x516C;&#x5F00;&#x8BFE;</a> &#x4EE5;&#x53CA; <a href="http://rll.berkeley.edu/deeprlcourse/" target="_blank" rel="external">UC Berkeley&#x7684;CS294</a>&#x4E3A;&#x84DD;&#x672C;&#xFF0C;&#x7740;&#x91CD;&#x5728;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x9886;&#x57DF;&#xFF0C;&#x9646;&#x7EED;&#x4F1A;&#x8865;&#x5145;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x7684;&#x76F8;&#x5173;&#x63A2;&#x8BA8;&#x3002;&#x8BB0;&#x5F55;&#x81EA;&#x5DF1;&#x7684;&#x6240;&#x5B66;&#x6240;&#x601D;&#xFF0C;&#x529B;&#x56FE;&#x6293;&#x4F4F;&#x4E3B;&#x8981;&#x6838;&#x5FC3;&#x3002;&#x6BD5;&#x7ADF;&#x543E;&#x751F;&#x4E5F;&#x6709;&#x6DAF;&#xFF0C;&#x800C;&#x77E5;&#x4E5F;&#x65E0;&#x6DAF;&#x3002;&#x4EE5;&#x6709;&#x6DAF;&#x968F;&#x65E0;&#x6DAF;&#xFF0C;&#x6B86;&#x5DF2;&#xFF01;&#x4F46;&#x5B66;&#x4E60;&#x662F;&#x4E00;&#x8F88;&#x5B50;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x6240;&#x4EE5;&#x65F6;&#x4E0D;&#x65F6;&#x4E5F;&#x4F1A;&#x91CD;&#x65B0;&#x8865;&#x5145;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x8FD9;&#x4E9B;&#x6587;&#x7AE0;&#x3002;&#x672C;&#x4EBA;&#x521D;&#x6D89;&#x6DF1;&#x5EA6;&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x9886;&#x57DF;&#xFF0C;&#x8FD8;&#x5E0C;&#x671B;&#x5404;&#x4F4D;&#x5B66;&#x754C;&#x4E1A;&#x754C;&#x5927;&#x725B;&#x591A;&#x591A;&#x6307;&#x6B63;&#x6587;&#x7AE0;&#x4E2D;&#x4E0D;&#x5F53;&#x4E4B;&#x5904;&#xFF0C;&#x4E92;&#x76F8;&#x5207;&#x78CB;&#xFF0C;&#x8C22;&#x8C22;&#xFF01;</div>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">&#x5EF6;&#x4F38;&#x9605;&#x8BFB;</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Multi-armed_bandit" target="_blank" rel="external">Wiki - Multi-armed Bandit Problem</a>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Monte_Carlo_tree_search" target="_blank" rel="external">Wiki - Monte Carlo Tree Search</a>
+</li>
+<li><a href="https://blogs.princeton.edu/imabandit/" target="_blank" rel="external">Dr. Sebastien Bubeck&apos;s Blog</a>
+</li>
+<li><a href="http://research.microsoft.com/en-us/um/people/sebubeck/pub.html" target="_blank" rel="external">Dr. Sebastien Bubeck&apos;s Publications</a>
+</li>
+<li><a href="https://homes.di.unimi.it/~cesabian/Pubblicazioni/ml-02.pdf" target="_blank" rel="external">Finite-time Analysis of the Multiarmed Bandit Problem</a>
+</li>
+<li><a href="http://ieeexplore.ieee.org/document/6145622/" target="_blank" rel="external">A Survey of Monte Carlo Tree Search Methods</a>
+</li>
+<li><a href="https://hal.inria.fr/hal-00747575v4/document" target="_blank" rel="external">From Bandits to Monte-Carlo Tree Search: The Optimistic Principle Applied to Optimization and Planning</a>
+</li>
+<li><a href="https://support.google.com/analytics/answer/2844870?hl=zh-Hans" target="_blank" rel="external">&#x8C37;&#x6B4C;Analytics: &#x591A;&#x624B;&#x67C4;&#x8001;&#x864E;&#x673A;&#x5B9E;&#x9A8C;</a>
+</li>
+<li><a href="https://webdocs.cs.ualberta.ca/~sutton/book/bookdraft2016sep.pdf" target="_blank" rel="external">Chapter 2, Reinforcement Learning (2nd edition)</a>
+</li>
+<li><a href="https://book.douban.com/subject/26708119/" target="_blank" rel="external">&#x7B2C;&#x5341;&#x516D;&#x7AE0;&#xFF0C;&#x300A;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x300B;</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p>&#x4E5F;&#x79F0;&#x4F5C;Boltzmann distribution&#xFF0C;&#x6700;&#x65E9;&#x662F;&#x63CF;&#x8FF0;&#x5206;&#x5B50;&#x8FD0;&#x52A8;&#x7684;</p></div>
+
+<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p>softmax distribution&#x7684;&#x5747;&#x503C;&#x968F;&#x5176;&#x53C2;&#x6570;&#x53D8;&#x5316;&#xFF0C;&#x5C06;&#x5305;&#x542B;&#x89C2;&#x6D4B;&#x503C;&#x4ECE;&#x6700;&#x5C0F;&#x5230;&#x6700;&#x5927;&#x7684;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x53D6;&#x503C;</p></div>
+
+<div class="footdef"><sup><a id="fn.3" name="fn.3" class="footnum" href="#fnr.3">3</a></sup> <p>&#x8BE6;&#x89C1;<a href="https://book.douban.com/subject/1475870/" target="_blank" rel="external">Algorithm Design&#x7684;&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;Dynamic Programming</a></p></div>
+
+<div class="footdef"><sup><a id="fn.4" name="fn.4" class="footnum" href="#fnr.4">4</a></sup> <p>&#x8FD9;&#x662F;&#x67D0;&#x6B21;&#x542C;&#x6E2F;&#x79D1;&#x5927;&#x9F50;&#x5411;&#x5F64;&#x8001;&#x5E08;&#x8BB2;&#x7684;</p></div>
+
+<div class="footdef"><sup><a id="fn.5" name="fn.5" class="footnum" href="#fnr.5">5</a></sup> <p>&#x8BE6;&#x89C1;<a href="https://arxiv.org/pdf/1208.4692.pdf" target="_blank" rel="external">Monte carlo search algorithm discovery for single-player games</a></p></div>
+
+
+</div>
+</div>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[深度增强学习【1】走向通用人工智能之路]]></title>
       <url>http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/</url>
       <content type="html"><![CDATA[
