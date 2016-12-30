@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/</loc>
+    
+    <lastmod>2016-12-30T06:56:21.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.greenwicher.com/2017/01/01/hello-2017/</loc>
     
     <lastmod>2016-12-30T06:24:33.000Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://blog.greenwicher.com/2016/12/24/drl-from_mab_to_mcts/</loc>
     
     <lastmod>2016-12-30T06:24:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/</loc>
-    
-    <lastmod>2016-12-30T06:23:45.000Z</lastmod>
     
   </url>
   
