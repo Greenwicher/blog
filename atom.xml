@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greenwicher.com/"/>
-  <updated>2016-12-30T01:55:50.000Z</updated>
+  <updated>2016-12-30T04:52:04.000Z</updated>
   <id>http://blog.greenwicher.com/</id>
   
   <author>
@@ -14,6 +14,101 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello 2017</title>
+    <link href="http://blog.greenwicher.com/2017/01/01/hello-2017/"/>
+    <id>http://blog.greenwicher.com/2017/01/01/hello-2017/</id>
+    <published>2017-01-01T00:00:00.000Z</published>
+    <updated>2016-12-30T04:52:04.000Z</updated>
+    
+    <content type="html">
+
+&lt;p&gt;
+&amp;#x8BA1;&amp;#x5212;&amp;#x3001;&amp;#x7EC4;&amp;#x7EC7;&amp;#x3001;&amp;#x9886;&amp;#x5BFC;&amp;#x3001;&amp;#x63A7;&amp;#x5236;&amp;#xFF0C;&amp;#x8FD9;&amp;#x6050;&amp;#x6015;&amp;#x662F;&amp;#x5B66;&amp;#x8FC7;&amp;#x7BA1;&amp;#x7406;&amp;#x7684;&amp;#x4EBA;&amp;#x90FD;&amp;#x8033;&amp;#x719F;&amp;#x80FD;&amp;#x8BE6;&amp;#x7684;&amp;#x56DB;&amp;#x4E2A;&amp;#x8BCD;&amp;#x3002;&amp;#x51E1;&amp;#x4E8B;&amp;#x9884;&amp;#x5219;&amp;#x7ACB;&amp;#xFF0C;&amp;#x4E0D;&amp;#x9884;&amp;#x5219;&amp;#x5E9F;&amp;#x3002;&amp;#x6211;&amp;#x60F3;&amp;#x76EE;&amp;#x6807;&amp;#x8FD8;&amp;#x662F;&amp;#x8BB2;&amp;#x51FA;&amp;#x6765;&amp;#x3001;&amp;#x5199;&amp;#x51FA;&amp;#x6765;&amp;#x7684;&amp;#x6BD4;&amp;#x8F83;&amp;#x597D;&amp;#xFF0C;&amp;#x4E00;&amp;#x6765;&amp;#x6709;&amp;#x4E2A;&amp;#x9776;&amp;#x5B50;&amp;#x77E5;&amp;#x9053;&amp;#x81EA;&amp;#x5DF1;&amp;#x8981;&amp;#x505A;&amp;#x4EC0;&amp;#x4E48;&amp;#xFF0C;&amp;#x4E8C;&amp;#x6765;&amp;#x5FC3;&amp;#x91CC;&amp;#x53EF;&amp;#x4EE5;&amp;#x60E6;&amp;#x8BB0;&amp;#x7740;&amp;#x4E5F;&amp;#x7B97;&amp;#x662F;&amp;#x4E00;&amp;#x79CD;&amp;#x97AD;&amp;#x7B56;&amp;#xFF0C;&amp;#x4E09;&amp;#x6765;&amp;#x4E5F;&amp;#x6709;&amp;#x4E2A;&amp;#x76D1;&amp;#x7763;&amp;#x7ACB;flag&amp;#x7684;&amp;#x610F;&amp;#x5473;&amp;#x3002;&amp;#x5176;&amp;#x5B9E;&amp;#x5927;&amp;#x90E8;&amp;#x5206;&amp;#x7684;&amp;#x76EE;&amp;#x6807;&amp;#xFF0C;&amp;#x65E0;&amp;#x5916;&amp;#x4E4E;&amp;#x5C31;&amp;#x662F;&amp;#x9760;&amp;#x65F6;&amp;#x95F4;&amp;#x6765;&amp;#x6362;&amp;#x53D6;&amp;#x7ED3;&amp;#x679C;&amp;#xFF0C;&amp;#x6709;&amp;#x4E2A;&amp;#x9636;&amp;#x6BB5;&amp;#x6027;&amp;#x7684;&amp;#x8BA1;&amp;#x5212;&amp;#x4E5F;&amp;#x597D;&amp;#x5BF9;&amp;#x6297;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x62D6;&amp;#x5EF6;&amp;#x75C7;&amp;#xFF0C;&amp;#x8981;&amp;#x4E0D;&amp;#x5C31;&amp;#x9677;&amp;#x5165;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x8212;&amp;#x9002;&amp;#x533A;&amp;#x65E0;&amp;#x6CD5;&amp;#x524D;&amp;#x8FDB;&amp;#x3002;&amp;#x5C31;&amp;#x50CF;&amp;#x9CA4;&amp;#x9C7C;&amp;#x8DC3;&amp;#x9F99;&amp;#x95E8;&amp;#x4E00;&amp;#x6837;&amp;#xFF0C;&amp;#x8DE8;&amp;#x8FC7;&amp;#x4E86;&amp;#x8FD9;&amp;#x4E2A;&amp;#x69DB;&amp;#xFF0C;&amp;#x624D;&amp;#x80FD;&amp;#x6709;&amp;#x65B0;&amp;#x7684;&amp;#x5E73;&amp;#x53F0;&amp;#x548C;&amp;#x89C6;&amp;#x91CE;&amp;#x3002;&amp;#x611F;&amp;#x89C9;&amp;#x6BD5;&amp;#x4E1A;&amp;#x4E24;&amp;#x5E74;&amp;#x534A;&amp;#xFF0C;&amp;#x5468;&amp;#x56F4;&amp;#x7684;&amp;#x540C;&amp;#x5B66;&amp;#x90FD;&amp;#x5728;&amp;#x5927;&amp;#x8E0F;&amp;#x6B65;&amp;#x7684;&amp;#x524D;&amp;#x8FDB;&amp;#xFF0C;&amp;#x800C;&amp;#x6211;&amp;#x8FD8;&amp;#x5728;&amp;#x539F;&amp;#x5730;&amp;#x8E0F;&amp;#x6B65;&amp;#xFF0C;&amp;#x5B9E;&amp;#x5728;&amp;#x662F;&amp;#x592A;&amp;#x60ED;&amp;#x6127;&amp;#x4E86;&amp;#x3002;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x5217;&amp;#x51FA;&amp;#x6211;2017&amp;#x5E74;&amp;#x7684;&amp;#x5C0F;&amp;#x76EE;&amp;#x6807;&amp;#xFF0C;&amp;#x901A;&amp;#x8FC7;&amp;#x6BCF;&amp;#x4E2A;&amp;#x5B63;&amp;#x5EA6;&amp;#x7684;&amp;#x8FFD;&amp;#x8E2A;&amp;#x4EE5;&amp;#x53CA;&amp;#x6821;&amp;#x6B63;&amp;#xFF0C;&amp;#x5E0C;&amp;#x671B;&amp;#x5728;&amp;#x65B0;&amp;#x7684;&amp;#x4E00;&amp;#x5E74;&amp;#x80FD;&amp;#x6709;&amp;#x6240;&amp;#x6536;&amp;#x83B7;&amp;#x5427;&amp;#x3002;
+&lt;/p&gt;
+
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+
+&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&amp;#x5927;&amp;#x7EA2;FLAG&amp;#x9AD8;&amp;#x9AD8;&amp;#x6302;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;hr&gt;
+&lt;!--&lt;input type=&#39;checkbox&#39; onclick=&#39;return false;&#39; checked&gt;--&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x6BCF;&amp;#x4E00;&amp;#x5929;&amp;#x7684;&amp;#x77AC;&amp;#x95F4;&amp;#xFF0C;&amp;#x90FD;&amp;#x6709;&amp;#x7167;&amp;#x7247;&amp;#x6765;&amp;#x6536;&amp;#x85CF; &lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x57F9;&amp;#x517B;&amp;#x4E00;&amp;#x8F88;&amp;#x5B50;&amp;#x7684;&amp;#x5174;&amp;#x8DA3;&amp;#x7231;&amp;#x597D; &amp;#xFF08;&amp;#x6BD4;&amp;#x5982;&amp;#x56F4;&amp;#x68CB;&amp;#x3001;&amp;#x97F3;&amp;#x4E50;&amp;#x9274;&amp;#x8D4F;&amp;#xFF09;&lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x5C1D;&amp;#x8BD5;&amp;#x4E16;&amp;#x754C;&amp;#x7684;&amp;#x591A;&amp;#x79CD;&amp;#x53EF;&amp;#x80FD;&amp;#x6027;&amp;#xFF0C;&amp;#x8D70;&amp;#x51FA;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x8212;&amp;#x9002;&amp;#x533A; &lt;br&gt;
+&lt;hr&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x6BCF;&amp;#x4E24;&amp;#x5468;&amp;#x9605;&amp;#x8BFB;&amp;#x4E00;&amp;#x672C;&amp;#x4E66;&amp;#xFF0C;&amp;#x4E5F;&amp;#x5C31;&amp;#x662F;&amp;#x5168;&amp;#x5E74;26&amp;#x672C;&amp;#x4E66;&amp;#xFF0C;&amp;#x5E76;&amp;#x4E14;&amp;#x8981;&amp;#x5BF9;&amp;#x8BFB;&amp;#x8FC7;&amp;#x7684;&amp;#x4E66;&amp;#x505A;&amp;#x9002;&amp;#x5F53;&amp;#x603B;&amp;#x7ED3;&lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x57F9;&amp;#x517B;&amp;#x770B;&amp;#x62A5;&amp;#x520A;&amp;#x6742;&amp;#x5FD7;&amp;#x65B0;&amp;#x95FB;&amp;#x7684;&amp;#x4E60;&amp;#x60EF; &amp;#xFF08;&amp;#x79BB;&amp;#x7EBF;&amp;#x5468;&amp;#x520A;&amp;#x3001;&amp;#x7ECF;&amp;#x6D4E;&amp;#x89C2;&amp;#x5BDF;&amp;#x62A5;&amp;#x3001;WIRED&amp;#x7B49;&amp;#xFF09;&lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x4F9D;&amp;#x9760;&amp;#x4E2A;&amp;#x4EBA;&amp;#x535A;&amp;#x5BA2;&amp;#x575A;&amp;#x6301;&amp;#x5199;&amp;#x4F5C;&amp;#xFF0C;&amp;#x5E76;&amp;#x5C1D;&amp;#x8BD5;&amp;#x521B;&amp;#x4F5C;&amp;#x4E00;&amp;#x4E9B;&amp;#x77ED;&amp;#x7BC7;&amp;#x5C0F;&amp;#x8BF4;&lt;br&gt;
+&lt;hr&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x5B66;&amp;#x672F;&amp;#x4E0A;&amp;#xFF0C;&amp;#x4E89;&amp;#x53D6;&amp;#x5B8C;&amp;#x6210;&amp;#x4E24;&amp;#x9879;&amp;#x7814;&amp;#x7A76;&amp;#xFF0C;&amp;#x5E76;&amp;#x8FBE;&amp;#x5230;&amp;#x671F;&amp;#x520A;&amp;#x7684;&amp;#x6C34;&amp;#x51C6;&amp;#xFF0C;&amp;#x4E3A;&amp;#x6BD5;&amp;#x4E1A;&amp;#x7B54;&amp;#x8FA9;&amp;#x505A;&amp;#x51C6;&amp;#x5907;&lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x53C2;&amp;#x52A0;12&amp;#x6708;&amp;#x4EFD;&amp;#x5728;&amp;#x62C9;&amp;#x65AF;&amp;#x7EF4;&amp;#x52A0;&amp;#x65AF;&amp;#x7684;Winter Simulation Conference
+&lt;hr&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x5F00;&amp;#x59CB;&amp;#x7CFB;&amp;#x7EDF;&amp;#x7684;&amp;#x5B66;&amp;#x4E60;C++ &lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x91CD;&amp;#x65B0;&amp;#x7CFB;&amp;#x7EDF;&amp;#x7684;&amp;#x5B66;&amp;#x4E60;Python &lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x5C1D;&amp;#x8BD5;&amp;#x4E00;&amp;#x95E8;&amp;#x51FD;&amp;#x6570;&amp;#x5F0F;&amp;#x7F16;&amp;#x7A0B;&amp;#x8BED;&amp;#x8A00; &lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x53C2;&amp;#x4E0E;&amp;#x5230;&amp;#x5F00;&amp;#x6E90;&amp;#x9879;&amp;#x76EE;&amp;#x4E2D;&amp;#xFF0C;&amp;#x4E3A;Google Summer of Code&amp;#x505A;&amp;#x51C6;&amp;#x5907; &lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x52AA;&amp;#x529B;&amp;#x5B66;&amp;#x4E60;&amp;#x7B97;&amp;#x6CD5;&amp;#x4E0E;&amp;#x6570;&amp;#x636E;&amp;#x7ED3;&amp;#x6784;&amp;#xFF0C;&amp;#x4E89;&amp;#x53D6;&amp;#x5728;Codeforces&amp;#x4E0A;&amp;#x7A33;&amp;#x5B9A;&amp;#x8FDB;&amp;#x5165;Div1&amp;#xFF0C;&amp;#x5F53;&amp;#x7136;&lt;font color=&quot;red&quot;&gt;&amp;#x98D8;&amp;#x7EA2;&lt;/font&gt;&amp;#x662F;&amp;#x6700;&amp;#x597D;&amp;#x7684;&lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x5728;&amp;#x535A;&amp;#x5BA2;&amp;#x4E0A;&amp;#x5F00;&amp;#x8BBE;&amp;#x300A;&amp;#x7B97;&amp;#x6CD5;&amp;#x4E0E;&amp;#x6570;&amp;#x636E;&amp;#x7ED3;&amp;#x6784;&amp;#x300B;&amp;#x7CFB;&amp;#x5217; &lt;br&gt;
+&lt;hr&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x5B8C;&amp;#x7ED3;&amp;#x300A;&amp;#x6DF1;&amp;#x5EA6;&amp;#x589E;&amp;#x5F3A;&amp;#x5B66;&amp;#x4E60;&amp;#x300B;&amp;#x4EE5;&amp;#x53CA;&amp;#x300A;&amp;#x673A;&amp;#x5668;&amp;#x5B66;&amp;#x4E60;&amp;#x300B;&amp;#x7CFB;&amp;#x5217; &lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x57FA;&amp;#x4E8E;Kaggle&amp;#x7684;101&amp;#x8BAD;&amp;#x7EC3;&amp;#xFF0C;&amp;#x6765;&amp;#x5B66;&amp;#x4E60;&amp;#x57FA;&amp;#x672C;&amp;#x7684;&amp;#x673A;&amp;#x5668;&amp;#x5B66;&amp;#x4E60;&amp;#x7B97;&amp;#x6CD5;&amp;#xFF0C;&amp;#x5E76;&amp;#x8BD5;&amp;#x7740;&amp;#x53C2;&amp;#x52A0;&amp;#x4E00;&amp;#x573A;Kaggle&amp;#x7684;&amp;#x6BD4;&amp;#x8D5B;&lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x5728;Open Universe&amp;#x6216;&amp;#x7C7B;&amp;#x4F3C;&amp;#x5E73;&amp;#x53F0;&amp;#x4E0A;&amp;#xFF0C;&amp;#x8BD5;&amp;#x7740;&amp;#x5B9E;&amp;#x65BD;&amp;#x4E1A;&amp;#x754C;&amp;#x9886;&amp;#x5148;&amp;#x7684;&amp;#x589E;&amp;#x5F3A;&amp;#x5B66;&amp;#x4E60;&amp;#x7B97;&amp;#x6CD5;&lt;br&gt;
+&lt;hr&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x627E;&amp;#x4E00;&amp;#x4E2A;&amp;#x5F00;&amp;#x6E90;&amp;#x9879;&amp;#x76EE;&amp;#xFF08;&amp;#x6BD4;&amp;#x5982;&amp;#x8BF4;tushare&amp;#xFF0C;zipline&amp;#xFF0C;vnpy&amp;#xFF0C;pyalgotrate&amp;#xFF0C;rqalpha&amp;#x7B49;&amp;#xFF09;&amp;#xFF0C;&amp;#x5B66;&amp;#x4E60;&amp;#x5176;&amp;#x67B6;&amp;#x6784;&lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x5B9E;&amp;#x65BD;&amp;#x7ECF;&amp;#x5178;&amp;#x7684;&amp;#x91CF;&amp;#x5316;&amp;#x4EA4;&amp;#x6613;&amp;#x7B56;&amp;#x7565;&amp;#x5E76;&amp;#x80FD;&amp;#x7EFC;&amp;#x5408;&amp;#x7684;&amp;#x5BF9;&amp;#x5176;&amp;#x8FDB;&amp;#x884C;&amp;#x8BC4;&amp;#x4EF7;&amp;#x6BD4;&amp;#x8F83;&lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x5728;&amp;#x535A;&amp;#x5BA2;&amp;#x4E0A;&amp;#x5F00;&amp;#x4E00;&amp;#x4E2A;&amp;#x300A;&amp;#x7ECF;&amp;#x5178;&amp;#x6295;&amp;#x8D44;&amp;#x7B56;&amp;#x7565;&amp;#x300B;&amp;#x7CFB;&amp;#x5217; &lt;br&gt;
+&lt;hr&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x65E9;&amp;#x7761;&amp;#x65E9;&amp;#x8D77;&amp;#xFF0C;&amp;#x65B9;&amp;#x80FD;&amp;#x517B;&amp;#x751F; &lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x57F9;&amp;#x517B;&amp;#x8DD1;&amp;#x6B65;&amp;#x7684;&amp;#x4E60;&amp;#x60EF; &lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x5B66;&amp;#x4F1A;&amp;#x81EA;&amp;#x7531;&amp;#x6CF3; &lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x591A;&amp;#x591A;&amp;#x6253;&amp;#x7FBD;&amp;#x6BDB;&amp;#x7403; &lt;br&gt;
+&lt;hr&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&amp;#x4E00;&amp;#x5B63;&amp;#x5EA6;&amp;#x89C4;&amp;#x5212;&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&amp;#x4E8C;&amp;#x5B63;&amp;#x5EA6;&amp;#x89C4;&amp;#x5212;&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&amp;#x4E09;&amp;#x5B63;&amp;#x5EA6;&amp;#x89C4;&amp;#x5212;&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-5&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-5&quot;&gt;&amp;#x56DB;&amp;#x5B63;&amp;#x5EA6;&amp;#x89C4;&amp;#x5212;&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-6&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-6&quot;&gt;&amp;#x5E74;&amp;#x5EA6;&amp;#x56DE;&amp;#x987E;&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-7&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-7&quot;&gt;&amp;#x6821;&amp;#x6B63;&amp;#x8BF4;&amp;#x660E;&lt;/h2&gt;
+&lt;/div&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;
+&amp;#x8BA1;&amp;#x5212;&amp;#x3001;&amp;#x7EC4;&amp;#x7EC7;&amp;#x3001;&amp;#x9886;&amp;#x5BFC;&amp;#x3001;&amp;#x63A7;&amp;#x5236;&amp;#xFF0C;&amp;#x8FD9;&amp;#x6050;&amp;#x6015;&amp;#x662F;&amp;#x5B66;&amp;#x8FC7;&amp;#x7BA1;&amp;#x7406;&amp;#x7684;&amp;#x4EBA;&amp;#x90FD;&amp;#x8033;&amp;#x719F;&amp;#x80FD;&amp;#x8BE6;&amp;#x7684;&amp;#x56DB;&amp;#x4E2A;&amp;#x8BCD;&amp;#x3002;&amp;#x51E1;&amp;#x4E8B;&amp;#x9884;&amp;#x5219;&amp;#x7ACB;&amp;#xFF0C;&amp;#x4E0D;&amp;#x9884;&amp;#x5219;&amp;#x5E9F;&amp;#x3002;&amp;#x6211;&amp;#x60F3;&amp;#x76EE;&amp;#x6807;&amp;#x8FD8;&amp;#x662F;&amp;#x8BB2;&amp;#x51FA;&amp;#x6765;&amp;#x3001;&amp;#x5199;&amp;#x51FA;&amp;#x6765;&amp;#x7684;&amp;#x6BD4;&amp;#x8F83;&amp;#x597D;&amp;#xFF0C;&amp;#x4E00;&amp;#x6765;&amp;#x6709;&amp;#x4E2A;&amp;#x9776;&amp;#x5B50;&amp;#x77E5;&amp;#x9053;&amp;#x81EA;&amp;#x5DF1;&amp;#x8981;&amp;#x505A;&amp;#x4EC0;&amp;#x4E48;&amp;#xFF0C;&amp;#x4E8C;&amp;#x6765;&amp;#x5FC3;&amp;#x91CC;&amp;#x53EF;&amp;#x4EE5;&amp;#x60E6;&amp;#x8BB0;&amp;#x7740;&amp;#x4E5F;&amp;#x7B97;&amp;#x662F;&amp;#x4E00;&amp;#x79CD;&amp;#x97AD;&amp;#x7B56;&amp;#xFF0C;&amp;#x4E09;&amp;#x6765;&amp;#x4E5F;&amp;#x6709;&amp;#x4E2A;&amp;#x76D1;&amp;#x7763;&amp;#x7ACB;flag&amp;#x7684;&amp;#x610F;&amp;#x5473;&amp;#x3002;&amp;#x5176;&amp;#x5B9E;&amp;#x5927;&amp;#x90E8;&amp;#x5206;&amp;#x7684;&amp;#x76EE;&amp;#x6807;&amp;#xFF0C;&amp;#x65E0;&amp;#x5916;&amp;#x4E4E;&amp;#x5C31;&amp;#x662F;&amp;#x9760;&amp;#x65F6;&amp;#x95F4;&amp;#x6765;&amp;#x6362;&amp;#x53D6;&amp;#x7ED3;&amp;#x679C;&amp;#xFF0C;&amp;#x6709;&amp;#x4E2A;&amp;#x9636;&amp;#x6BB5;&amp;#x6027;&amp;#x7684;&amp;#x8BA1;&amp;#x5212;&amp;#x4E5F;&amp;#x597D;&amp;#x5BF9;&amp;#x6297;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x62D6;&amp;#x5EF6;&amp;#x75C7;&amp;#xFF0C;&amp;#x8981;&amp;#x4E0D;&amp;#x5C31;&amp;#x9677;&amp;#x5165;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x8212;&amp;#x9002;&amp;#x533A;&amp;#x65E0;&amp;#x6CD5;&amp;#x524D;&amp;#x8FDB;&amp;#x3002;&amp;#x5C31;&amp;#x50CF;&amp;#x9CA4;&amp;#x9C7C;&amp;#x8DC3;&amp;#x9F99;&amp;#x95E8;&amp;#x4E00;&amp;#x6837;&amp;#xFF0C;&amp;#x8DE8;&amp;#x8FC7;&amp;#x4E86;&amp;#x8FD9;&amp;#x4E2A;&amp;#x69DB;&amp;#xFF0C;&amp;#x624D;&amp;#x80FD;&amp;#x6709;&amp;#x65B0;&amp;#x7684;&amp;#x5E73;&amp;#x53F0;&amp;#x548C;&amp;#x89C6;&amp;#x91CE;&amp;#x3002;&amp;#x611F;&amp;#x89C9;&amp;#x6BD5;&amp;#x4E1A;&amp;#x4E24;&amp;#x5E74;&amp;#x534A;&amp;#xFF0C;&amp;#x5468;&amp;#x56F4;&amp;#x7684;&amp;#x540C;&amp;#x5B66;&amp;#x90FD;&amp;#x5728;&amp;#x5927;&amp;#x8E0F;&amp;#x6B65;&amp;#x7684;&amp;#x524D;&amp;#x8FDB;&amp;#xFF0C;&amp;#x800C;&amp;#x6211;&amp;#x8FD8;&amp;#x5728;&amp;#x539F;&amp;#x5730;&amp;#x8E0F;&amp;#x6B65;&amp;#xFF0C;&amp;#x5B9E;&amp;#x5728;&amp;#x662F;&amp;#x592A;&amp;#x60ED;&amp;#x6127;&amp;#x4E86;&amp;#x3002;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x5217;&amp;#x51FA;&amp;#x6211;2017&amp;#x5E74;&amp;#x7684;&amp;#x5C0F;&amp;#x76EE;&amp;#x6807;&amp;#xFF0C;&amp;#x901A;&amp;#x8FC7;&amp;#x6BCF;&amp;#x4E2A;&amp;#x5B63;&amp;#x5EA6;&amp;#x7684;&amp;#x8FFD;&amp;#x8E2A;&amp;#x4EE5;&amp;#x53CA;&amp;#x6821;&amp;#x6B63;&amp;#xFF0C;&amp;#x5E0C;&amp;#x671B;&amp;#x5728;&amp;#x65B0;&amp;#x7684;&amp;#x4E00;&amp;#x5E74;&amp;#x80FD;&amp;#x6709;&amp;#x6240;&amp;#x6536;&amp;#x83B7;&amp;#x5427;&amp;#x3002;
+&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://blog.greenwicher.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="规划" scheme="http://blog.greenwicher.com/tags/%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>Good Bye 2016</title>
@@ -2510,206 +2605,6 @@ Igor&amp;#x53EA;&amp;#x80FD;&amp;#x5728;&amp;#x8FDE;&amp;#x901A;&amp;#x7684;&amp
   </entry>
   
   <entry>
-    <title>部署个性化子域名网站到Github</title>
-    <link href="http://blog.greenwicher.com/2016/02/15/%E9%83%A8%E7%BD%B2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%AD%90%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99%E5%88%B0Github/"/>
-    <id>http://blog.greenwicher.com/2016/02/15/部署个性化子域名网站到Github/</id>
-    <published>2016-02-15T00:00:00.000Z</published>
-    <updated>2016-12-05T04:12:47.000Z</updated>
-    
-    <content type="html">
-
-&lt;p&gt;
-&amp;#x6700;&amp;#x8FD1;&amp;#x51E0;&amp;#x5E74;&amp;#xFF0C;&amp;#x8D8A;&amp;#x6765;&amp;#x8D8A;&amp;#x591A;&amp;#x7684;&amp;#x4EBA;&amp;#x57FA;&amp;#x4E8E;Jekyll&amp;#xFF0C;Octopress&amp;#x6216;&amp;#x8005;Hexo&amp;#x7B49;&amp;#x6E32;&amp;#x67D3;&amp;#x6846;&amp;#x67B6;&amp;#x5728;Github&amp;#x4E0A;&amp;#x5EFA;&amp;#x7ACB;&amp;#x4E86;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x9759;&amp;#x6001;&amp;#x535A;&amp;#x5BA2;&amp;#x3002;&amp;#x6709;&amp;#x4E86;&amp;#x8FD9;&amp;#x4E9B;&amp;#x6E32;&amp;#x67D3;&amp;#x6846;&amp;#x67B6;&amp;#x540E;&amp;#xFF0C;&amp;#x4F60;&amp;#x53EA;&amp;#x8981;&amp;#x77E5;&amp;#x9053;&amp;#x6700;&amp;#x57FA;&amp;#x672C;&amp;#x7684; &lt;code&gt;markdown&lt;/code&gt; &amp;#x8BED;&amp;#x6CD5;&amp;#xFF08;&amp;#x5BF9;&amp;#x4E8E;Emacs&amp;#x7528;&amp;#x6237;&amp;#xFF0C;&amp;#x4F1A;&amp;#x7528; &lt;code&gt;org mode&lt;/code&gt; &amp;#xFF09;&amp;#xFF0C;&amp;#x9009;&amp;#x62E9;&amp;#x4E00;&amp;#x4E2A;&amp;#x81EA;&amp;#x5DF1;&amp;#x559C;&amp;#x6B22;&amp;#x7684;&amp;#x7F51;&amp;#x7AD9;&amp;#x4E3B;&amp;#x9898;&amp;#xFF0C;&amp;#x7136;&amp;#x540E;&amp;#x5176;&amp;#x4ED6;&amp;#x4E8B;&amp;#x60C5;&amp;#x57FA;&amp;#x672C;&amp;#x5C31;&amp;#x4E0D;&amp;#x9700;&amp;#x8981;&amp;#x5173;&amp;#x5FC3;&amp;#x4E86;&amp;#x3002;&amp;#x8FD9;&amp;#x6837;&amp;#x7684;&amp;#x597D;&amp;#x5904;&amp;#x662F;&amp;#xFF0C;&amp;#x5199;&amp;#x4F5C;&amp;#x8005;&amp;#x80FD;&amp;#x66F4;&amp;#x52A0;&amp;#x4E13;&amp;#x5FC3;&amp;#x4E8E;&amp;#x5199;&amp;#x4F5C;&amp;#x5185;&amp;#x5BB9;&amp;#xFF0C;&amp;#x540C;&amp;#x65F6;&amp;#x66F4;&amp;#x52A0;&amp;#x65B9;&amp;#x4FBF;&amp;#x7684;&amp;#x628A;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x601D;&amp;#x60F3;&amp;#x89C1;&amp;#x89E3;&amp;#x7ECF;&amp;#x9A8C;&amp;#x5728;&amp;#x4E92;&amp;#x8054;&amp;#x7F51;&amp;#x4E0A;&amp;#x5171;&amp;#x4EAB;&amp;#x51FA;&amp;#x6765;&amp;#x3002;&amp;#x5173;&amp;#x4E8E;&amp;#x5982;&amp;#x4F55;&amp;#x5229;&amp;#x7528;&amp;#x4EE5;&amp;#x4E0A;&amp;#x6280;&amp;#x672F;&amp;#x5728;Github&amp;#x6216;&amp;#x8005;Gitcafe&amp;#x4E0A;&amp;#x5EFA;&amp;#x7ACB;&amp;#x4E2A;&amp;#x4EBA;&amp;#x535A;&amp;#x5BA2;&amp;#x7684;&amp;#x6587;&amp;#x7AE0;&amp;#x51E0;&amp;#x4E4E;&amp;#x5DF2;&amp;#x7ECF;&amp;#x6F2B;&amp;#x5929;&amp;#x98DE;&amp;#x4E86;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;&amp;#x6709;&amp;#x7684;&amp;#x65F6;&amp;#x5019;&amp;#x6211;&amp;#x4EEC;&amp;#x66F4;&amp;#x5E0C;&amp;#x671B;&amp;#x62E5;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x5168;&amp;#x9762;&amp;#x7684;&amp;#x7F51;&amp;#x7AD9;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E2A;&amp;#x7F51;&amp;#x7AD9;&amp;#x53EF;&amp;#x4EE5;&amp;#x5305;&amp;#x542B;&amp;#x6211;&amp;#x4EEC;&amp;#x7684;&amp;#x7EF4;&amp;#x57FA;&amp;#x5B50;&amp;#x7AD9;&amp;#x70B9;&amp;#x6216;&amp;#x8005;&amp;#x9879;&amp;#x76EE;&amp;#x5B50;&amp;#x7AD9;&amp;#x70B9;&amp;#x3002;&amp;#x4F46;&amp;#x662F;&amp;#x76EE;&amp;#x524D;&amp;#x7684;&amp;#x6587;&amp;#x7AE0;&amp;#x4EE5;&amp;#x53CA;&amp;#x6E32;&amp;#x67D3;&amp;#x6280;&amp;#x672F;&amp;#x4E3B;&amp;#x8981;&amp;#x90FD;&amp;#x662F;&amp;#x9488;&amp;#x5BF9;&amp;#x4E2A;&amp;#x4EBA;&amp;#x535A;&amp;#x5BA2;&amp;#x7684;&amp;#x5EFA;&amp;#x8BBE;&amp;#xFF0C;&amp;#x672C;&amp;#x6587;&amp;#x8BD5;&amp;#x56FE;&amp;#x5F25;&amp;#x8865;&amp;#x8FD9;&amp;#x4E2A;&amp;#x7A7A;&amp;#x7F3A;&amp;#xFF0C;&amp;#x63D0;&amp;#x51FA;&amp;#x5229;&amp;#x7528;Github Pages&amp;#x6765;&amp;#x90E8;&amp;#x7F72;&amp;#x4E2A;&amp;#x6027;&amp;#x5316;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#x7AD9;&amp;#x70B9;&amp;#x7684;&amp;#x65B9;&amp;#x6CD5;&amp;#x3002;&amp;#x8BFB;&amp;#x5B8C;&amp;#x672C;&amp;#x6587;&amp;#xFF0C;&amp;#x4F60;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x521B;&amp;#x5EFA;&amp;#x8BF8;&amp;#x5982; &lt;code&gt;wiki.greenwicher.com&lt;/code&gt; &amp;#x6216;&amp;#x8005; &lt;code&gt;love.greenwicher.com&lt;/code&gt; &amp;#x8FD9;&amp;#x7C7B;&amp;#x7684;&amp;#x5B50;&amp;#x7AD9;&amp;#x70B9;&amp;#x4E86;&amp;#x3002;
-&lt;/p&gt;
-
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-1&quot;&gt;&amp;#x51C6;&amp;#x5907;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
-&lt;p&gt;
-&amp;#x9996;&amp;#x5148;&amp;#xFF0C;&amp;#x4F60;&amp;#x9700;&amp;#x8981;&amp;#x51C6;&amp;#x5907;&amp;#x5982;&amp;#x4E0B;&amp;#x4E1C;&amp;#x897F;&amp;#x4EE5;&amp;#x53CA;&amp;#x4E86;&amp;#x89E3;&amp;#x4E00;&amp;#x4E9B;&amp;#x57FA;&amp;#x672C;&amp;#x77E5;&amp;#x8BC6;
-&lt;/p&gt;
-&lt;ul class=&quot;org-ul&quot;&gt;
-&lt;li&gt;&amp;#x57FA;&amp;#x672C;&amp;#x7684;Shell&amp;#x547D;&amp;#x4EE4;
-&lt;/li&gt;
-&lt;li&gt;Github&amp;#x8D26;&amp;#x6237;&amp;#x4EE5;&amp;#x53CA;Git&amp;#x57FA;&amp;#x672C;&amp;#x77E5;&amp;#x8BC6;
-&lt;/li&gt;
-&lt;li&gt;&amp;#x4E00;&amp;#x4E2A;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x6587;&amp;#x4EF6;&amp;#x5939;&amp;#xFF08;&amp;#x6839;&amp;#x76EE;&amp;#x5F55;&amp;#x5305;&amp;#x542B;index.html&amp;#xFF09;
-&lt;/li&gt;
-&lt;li&gt;&amp;#x4E2A;&amp;#x4EBA;&amp;#x57DF;&amp;#x540D;&amp;#xFF08;&amp;#x53EF;&amp;#x5728;GoDaddy&amp;#x6216;&amp;#x8005;&amp;#x963F;&amp;#x91CC;&amp;#x4E91;&amp;#x4E0A;&amp;#x6CE8;&amp;#x518C;&amp;#xFF09;
-&lt;/li&gt;
-&lt;li&gt;DNSPod.cn&amp;#x8D26;&amp;#x6237;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-&amp;#x5982;&amp;#x5BF9;&amp;#x63A5;&amp;#x4E0B;&amp;#x6765;&amp;#x4ECB;&amp;#x7ECD;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#x6709;&amp;#x4E0D;&amp;#x61C2;&amp;#x7684;&amp;#x5730;&amp;#x65B9;&amp;#xFF0C;&amp;#x8BF7;&amp;#x81EA;&amp;#x884C;&amp;#x8C37;&amp;#x6B4C;&amp;#x6216;&amp;#x8005;&amp;#x8FDB;&amp;#x884C;&amp;#x7559;&amp;#x8A00;&amp;#x3002;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-2&quot;&gt;&amp;#x63D0;&amp;#x4EA4;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x5230;Github&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
-&lt;/div&gt;&lt;div id=&quot;outline-container-sec-2-1&quot; class=&quot;outline-3&quot;&gt;
-&lt;h3 id=&quot;sec-2-1&quot;&gt;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x83B7;&amp;#x53D6;&lt;/h3&gt;
-&lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-1&quot;&gt;
-&lt;p&gt;
-&amp;#x8FD9;&amp;#x91CC;&amp;#x6211;&amp;#x4EE5;&lt;a href=&quot;https://github.com/gabrielecirulli/2048&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github&amp;#x4E0A;&amp;#x7684;2048&lt;/a&gt;&amp;#x9879;&amp;#x76EE;&amp;#x6765;&amp;#x4F5C;&amp;#x4E3A;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x7684;&amp;#x4F8B;&amp;#x5B50;&amp;#xFF0C;&amp;#x5982;&amp;#x679C;&amp;#x4F60;&amp;#x5DF2;&amp;#x7ECF;&amp;#x6709;&amp;#x4E2A;&amp;#x4EBA;&amp;#x7684;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#xFF0C;&amp;#x90A3;&amp;#x4E48;&amp;#x8BF7;&amp;#x5FFD;&amp;#x7565;&amp;#x8FD9;&amp;#x4E00;&amp;#x5C0F;&amp;#x8282;&amp;#xFF0C;&amp;#x76F4;&amp;#x63A5;&amp;#x5230;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x4E0A;&amp;#x4F20;&amp;#x5C0F;&amp;#x8282;&amp;#x3002;
-&lt;/p&gt;
-
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;http://greenwicher.qiniudn.com/2048.jpg&quot; alt=&quot;2048.jpg&quot; width=&quot;800px&quot;&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-&amp;#x9996;&amp;#x5148;&amp;#x5728;&amp;#x4E0A;&amp;#x9762;&amp;#x7684;&amp;#x56FE;&amp;#x7247;&amp;#xFF0C;&amp;#x70B9;&amp;#x51FB; &lt;code&gt;Fork&lt;/code&gt; &amp;#xFF0C;&amp;#x8FD9;&amp;#x6837;&amp;#x5BF9;&amp;#x65B9;&amp;#x7684;repository&amp;#x5C31;&amp;#x4F1A;&amp;#x88AB;&amp;#x62F7;&amp;#x8D1D;&amp;#x5230;&amp;#x4F60;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x8D26;&amp;#x6237;&amp;#x4E0B;&amp;#x3002;&amp;#x63A5;&amp;#x4E0B;&amp;#x6765;&amp;#x5728;terminal&amp;#x4E0B;&amp;#xFF0C;&amp;#x590D;&amp;#x5236;&amp;#x88AB; &lt;code&gt;Fork&lt;/code&gt; &amp;#x8FC7;&amp;#x6765;&amp;#x7684;repository&amp;#x5230;&amp;#x4F60;&amp;#x60F3;&amp;#x8981;&amp;#x7684;&amp;#x672C;&amp;#x5730;&amp;#x8DEF;&amp;#x5F84;&amp;#x4E0B;&amp;#xFF08;&amp;#x6BD4;&amp;#x5982;&amp;#x8BF4;&amp;#x662F; &lt;code&gt;your_dir&lt;/code&gt; &amp;#xFF09;&amp;#x3002;
-&lt;/p&gt;
-
-&lt;div class=&quot;org-src-container&quot;&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd your_dir
-git clone https://github.com/Greenwicher/2048.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-&amp;#x63A5;&amp;#x4E0B;&amp;#x6765;&amp;#x5728;&amp;#x4F60;&amp;#x7684;&amp;#x672C;&amp;#x5730; &lt;code&gt;your_dir&lt;/code&gt; &amp;#x6253;&amp;#x5F00;index.html&amp;#xFF0C;&amp;#x662F;&amp;#x4E0D;&amp;#x662F;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x5728;&amp;#x672C;&amp;#x5730;&amp;#x73A9;2048&amp;#x5566;~ &amp;#x63A5;&amp;#x4E0B;&amp;#x6765;&amp;#x6211;&amp;#x4EEC;&amp;#x8981;&amp;#x5728;&amp;#x6839;&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#x65B0;&amp;#x5EFA;CNAME&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x5E76;&amp;#x8F93;&amp;#x5165;&amp;#x4F60;&amp;#x7684;&amp;#x4E2A;&amp;#x6027;&amp;#x5316;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#xFF0C;&amp;#x6BD4;&amp;#x5982;&amp;#x8BF4;&amp;#x6211;&amp;#x8FD9;&amp;#x91CC;&amp;#x7684;
-&lt;/p&gt;
-
-&lt;pre class=&quot;example&quot;&gt;
-2048.greenwicher.com
-&lt;/pre&gt;
-
-&lt;p&gt;
-&amp;#x81F3;&amp;#x6B64;&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x7684;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x90E8;&amp;#x5206;&amp;#x4FEE;&amp;#x6539;&amp;#x5C31;&amp;#x57FA;&amp;#x672C;&amp;#x5B8C;&amp;#x6210;&amp;#x4E86;&amp;#x3002;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id=&quot;outline-container-sec-2-2&quot; class=&quot;outline-3&quot;&gt;
-&lt;h3 id=&quot;sec-2-2&quot;&gt;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x4E0A;&amp;#x4F20;&lt;/h3&gt;
-&lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-2&quot;&gt;
-&lt;p&gt;
-&amp;#x57FA;&amp;#x4E8E;Github Pages&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x53EF;&amp;#x4EE5;&amp;#x4E3A;&amp;#x6BCF;&amp;#x4E00;&amp;#x4E2A;repository&amp;#x5EFA;&amp;#x7ACB;project&amp;#x4E3B;&amp;#x9875;&amp;#x3002;&amp;#x7136;&amp;#x540E;&amp;#xFF0C;&amp;#x901A;&amp;#x8FC7;&amp;#x8BBF;&amp;#x95EE; &lt;code&gt;https://username.github.io/repository_name&lt;/code&gt; &amp;#x6765;&amp;#x8BBF;&amp;#x95EE;&amp;#x8BE5;project&amp;#x4E3B;&amp;#x9875;&amp;#x3002;&amp;#x503C;&amp;#x5F97;&amp;#x6CE8;&amp;#x610F;&amp;#x7684;&amp;#x662F;&amp;#x8BE5;project&amp;#x7684;&amp;#x4E3B;&amp;#x9875;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x9700;&amp;#x5B58;&amp;#x653E;&amp;#x5728; &lt;code&gt;gh-pages&lt;/code&gt; &amp;#x5206;&amp;#x652F;&amp;#x4E0B;&amp;#x3002;
-&amp;#x63A5;&amp;#x4E0B;&amp;#x6765;&amp;#x9700;&amp;#x8981;&amp;#x4E00;&amp;#x4E9B;git&amp;#x7684;&amp;#x57FA;&amp;#x672C;&amp;#x77E5;&amp;#x8BC6;&amp;#x3002;&amp;#x9996;&amp;#x5148;&amp;#x5982;&amp;#x679C;&amp;#x6CA1;&amp;#x6709; &lt;code&gt;gh-pages&lt;/code&gt; &amp;#x5206;&amp;#x652F;&amp;#x7684;&amp;#x8BDD;&amp;#xFF0C;&amp;#x5148;&amp;#x8FDB;&amp;#x884C;&amp;#x521B;&amp;#x5EFA;
-&lt;/p&gt;
-&lt;div class=&quot;org-src-container&quot;&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout --orphan gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-&amp;#x5426;&amp;#x5219;&amp;#xFF0C;&amp;#x8F6C;&amp;#x5230;&amp;#x8BE5;&amp;#x5206;&amp;#x652F;&amp;#x4E0B;
-&lt;/p&gt;
-&lt;div class=&quot;org-src-container&quot;&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-&amp;#x63A5;&amp;#x4E0B;&amp;#x6765;&amp;#x5728; &lt;code&gt;your_dir&lt;/code&gt; &amp;#x6839;&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#xFF0C;&amp;#x8F93;&amp;#x5165;&amp;#x5982;&amp;#x4E0B;shell&amp;#x547D;&amp;#x4EE4;&amp;#x3002;
-&lt;/p&gt;
-
-&lt;div class=&quot;org-src-container&quot;&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git add .
-git commit -m &amp;quot;Add CNAME&amp;quot;
-git push origin gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-&amp;#x5982;&amp;#x679C;&amp;#x4E00;&amp;#x5207;&amp;#x987A;&amp;#x5229;&amp;#x7684;&amp;#x8BDD;&amp;#xFF0C;&amp;#x4F60;&amp;#x73B0;&amp;#x5728;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x5728; &lt;code&gt;https://username.github.io/repository_name&lt;/code&gt; &amp;#x6216;&amp;#x8005; &lt;code&gt;http://yourdomain/repository_name&lt;/code&gt; &amp;#x6765;&amp;#x67E5;&amp;#x770B;&amp;#x8BE5;&amp;#x9759;&amp;#x6001;&amp;#x7F51;&amp;#x7AD9;&amp;#x3002;&amp;#x4F46;&amp;#x662F;&amp;#x8FD8;&amp;#x4E0D;&amp;#x53EF;&amp;#x4EE5;&amp;#x901A;&amp;#x8FC7; &lt;code&gt;https://xxx.username.github.io&lt;/code&gt; &amp;#x6216;&amp;#x8005; &lt;code&gt;http://xxx.yourdomain&lt;/code&gt; &amp;#x6765;&amp;#x8BBF;&amp;#x95EE;&amp;#x3002;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-3&quot;&gt;&amp;#x4E2A;&amp;#x6027;&amp;#x5316;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#x8BBE;&amp;#x7F6E;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
-&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3-1&quot; class=&quot;outline-3&quot;&gt;
-&lt;h3 id=&quot;sec-3-1&quot;&gt;&amp;#x6DFB;&amp;#x52A0;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&lt;/h3&gt;
-&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-1&quot;&gt;
-&lt;p&gt;
-&amp;#x6211;&amp;#x7684; &lt;code&gt;greenwicher.com&lt;/code&gt; &amp;#x662F;&amp;#x5728;GoDaddy&amp;#x4E0A;&amp;#x6CE8;&amp;#x518C;&amp;#x7684;&amp;#xFF0C;&amp;#x4E8E;&amp;#x662F;&amp;#x9700;&amp;#x8981;&amp;#x5728;&amp;#x8BE5;&amp;#x7F51;&amp;#x7AD9;&amp;#x8FDB;&amp;#x884C;&amp;#x65B0;&amp;#x589E;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#x670D;&amp;#x52A1;&amp;#x3002;&amp;#x627E;&amp;#x5230; &lt;code&gt;&amp;#x57DF;&amp;#x540D;-&amp;gt;&amp;#x7BA1;&amp;#x7406;DNS&lt;/code&gt; &amp;#xFF0C;&amp;#x70B9;&amp;#x51FB;&amp;#x8FDB;&amp;#x5165;&amp;#x4E4B;&amp;#x540E;&amp;#xFF0C;&amp;#x8BBE;&amp;#x7F6E;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#x3002;
-&lt;/p&gt;
-
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;http://greenwicher.qiniudn.com/GoDaddy%E5%AD%90%E5%9F%9F%E5%90%8D.jpg&quot; alt=&quot;GoDaddy%E5%AD%90%E5%9F%9F%E5%90%8D.jpg&quot;&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id=&quot;outline-container-sec-3-2&quot; class=&quot;outline-3&quot;&gt;
-&lt;h3 id=&quot;sec-3-2&quot;&gt;DNS&amp;#x89E3;&amp;#x6790;&lt;/h3&gt;
-&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-2&quot;&gt;
-&lt;p&gt;
-&amp;#x7EC8;&amp;#x4E8E;&amp;#x5230;&amp;#x4E86;&amp;#x6700;&amp;#x540E;&amp;#x4E00;&amp;#x6B65;&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x9700;&amp;#x8981;&amp;#x5728;&lt;a href=&quot;https://www.dnspod.cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DNSPod&lt;/a&gt;&amp;#x4E0A;&amp;#x8BBE;&amp;#x7F6E;&amp;#x57DF;&amp;#x540D;&amp;#x89E3;&amp;#x6790;&amp;#x3002;&amp;#x8FDB;&amp;#x5165;&amp;#x9996;&amp;#x9875;&amp;#x4E4B;&amp;#x540E;&amp;#xFF0C;&amp;#x70B9;&amp;#x51FB;&amp;#x57DF;&amp;#x540D;&amp;#x89E3;&amp;#x6790;&amp;#x3002;&amp;#x9009;&amp;#x62E9;&amp;#x8981;&amp;#x6DFB;&amp;#x52A0;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#x7684;&amp;#x4E3B;&amp;#x57DF;&amp;#x540D;&amp;#xFF0C;&amp;#x8FDB;&amp;#x884C;&amp;#x6DFB;&amp;#x52A0;CNAME&amp;#x8BB0;&amp;#x5F55;&amp;#x3002;&amp;#x5176;&amp;#x4E2D;&amp;#x4E3B;&amp;#x673A;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E3A;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#xFF0C;&amp;#x8BB0;&amp;#x5F55;&amp;#x503C;&amp;#x4E3A; &lt;code&gt;username.github.io&lt;/code&gt;
-&lt;/p&gt;
-
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;http://greenwicher.qiniudn.com/DNSPod_CNAME.jpg&quot; alt=&quot;DNSPod_CNAME.jpg&quot;&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-4&quot;&gt;&amp;#x6210;&amp;#x54C1;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
-&lt;p&gt;
-&amp;#x6700;&amp;#x7EC8;&amp;#x7684;&amp;#x6210;&amp;#x54C1;&amp;#x5982;&amp;#x4E0B;&amp;#x56FE;&amp;#x6240;&amp;#x793A;&amp;#xFF0C;&amp;#x8FD9;&amp;#x6837;&amp;#x5C31;&amp;#x6709;&amp;#x4E2A;&amp;#x6027;&amp;#x5316;&amp;#x57DF;&amp;#x540D;&amp;#x5B50;&amp;#x7F51;&amp;#x7AD9;&amp;#x5566;~
-&lt;/p&gt;
-
-&lt;div class=&quot;figure&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;http://greenwicher.qiniudn.com/2048%E6%88%90%E5%93%81.jpg&quot; alt=&quot;2048%E6%88%90%E5%93%81.jpg&quot;&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id=&quot;outline-container-sec-5&quot; class=&quot;outline-2&quot;&gt;
-&lt;h2 id=&quot;sec-5&quot;&gt;&amp;#x53C2;&amp;#x8003;&amp;#x8D44;&amp;#x6599;&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-5&quot;&gt;
-&lt;ul class=&quot;org-ul&quot;&gt;
-&lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/about-custom-domains-for-github-pages-sites/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;About custom domains for GitHub Pages sites&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/iissnan/hexo-theme-next/issues/54&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x65B0;&amp;#x7248;&amp;#x672C;&amp;#x529F;&amp;#x80FD;&amp;#x63D0;&amp;#x8BAE; #54&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/e7413116e9d4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&amp;#x642D;&amp;#x5EFA;WiKi&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.zfan.me/2015/09/03/%E4%B8%BA%E9%83%A8%E7%BD%B2%E5%9C%A8Github%E4%B8%8A%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E6%80%A7%E5%9F%9F%E5%90%8D/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x4E3A;&amp;#x90E8;&amp;#x7F72;&amp;#x5728;Github&amp;#x4E0A;&amp;#x7684;Hexo&amp;#x535A;&amp;#x5BA2;&amp;#x7ED1;&amp;#x5B9A;&amp;#x4E2A;&amp;#x6027;&amp;#x57DF;&amp;#x540D;&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content>
-    
-    <summary type="html">
-    
-      本文介绍了如何利用Github Pages来部署个性化子域名站点
-    
-    </summary>
-    
-      <category term="杂" scheme="http://blog.greenwicher.com/categories/%E6%9D%82/"/>
-    
-    
-      <category term="Github" scheme="http://blog.greenwicher.com/tags/Github/"/>
-    
-      <category term="子域名" scheme="http://blog.greenwicher.com/tags/%E5%AD%90%E5%9F%9F%E5%90%8D/"/>
-    
-      <category term="网站开发" scheme="http://blog.greenwicher.com/tags/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Codeforces - 598C Nearest vectors</title>
     <link href="http://blog.greenwicher.com/2016/02/15/CF-598C/"/>
     <id>http://blog.greenwicher.com/2016/02/15/CF-598C/</id>
@@ -2924,6 +2819,206 @@ $$ (abs(a \cdot b) a \cdot b) (\Vert c \Vert \Vert d \Vert)^{2} \ge  (abs(c \cdo
       <category term="算法运行" scheme="http://blog.greenwicher.com/tags/%E7%AE%97%E6%B3%95%E8%BF%90%E8%A1%8C/"/>
     
       <category term="高精度" scheme="http://blog.greenwicher.com/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>部署个性化子域名网站到Github</title>
+    <link href="http://blog.greenwicher.com/2016/02/15/%E9%83%A8%E7%BD%B2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%AD%90%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99%E5%88%B0Github/"/>
+    <id>http://blog.greenwicher.com/2016/02/15/部署个性化子域名网站到Github/</id>
+    <published>2016-02-15T00:00:00.000Z</published>
+    <updated>2016-12-05T04:12:47.000Z</updated>
+    
+    <content type="html">
+
+&lt;p&gt;
+&amp;#x6700;&amp;#x8FD1;&amp;#x51E0;&amp;#x5E74;&amp;#xFF0C;&amp;#x8D8A;&amp;#x6765;&amp;#x8D8A;&amp;#x591A;&amp;#x7684;&amp;#x4EBA;&amp;#x57FA;&amp;#x4E8E;Jekyll&amp;#xFF0C;Octopress&amp;#x6216;&amp;#x8005;Hexo&amp;#x7B49;&amp;#x6E32;&amp;#x67D3;&amp;#x6846;&amp;#x67B6;&amp;#x5728;Github&amp;#x4E0A;&amp;#x5EFA;&amp;#x7ACB;&amp;#x4E86;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x9759;&amp;#x6001;&amp;#x535A;&amp;#x5BA2;&amp;#x3002;&amp;#x6709;&amp;#x4E86;&amp;#x8FD9;&amp;#x4E9B;&amp;#x6E32;&amp;#x67D3;&amp;#x6846;&amp;#x67B6;&amp;#x540E;&amp;#xFF0C;&amp;#x4F60;&amp;#x53EA;&amp;#x8981;&amp;#x77E5;&amp;#x9053;&amp;#x6700;&amp;#x57FA;&amp;#x672C;&amp;#x7684; &lt;code&gt;markdown&lt;/code&gt; &amp;#x8BED;&amp;#x6CD5;&amp;#xFF08;&amp;#x5BF9;&amp;#x4E8E;Emacs&amp;#x7528;&amp;#x6237;&amp;#xFF0C;&amp;#x4F1A;&amp;#x7528; &lt;code&gt;org mode&lt;/code&gt; &amp;#xFF09;&amp;#xFF0C;&amp;#x9009;&amp;#x62E9;&amp;#x4E00;&amp;#x4E2A;&amp;#x81EA;&amp;#x5DF1;&amp;#x559C;&amp;#x6B22;&amp;#x7684;&amp;#x7F51;&amp;#x7AD9;&amp;#x4E3B;&amp;#x9898;&amp;#xFF0C;&amp;#x7136;&amp;#x540E;&amp;#x5176;&amp;#x4ED6;&amp;#x4E8B;&amp;#x60C5;&amp;#x57FA;&amp;#x672C;&amp;#x5C31;&amp;#x4E0D;&amp;#x9700;&amp;#x8981;&amp;#x5173;&amp;#x5FC3;&amp;#x4E86;&amp;#x3002;&amp;#x8FD9;&amp;#x6837;&amp;#x7684;&amp;#x597D;&amp;#x5904;&amp;#x662F;&amp;#xFF0C;&amp;#x5199;&amp;#x4F5C;&amp;#x8005;&amp;#x80FD;&amp;#x66F4;&amp;#x52A0;&amp;#x4E13;&amp;#x5FC3;&amp;#x4E8E;&amp;#x5199;&amp;#x4F5C;&amp;#x5185;&amp;#x5BB9;&amp;#xFF0C;&amp;#x540C;&amp;#x65F6;&amp;#x66F4;&amp;#x52A0;&amp;#x65B9;&amp;#x4FBF;&amp;#x7684;&amp;#x628A;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x601D;&amp;#x60F3;&amp;#x89C1;&amp;#x89E3;&amp;#x7ECF;&amp;#x9A8C;&amp;#x5728;&amp;#x4E92;&amp;#x8054;&amp;#x7F51;&amp;#x4E0A;&amp;#x5171;&amp;#x4EAB;&amp;#x51FA;&amp;#x6765;&amp;#x3002;&amp;#x5173;&amp;#x4E8E;&amp;#x5982;&amp;#x4F55;&amp;#x5229;&amp;#x7528;&amp;#x4EE5;&amp;#x4E0A;&amp;#x6280;&amp;#x672F;&amp;#x5728;Github&amp;#x6216;&amp;#x8005;Gitcafe&amp;#x4E0A;&amp;#x5EFA;&amp;#x7ACB;&amp;#x4E2A;&amp;#x4EBA;&amp;#x535A;&amp;#x5BA2;&amp;#x7684;&amp;#x6587;&amp;#x7AE0;&amp;#x51E0;&amp;#x4E4E;&amp;#x5DF2;&amp;#x7ECF;&amp;#x6F2B;&amp;#x5929;&amp;#x98DE;&amp;#x4E86;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;&amp;#x6709;&amp;#x7684;&amp;#x65F6;&amp;#x5019;&amp;#x6211;&amp;#x4EEC;&amp;#x66F4;&amp;#x5E0C;&amp;#x671B;&amp;#x62E5;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x5168;&amp;#x9762;&amp;#x7684;&amp;#x7F51;&amp;#x7AD9;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E2A;&amp;#x7F51;&amp;#x7AD9;&amp;#x53EF;&amp;#x4EE5;&amp;#x5305;&amp;#x542B;&amp;#x6211;&amp;#x4EEC;&amp;#x7684;&amp;#x7EF4;&amp;#x57FA;&amp;#x5B50;&amp;#x7AD9;&amp;#x70B9;&amp;#x6216;&amp;#x8005;&amp;#x9879;&amp;#x76EE;&amp;#x5B50;&amp;#x7AD9;&amp;#x70B9;&amp;#x3002;&amp;#x4F46;&amp;#x662F;&amp;#x76EE;&amp;#x524D;&amp;#x7684;&amp;#x6587;&amp;#x7AE0;&amp;#x4EE5;&amp;#x53CA;&amp;#x6E32;&amp;#x67D3;&amp;#x6280;&amp;#x672F;&amp;#x4E3B;&amp;#x8981;&amp;#x90FD;&amp;#x662F;&amp;#x9488;&amp;#x5BF9;&amp;#x4E2A;&amp;#x4EBA;&amp;#x535A;&amp;#x5BA2;&amp;#x7684;&amp;#x5EFA;&amp;#x8BBE;&amp;#xFF0C;&amp;#x672C;&amp;#x6587;&amp;#x8BD5;&amp;#x56FE;&amp;#x5F25;&amp;#x8865;&amp;#x8FD9;&amp;#x4E2A;&amp;#x7A7A;&amp;#x7F3A;&amp;#xFF0C;&amp;#x63D0;&amp;#x51FA;&amp;#x5229;&amp;#x7528;Github Pages&amp;#x6765;&amp;#x90E8;&amp;#x7F72;&amp;#x4E2A;&amp;#x6027;&amp;#x5316;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#x7AD9;&amp;#x70B9;&amp;#x7684;&amp;#x65B9;&amp;#x6CD5;&amp;#x3002;&amp;#x8BFB;&amp;#x5B8C;&amp;#x672C;&amp;#x6587;&amp;#xFF0C;&amp;#x4F60;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x521B;&amp;#x5EFA;&amp;#x8BF8;&amp;#x5982; &lt;code&gt;wiki.greenwicher.com&lt;/code&gt; &amp;#x6216;&amp;#x8005; &lt;code&gt;love.greenwicher.com&lt;/code&gt; &amp;#x8FD9;&amp;#x7C7B;&amp;#x7684;&amp;#x5B50;&amp;#x7AD9;&amp;#x70B9;&amp;#x4E86;&amp;#x3002;
+&lt;/p&gt;
+
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&amp;#x51C6;&amp;#x5907;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+&amp;#x9996;&amp;#x5148;&amp;#xFF0C;&amp;#x4F60;&amp;#x9700;&amp;#x8981;&amp;#x51C6;&amp;#x5907;&amp;#x5982;&amp;#x4E0B;&amp;#x4E1C;&amp;#x897F;&amp;#x4EE5;&amp;#x53CA;&amp;#x4E86;&amp;#x89E3;&amp;#x4E00;&amp;#x4E9B;&amp;#x57FA;&amp;#x672C;&amp;#x77E5;&amp;#x8BC6;
+&lt;/p&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&amp;#x57FA;&amp;#x672C;&amp;#x7684;Shell&amp;#x547D;&amp;#x4EE4;
+&lt;/li&gt;
+&lt;li&gt;Github&amp;#x8D26;&amp;#x6237;&amp;#x4EE5;&amp;#x53CA;Git&amp;#x57FA;&amp;#x672C;&amp;#x77E5;&amp;#x8BC6;
+&lt;/li&gt;
+&lt;li&gt;&amp;#x4E00;&amp;#x4E2A;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x6587;&amp;#x4EF6;&amp;#x5939;&amp;#xFF08;&amp;#x6839;&amp;#x76EE;&amp;#x5F55;&amp;#x5305;&amp;#x542B;index.html&amp;#xFF09;
+&lt;/li&gt;
+&lt;li&gt;&amp;#x4E2A;&amp;#x4EBA;&amp;#x57DF;&amp;#x540D;&amp;#xFF08;&amp;#x53EF;&amp;#x5728;GoDaddy&amp;#x6216;&amp;#x8005;&amp;#x963F;&amp;#x91CC;&amp;#x4E91;&amp;#x4E0A;&amp;#x6CE8;&amp;#x518C;&amp;#xFF09;
+&lt;/li&gt;
+&lt;li&gt;DNSPod.cn&amp;#x8D26;&amp;#x6237;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+&amp;#x5982;&amp;#x5BF9;&amp;#x63A5;&amp;#x4E0B;&amp;#x6765;&amp;#x4ECB;&amp;#x7ECD;&amp;#x7684;&amp;#x5185;&amp;#x5BB9;&amp;#x6709;&amp;#x4E0D;&amp;#x61C2;&amp;#x7684;&amp;#x5730;&amp;#x65B9;&amp;#xFF0C;&amp;#x8BF7;&amp;#x81EA;&amp;#x884C;&amp;#x8C37;&amp;#x6B4C;&amp;#x6216;&amp;#x8005;&amp;#x8FDB;&amp;#x884C;&amp;#x7559;&amp;#x8A00;&amp;#x3002;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&amp;#x63D0;&amp;#x4EA4;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x5230;Github&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;/div&gt;&lt;div id=&quot;outline-container-sec-2-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-2-1&quot;&gt;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x83B7;&amp;#x53D6;&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-1&quot;&gt;
+&lt;p&gt;
+&amp;#x8FD9;&amp;#x91CC;&amp;#x6211;&amp;#x4EE5;&lt;a href=&quot;https://github.com/gabrielecirulli/2048&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github&amp;#x4E0A;&amp;#x7684;2048&lt;/a&gt;&amp;#x9879;&amp;#x76EE;&amp;#x6765;&amp;#x4F5C;&amp;#x4E3A;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x7684;&amp;#x4F8B;&amp;#x5B50;&amp;#xFF0C;&amp;#x5982;&amp;#x679C;&amp;#x4F60;&amp;#x5DF2;&amp;#x7ECF;&amp;#x6709;&amp;#x4E2A;&amp;#x4EBA;&amp;#x7684;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#xFF0C;&amp;#x90A3;&amp;#x4E48;&amp;#x8BF7;&amp;#x5FFD;&amp;#x7565;&amp;#x8FD9;&amp;#x4E00;&amp;#x5C0F;&amp;#x8282;&amp;#xFF0C;&amp;#x76F4;&amp;#x63A5;&amp;#x5230;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x4E0A;&amp;#x4F20;&amp;#x5C0F;&amp;#x8282;&amp;#x3002;
+&lt;/p&gt;
+
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://greenwicher.qiniudn.com/2048.jpg&quot; alt=&quot;2048.jpg&quot; width=&quot;800px&quot;&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&amp;#x9996;&amp;#x5148;&amp;#x5728;&amp;#x4E0A;&amp;#x9762;&amp;#x7684;&amp;#x56FE;&amp;#x7247;&amp;#xFF0C;&amp;#x70B9;&amp;#x51FB; &lt;code&gt;Fork&lt;/code&gt; &amp;#xFF0C;&amp;#x8FD9;&amp;#x6837;&amp;#x5BF9;&amp;#x65B9;&amp;#x7684;repository&amp;#x5C31;&amp;#x4F1A;&amp;#x88AB;&amp;#x62F7;&amp;#x8D1D;&amp;#x5230;&amp;#x4F60;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x8D26;&amp;#x6237;&amp;#x4E0B;&amp;#x3002;&amp;#x63A5;&amp;#x4E0B;&amp;#x6765;&amp;#x5728;terminal&amp;#x4E0B;&amp;#xFF0C;&amp;#x590D;&amp;#x5236;&amp;#x88AB; &lt;code&gt;Fork&lt;/code&gt; &amp;#x8FC7;&amp;#x6765;&amp;#x7684;repository&amp;#x5230;&amp;#x4F60;&amp;#x60F3;&amp;#x8981;&amp;#x7684;&amp;#x672C;&amp;#x5730;&amp;#x8DEF;&amp;#x5F84;&amp;#x4E0B;&amp;#xFF08;&amp;#x6BD4;&amp;#x5982;&amp;#x8BF4;&amp;#x662F; &lt;code&gt;your_dir&lt;/code&gt; &amp;#xFF09;&amp;#x3002;
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd your_dir
+git clone https://github.com/Greenwicher/2048.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&amp;#x63A5;&amp;#x4E0B;&amp;#x6765;&amp;#x5728;&amp;#x4F60;&amp;#x7684;&amp;#x672C;&amp;#x5730; &lt;code&gt;your_dir&lt;/code&gt; &amp;#x6253;&amp;#x5F00;index.html&amp;#xFF0C;&amp;#x662F;&amp;#x4E0D;&amp;#x662F;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x5728;&amp;#x672C;&amp;#x5730;&amp;#x73A9;2048&amp;#x5566;~ &amp;#x63A5;&amp;#x4E0B;&amp;#x6765;&amp;#x6211;&amp;#x4EEC;&amp;#x8981;&amp;#x5728;&amp;#x6839;&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#x65B0;&amp;#x5EFA;CNAME&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x5E76;&amp;#x8F93;&amp;#x5165;&amp;#x4F60;&amp;#x7684;&amp;#x4E2A;&amp;#x6027;&amp;#x5316;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#xFF0C;&amp;#x6BD4;&amp;#x5982;&amp;#x8BF4;&amp;#x6211;&amp;#x8FD9;&amp;#x91CC;&amp;#x7684;
+&lt;/p&gt;
+
+&lt;pre class=&quot;example&quot;&gt;
+2048.greenwicher.com
+&lt;/pre&gt;
+
+&lt;p&gt;
+&amp;#x81F3;&amp;#x6B64;&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x7684;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x90E8;&amp;#x5206;&amp;#x4FEE;&amp;#x6539;&amp;#x5C31;&amp;#x57FA;&amp;#x672C;&amp;#x5B8C;&amp;#x6210;&amp;#x4E86;&amp;#x3002;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-2-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-2-2&quot;&gt;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x4E0A;&amp;#x4F20;&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-2&quot;&gt;
+&lt;p&gt;
+&amp;#x57FA;&amp;#x4E8E;Github Pages&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x53EF;&amp;#x4EE5;&amp;#x4E3A;&amp;#x6BCF;&amp;#x4E00;&amp;#x4E2A;repository&amp;#x5EFA;&amp;#x7ACB;project&amp;#x4E3B;&amp;#x9875;&amp;#x3002;&amp;#x7136;&amp;#x540E;&amp;#xFF0C;&amp;#x901A;&amp;#x8FC7;&amp;#x8BBF;&amp;#x95EE; &lt;code&gt;https://username.github.io/repository_name&lt;/code&gt; &amp;#x6765;&amp;#x8BBF;&amp;#x95EE;&amp;#x8BE5;project&amp;#x4E3B;&amp;#x9875;&amp;#x3002;&amp;#x503C;&amp;#x5F97;&amp;#x6CE8;&amp;#x610F;&amp;#x7684;&amp;#x662F;&amp;#x8BE5;project&amp;#x7684;&amp;#x4E3B;&amp;#x9875;&amp;#x9759;&amp;#x6001;&amp;#x7AD9;&amp;#x70B9;&amp;#x9700;&amp;#x5B58;&amp;#x653E;&amp;#x5728; &lt;code&gt;gh-pages&lt;/code&gt; &amp;#x5206;&amp;#x652F;&amp;#x4E0B;&amp;#x3002;
+&amp;#x63A5;&amp;#x4E0B;&amp;#x6765;&amp;#x9700;&amp;#x8981;&amp;#x4E00;&amp;#x4E9B;git&amp;#x7684;&amp;#x57FA;&amp;#x672C;&amp;#x77E5;&amp;#x8BC6;&amp;#x3002;&amp;#x9996;&amp;#x5148;&amp;#x5982;&amp;#x679C;&amp;#x6CA1;&amp;#x6709; &lt;code&gt;gh-pages&lt;/code&gt; &amp;#x5206;&amp;#x652F;&amp;#x7684;&amp;#x8BDD;&amp;#xFF0C;&amp;#x5148;&amp;#x8FDB;&amp;#x884C;&amp;#x521B;&amp;#x5EFA;
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout --orphan gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&amp;#x5426;&amp;#x5219;&amp;#xFF0C;&amp;#x8F6C;&amp;#x5230;&amp;#x8BE5;&amp;#x5206;&amp;#x652F;&amp;#x4E0B;
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&amp;#x63A5;&amp;#x4E0B;&amp;#x6765;&amp;#x5728; &lt;code&gt;your_dir&lt;/code&gt; &amp;#x6839;&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#xFF0C;&amp;#x8F93;&amp;#x5165;&amp;#x5982;&amp;#x4E0B;shell&amp;#x547D;&amp;#x4EE4;&amp;#x3002;
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git add .
+git commit -m &amp;quot;Add CNAME&amp;quot;
+git push origin gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&amp;#x5982;&amp;#x679C;&amp;#x4E00;&amp;#x5207;&amp;#x987A;&amp;#x5229;&amp;#x7684;&amp;#x8BDD;&amp;#xFF0C;&amp;#x4F60;&amp;#x73B0;&amp;#x5728;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x5728; &lt;code&gt;https://username.github.io/repository_name&lt;/code&gt; &amp;#x6216;&amp;#x8005; &lt;code&gt;http://yourdomain/repository_name&lt;/code&gt; &amp;#x6765;&amp;#x67E5;&amp;#x770B;&amp;#x8BE5;&amp;#x9759;&amp;#x6001;&amp;#x7F51;&amp;#x7AD9;&amp;#x3002;&amp;#x4F46;&amp;#x662F;&amp;#x8FD8;&amp;#x4E0D;&amp;#x53EF;&amp;#x4EE5;&amp;#x901A;&amp;#x8FC7; &lt;code&gt;https://xxx.username.github.io&lt;/code&gt; &amp;#x6216;&amp;#x8005; &lt;code&gt;http://xxx.yourdomain&lt;/code&gt; &amp;#x6765;&amp;#x8BBF;&amp;#x95EE;&amp;#x3002;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&amp;#x4E2A;&amp;#x6027;&amp;#x5316;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#x8BBE;&amp;#x7F6E;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-1&quot;&gt;&amp;#x6DFB;&amp;#x52A0;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-1&quot;&gt;
+&lt;p&gt;
+&amp;#x6211;&amp;#x7684; &lt;code&gt;greenwicher.com&lt;/code&gt; &amp;#x662F;&amp;#x5728;GoDaddy&amp;#x4E0A;&amp;#x6CE8;&amp;#x518C;&amp;#x7684;&amp;#xFF0C;&amp;#x4E8E;&amp;#x662F;&amp;#x9700;&amp;#x8981;&amp;#x5728;&amp;#x8BE5;&amp;#x7F51;&amp;#x7AD9;&amp;#x8FDB;&amp;#x884C;&amp;#x65B0;&amp;#x589E;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#x670D;&amp;#x52A1;&amp;#x3002;&amp;#x627E;&amp;#x5230; &lt;code&gt;&amp;#x57DF;&amp;#x540D;-&amp;gt;&amp;#x7BA1;&amp;#x7406;DNS&lt;/code&gt; &amp;#xFF0C;&amp;#x70B9;&amp;#x51FB;&amp;#x8FDB;&amp;#x5165;&amp;#x4E4B;&amp;#x540E;&amp;#xFF0C;&amp;#x8BBE;&amp;#x7F6E;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#x3002;
+&lt;/p&gt;
+
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://greenwicher.qiniudn.com/GoDaddy%E5%AD%90%E5%9F%9F%E5%90%8D.jpg&quot; alt=&quot;GoDaddy%E5%AD%90%E5%9F%9F%E5%90%8D.jpg&quot;&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-3-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-2&quot;&gt;DNS&amp;#x89E3;&amp;#x6790;&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-2&quot;&gt;
+&lt;p&gt;
+&amp;#x7EC8;&amp;#x4E8E;&amp;#x5230;&amp;#x4E86;&amp;#x6700;&amp;#x540E;&amp;#x4E00;&amp;#x6B65;&amp;#xFF0C;&amp;#x6211;&amp;#x4EEC;&amp;#x9700;&amp;#x8981;&amp;#x5728;&lt;a href=&quot;https://www.dnspod.cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DNSPod&lt;/a&gt;&amp;#x4E0A;&amp;#x8BBE;&amp;#x7F6E;&amp;#x57DF;&amp;#x540D;&amp;#x89E3;&amp;#x6790;&amp;#x3002;&amp;#x8FDB;&amp;#x5165;&amp;#x9996;&amp;#x9875;&amp;#x4E4B;&amp;#x540E;&amp;#xFF0C;&amp;#x70B9;&amp;#x51FB;&amp;#x57DF;&amp;#x540D;&amp;#x89E3;&amp;#x6790;&amp;#x3002;&amp;#x9009;&amp;#x62E9;&amp;#x8981;&amp;#x6DFB;&amp;#x52A0;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#x7684;&amp;#x4E3B;&amp;#x57DF;&amp;#x540D;&amp;#xFF0C;&amp;#x8FDB;&amp;#x884C;&amp;#x6DFB;&amp;#x52A0;CNAME&amp;#x8BB0;&amp;#x5F55;&amp;#x3002;&amp;#x5176;&amp;#x4E2D;&amp;#x4E3B;&amp;#x673A;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E3A;&amp;#x5B50;&amp;#x57DF;&amp;#x540D;&amp;#xFF0C;&amp;#x8BB0;&amp;#x5F55;&amp;#x503C;&amp;#x4E3A; &lt;code&gt;username.github.io&lt;/code&gt;
+&lt;/p&gt;
+
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://greenwicher.qiniudn.com/DNSPod_CNAME.jpg&quot; alt=&quot;DNSPod_CNAME.jpg&quot;&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&amp;#x6210;&amp;#x54C1;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
+&lt;p&gt;
+&amp;#x6700;&amp;#x7EC8;&amp;#x7684;&amp;#x6210;&amp;#x54C1;&amp;#x5982;&amp;#x4E0B;&amp;#x56FE;&amp;#x6240;&amp;#x793A;&amp;#xFF0C;&amp;#x8FD9;&amp;#x6837;&amp;#x5C31;&amp;#x6709;&amp;#x4E2A;&amp;#x6027;&amp;#x5316;&amp;#x57DF;&amp;#x540D;&amp;#x5B50;&amp;#x7F51;&amp;#x7AD9;&amp;#x5566;~
+&lt;/p&gt;
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;http://greenwicher.qiniudn.com/2048%E6%88%90%E5%93%81.jpg&quot; alt=&quot;2048%E6%88%90%E5%93%81.jpg&quot;&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-5&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-5&quot;&gt;&amp;#x53C2;&amp;#x8003;&amp;#x8D44;&amp;#x6599;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-5&quot;&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/about-custom-domains-for-github-pages-sites/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;About custom domains for GitHub Pages sites&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/iissnan/hexo-theme-next/issues/54&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x65B0;&amp;#x7248;&amp;#x672C;&amp;#x529F;&amp;#x80FD;&amp;#x63D0;&amp;#x8BAE; #54&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/e7413116e9d4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&amp;#x642D;&amp;#x5EFA;WiKi&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.zfan.me/2015/09/03/%E4%B8%BA%E9%83%A8%E7%BD%B2%E5%9C%A8Github%E4%B8%8A%E7%9A%84Hexo%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E6%80%A7%E5%9F%9F%E5%90%8D/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x4E3A;&amp;#x90E8;&amp;#x7F72;&amp;#x5728;Github&amp;#x4E0A;&amp;#x7684;Hexo&amp;#x535A;&amp;#x5BA2;&amp;#x7ED1;&amp;#x5B9A;&amp;#x4E2A;&amp;#x6027;&amp;#x57DF;&amp;#x540D;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+    
+    <summary type="html">
+    
+      本文介绍了如何利用Github Pages来部署个性化子域名站点
+    
+    </summary>
+    
+      <category term="杂" scheme="http://blog.greenwicher.com/categories/%E6%9D%82/"/>
+    
+    
+      <category term="Github" scheme="http://blog.greenwicher.com/tags/Github/"/>
+    
+      <category term="子域名" scheme="http://blog.greenwicher.com/tags/%E5%AD%90%E5%9F%9F%E5%90%8D/"/>
+    
+      <category term="网站开发" scheme="http://blog.greenwicher.com/tags/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
