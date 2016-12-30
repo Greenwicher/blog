@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.greenwicher.com/2017/01/01/hello-2017/</loc>
+    
+    <lastmod>2016-12-30T06:24:33.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.greenwicher.com/2016/12/31/good-bye-2016/</loc>
+    
+    <lastmod>2016-12-30T06:24:23.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.greenwicher.com/2016/12/24/drl-from_mab_to_mcts/</loc>
+    
+    <lastmod>2016-12-30T06:24:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/</loc>
+    
+    <lastmod>2016-12-30T06:23:45.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.greenwicher.com/2016/03/12/CF-598D/</loc>
+    
+    <lastmod>2016-12-30T06:23:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.greenwicher.com/2016/02/15/CF-598C/</loc>
+    
+    <lastmod>2016-12-30T06:22:51.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.greenwicher.com/2014/03/02/%E6%AF%95%E8%AE%BE%E5%BC%80%E9%A2%98%E4%B8%8D%E4%BC%9A%E5%86%99%EF%BC%8C%E6%80%8E%E4%B9%88%E7%A0%B4%EF%BC%9F%E5%BF%AB%E8%AF%95%E8%AF%95BiblioPy%E5%90%A7%EF%BC%81/</loc>
     
     <lastmod>2016-12-30T05:15:34.000Z</lastmod>
@@ -9,37 +51,16 @@
   </url>
   
   <url>
-    <loc>http://blog.greenwicher.com/2017/01/01/hello-2017/</loc>
-    
-    <lastmod>2016-12-30T04:52:04.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.greenwicher.com/2016/12/31/good-bye-2016/</loc>
-    
-    <lastmod>2016-12-30T01:55:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.greenwicher.com/2016/12/24/drl-from_mab_to_mcts/</loc>
-    
-    <lastmod>2016-12-28T13:01:33.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/</loc>
-    
-    <lastmod>2016-12-23T07:09:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.greenwicher.com/2016/12/04/my_liqi/</loc>
     
     <lastmod>2016-12-16T07:41:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.greenwicher.com/2014/12/06/%E7%A5%9E%E5%A5%87%E5%85%AC%E5%BC%8F%EF%BC%8C%E5%B9%B6%E4%B8%8D%E7%A5%9E%E5%A5%87/</loc>
+    
+    <lastmod>2016-12-05T04:12:47.000Z</lastmod>
     
   </url>
   
@@ -52,27 +73,6 @@
   
   <url>
     <loc>http://blog.greenwicher.com/2014/12/03/%E5%9A%BC%E5%BE%97%E8%8F%9C%E6%A0%B9%EF%BC%8C%E5%81%9A%E5%BE%97%E5%A4%A7%E4%BA%8B/</loc>
-    
-    <lastmod>2016-12-05T04:12:47.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.greenwicher.com/2014/12/06/%E7%A5%9E%E5%A5%87%E5%85%AC%E5%BC%8F%EF%BC%8C%E5%B9%B6%E4%B8%8D%E7%A5%9E%E5%A5%87/</loc>
-    
-    <lastmod>2016-12-05T04:12:47.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.greenwicher.com/2016/03/12/CF-598D/</loc>
-    
-    <lastmod>2016-12-05T04:12:47.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.greenwicher.com/2016/02/15/CF-598C/</loc>
     
     <lastmod>2016-12-05T04:12:47.000Z</lastmod>
     
