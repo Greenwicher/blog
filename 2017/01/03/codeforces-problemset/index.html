@@ -1,0 +1,536 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Codeforces科学刷题指南，一图一表便够了 | Greenwicher&#39;s Blog</title>
+  <meta name="author" content="LIU Weizhi">
+  
+  <meta name="description" content="简要介绍如何科学地刷算法题，来提高自己解决问题的能力，并利用爬虫抓取Codeforces的题库，来分析题目难度以及算法分类的关系">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Codeforces科学刷题指南，一图一表便够了"/>
+  <meta property="og:site_name" content="Greenwicher&#39;s Blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="Greenwicher&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/themes/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-42890116-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="http://greenwicher.com">Greenwicher&#39;s Blog</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href= "/" title="Blog homepage"> 
+			  <i class="fa fa-home"></i>首页
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/archives" title="All the articles."> 
+			  <i class="fa fa-archive"></i>归档
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/categories" title="All the categories."> 
+			  <i class="fa fa-folder"></i>分类
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/tags" title="All the tags."> 
+			  <i class="fa fa-tags"></i>标签
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/atom.xml" title="RSS Subscription"> 
+			  <i class="fa fa-rss"></i>RSS
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "https://book.douban.com/people/Greenwicher/" title="Douban"> 
+			  <i class="fa fa-book"></i>读书
+			</a>			
+	          </li>
+		  <li>
+			<a href= "http://greenwicher.com/me/cv.pdf" title="Me"> 
+			  <i class="fa fa-user"></i>关于我
+			</a>			
+	          </li>
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header page-header-inverse ">		
+			<h1 class="title title-inverse "> Codeforces科学刷题指南，一图一表便够了</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta">
+        </div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  
+		 <div class="alert alert-success description">
+			<i class="fa fa-info-circle"></i> <p>简要介绍如何科学地刷算法题，来提高自己解决问题的能力，并利用爬虫抓取Codeforces的题库，来分析题目难度以及算法分类的关系</p>
+			
+		 </div> <!-- alert -->
+	  		
+
+	  
+
+<p>
+&#x65E0;&#x8BBA;&#x505A;&#x4EC0;&#x4E48;&#x4E8B;&#xFF0C;&#x591A;&#x5C1D;&#x8BD5;&#x3001;&#x627E;&#x5957;&#x8DEF;&#x3001;&#x7136;&#x540E;&#x523B;&#x610F;&#x7EC3;&#x4E60;&#x90FD;&#x662F;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x7684;&#x3002;&#x5BF9;&#x4FE1;&#x606F;&#x79D1;&#x5B66;&#x7ADE;&#x8D5B;&#xFF08;Olympiad in Informatics&#xFF09;&#x7231;&#x597D;&#x8005;&#x6765;&#x8BF4;&#xFF0C;&#x627E;&#x5957;&#x8DEF;&#x7684;&#x5173;&#x952E;&#x5C31;&#x662F;&#x591A;&#x5237;&#x9898;&#x3002;&#x7136;&#x800C;&#x9898;&#x6D77;&#x832B;&#x832B;&#xFF0C;&#x5355;&#x4EE5;Codeforces&#x6765;&#x8BF4;&#xFF0C;&#x622A;&#x6B62;2017&#x5E74;1&#x6708;3&#x65E5;&#xFF0C;&#x603B;&#x5171;&#x6709;3206&#x9053;&#x9898;&#x3002;&#x6362;&#x8A00;&#x4E4B;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x4EBA;&#x8DB3;&#x591F;&#x52E4;&#x594B;&#xFF0C;&#x80FD;&#x591F;&#x4E00;&#x5929;&#x5237;&#x4E09;&#x9053;&#x9898;&#xFF0C;&#x90A3;&#x4E5F;&#x5F97;&#x5FEB;&#x4E09;&#x5E74;&#x624D;&#x80FD;&#x628A;&#x9898;&#x76EE;&#x5237;&#x5B8C;&#xFF0C;&#x800C;&#x4E14;&#x9898;&#x76EE;&#x6570;&#x91CF;&#x8FD8;&#x5728;&#x6269;&#x5145;&#x3002;&#x6240;&#x4EE5;&#x76F2;&#x76EE;&#x7684;&#x5237;&#x9898;&#x7B80;&#x76F4;&#x662F;&#x6D6A;&#x8D39;&#x751F;&#x547D;&#xFF0C;&#x672C;&#x4EBA;&#x4ECE;16&#x5E74;&#x4E0A;&#x534A;&#x5E74;&#x4E00;&#x76F4;&#x6309;&#x7167;&#x9898;&#x76EE;&#x89E3;&#x51B3;&#x4EBA;&#x6570;&#x4ECE;&#x9AD8;&#x5230;&#x4F4E;&#x6392;&#x5E8F;&#xFF0C;&#x4E0D;&#x65AD;&#x7684;&#x5237;&#x6C34;&#x9898;&#x3002;&#x663E;&#x7136;&#x6613;&#x89C1;&#xFF0C;&#x5237;&#x6C34;&#x9898;&#x7684;&#x540E;&#x679C;&#x5C31;&#x662F;&#x6CA1;&#x6709;&#x957F;&#x8FDB;&#xFF0C;&#x719F;&#x6089;&#x7684;&#x8FD8;&#x662F;&#x719F;&#x6089;&#xFF0C;&#x4E0D;&#x61C2;&#x7684;&#x8FD8;&#x662F;&#x4E0D;&#x61C2;&#xFF0C;&#x552F;&#x4E00;&#x8BA9;&#x81EA;&#x5DF1;&#x5F00;&#x5FC3;&#x7684;&#x5C31;&#x662F;&#x5237;&#x9898;&#x6570;&#x91CF;&#x7684;&#x7D2F;&#x79EF;&#x3002;&#x6240;&#x4EE5;&#x79D1;&#x5B66;&#x5237;&#x9898;&#x7684;&#x672C;&#x8D28;&#x5728;&#x4E8E;&#x4E0D;&#x65AD;&#x6311;&#x6218;&#x65B0;&#x9AD8;&#x5EA6;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x5E73;&#x53F0;&#x7EC3;&#x4E60;&#x8DB3;&#x591F;&#x4E45;&#x8DB3;&#x591F;&#x719F;&#x7EC3;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x8981;&#x8FDB;&#x5165;&#x4E0B;&#x4E00;&#x4E2A;&#x96BE;&#x5EA6;&#x5E73;&#x53F0;&#x3002;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x5927;&#x5BB6;&#xFF0C;&#x6211;&#x628A;Codeforces&#x4E0A;&#x622A;&#x6B62;2017&#x5E74;1&#x6708;3&#x65E5;&#x7684;&#x6240;&#x6709;&#x9898;&#x76EE;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x7528;&#x722C;&#x866B;&#x6536;&#x96C6;&#x4E86;&#x4E0B;&#x6765;&#xFF0C;&#x5E76;&#x5B58;&#x50A8;&#x5230;excel&#x91CC;&#x3002;&#x66F4;&#x8FDB;&#x4E00;&#x6B65;&#xFF0C;&#x672C;&#x6587;&#x8BD5;&#x56FE;&#x5206;&#x6790;&#x4E0D;&#x540C;&#x7B97;&#x6CD5;&#x5728;&#x4E0D;&#x540C;&#x96BE;&#x5EA6;&#x7B49;&#x7EA7;&#x4E0A;&#x7684;&#x51FA;&#x73B0;&#x9891;&#x7387;&#x5206;&#x5E03;&#xFF0C;&#x4EE5;&#x53CA;&#x4E0D;&#x540C;&#x7B97;&#x6CD5;&#x5728;&#x4E0D;&#x540C;&#x96BE;&#x5EA6;&#x7B49;&#x7EA7;&#x4E0A;&#x88AB;&#x89E3;&#x51B3;&#x6B21;&#x6570;&#x7684;&#x5206;&#x5E03;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4F1A;&#x7B80;&#x8981;&#x4ECB;&#x7ECD;&#x7684;&#x6211;&#x7684;&#x5237;&#x9898;&#x89C2;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x722C;&#x53D6;Codeforces&#x4E0A;&#x7684;&#x4FE1;&#x606F;&#x3002;
+</p>
+
+<a id="more"></a>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">&#x5148;&#x8BF4;&#x7ED3;&#x8BBA;</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">&#x4E00;&#x5F20;&#x56FE;</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+<div class="figure"><p><center><img src="Codeforces_Algorithms_Tag_Frequency.jpg" alt="Codeforces_Algorithms_Tag_Frequency.jpg" width=" 80%"><figcaption>Codeforces_Algorithms_Tag_Frequency.jpg</figcaption></center></p></div> 
+&#x4E0A;&#x9762;&#x8FD9;&#x5F20;&#x56FE;&#x53CD;&#x6620;&#x4E86;&#x4E0D;&#x540C;&#x7B97;&#x6CD5;&#xFF08;&#x7B2C;&#x4E00;&#x5217;&#xFF09;&#x5728;&#x4E0D;&#x540C;&#x95EE;&#x9898;&#x96BE;&#x5EA6;&#xFF08;&#x7B2C;&#x4E00;&#x884C;&#xFF09;&#x4E0A;&#x7684;&#x9891;&#x7387;&#x5206;&#x5E03;&#xFF0C;&#x57FA;&#x4E8E;&#x8BE5;&#x56FE;&#xFF0C;&#x5927;&#x6982;&#x5C31;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x5728;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x6C34;&#x5E73;&#x4E0B;&#x5E94;&#x8BE5;&#x638C;&#x63E1;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x7B97;&#x6CD5;&#x3002;&#x4E0D;&#x8FC7;&#x8FD9;&#x91CC;&#x6211;&#x6CA1;&#x6709;&#x533A;&#x5206;Div1&#x548C;Div2&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x522B;&#xFF0C;&#x4EC5;&#x4EC5;&#x662F;&#x6309;&#x7167;&#x9898;&#x53F7;&#xFF08;A&#x3001;B&#x3001;C&#x7B49;&#x7B49;&#xFF09;&#x6765;&#x63A8;&#x65AD;&#x96BE;&#x5EA6;&#x3002;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5BF9;&#x7B80;&#x5355;&#x7684;A&#x9898;&#x800C;&#x8A00;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x90FD;&#x662F;&#x8003;&#x5BDF;&#x57FA;&#x672C;&#x7684;&#x7F16;&#x7A0B;&#x529F;&#x5E95;&#xFF0C;&#x8BF8;&#x5982;implementation&#xFF08;&#x5927;&#x6982;&#x5C31;&#x662F;&#x9898;&#x76EE;&#x8BF4;&#x4EC0;&#x4E48;&#xFF0C;&#x4F60;&#x505A;&#x4EC0;&#x4E48;&#x5C31;&#x662F;&#x4E86;&#xFF09;&#xFF0C;math&#xFF08;&#x56DB;&#x5219;&#x8FD0;&#x7B97;&#x3001;&#x53D6;&#x6A21;&#x53D6;&#x6574;&#x7B49;&#x7B49;&#xFF09;&#x4EE5;&#x53CA;brute force&#xFF08;&#x66B4;&#x529B;&#x679A;&#x4E3E;&#xFF09;&#x3002;&#x800C;&#x968F;&#x7740;&#x96BE;&#x5EA6;&#x7684;&#x589E;&#x52A0;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;E&#x9898;&#xFF0C;&#x4E3B;&#x8981;&#x5C31;&#x5728;&#x4E8E;&#x8003;&#x5BDF;&#x5BF9;dp&#xFF08;&#x52A8;&#x6001;&#x89C4;&#x5212;&#xFF09;&#xFF0C;data structures&#xFF08;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF09;&#x3002;&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x4ECE;&#x56FE;&#x4E2D;&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x9AD8;&#x96BE;&#x5EA6;&#x9898;&#x76EE;&#x4E3B;&#x8981;&#x5728;math&#xFF0C;geometry&#xFF08;&#x8BA1;&#x7B97;&#x51E0;&#x4F55;&#xFF09;&#xFF0C;shortest path&#xFF08;&#x56FE;&#x8BBA;&#xFF09;&#x4EE5;&#x53CA;games&#xFF08;&#x535A;&#x5F08;&#xFF09;&#x4E0A;&#x3002;&#x4E0B;&#x9762;&#x518D;&#x514D;&#x8D39;&#x9644;&#x9001;&#x9886;&#x4E00;&#x5F20;&#x56FE;&#xFF0C;&#x53CD;&#x6620;&#x4E86;&#x4E0D;&#x540C;&#x7B97;&#x6CD5;&#x5728;&#x4E0D;&#x540C;&#x95EE;&#x9898;&#x96BE;&#x5EA6;&#x4E0A;&#x88AB;&#x89E3;&#x51B3;&#x6B21;&#x6570;&#x7684;&#x9891;&#x7387;&#x5206;&#x5E03;&#x3002;
+</p>
+
+<p>
+<div class="figure"><p><center><img src="Codeforces_Algorithms_Tag_Solved.jpg" alt="Codeforces_Algorithms_Tag_Solved.jpg" width=" 100%"><figcaption>Codeforces_Algorithms_Tag_Solved.jpg</figcaption></center></p></div> 
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">&#x4E00;&#x5F20;&#x8868;</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+<div class="figure"><p><center><img src="Codeforces-ProblemSet.jpg" alt="Codeforces-ProblemSet.jpg" width=" 80%"><figcaption>Codeforces-ProblemSet.jpg</figcaption></center></p></div> 
+&#x7136;&#x540E;&#x796D;&#x4E0A;&#x5237;&#x9898;&#x76EE;&#x5F55;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8FD9;&#x4E00;&#x5F20;&#x8868;&#xFF0C;&#x6C47;&#x603B;&#x4E86;&#x622A;&#x6B62;2017&#x5E74;1&#x6708;3&#x65E5;Codeforces&#x9898;&#x76EE;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x7B97;&#x6CD5;&#x9898;&#x3002;&#x57FA;&#x4E8E;&#x8FD9;&#x5F20;&#x8868;&#xFF0C;&#x4E00;&#x6765;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x89E3;&#x51B3;&#x4EBA;&#x6570;&#x6765;&#x8FDB;&#x884C;&#x5237;&#x9898;&#xFF0C;&#x4E8C;&#x6765;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x9898;&#x76EE;&#x96BE;&#x5EA6;&#x8FDB;&#x884C;&#x5237;&#x9898;&#xFF0C;&#x4E09;&#x6765;&#x8FD8;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x4E3B;&#x9898;&#x5237;&#x9898;&#x3002;&#x5177;&#x4F53;&#x7684;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x94FE;&#x63A5;&#x8BF7;&#x89C1;&#x6587;&#x672B;&#x3002;
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">&#x6211;&#x7684;&#x5237;&#x9898;&#x89C2;</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+&#x8FD9;&#x91CC;&#x642C;&#x6765;&#x6211;&#x5728;&#x77E5;&#x4E4E;&#x4E0A;&#x7684;&#x56DE;&#x7B54;&#xFF0C;&#x8BE6;&#x89C1; <a href="https://www.zhihu.com/question/36738189/answer/128101002" target="_blank" rel="external">LeetCode&#x6309;&#x7167;&#x600E;&#x6837;&#x7684;&#x987A;&#x5E8F;&#x6765;&#x5237;&#x9898;&#x6BD4;&#x8F83;&#x597D;&#xFF1F;</a>
+</p>
+<ul class="org-ul">
+<li><b>&#x5982;&#x679C;&#x60F3;&#x63D0;&#x5347;&#x81EA;&#x5DF1;&#x7684;&#x601D;&#x7EF4;&#x80FD;&#x529B;</b> &#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x7167;AC&#x7387;&#x6216;&#x8005;&#x89E3;&#x51B3;&#x4EBA;&#x6570;&#x7531;&#x4F4E;&#x5230;&#x9AD8;&#x4E8C;&#x5206;&#x67E5;&#x627E;&#x5339;&#x914D;&#x81EA;&#x5DF1;&#x5F53;&#x524D;&#x6C34;&#x5E73;&#x96BE;&#x5EA6;&#x7684;&#x9898;&#x76EE;&#xFF0C;&#x7136;&#x540E;&#x9002;&#x5F53;&#x6311;&#x6218;&#x9AD8;&#x96BE;&#x5EA6;&#x9898;&#xFF08;&#x4E8C;&#x5206;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x662F; \(O(\log N)\) &#xFF0C;&#x81F3;&#x5C11;&#x6BD4;&#x4ECE;&#x6613;&#x5230;&#x96BE;&#x7684; \(O(N)\) &#x8282;&#x7701;&#x65F6;&#x95F4;&#xFF09;
+</li>
+<li><b>&#x5982;&#x679C;&#x60F3;&#x5DE9;&#x56FA;&#x67D0;&#x4E00;&#x4E13;&#x9898;</b> &#xFF0C;&#x90A3;&#x81EA;&#x7136;&#x5E94;&#x8BE5;&#x6309;&#x7167;tag&#x6765;&#x5237;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x56E0;&#x4E3A;&#x6240;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x5728;&#x6C42;&#x89E3;&#x524D;&#x5DF2;&#x77E5;&#xFF0C;&#x4E0D;&#x592A;&#x5229;&#x4E8E;&#x601D;&#x7EF4;&#x80FD;&#x529B;&#x7684;&#x63D0;&#x5347;
+</li>
+<li><b>&#x5982;&#x679C;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x61C2;</b> &#xFF0C;&#x90A3;&#x4E48;&#x5EFA;&#x8BAE;&#x968F;&#x673A;&#x5237;&#x9898;&#xFF0C;&#x4E00;&#x6765;&#x53EF;&#x4EE5;&#x6DA8;&#x89C1;&#x8BC6;&#xFF0C;&#x4E8C;&#x6765;&#x8FDB;&#x6B65;&#x7A7A;&#x95F4;&#x6BD4;&#x8F83;&#x5927;
+</li>
+<li><b>&#x5982;&#x679C;&#x60F3;&#x63D0;&#x9AD8;AC&#x7387;&#x6216;&#x8005;&#x589E;&#x52A0;&#x81EA;&#x4FE1;</b> &#xFF0C;&#x90A3;&#x4E48;&#x5EFA;&#x8BAE;&#x5237;&#x6C34;&#x9898;
+</li>
+<li><b>&#x6DF7;&#x642D;&#x4EE5;&#x4E0A;&#x7B56;&#x7565;</b> &#xFF0C;&#x6BD4;&#x5982;&#x9488;&#x5BF9;&#x67D0;&#x4E00;&#x4E13;&#x9898;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x4E8C;&#x5206;&#x67E5;&#x627E;&#x6765;&#x9009;&#x62E9;&#x95EE;&#x9898;&#x6C42;&#x89E3;
+</li>
+</ul>
+
+<p>
+&#x518D;&#x6709;&#x4E2A;&#x5EFA;&#x8BAE;&#xFF0C;&#x9898;&#x76EE;&#x5982;&#x679C;&#x592A;&#x96BE;&#x8D85;&#x8FC7;&#x81EA;&#x5DF1;&#x5F53;&#x524D;&#x80FD;&#x529B;&#x7684;&#x8BDD;&#xFF0C;&#x5C1D;&#x8BD5;&#x4E00;&#x5B9A;&#x65F6;&#x95F4;&#x540E;&#x8FD8;&#x662F;&#x8001;&#x8001;&#x5B9E;&#x5B9E;&#x770B;&#x9898;&#x89E3;&#x5427;&#xFF0C;&#x4EBA;&#x4E0E;&#x4EBA;&#x4E4B;&#x95F4;&#x8FD8;&#x662F;&#x6709;&#x5929;&#x8D4B;&#x5DEE;&#x522B;&#x7684;&#xFF0C;&#x4F46;&#x533A;&#x522B;&#x5728;&#x4E8E;&#x7ECF;&#x9A8C;&#x53EF;&#x4EE5;&#x6162;&#x6162;&#x79EF;&#x7D2F;&#x3002;&#x7279;&#x522B;&#x662F;&#x5373;&#x4F7F;&#x505A;&#x5BF9;&#x9898;&#x4E4B;&#x540E;&#xFF0C;&#x8FD8;&#x8981;&#x60F3;&#x5C3D;&#x529E;&#x6CD5;&#x770B;&#x6709;&#x6CA1;&#x6709;&#x63D0;&#x9AD8;&#x7684;&#x4F59;&#x5730;&#xFF0C;&#x5E76;&#x53C2;&#x8003;&#x522B;&#x4EBA;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x770B;&#x5982;&#x4F55;&#x7CBE;&#x7B80;&#x4EE3;&#x7801;&#x4EE5;&#x53CA;&#x7CBE;&#x7B80;&#x65F6;&#x95F4;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x3002;
+</p>
+
+<p>
+<div class="figure"><p><center><img src="tourist.jpg" alt="tourist.jpg" width=" 80%"><figcaption>tourist.jpg</figcaption></center></p></div> 
+&#x636E;&#x8BF4;&#x5927;&#x795E;&#x4EEC;&#x7684;&#x5237;&#x9898;&#x91CF;&#x90FD;&#x662F;&#x4E0A;&#x4E07;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6B63;&#x5F0F;&#x6BD4;&#x8D5B;&#x91CC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BF8;&#x591A;&#x5927;&#x795E;&#x4E0D;&#x5230;&#x4E00;&#x5206;&#x949F;&#x5C31;&#x79D2;&#x4E86;&#x4E00;&#x9053;&#x9898;&#xFF0C;&#x624B;&#x901F;&#x592A;&#x5FEB;&#x3002;&#x5BF9;Competitive Programming&#x800C;&#x8A00;&#xFF0C;&#x628A;&#x9898;&#x76EE;&#x505A;&#x5BF9;&#x662F;&#x57FA;&#x672C;&#x8981;&#x6C42;&#xFF08;&#x9898;&#x76EE;&#x592A;&#x96BE;&#x5219;&#x53E6;&#x5F53;&#x522B;&#x8BBA;&#xFF09;&#xFF0C;&#x7528;&#x66F4;&#x5FEB;&#x7684;&#x901F;&#x5EA6;&#x6C42;&#x89E3;&#x624D;&#x662F;&#x9876;&#x5C16;&#x9AD8;&#x624B;&#x4E4B;&#x95F4;&#x7684;&#x6838;&#x5FC3;&#x533A;&#x522B;&#x3002;&#x5982;&#x679C;&#x8BF4;&#x771F;&#x7684;&#x6709;&#x5929;&#x8D4B;&#x5B58;&#x5728;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x4E5F;&#x65E0;&#x80FD;&#x4E3A;&#x529B;&#xFF1B;&#x4F46;&#x5E0C;&#x671B;&#x80FD;&#x50CF;&#x5356;&#x6CB9;&#x7FC1;&#x4E00;&#x6837;&#x8BF4;&#x51FA;&#xFF0C;&#x300E;&#x65E0;&#x4ED6;&#xFF0C;&#x4F46;&#x624B;&#x719F;&#x5C14;&#x300F;&#x3002;
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">&#x5982;&#x4F55;&#x7528;&#x722C;&#x866B;&#x83B7;&#x53D6;&#x4FE1;&#x606F;</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">&#x5FC5;&#x8981;&#x7684;&#x5E93;</h3>
+<div class="outline-text-3" id="text-2-1">
+<div class="org-src-container">
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>: <span class="keyword">import</span> re</span><br><span class="line"><span class="number">2</span>: <span class="keyword">import</span> urllib.request</span><br><span class="line"><span class="number">3</span>: <span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="number">4</span>: <span class="keyword">import</span> os</span><br><span class="line"><span class="number">5</span>: <span class="keyword">import</span> csv</span><br><span class="line"><span class="number">6</span>: <span class="keyword">import</span> time</span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">&#x722C;&#x53D6;Codeforces&#x7684;&#x6240;&#x6709;&#x7B97;&#x6CD5;&#x9898;</h3>
+<div class="outline-text-3" id="text-2-2">
+<div class="org-src-container">
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"> <span class="number">1</span>: <span class="comment">#%% retrieve the problem set</span></span><br><span class="line"> <span class="number">2</span>: <span class="function"><span class="keyword">def</span> <span class="title">spider</span><span class="params">(url)</span>:</span></span><br><span class="line"> <span class="number">3</span>:     response = urllib.request.urlopen(url)</span><br><span class="line"> <span class="number">4</span>:     soup = BeautifulSoup(response.read())</span><br><span class="line"> <span class="number">5</span>:     pattern = {<span class="string">&apos;name&apos;</span>: <span class="string">&apos;tr&apos;</span>}</span><br><span class="line"> <span class="number">6</span>:     content = soup.findAll(**pattern)</span><br><span class="line"> <span class="number">7</span>:     <span class="keyword">for</span> row <span class="keyword">in</span> content:</span><br><span class="line"> <span class="number">8</span>: 	item = row.findAll(<span class="string">&apos;td&apos;</span>)</span><br><span class="line"> <span class="number">9</span>: 	<span class="keyword">try</span>:</span><br><span class="line"><span class="number">10</span>: 	    <span class="comment"># get the problem id</span></span><br><span class="line"><span class="number">11</span>: 	    id = item[<span class="number">0</span>].find(<span class="string">&apos;a&apos;</span>).string.strip()</span><br><span class="line"><span class="number">12</span>: 	    col2 = item[<span class="number">1</span>].findAll(<span class="string">&apos;a&apos;</span>)</span><br><span class="line"><span class="number">13</span>: 	    <span class="comment"># get the problem title</span></span><br><span class="line"><span class="number">14</span>: 	    title = col2[<span class="number">0</span>].string.strip()</span><br><span class="line"><span class="number">15</span>: 	    <span class="comment"># get the problem tags</span></span><br><span class="line"><span class="number">16</span>: 	    tags = [foo.string.strip() <span class="keyword">for</span> foo <span class="keyword">in</span> col2[<span class="number">1</span>:]]</span><br><span class="line"><span class="number">17</span>: 	    <span class="comment"># get the number of AC submissions</span></span><br><span class="line"><span class="number">18</span>: 	    solved = re.findall(<span class="string">&apos;x(\d+)&apos;</span>, str(item[<span class="number">3</span>].find(<span class="string">&apos;a&apos;</span>)))[<span class="number">0</span>]</span><br><span class="line"><span class="number">19</span>: 	    <span class="comment"># update the problem info</span></span><br><span class="line"><span class="number">20</span>: 	    codeforces[id] = {<span class="string">&apos;title&apos;</span>:title, <span class="string">&apos;tags&apos;</span>:tags, <span class="string">&apos;solved&apos;</span>:solved, <span class="string">&apos;accepted&apos;</span>:<span class="number">0</span>,}</span><br><span class="line"><span class="number">21</span>: 	<span class="keyword">except</span>:</span><br><span class="line"><span class="number">22</span>: 	    <span class="keyword">continue</span></span><br><span class="line"><span class="number">23</span>:     <span class="keyword">return</span> soup</span><br><span class="line"><span class="number">24</span>: </span><br><span class="line"><span class="number">25</span>: codeforces = {}</span><br><span class="line"><span class="number">26</span>: wait = <span class="number">15</span> <span class="comment"># wait time to avoid the blocking of spider</span></span><br><span class="line"><span class="number">27</span>: last_page = <span class="number">33</span> <span class="comment"># the total page number of problem set page</span></span><br><span class="line"><span class="number">28</span>: url = [<span class="string">&apos;http://codeforces.com/problemset/page/%d&apos;</span> % page <span class="keyword">for</span> page <span class="keyword">in</span> range(<span class="number">1</span>,last_page+<span class="number">1</span>)]</span><br><span class="line"><span class="number">29</span>: <span class="keyword">for</span> foo <span class="keyword">in</span> url:</span><br><span class="line"><span class="number">30</span>:     print(<span class="string">&apos;Processing URL %s&apos;</span> % foo)</span><br><span class="line"><span class="number">31</span>:     spider(foo)</span><br><span class="line"><span class="number">32</span>:     print(<span class="string">&apos;Wait %f seconds&apos;</span> % wait)</span><br><span class="line"><span class="number">33</span>:     time.sleep(wait)</span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3">&#x6807;&#x8BB0;&#x5DF2;&#x89E3;&#x51B3;&#x7684;&#x7B97;&#x6CD5;&#x9898;</h3>
+<div class="outline-text-3" id="text-2-3">
+<div class="org-src-container">
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"> <span class="number">1</span>: <span class="comment">#%% mark the accepted problems</span></span><br><span class="line"> <span class="number">2</span>: <span class="function"><span class="keyword">def</span> <span class="title">accepted</span><span class="params">(url)</span>:</span></span><br><span class="line"> <span class="number">3</span>:     response = urllib.request.urlopen(url)</span><br><span class="line"> <span class="number">4</span>:     soup = BeautifulSoup(response.read())</span><br><span class="line"> <span class="number">5</span>:     pattern = {<span class="string">&apos;name&apos;</span>:<span class="string">&apos;table&apos;</span>, <span class="string">&apos;class&apos;</span>:<span class="string">&apos;status-frame-datatable&apos;</span>}</span><br><span class="line"> <span class="number">6</span>:     table = soup.findAll(**pattern)[<span class="number">0</span>]</span><br><span class="line"> <span class="number">7</span>:     pattern = {<span class="string">&apos;name&apos;</span>: <span class="string">&apos;tr&apos;</span>}</span><br><span class="line"> <span class="number">8</span>:     content = table.findAll(**pattern)</span><br><span class="line"> <span class="number">9</span>:     <span class="keyword">for</span> row <span class="keyword">in</span> content:</span><br><span class="line"><span class="number">10</span>: 	<span class="keyword">try</span>:</span><br><span class="line"><span class="number">11</span>: 	    item = row.findAll(<span class="string">&apos;td&apos;</span>)</span><br><span class="line"><span class="number">12</span>: 	    <span class="comment"># check whether this problem is solved</span></span><br><span class="line"><span class="number">13</span>: 	    <span class="keyword">if</span> <span class="string">&apos;Accepted&apos;</span> <span class="keyword">in</span> str(row):</span><br><span class="line"><span class="number">14</span>: 		id = item[<span class="number">3</span>].find(<span class="string">&apos;a&apos;</span>).string.split(<span class="string">&apos;-&apos;</span>)[<span class="number">0</span>].strip()</span><br><span class="line"><span class="number">15</span>: 		codeforces[id][<span class="string">&apos;accepted&apos;</span>] = <span class="number">1</span></span><br><span class="line"><span class="number">16</span>: 	<span class="keyword">except</span>:</span><br><span class="line"><span class="number">17</span>: 	    <span class="keyword">continue</span></span><br><span class="line"><span class="number">18</span>:     <span class="keyword">return</span> soup</span><br><span class="line"><span class="number">19</span>: </span><br><span class="line"><span class="number">20</span>: wait = <span class="number">15</span> <span class="comment"># wait time to avoid the blocking of spider</span></span><br><span class="line"><span class="number">21</span>: last_page = <span class="number">10</span> <span class="comment"># the total page number of user submission</span></span><br><span class="line"><span class="number">22</span>: handle = <span class="string">&apos;Greenwicher&apos;</span> <span class="comment"># please input your handle</span></span><br><span class="line"><span class="number">23</span>: url = [<span class="string">&apos;http://codeforces.com/submissions/%s/page/%d&apos;</span> % (handle, page) <span class="keyword">for</span> page <span class="keyword">in</span> range(<span class="number">1</span>, last_page+<span class="number">1</span>)]</span><br><span class="line"><span class="number">24</span>: <span class="keyword">for</span> foo <span class="keyword">in</span> url:</span><br><span class="line"><span class="number">25</span>:     print(<span class="string">&apos;Processing URL %s&apos;</span> % foo)</span><br><span class="line"><span class="number">26</span>:     accepted(foo)</span><br><span class="line"><span class="number">27</span>:     print(<span class="string">&apos;Wait %f seconds&apos;</span> % wait)</span><br><span class="line"><span class="number">28</span>:     time.sleep(wait)</span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4">&#x8F93;&#x51FA;&#x722C;&#x53D6;&#x4FE1;&#x606F;&#x5230;csv&#x6587;&#x672C;</h3>
+<div class="outline-text-3" id="text-2-4">
+<div class="org-src-container">
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"> <span class="number">1</span>: <span class="comment">#%% output the problem set to csv files</span></span><br><span class="line"> <span class="number">2</span>: root = os.getcwd()</span><br><span class="line"> <span class="number">3</span>: <span class="keyword">with</span> open(os.path.join(root,<span class="string">&quot;CodeForces-ProblemSet.csv&quot;</span>),<span class="string">&quot;w&quot;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f_out:</span><br><span class="line"> <span class="number">4</span>:     f_csv = csv.writer(f_out)</span><br><span class="line"> <span class="number">5</span>:     f_csv.writerow([<span class="string">&apos;ID&apos;</span>, <span class="string">&apos;Title&apos;</span>, <span class="string">&apos;Tags&apos;</span>, <span class="string">&apos;Solved&apos;</span>, <span class="string">&apos;Accepted&apos;</span>])</span><br><span class="line"> <span class="number">6</span>:     <span class="keyword">for</span> id <span class="keyword">in</span> codeforces:</span><br><span class="line"> <span class="number">7</span>: 	title = codeforces[id][<span class="string">&apos;title&apos;</span>]</span><br><span class="line"> <span class="number">8</span>: 	tags = <span class="string">&apos;, &apos;</span>.join(codeforces[id][<span class="string">&apos;tags&apos;</span>])</span><br><span class="line"> <span class="number">9</span>: 	solved = codeforces[id][<span class="string">&apos;solved&apos;</span>]</span><br><span class="line"><span class="number">10</span>: 	accepted = codeforces[id][<span class="string">&apos;accepted&apos;</span>]</span><br><span class="line"><span class="number">11</span>: 	f_csv.writerow([id, title, tags, solved, accepted])</span><br><span class="line"><span class="number">12</span>:     f_out.close()</span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5">&#x5206;&#x6790;&#x9898;&#x76EE;&#x96BE;&#x5EA6;&#x4EE5;&#x53CA;&#x7B97;&#x6CD5;&#x5206;&#x7C7B;&#x7684;&#x5173;&#x7CFB;</h3>
+<div class="outline-text-3" id="text-2-5">
+<div class="org-src-container">
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"> <span class="number">1</span>: <span class="comment">#%% analyze the problem set</span></span><br><span class="line"> <span class="number">2</span>: <span class="comment"># initialize the difficult and tag list</span></span><br><span class="line"> <span class="number">3</span>: difficult_level = {}</span><br><span class="line"> <span class="number">4</span>: tags_level = {}</span><br><span class="line"> <span class="number">5</span>: <span class="keyword">for</span> id <span class="keyword">in</span> codeforces:</span><br><span class="line"> <span class="number">6</span>:     difficult = re.findall(<span class="string">&apos;([A-Z])&apos;</span>, id)[<span class="number">0</span>]</span><br><span class="line"> <span class="number">7</span>:     tags = codeforces[id][<span class="string">&apos;tags&apos;</span>]</span><br><span class="line"> <span class="number">8</span>:     difficult_level[difficult] = difficult_level.get(difficult, <span class="number">0</span>) + <span class="number">1</span></span><br><span class="line"> <span class="number">9</span>:     <span class="keyword">for</span> tag <span class="keyword">in</span> tags:</span><br><span class="line"><span class="number">10</span>: 	tags_level[tag] = tags_level.get(tag, <span class="number">0</span>) + <span class="number">1</span></span><br><span class="line"><span class="number">11</span>: <span class="keyword">import</span> operator</span><br><span class="line"><span class="number">12</span>: tag_level = sorted(tags_level.items(), key=operator.itemgetter(<span class="number">1</span>))[::-<span class="number">1</span>]</span><br><span class="line"><span class="number">13</span>: tag_list = [foo[<span class="number">0</span>] <span class="keyword">for</span> foo <span class="keyword">in</span> tag_level]</span><br><span class="line"><span class="number">14</span>: difficult_level = sorted(difficult_level.items(), key=operator.itemgetter(<span class="number">0</span>))</span><br><span class="line"><span class="number">15</span>: difficult_list = [foo[<span class="number">0</span>] <span class="keyword">for</span> foo <span class="keyword">in</span> difficult_level]</span><br><span class="line"><span class="number">16</span>: </span><br><span class="line"><span class="number">17</span>: <span class="comment"># initialize the 2D relationships matrix</span></span><br><span class="line"><span class="number">18</span>: <span class="comment"># matrix_solved: the number of AC submission for each tag in each difficult level</span></span><br><span class="line"><span class="number">19</span>: <span class="comment"># matrix_freq: the number of tag frequency for each diffiicult level</span></span><br><span class="line"><span class="number">20</span>: matrix_solved, matrix_freq = [[[<span class="number">0</span>] * len(difficult_list) <span class="keyword">for</span> _ <span class="keyword">in</span> range(len(tag_list))] <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">2</span>)]</span><br><span class="line"><span class="number">21</span>: </span><br><span class="line"><span class="number">22</span>: </span><br><span class="line"><span class="number">23</span>: <span class="comment"># construct the 2D relationships matrix</span></span><br><span class="line"><span class="number">24</span>: <span class="keyword">for</span> id <span class="keyword">in</span> codeforces:</span><br><span class="line"><span class="number">25</span>:     difficult = re.findall(<span class="string">&apos;([A-Z])&apos;</span>, id)[<span class="number">0</span>]</span><br><span class="line"><span class="number">26</span>:     difficult_id = difficult_list.index(difficult)</span><br><span class="line"><span class="number">27</span>:     tags = codeforces[id][<span class="string">&apos;tags&apos;</span>]</span><br><span class="line"><span class="number">28</span>:     solved = codeforces[id][<span class="string">&apos;solved&apos;</span>]</span><br><span class="line"><span class="number">29</span>:     <span class="keyword">for</span> tag <span class="keyword">in</span> tags:</span><br><span class="line"><span class="number">30</span>: 	tag_id = tag_list.index(tag)</span><br><span class="line"><span class="number">31</span>: 	matrix_solved[tag_id][difficult_id] += int(solved)</span><br><span class="line"><span class="number">32</span>: 	matrix_freq[tag_id][difficult_id] += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">&#x4E0B;&#x8F7D;&#x672C;&#x6587;&#x6E90;&#x4EE3;&#x7801;&#x4EE5;&#x53CA;&#x5206;&#x6790;&#x7ED3;&#x679C;</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+&#x672C;&#x6587;&#x6E90;&#x4EE3;&#x7801;&#x4EE5;&#x53CA;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x8BF7;&#x89C1; <a href="https://github.com/Greenwicher/Awsome-Project/tree/master/Codeforces%20Guide" target="_blank" rel="external">&#x6211;&#x7684;Github</a> &#xFF0C;&#x6216;&#x8005;&#x70B9;&#x51FB;&#x94FE;&#x63A5;&#x4E0B;&#x8F7D;: <a href="https://pan.baidu.com/s/1o7P8oT8" target="_blank" rel="external">https://pan.baidu.com/s/1o7P8oT8</a> &#x5BC6;&#x7801;: 8dcb&#x3002;
+</p>
+</div>
+</div>
+
+
+          <p class="bg-warning"><a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external"><a href="http://i.creativecommons.org/l/by/2.5/cn/88x31.png" title="知识共享许可协议" rel="fancy-group" class="fancy-ctn fancybox"><img src="http://i.creativecommons.org/l/by/2.5/cn/88x31.png" title="知识共享许可协议"></a></a>本作品采用<a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external">知识共享署名 2.5 中国大陆许可协议</a>进行许可。欢迎转载，但请注明来自<a href="http://greenwicher.github.io/" target="_blank" rel="external">Mount Greenwicher</a>的文章<a href="http://blog.greenwicher.com/2017/01/03/codeforces-problemset/index.html">《Codeforces科学刷题指南，一图一表便够了》</a>，并保持转载后文章内容的完整与无歧义。本人保留所有版权相关权利。</p>
+          
+	</div>
+        
+        <!--Donate-->
+          <style type="text/css">
+            #rewardButton{cursor:pointer;border:0;outline:0;border-radius:100%;padding:0;margin:0;letter-spacing:normal;text-transform:none;text-indent:0px;text-shadow:none;}
+            #rewardButton span{display:inline-block;width:80px;height:25px;border-radius:5px;color:#fff;font-weight:400;font-style:normal;font-variant:normal;font-stretch:normal;font-size:18px;font-family:"Microsoft Yahei";background:#f44336;}
+            #rewardButton span:hover{background:#f7877f;}#QR{padding-top:20px;}#QR a{border:0;}#QR img{width:180px;max-width:100%;display:inline-block;margin:0.8em 2em 0 2em;}#wechat:hover p{animation:roll 0.1s infinite linear;-webkit-animation:roll 0.1s infinite linear;-moz-animation:roll 0.1s infinite linear;}#alipay:hover p{animation:roll 0.1s infinite linear;-webkit-animation:roll 0.1s infinite linear;-moz-animation:roll 0.1s infinite linear;}
+            @-moz-keyframes roll{from{-webkit-transform:rotateZ(30deg);-moz-transform:rotateZ(30deg);-ms-transform:rotateZ(30deg);-o-transform:rotateZ(30deg);transform:rotateZ(30deg);}to{-webkit-transform:rotateZ(-30deg);-moz-transform:rotateZ(-30deg);-ms-transform:rotateZ(-30deg);-o-transform:rotateZ(-30deg);transform:rotateZ(-30deg);}}@-webkit-keyframes roll{from{-webkit-transform:rotateZ(30deg);-moz-transform:rotateZ(30deg);-ms-transform:rotateZ(30deg);-o-transform:rotateZ(30deg);transform:rotateZ(30deg);}to{-webkit-transform:rotateZ(-30deg);-moz-transform:rotateZ(-30deg);-ms-transform:rotateZ(-30deg);-o-transform:rotateZ(-30deg);transform:rotateZ(-30deg);}}@-o-keyframes roll{from{-webkit-transform:rotateZ(30deg);-moz-transform:rotateZ(30deg);-ms-transform:rotateZ(30deg);-o-transform:rotateZ(30deg);transform:rotateZ(30deg);}to{-webkit-transform:rotateZ(-30deg);-moz-transform:rotateZ(-30deg);-ms-transform:rotateZ(-30deg);-o-transform:rotateZ(-30deg);transform:rotateZ(-30deg);}}@keyframes roll{from{-webkit-transform:rotateZ(30deg);-moz-transform:rotateZ(30deg);-ms-transform:rotateZ(30deg);-o-transform:rotateZ(30deg);transform:rotateZ(30deg);}to{-webkit-transform:rotateZ(-30deg);-moz-transform:rotateZ(-30deg);-ms-transform:rotateZ(-30deg);-o-transform:rotateZ(-30deg);transform:rotateZ(-30deg);}}
+        </style>
+        
+        <div>
+          <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+            <div>据说爱打赏的人运气都不会差</div>
+            <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+              <span>谢主隆恩</span>
+            </button>
+            <div id="QR" style="display: block;">
+              <div id="wechat" style="display: inline-block">
+                <a href="" class="fancybox" rel="group"><img id="wechat_qr" src="/imgs/wechatpay.PNG"></a>
+                <p>微信打赏</p>
+              </div>
+              <div id="wechat" style="display: inline-block">
+                <a href="" class="fancybox" rel="group"><img id="alipay_qr" src="/imgs/alipay.PNG"></a>
+                <p>支付宝打赏</p>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <!--End of Donate-->
+
+        <!--Adsense-->
+        <div class="widget tag">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 文末横幅 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4230509553120128"
+     data-ad-slot="1153059496"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+        <!--End of Adsense-->
+
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
+
+        <li><a href="/"><i class="fa fa-archive"></i>首页</a></li>
+
+		
+		   <li class="next"><a href="/2017/01/01/hello-2017/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+
+        
+
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  
+  	 <div class="ds-thread" data-thread-key="2017/01/03/codeforces-problemset/" data-title="Codeforces科学刷题指南，一图一表便够了" data-url="http://blog.greenwicher.com/2017/01/03/codeforces-problemset/"></div>  
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+           <span id="busuanzi_container_page_pv">
+             新大陆被发现了<span id="busuanzi_value_page_pv" class="badge badge-success"></span>次！
+          </span>
+
+		<div class="col-md-3 scrollspy" id="post_meta"> 
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	Jan 3 2017 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/如何写算法/">如何写算法<span>3</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div id="tagsblock" class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/codeforces/">codeforces<span>3</span></a></li> <li><a href="/tags/指南/">指南<span>1</span></a></li> <li><a href="/tags/爬虫/">爬虫<span>1</span></a></li> <li><a href="/tags/算法/">算法<span>3</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+        <script type="text/javascript">
+        $(document).ready(function(){
+          $("#tocaffix").affix({
+            offset: { 
+              top: $("#tagsblock").offset().top
+            }
+          });
+        });
+        </script>
+
+        <style>
+          .affix{position:fixed;top:40px;}
+          .affix-bottom{position:absolute;}
+        </style>
+        
+	<div id="tocaffix" class="meta-widget affix-top">
+        <!--<div class="meta-widget">-->
+	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#sec-1"><span class="toc-article-text">先说结论</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#sec-1-1"><span class="toc-article-text">一张图</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#sec-1-2"><span class="toc-article-text">一张表</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#sec-1-3"><span class="toc-article-text">我的刷题观</span></a></li></ol></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#sec-2"><span class="toc-article-text">如何用爬虫获取信息</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#sec-2-1"><span class="toc-article-text">必要的库</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#sec-2-2"><span class="toc-article-text">爬取Codeforces的所有算法题</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#sec-2-3"><span class="toc-article-text">标记已解决的算法题</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#sec-2-4"><span class="toc-article-text">输出爬取信息到csv文本</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#sec-2-5"><span class="toc-article-text">分析题目难度以及算法分类的关系</span></a></li></ol></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#sec-3"><span class="toc-article-text">下载本文源代码以及分析结果</span></a></li></ol>
+		</div>
+	
+	</div>
+
+
+
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'greenwicher' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2017 LIU Weizhi
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.
+</br>
+本站共迎来了<span id="busuanzi_value_site_uv"></span>个小伙伴，总计<span id="busuanzi_value_site_pv"></span>次站点流量.
+
+</p>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+   </html>
