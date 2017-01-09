@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greenwicher.com/"/>
-  <updated>2017-01-09T05:06:33.000Z</updated>
+  <updated>2017-01-09T05:07:42.000Z</updated>
   <id>http://blog.greenwicher.com/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://blog.greenwicher.com/2017/01/09/drl-general_ai-intro-test/"/>
     <id>http://blog.greenwicher.com/2017/01/09/drl-general_ai-intro-test/</id>
     <published>2017-01-08T16:00:00.000Z</published>
-    <updated>2017-01-09T05:06:33.000Z</updated>
+    <updated>2017-01-09T05:07:42.000Z</updated>
     
     <content type="html">&lt;p&gt;现在但凡写人工智能的文章，必提&lt;a href=&quot;https://deepmind.com/research/alphago/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Alpha Go&lt;/a&gt;。也正是因为Alpha Go在围棋人机大战中里程碑式的胜利，人工智能迎来了新的春天。 &lt;strong&gt;本文也不免俗套，从Alpha Go说起，但希望能指明一些被忽视的但对Alpha Go棋力有深远影响的技术。&lt;/strong&gt; 围棋人工智能大致可以分为三个阶段&lt;a href=&quot;详见知乎Live：[深入浅出说围棋人工智能](https://www.zhihu.com/lives/784053023981719552)&quot;&gt;^1&lt;/a&gt; ：第一阶段以启发式算法为主，水平低于业余初段，代表软件即以静态势力函数为强项的&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E9%99%88%E5%BF%97%E8%A1%8C&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;手谈&lt;/a&gt;； 第二阶段以&lt;a href=&quot;https://zh.wikipedia.org/zh-sg/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91%E6%90%9C%E7%B4%A2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;蒙特卡洛树搜索算法 &lt;/a&gt;为代表，水平最高达到业余5段，比如说 &lt;a href=&quot;http://senseis.xmp.net/?ZenGoProgram&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Zen&lt;/a&gt; ，&lt;a href=&quot;https://www.remi-coulom.fr/CrazyStone/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Crazy Stone&lt;/a&gt; ；第三阶段以 &lt;code&gt;深度学习&lt;/code&gt; （&lt;a href=&quot;https://en.wikipedia.org/wiki/Deep_learning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deep Learning&lt;/a&gt;）以及 &lt;code&gt;增强学习&lt;/code&gt; （&lt;a href=&quot;https://en.wikipedia.org/wiki/Reinforcement_learning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Reinforcement Learning&lt;/a&gt;，也称强化学习）算法为突破，并战胜了人类职业九段棋手李世乭，这也就是Alpha Go的故事了。每每提到Alpha Go卓越的能力，往往归咎于深度学习的强大，但实际上增强学习算法也功不可没。这二者的结合被称之为 &lt;code&gt;深度增强学习&lt;/code&gt; （&lt;a href=&quot;https://deepmind.com/blog/deep-reinforcement-learning/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deep Reinforcement Learning&lt;/a&gt;，DRL），最初见于DeepMind在Nature上发表的&lt;a href=&quot;http://www.nature.com/nature/journal/v518/n7540/abs/nature14236.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Human-level control through deep reinforcement learning&lt;/a&gt;。 &lt;strong&gt;本文试图从深度增强学习的角度来探讨通用人工智能的实现，并简要介绍了深度增强学习的基础知识、常见算法以及相关应用。&lt;/strong&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;u5982_u4F55_u89E3_u51B3_u901A_u7528_u4EBA_u5DE5_u667A_u80FD_u7684_u96BE_u70B9&quot;&gt;&lt;a href=&quot;#u5982_u4F55_u89E3_u51B3_u901A_u7528_u4EBA_u5DE5_u667A_u80FD_u7684_u96BE_u70B9&quot; class=&quot;headerlink&quot; title=&quot;如何解决通用人工智能的难点&quot;&gt;&lt;/a&gt;如何解决通用人工智能的难点&lt;/h1&gt;&lt;h2 id=&quot;u4E09_u5EA7_u5927_u5C71&quot;&gt;&lt;a href=&quot;#u4E09_u5EA7_u5927_u5C71&quot; class=&quot;headerlink&quot; title=&quot;三座大山&quot;&gt;&lt;/a&gt;三座大山&lt;/h2&gt;&lt;p&gt;创造出像你我一样具有自我意识和思考的人工智能估计是人世间最迷人的问题之一了吧，新的存在总是想窥探造物主的秘密。同 &lt;code&gt;P=NP&lt;/code&gt; 问题一样，验证一个存在是否具有自我意识的难度（见&lt;a href=&quot;https://zh.wikipedia.org/zh-sg/%E5%9B%BE%E7%81%B5%E6%B5%8B%E8%AF%95&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;图灵测试&lt;/a&gt; 以及 &lt;a href=&quot;https://zh.wikipedia.org/wiki/%E4%B8%AD%E6%96%87%E6%88%BF%E9%97%B4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;中文房间问题&lt;/a&gt;） 同创造一个具有自我意识的存在的难度究竟关系如何，恐怕可以看做是判断自我意识是否能涌现的关键了吧。本文不讲那么上层次的人工智能，先来谈谈 &lt;code&gt;通用人工智能&lt;/code&gt; 。按照维基百科的解释，&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;强人工智能也指通用人工智能（artificial general intelligence，AGI），或具备执行一般智慧行为的能力。强人工智能通常把人工智能和意识、感性、知识和自觉等人类的特征互相连结。&lt;/p&gt;
@@ -1730,8 +1731,6 @@
     
     </summary>
     
-      <category term="随笔" scheme="http://blog.greenwicher.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
     
       <category term="影像志" scheme="http://blog.greenwicher.com/tags/%E5%BD%B1%E5%83%8F%E5%BF%97/"/>
     
@@ -2105,20 +2104,6 @@ OCBA&amp;#x7684;&amp;#x6838;&amp;#x5FC3;&amp;#x601D;&amp;#x8DEF;&amp;#x662F;&amp
     
     </summary>
     
-      <category term="如何创造AI" scheme="http://blog.greenwicher.com/categories/%E5%A6%82%E4%BD%95%E5%88%9B%E9%80%A0AI/"/>
-    
-    
-      <category term="人工智能" scheme="http://blog.greenwicher.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-      <category term="仿真优化" scheme="http://blog.greenwicher.com/tags/%E4%BB%BF%E7%9C%9F%E4%BC%98%E5%8C%96/"/>
-    
-      <category term="增强学习" scheme="http://blog.greenwicher.com/tags/%E5%A2%9E%E5%BC%BA%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="多臂赌博机问题" scheme="http://blog.greenwicher.com/tags/%E5%A4%9A%E8%87%82%E8%B5%8C%E5%8D%9A%E6%9C%BA%E9%97%AE%E9%A2%98/"/>
-    
-      <category term="深度增强学习" scheme="http://blog.greenwicher.com/tags/%E6%B7%B1%E5%BA%A6%E5%A2%9E%E5%BC%BA%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="蒙特卡洛树搜索" scheme="http://blog.greenwicher.com/tags/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91%E6%90%9C%E7%B4%A2/"/>
     
   </entry>
   
@@ -2751,8 +2736,6 @@ Reinforcement Learning defines the objective. Deep Learning gives the mechanism.
     
     </summary>
     
-      <category term="杂" scheme="http://blog.greenwicher.com/categories/%E6%9D%82/"/>
-    
     
       <category term="工作流" scheme="http://blog.greenwicher.com/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
@@ -2917,18 +2900,6 @@ Igor&amp;#x53EA;&amp;#x80FD;&amp;#x5728;&amp;#x8FDE;&amp;#x901A;&amp;#x7684;&amp
     
     </summary>
     
-      <category term="如何写算法" scheme="http://blog.greenwicher.com/categories/%E5%A6%82%E4%BD%95%E5%86%99%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="codeforces" scheme="http://blog.greenwicher.com/tags/codeforces/"/>
-    
-      <category term="深度优先搜索" scheme="http://blog.greenwicher.com/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/"/>
-    
-      <category term="算法" scheme="http://blog.greenwicher.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="算法实施" scheme="http://blog.greenwicher.com/tags/%E7%AE%97%E6%B3%95%E5%AE%9E%E6%96%BD/"/>
-    
-      <category term="缓存" scheme="http://blog.greenwicher.com/tags/%E7%BC%93%E5%AD%98/"/>
     
   </entry>
   
@@ -3335,18 +3306,6 @@ $$ (abs(a \cdot b) a \cdot b) (\Vert c \Vert \Vert d \Vert)^{2} \ge  (abs(c \cdo
     
     </summary>
     
-      <category term="如何写算法" scheme="http://blog.greenwicher.com/categories/%E5%A6%82%E4%BD%95%E5%86%99%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="codeforces" scheme="http://blog.greenwicher.com/tags/codeforces/"/>
-    
-      <category term="同构" scheme="http://blog.greenwicher.com/tags/%E5%90%8C%E6%9E%84/"/>
-    
-      <category term="算法" scheme="http://blog.greenwicher.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="算法运行" scheme="http://blog.greenwicher.com/tags/%E7%AE%97%E6%B3%95%E8%BF%90%E8%A1%8C/"/>
-    
-      <category term="高精度" scheme="http://blog.greenwicher.com/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
     
   </entry>
   
