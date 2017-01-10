@@ -4,17 +4,23 @@
 
     
   <url>
-    <loc>http://blog.greenwicher.com/2017/01/10/markdown-syntax2/</loc>
-    <lastmod>2017-01-09T07:21:21.000Z</lastmod>
+    <loc>http://blog.greenwicher.com/2017/01/10/bibliopy/</loc>
+    <lastmod>2017-01-10T07:44:03.000Z</lastmod>
     <data>
         <display>
-        <title>Markdown语法 2</title>
+        <title>毕设开题不会写，怎么破？快试试BiblioPy吧！</title>
         <pubTime>2017-01-09T16:00:00.000Z</pubTime>
         
+        <tag>BiblioPy</tag>
+         
+        <tag>开源项目</tag>
+         
+        <tag>文献分析</tag>
+         
          
            
              
-              <breadCrumb title="测试" url="http://blog.greenwicher.com/categories/%E6%B5%8B%E8%AF%95/"/>
+              <breadCrumb title="如何做科研" url="http://blog.greenwicher.com/categories/%E5%A6%82%E4%BD%95%E5%81%9A%E7%A7%91%E7%A0%94/"/>
           
         </display>
     </data>
@@ -45,24 +51,6 @@
     <data>
         <display>
         <title>邮件订阅测试</title>
-        <pubTime>2017-01-08T16:00:00.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="测试" url="http://blog.greenwicher.com/categories/%E6%B5%8B%E8%AF%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.greenwicher.com/2017/01/09/drl-general_ai-intro-test2/</loc>
-    <lastmod>2017-01-09T06:29:29.000Z</lastmod>
-    <data>
-        <display>
-        <title>邮件订阅测试2</title>
         <pubTime>2017-01-08T16:00:00.000Z</pubTime>
         
          
@@ -329,31 +317,6 @@
 
     
   <url>
-    <loc>http://blog.greenwicher.com/2014/12/03/%E5%9A%BC%E5%BE%97%E8%8F%9C%E6%A0%B9%EF%BC%8C%E5%81%9A%E5%BE%97%E5%A4%A7%E4%BA%8B/</loc>
-    <lastmod>2016-12-05T04:12:47.000Z</lastmod>
-    <data>
-        <display>
-        <title>嚼得菜根，做得大事</title>
-        <pubTime>2014-12-03T00:00:00.000Z</pubTime>
-        
-        <tag>书评</tag>
-         
-        <tag>投资</tag>
-         
-         
-           
-             
-              <breadCrumb title="如何做投资" url="http://blog.greenwicher.com/categories/%E5%A6%82%E4%BD%95%E5%81%9A%E6%8A%95%E8%B5%84/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-    
-  <url>
     <loc>http://blog.greenwicher.com/2016/02/15/%E9%83%A8%E7%BD%B2%E4%B8%AA%E6%80%A7%E5%8C%96%E5%AD%90%E5%9F%9F%E5%90%8D%E7%BD%91%E7%AB%99%E5%88%B0Github/</loc>
     <lastmod>2016-12-05T04:12:47.000Z</lastmod>
     <data>
@@ -371,6 +334,31 @@
            
              
               <breadCrumb title="杂" url="http://blog.greenwicher.com/categories/%E6%9D%82/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+  <url>
+    <loc>http://blog.greenwicher.com/2014/12/03/%E5%9A%BC%E5%BE%97%E8%8F%9C%E6%A0%B9%EF%BC%8C%E5%81%9A%E5%BE%97%E5%A4%A7%E4%BA%8B/</loc>
+    <lastmod>2016-12-05T04:12:47.000Z</lastmod>
+    <data>
+        <display>
+        <title>嚼得菜根，做得大事</title>
+        <pubTime>2014-12-03T00:00:00.000Z</pubTime>
+        
+        <tag>书评</tag>
+         
+        <tag>投资</tag>
+         
+         
+           
+             
+              <breadCrumb title="如何做投资" url="http://blog.greenwicher.com/categories/%E5%A6%82%E4%BD%95%E5%81%9A%E6%8A%95%E8%B5%84/"/>
           
         </display>
     </data>
