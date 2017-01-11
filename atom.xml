@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greenwicher.com/"/>
-  <updated>2017-01-11T03:00:03.000Z</updated>
+  <updated>2017-01-11T09:07:32.000Z</updated>
   <id>http://blog.greenwicher.com/</id>
   
   <author>
@@ -20,16 +20,14 @@
     <link href="http://blog.greenwicher.com/2017/01/11/snake-ai/"/>
     <id>http://blog.greenwicher.com/2017/01/11/snake-ai/</id>
     <published>2017-01-10T16:00:00.000Z</published>
-    <updated>2017-01-11T03:00:03.000Z</updated>
+    <updated>2017-01-11T09:07:32.000Z</updated>
     
     <content type="html">&lt;p&gt;人工智能玩贪吃蛇，邮件订阅测试！！&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;Snake_AI&quot;&gt;&lt;a href=&quot;#Snake_AI&quot; class=&quot;headerlink&quot; title=&quot;Snake AI&quot;&gt;&lt;/a&gt;Snake AI&lt;/h1&gt;&lt;p&gt;A snake AI written in python. Use curses module, Windows users&lt;br&gt;should install it first:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.lfd.uci.edu/~gohlke/pythonlibs/#curses&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.lfd.uci.edu/~gohlke/pythonlibs/#curses&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;How_to_run&quot;&gt;&lt;a href=&quot;#How_to_run&quot; class=&quot;headerlink&quot; title=&quot;How to run&quot;&gt;&lt;/a&gt;How to run&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;git clone https://github.com/Hawstein/snake-ai.git
-cd snake-ai
-python snake.py
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;Demo&quot;&gt;&lt;a href=&quot;#Demo&quot; class=&quot;headerlink&quot; title=&quot;Demo&quot;&gt;&lt;/a&gt;Demo&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://github.com/Hawstein/snake-ai/raw/master/snake-ai.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;How_to_run&quot;&gt;&lt;a href=&quot;#How_to_run&quot; class=&quot;headerlink&quot; title=&quot;How to run&quot;&gt;&lt;/a&gt;How to run&lt;/h2&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https://github.com/Hawstein/snake-ai.git&amp;#10;cd snake-ai&amp;#10;python snake.py&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;Demo&quot;&gt;&lt;a href=&quot;#Demo&quot; class=&quot;headerlink&quot; title=&quot;Demo&quot;&gt;&lt;/a&gt;Demo&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://github.com/Hawstein/snake-ai/raw/master/snake-ai.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;More_in_my_blog&quot;&gt;&lt;a href=&quot;#More_in_my_blog&quot; class=&quot;headerlink&quot; title=&quot;More in my blog&quot;&gt;&lt;/a&gt;More in my blog&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://hawstein.com/posts/snake-ai.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://hawstein.com/posts/snake-ai.html&lt;/a&gt;&lt;/p&gt;
 </content>
     
