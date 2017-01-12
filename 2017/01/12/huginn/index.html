@@ -1,0 +1,529 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Huginn | Greenwicher&#39;s Blog</title>
+  <meta name="author" content="LIU Weizhi">
+  
+  <meta name="description" content="Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn&#39;s Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data.  You do.">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Huginn"/>
+  <meta property="og:site_name" content="Greenwicher&#39;s Blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="Greenwicher&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/themes/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-42890116-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="http://greenwicher.com">Greenwicher&#39;s Blog</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href= "/" title="Blog homepage"> 
+			  <i class="fa fa-home"></i>首页
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/archives" title="All the articles."> 
+			  <i class="fa fa-archive"></i>归档
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/categories" title="All the categories."> 
+			  <i class="fa fa-folder"></i>分类
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/tags" title="All the tags."> 
+			  <i class="fa fa-tags"></i>标签
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/subscribe" title="Subscribe"> 
+			  <i class="fa fa-rss"></i>订阅
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "https://book.douban.com/people/Greenwicher/" title="Douban"> 
+			  <i class="fa fa-book"></i>读书
+			</a>			
+	          </li>
+		  <li>
+			<a href= "http://greenwicher.com/me/cv.pdf" title="Me"> 
+			  <i class="fa fa-user"></i>关于我
+			</a>			
+	          </li>
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header page-header-inverse ">		
+			<h1 class="title title-inverse "> Huginn</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta">
+        </div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">
+          <!--subscriber-->
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//greenwicher.us14.list-manage.com/subscribe/post?u=8da47f8ec088ffc8c8d5b6b88&amp;id=d8da6d2b40" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL">一键订阅 | Greenwicher's Newsletter </label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="输入邮箱，为您科普 人工智能|量化交易|算法之美" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8da47f8ec088ffc8c8d5b6b88_d8da6d2b40" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="订阅" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+<!--end of subscriber-->
+
+<hr>
+
+	  
+		 <div class="alert alert-success description">
+			<i class="fa fa-info-circle"></i> <p>Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn’s Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data.  You do.</p>
+			
+		 </div> <!-- alert -->
+	  		
+
+	  <p><img src="https://raw.github.com/cantino/huginn/master/media/huginn-logo.png" alt="Huginn" title="Your agents are standing by."></p>
+<hr>
+<a id="more"></a>
+<h2 id="What_is_Huginn_3F"><a href="#What_is_Huginn_3F" class="headerlink" title="What is Huginn?"></a>What is Huginn?</h2><p>Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn’s Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data.  You do.</p>
+<p><img src="https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/the-name.png" alt="the origin of the name"></p>
+<h4 id="Here_are_some_of_the_things_that_you_can_do_with_Huginn_3A"><a href="#Here_are_some_of_the_things_that_you_can_do_with_Huginn_3A" class="headerlink" title="Here are some of the things that you can do with Huginn:"></a>Here are some of the things that you can do with Huginn:</h4><ul>
+<li>Track the weather and get an email when it’s going to rain (or snow) tomorrow (“Don’t forget your umbrella!”)</li>
+<li>List terms that you care about and receive emails when their occurrence on Twitter changes.  (For example, want to know when something interesting has happened in the world of Machine Learning?  Huginn will watch the term “machine learning” on Twitter and tell you when there is a spike in discussion.)</li>
+<li>Watch for air travel or shopping deals</li>
+<li>Follow your project names on Twitter and get updates when people mention them</li>
+<li>Scrape websites and receive emails when they change</li>
+<li>Connect to Adioso, HipChat, Basecamp, Growl, FTP, IMAP, Jabber, JIRA, MQTT, nextbus, Pushbullet, Pushover, RSS, Bash, Slack, StubHub, translation APIs, Twilio, Twitter, Wunderground, and Weibo, to name a few.</li>
+<li>Send digest emails with things that you care about at specific times during the day</li>
+<li>Track counts of high frequency events and send an SMS within moments when they spike, such as the term “san francisco emergency”</li>
+<li>Send and receive WebHooks</li>
+<li>Run custom JavaScript or CoffeeScript functions</li>
+<li>Track your location over time</li>
+<li>Create Amazon Mechanical Turk workflows as the inputs, or outputs, of agents (the Amazon Turk Agent is called the “HumanTaskAgent”). For example: “Once a day, ask 5 people for a funny cat photo; send the results to 5 more people to be rated; send the top-rated photo to 5 people for a funny caption; send to 5 final people to rate for funniest caption; finally, post the best captioned photo on my blog.”</li>
+</ul>
+<p><a href="https://gitter.im/cantino/huginn?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge" target="_blank" rel="external"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter"></a> <a href="https://changelog.com/199" target="_blank" rel="external"><img src="https://img.shields.io/badge/changelog-%23199-lightgrey.svg" alt="Changelog #199"></a></p>
+<p>Join us in our <a href="https://gitter.im/cantino/huginn" target="_blank" rel="external">Gitter room</a> to discuss the project and follow <a href="https://twitter.com/tectonic" target="_blank" rel="external">@tectonic</a> for updates as Huginn evolves.</p>
+<h3 id="Join_us_21"><a href="#Join_us_21" class="headerlink" title="Join us!"></a>Join us!</h3><p>Want to help with Huginn?  All contributions are encouraged!  You could make UI improvements, <a href="https://github.com/cantino/huginn/wiki/Creating-a-new-agent" target="_blank" rel="external">add new Agents</a>, write <a href="https://github.com/cantino/huginn/wiki" target="_blank" rel="external">documentation and tutorials</a>, or try tackling <a href="https://github.com/cantino/huginn/issues?direction=desc&amp;labels=help-wanted&amp;page=1&amp;sort=created&amp;state=open" target="_blank" rel="external">issues tagged with #help-wanted</a>.  Please fork, add specs, and send pull requests!</p>
+<p>Really want a fix or feature? Want to solve some community issues and earn some extra coffee money? Take a look at the <a href="https://www.bountysource.com/trackers/282580-huginn" target="_blank" rel="external">current bounties on Bountysource</a>.</p>
+<p>Have an awesome idea but not feeling quite up to contributing yet? Head over to our <a href="https://github.com/cantino/huginn/issues/353" target="_blank" rel="external">Official ‘suggest an agent’ thread </a> and tell us!</p>
+<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><p>Please checkout the <a href="http://vimeo.com/61976251" target="_blank" rel="external">Huginn Introductory Screencast</a>!</p>
+<p>And now, some example screenshots.  Below them are instructions to get you started.</p>
+<p><img src="https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/your-agents.png" alt="Example list of agents"></p>
+<p><img src="https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/diagram.png" alt="Event flow diagram"></p>
+<p><img src="https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/peaks.png" alt="Detecting peaks in Twitter"></p>
+<p><img src="https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/my-locations.png" alt="Logging your location over time"></p>
+<p><img src="https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/new-agent.png" alt="Making a new agent"></p>
+<h2 id="Getting_Started"><a href="#Getting_Started" class="headerlink" title="Getting Started"></a>Getting Started</h2><h3 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h3><p>The quickest and easiest way to check out Huginn is to use the official Docker image. Have a look at the <a href="https://github.com/cantino/huginn/blob/master/doc/docker/install.md" target="_blank" rel="external">documentation</a>.</p>
+<h3 id="Local_Installation"><a href="#Local_Installation" class="headerlink" title="Local Installation"></a>Local Installation</h3><p>If you just want to play around, you can simply fork this repository, then perform the following steps:</p>
+<ul>
+<li>Run <code>git remote add upstream https://github.com/cantino/huginn.git</code> to add the main repository as a remote for your fork.</li>
+<li>Copy <code>.env.example</code> to <code>.env</code> (<code>cp .env.example .env</code>) and edit <code>.env</code>, at least updating the <code>APP_SECRET_TOKEN</code> variable.</li>
+<li>Run <code>bundle</code> to install dependencies</li>
+<li>Run <code>bundle exec rake db:create</code>, <code>bundle exec rake db:migrate</code>, and then <code>bundle exec rake db:seed</code> to create a development database with some example Agents.</li>
+<li>Run <code>bundle exec foreman start</code>, visit <a href="http://localhost:3000/" target="_blank" rel="external">http://localhost:3000/</a>, and login with the username of <code>admin</code> and the password of <code>password</code>.</li>
+<li>Setup some Agents!</li>
+<li>Read the <a href="https://github.com/cantino/huginn/wiki" target="_blank" rel="external">wiki</a> for usage examples and to get started making new Agents.</li>
+<li>Periodically run <code>git fetch upstream</code> and then <code>git checkout master &amp;&amp; git merge upstream/master</code> to merge in the newest version of Huginn.</li>
+</ul>
+<p>Note: By default, emails are intercepted in the <code>development</code> Rails environment, which is what you just setup.  You can view<br>them at <a href="http://localhost:3000/letter_opener" target="_blank" rel="external">http://localhost:3000/letter_opener</a>. If you’d like to send real emails via SMTP when playing<br>with Huginn locally, set <code>SEND_EMAIL_IN_DEVELOPMENT</code> to <code>true</code> in your <code>.env</code> file.</p>
+<p>If you need more detailed instructions, see the <a href="https://github.com/cantino/huginn/wiki/Novice-setup-guide" target="_blank" rel="external">Novice setup guide</a>.</p>
+<h3 id="Develop"><a href="#Develop" class="headerlink" title="Develop"></a>Develop</h3><p>All agents have specs! And there’s also acceptance tests that simulate running Huginn in a headless browser. </p>
+<ul>
+<li>Install PhantomJS 2.1.1 or greater: <ul>
+<li>Using <a href="https://www.npmjs.com/" target="_blank" rel="external">Node Package Manager</a>: <code>npm install phantomjs</code> </li>
+<li>Using <a href="http://brew.sh/" target="_blank" rel="external">Homebrew</a> on OSX <code>brew install phantomjs</code></li>
+</ul>
+</li>
+<li>Run all specs with <code>bundle exec rspec</code></li>
+<li>Run a specific spec with <code>bundle exec rspec path/to/specific/test_spec.rb</code>. </li>
+<li>Read more about rspec for rails <a href="https://github.com/rspec/rspec-rails" target="_blank" rel="external">here</a>.</li>
+</ul>
+<h2 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h2><h3 id="Heroku"><a href="#Heroku" class="headerlink" title="Heroku"></a>Heroku</h3><p>Try Huginn on Heroku: <a href="https://heroku.com/deploy" target="_blank" rel="external"><img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy"></a> (Takes a few minutes to setup. Read the <a href="https://github.com/cantino/huginn/blob/master/doc/heroku/install.md" target="_blank" rel="external">documentation</a> while you are waiting and be sure to click ‘View it’ after launch!)</p>
+<p>Huginn works on the free version of Heroku <a href="https://github.com/cantino/huginn/blob/master/doc/heroku/install.md" target="_blank" rel="external">with significant limitations</a>. For non-experimental use, we strongly recommend Heroku’s cheapest paid plan or our Docker container.</p>
+<p>Please see <a href="https://github.com/cantino/huginn/wiki#deploying-huginn" target="_blank" rel="external">the Huginn Wiki</a> for detailed deployment strategies for different providers.</p>
+<h3 id="Manual_installation_on_any_server"><a href="#Manual_installation_on_any_server" class="headerlink" title="Manual installation on any server"></a>Manual installation on any server</h3><p>Have a look at the <a href="https://github.com/cantino/huginn/blob/master/doc/manual/README.md" target="_blank" rel="external">installation guide</a>.</p>
+<h3 id="Optional_Setup"><a href="#Optional_Setup" class="headerlink" title="Optional Setup"></a>Optional Setup</h3><h4 id="Setup_for_private_development"><a href="#Setup_for_private_development" class="headerlink" title="Setup for private development"></a>Setup for private development</h4><p>See <a href="https://github.com/cantino/huginn/wiki/Private-development-instructions" target="_blank" rel="external">private development instructions</a> on the wiki.</p>
+<h4 id="Enable_the_WeatherAgent"><a href="#Enable_the_WeatherAgent" class="headerlink" title="Enable the WeatherAgent"></a>Enable the WeatherAgent</h4><p>In order to use the WeatherAgent you need an <a href="http://www.wunderground.com/weather/api/" target="_blank" rel="external">API key with Wunderground</a>. Signup for one and then change the value of <code>api_key: your-key</code> in your seeded WeatherAgent.</p>
+<h4 id="Disable_SSL"><a href="#Disable_SSL" class="headerlink" title="Disable SSL"></a>Disable SSL</h4><p>We assume your deployment will run over SSL. This is a very good idea! However, if you wish to turn this off, you’ll probably need to edit <code>config/initializers/devise.rb</code> and modify the line containing <code>config.rememberable_options = { :secure =&gt; true }</code>.  You will also need to edit <code>config/environments/production.rb</code> and modify the value of <code>config.force_ssl</code>.</p>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>Huginn is provided under the MIT License.</p>
+<p><a href="https://travis-ci.org/cantino/huginn" target="_blank" rel="external"><img src="https://travis-ci.org/cantino/huginn.svg" alt="Build Status"></a> <a href="https://coveralls.io/r/cantino/huginn" target="_blank" rel="external"><img src="https://coveralls.io/repos/cantino/huginn/badge.svg" alt="Coverage Status"></a> <a href="https://gemnasium.com/cantino/huginn" target="_blank" rel="external"><img src="https://gemnasium.com/cantino/huginn.svg" alt="Dependency Status"></a> <a href="https://www.bountysource.com/trackers/282580-huginn?utm_source=282580&amp;utm_medium=shield&amp;utm_campaign=TRACKER_BADGE" target="_blank" rel="external"><img src="https://www.bountysource.com/badge/tracker?tracker_id=282580" alt="Bountysource"></a></p>
+
+
+          <p class="bg-warning"><a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external"><a href="http://i.creativecommons.org/l/by/2.5/cn/88x31.png" title="知识共享许可协议" rel="fancy-group" class="fancy-ctn fancybox"><img src="http://i.creativecommons.org/l/by/2.5/cn/88x31.png" title="知识共享许可协议"></a></a>本作品采用<a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external">知识共享署名 2.5 中国大陆许可协议</a>进行许可。欢迎转载，但请注明来自<a href="http://greenwicher.github.io/" target="_blank" rel="external">Mount Greenwicher</a>的文章<a href="http://blog.greenwicher.com/2017/01/12/huginn/index.html">《Huginn》</a>，并保持转载后文章内容的完整与无歧义。本人保留所有版权相关权利。</p>
+        <!--subscriber-->
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//greenwicher.us14.list-manage.com/subscribe/post?u=8da47f8ec088ffc8c8d5b6b88&amp;id=d8da6d2b40" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL">一键订阅 | Greenwicher's Newsletter </label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="输入邮箱，为您科普 人工智能|量化交易|算法之美" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8da47f8ec088ffc8c8d5b6b88_d8da6d2b40" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="订阅" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+<!--end of subscriber-->
+
+<hr>
+
+	</div>
+        
+        <!--Donate-->
+          <style type="text/css">
+            #rewardButton{cursor:pointer;border:0;outline:0;border-radius:100%;padding:0;margin:0;letter-spacing:normal;text-transform:none;text-indent:0px;text-shadow:none;}
+            #rewardButton span{display:inline-block;width:80px;height:25px;border-radius:5px;color:#fff;font-weight:400;font-style:normal;font-variant:normal;font-stretch:normal;font-size:18px;font-family:"Microsoft Yahei";background:#f44336;}
+            #rewardButton span:hover{background:#f7877f;}#QR{padding-top:20px;}#QR a{border:0;}#QR img{width:180px;max-width:100%;display:inline-block;margin:0.8em 2em 0 2em;}#wechat:hover p{animation:roll 0.1s infinite linear;-webkit-animation:roll 0.1s infinite linear;-moz-animation:roll 0.1s infinite linear;}#alipay:hover p{animation:roll 0.1s infinite linear;-webkit-animation:roll 0.1s infinite linear;-moz-animation:roll 0.1s infinite linear;}
+            @-moz-keyframes roll{from{-webkit-transform:rotateZ(30deg);-moz-transform:rotateZ(30deg);-ms-transform:rotateZ(30deg);-o-transform:rotateZ(30deg);transform:rotateZ(30deg);}to{-webkit-transform:rotateZ(-30deg);-moz-transform:rotateZ(-30deg);-ms-transform:rotateZ(-30deg);-o-transform:rotateZ(-30deg);transform:rotateZ(-30deg);}}@-webkit-keyframes roll{from{-webkit-transform:rotateZ(30deg);-moz-transform:rotateZ(30deg);-ms-transform:rotateZ(30deg);-o-transform:rotateZ(30deg);transform:rotateZ(30deg);}to{-webkit-transform:rotateZ(-30deg);-moz-transform:rotateZ(-30deg);-ms-transform:rotateZ(-30deg);-o-transform:rotateZ(-30deg);transform:rotateZ(-30deg);}}@-o-keyframes roll{from{-webkit-transform:rotateZ(30deg);-moz-transform:rotateZ(30deg);-ms-transform:rotateZ(30deg);-o-transform:rotateZ(30deg);transform:rotateZ(30deg);}to{-webkit-transform:rotateZ(-30deg);-moz-transform:rotateZ(-30deg);-ms-transform:rotateZ(-30deg);-o-transform:rotateZ(-30deg);transform:rotateZ(-30deg);}}@keyframes roll{from{-webkit-transform:rotateZ(30deg);-moz-transform:rotateZ(30deg);-ms-transform:rotateZ(30deg);-o-transform:rotateZ(30deg);transform:rotateZ(30deg);}to{-webkit-transform:rotateZ(-30deg);-moz-transform:rotateZ(-30deg);-ms-transform:rotateZ(-30deg);-o-transform:rotateZ(-30deg);transform:rotateZ(-30deg);}}
+        </style>
+        
+        <div>
+          <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+            <div>据说爱打赏的人运气都不会差</div>
+            <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+              <span>谢主隆恩</span>
+            </button>
+            <div id="QR" style="display: block;">
+              <div id="wechat" style="display: inline-block">
+                <a href="" class="fancybox" rel="group"><img id="wechat_qr" src="/imgs/wechatpay.PNG"></a>
+                <p>微信打赏</p>
+              </div>
+              <div id="wechat" style="display: inline-block">
+                <a href="" class="fancybox" rel="group"><img id="alipay_qr" src="/imgs/alipay.PNG"></a>
+                <p>支付宝打赏</p>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <!--End of Donate-->
+
+        <!--Adsense-->
+        <div class="widget tag">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 文末横幅 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4230509553120128"
+     data-ad-slot="1153059496"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+        <!--End of Adsense-->
+
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
+
+        <li><a href="/"><i class="fa fa-archive"></i>首页</a></li>
+
+		
+		   <li class="next"><a href="/2017/01/11/snake-ai/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+
+        
+
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  
+  	 <div class="ds-thread" data-thread-key="2017/01/12/huginn/" data-title="Huginn" data-url="http://blog.greenwicher.com/2017/01/12/huginn/"></div>  
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+           <span id="busuanzi_container_page_pv">
+             新大陆被发现了<span id="busuanzi_value_page_pv" class="badge badge-success"></span>次！
+          </span>
+
+		<div class="col-md-3 scrollspy" id="post_meta"> 
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	Jan 12 2017 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/测试/">测试<span>4</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+        <script type="text/javascript">
+        $(document).ready(function(){
+          $("#tocaffix").affix({
+            offset: { 
+              top: $("#tagsblock").offset().top
+            }
+          });
+        });
+        </script>
+
+        <style>
+          .affix{position:fixed;top:40px;}
+          .affix-bottom{position:absolute;}
+        </style>
+        
+	<div id="tocaffix" class="meta-widget affix-top">
+        <!--<div class="meta-widget">-->
+	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#What_is_Huginn_3F"><span class="toc-article-text">What is Huginn?</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#Here_are_some_of_the_things_that_you_can_do_with_Huginn_3A"><span class="toc-article-text">Here are some of the things that you can do with Huginn:</span></a></li></ol></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#Join_us_21"><span class="toc-article-text">Join us!</span></a></li></ol></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#Examples"><span class="toc-article-text">Examples</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#Getting_Started"><span class="toc-article-text">Getting Started</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#Docker"><span class="toc-article-text">Docker</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#Local_Installation"><span class="toc-article-text">Local Installation</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#Develop"><span class="toc-article-text">Develop</span></a></li></ol></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#Deployment"><span class="toc-article-text">Deployment</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#Heroku"><span class="toc-article-text">Heroku</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#Manual_installation_on_any_server"><span class="toc-article-text">Manual installation on any server</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#Optional_Setup"><span class="toc-article-text">Optional Setup</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#Setup_for_private_development"><span class="toc-article-text">Setup for private development</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#Enable_the_WeatherAgent"><span class="toc-article-text">Enable the WeatherAgent</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#Disable_SSL"><span class="toc-article-text">Disable SSL</span></a></li></ol></li></ol></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#License"><span class="toc-article-text">License</span></a></li></ol>
+		</div>
+	
+	</div>
+
+
+
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'greenwicher' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2017 LIU Weizhi
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.
+</br>
+本站共迎来了<span id="busuanzi_value_site_uv"></span>个小伙伴，总计<span id="busuanzi_value_site_pv"></span>次站点流量.
+
+</p>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+
+<!-- UJian Button BEGIN -->
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?type=slide&fade=1&uid=2123572"></script>
+<a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
+<!-- UJian Button END -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+   </html>
