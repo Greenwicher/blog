@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Huginn | Greenwicher&#39;s Blog</title>
+  <title>让所有网页变成RSS —— Huginn | Greenwicher&#39;s Blog</title>
   <meta name="author" content="LIU Weizhi">
   
   <meta name="description" content="Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn&#39;s Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data.  You do.">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Huginn"/>
+  <meta property="og:title" content="让所有网页变成RSS —— Huginn"/>
   <meta property="og:site_name" content="Greenwicher&#39;s Blog"/>
 
   
@@ -148,7 +148,7 @@
 
 	
 		<div class="page-header page-header-inverse ">		
-			<h1 class="title title-inverse "> Huginn</h1>
+			<h1 class="title title-inverse "> 让所有网页变成RSS —— Huginn</h1>
 		</div>		
 	
 
@@ -200,8 +200,9 @@
 		 </div> <!-- alert -->
 	  		
 
-	  <p><img src="https://raw.github.com/cantino/huginn/master/media/huginn-logo.png" alt="Huginn" title="Your agents are standing by."></p>
-<hr>
+	  <p><strong>【请忽视本文，仅是邮件订阅测试】</strong>我是一个重度 RSS 使用者，一般来说，我获取信息有微博，微信，邮件，还有就是 RSS 。每次打开 Chrome 之后第一个打开的就是 Feedly，看看有没有新的内容更新，省去我了一次性打开多个网站的麻烦。但是问题来了，有些网站没有 RSS 怎么办？</p>
+<p>前几天在利器的群里，看到有在讨论一个叫 Huginn 的东西，一个叫祥子的朋友还很热心的给大家解答一些关于这个的问题，我稍微查了查，发现这个东西可以解决我一直的一个痛点，就决定花时间来倒腾一下。</p>
+<p>Huginn 是一个 Github 的开源项目，已经上万 Star 了。简单的说这个东西是一个 IFTTT 形式的东西，可以把所有网页转换成 RSS 输出。更简单的说，就是工作流形式，类似于 iPhone 上的 Workflow。</p>
 <a id="more"></a>
 <h2 id="What_is_Huginn_3F"><a href="#What_is_Huginn_3F" class="headerlink" title="What is Huginn?"></a>What is Huginn?</h2><p>Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn’s Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data.  You do.</p>
 <p><img src="https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/the-name.png" alt="the origin of the name"></p>
@@ -236,6 +237,7 @@
 <ul>
 <li>Run <code>git remote add upstream https://github.com/cantino/huginn.git</code> to add the main repository as a remote for your fork.</li>
 <li>Copy <code>.env.example</code> to <code>.env</code> (<code>cp .env.example .env</code>) and edit <code>.env</code>, at least updating the <code>APP_SECRET_TOKEN</code> variable.</li>
+<li>Make sure that you have MySQL or PostgreSQL installed. (On a Mac, the easiest way is with <a href="http://brew.sh/" target="_blank" rel="external">Homebrew</a>. If you’re going to use PostgreSQL, you’ll need to prepend all commands below with <code>DATABASE_ADAPTER=postgresql</code>.)</li>
 <li>Run <code>bundle</code> to install dependencies</li>
 <li>Run <code>bundle exec rake db:create</code>, <code>bundle exec rake db:migrate</code>, and then <code>bundle exec rake db:seed</code> to create a development database with some example Agents.</li>
 <li>Run <code>bundle exec foreman start</code>, visit <a href="http://localhost:3000/" target="_blank" rel="external">http://localhost:3000/</a>, and login with the username of <code>admin</code> and the password of <code>password</code>.</li>
@@ -267,7 +269,7 @@
 <p><a href="https://travis-ci.org/cantino/huginn" target="_blank" rel="external"><img src="https://travis-ci.org/cantino/huginn.svg" alt="Build Status"></a> <a href="https://coveralls.io/r/cantino/huginn" target="_blank" rel="external"><img src="https://coveralls.io/repos/cantino/huginn/badge.svg" alt="Coverage Status"></a> <a href="https://gemnasium.com/cantino/huginn" target="_blank" rel="external"><img src="https://gemnasium.com/cantino/huginn.svg" alt="Dependency Status"></a> <a href="https://www.bountysource.com/trackers/282580-huginn?utm_source=282580&amp;utm_medium=shield&amp;utm_campaign=TRACKER_BADGE" target="_blank" rel="external"><img src="https://www.bountysource.com/badge/tracker?tracker_id=282580" alt="Bountysource"></a></p>
 
 
-          <p class="bg-warning"><a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external"><a href="http://i.creativecommons.org/l/by/2.5/cn/88x31.png" title="知识共享许可协议" rel="fancy-group" class="fancy-ctn fancybox"><img src="http://i.creativecommons.org/l/by/2.5/cn/88x31.png" title="知识共享许可协议"></a></a>本作品采用<a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external">知识共享署名 2.5 中国大陆许可协议</a>进行许可。欢迎转载，但请注明来自<a href="http://greenwicher.github.io/" target="_blank" rel="external">Mount Greenwicher</a>的文章<a href="http://blog.greenwicher.com/2017/01/12/huginn/index.html">《Huginn》</a>，并保持转载后文章内容的完整与无歧义。本人保留所有版权相关权利。</p>
+          <p class="bg-warning"><a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external"><a href="http://i.creativecommons.org/l/by/2.5/cn/88x31.png" title="知识共享许可协议" rel="fancy-group" class="fancy-ctn fancybox"><img src="http://i.creativecommons.org/l/by/2.5/cn/88x31.png" title="知识共享许可协议"></a></a>本作品采用<a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external">知识共享署名 2.5 中国大陆许可协议</a>进行许可。欢迎转载，但请注明来自<a href="http://greenwicher.github.io/" target="_blank" rel="external">Mount Greenwicher</a>的文章<a href="http://blog.greenwicher.com/2017/01/13/huginn/index.html">《让所有网页变成RSS —— Huginn》</a>，并保持转载后文章内容的完整与无歧义。本人保留所有版权相关权利。</p>
         <!--subscriber-->
 
 <!-- Begin MailChimp Signup Form -->
@@ -353,7 +355,7 @@
         <li><a href="/"><i class="fa fa-archive"></i>首页</a></li>
 
 		
-		   <li class="next"><a href="/2017/01/11/snake-ai/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+		   <li class="next"><a href="/2017/01/03/codeforces-problemset/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
         
 	
 </ul>
@@ -392,7 +394,7 @@
   <h2 class="title">留言</h2>
 
   
-  	 <div class="ds-thread" data-thread-key="2017/01/12/huginn/" data-title="Huginn" data-url="http://blog.greenwicher.com/2017/01/12/huginn/"></div>  
+  	 <div class="ds-thread" data-thread-key="2017/01/13/huginn/" data-title="让所有网页变成RSS —— Huginn" data-url="http://blog.greenwicher.com/2017/01/13/huginn/"></div>  
   
 </section>
 
@@ -409,7 +411,7 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	Jan 12 2017 
+	Jan 13 2017 
 	</div>
 	
 
@@ -420,7 +422,7 @@
     <ul id="categorys" class="tag_box list-unstyled collapse in">
           
   <li>
-    <li><a href="/categories/测试/">测试<span>4</span></a></li>
+    <li><a href="/categories/测试/">测试<span>1</span></a></li>
   </li>
 
     </ul>
