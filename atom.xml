@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greenwicher.com/"/>
-  <updated>2017-01-13T02:45:28.000Z</updated>
+  <updated>2017-01-03T10:06:15.000Z</updated>
   <id>http://blog.greenwicher.com/</id>
   
   <author>
@@ -14,93 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>让所有网页变成RSS —— Huginn</title>
-    <link href="http://blog.greenwicher.com/2017/01/13/huginn/"/>
-    <id>http://blog.greenwicher.com/2017/01/13/huginn/</id>
-    <published>2017-01-12T16:00:00.000Z</published>
-    <updated>2017-01-13T02:45:28.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;strong&gt;【请忽视本文，仅是邮件订阅测试】&lt;/strong&gt;我是一个重度 RSS 使用者，一般来说，我获取信息有微博，微信，邮件，还有就是 RSS 。每次打开 Chrome 之后第一个打开的就是 Feedly，看看有没有新的内容更新，省去我了一次性打开多个网站的麻烦。但是问题来了，有些网站没有 RSS 怎么办？&lt;/p&gt;
-&lt;p&gt;前几天在利器的群里，看到有在讨论一个叫 Huginn 的东西，一个叫祥子的朋友还很热心的给大家解答一些关于这个的问题，我稍微查了查，发现这个东西可以解决我一直的一个痛点，就决定花时间来倒腾一下。&lt;/p&gt;
-&lt;p&gt;Huginn 是一个 Github 的开源项目，已经上万 Star 了。简单的说这个东西是一个 IFTTT 形式的东西，可以把所有网页转换成 RSS 输出。更简单的说，就是工作流形式，类似于 iPhone 上的 Workflow。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;What_is_Huginn_3F&quot;&gt;&lt;a href=&quot;#What_is_Huginn_3F&quot; class=&quot;headerlink&quot; title=&quot;What is Huginn?&quot;&gt;&lt;/a&gt;What is Huginn?&lt;/h2&gt;&lt;p&gt;Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn’s Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data.  You do.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/the-name.png&quot; alt=&quot;the origin of the name&quot;&gt;&lt;/p&gt;
-&lt;h4 id=&quot;Here_are_some_of_the_things_that_you_can_do_with_Huginn_3A&quot;&gt;&lt;a href=&quot;#Here_are_some_of_the_things_that_you_can_do_with_Huginn_3A&quot; class=&quot;headerlink&quot; title=&quot;Here are some of the things that you can do with Huginn:&quot;&gt;&lt;/a&gt;Here are some of the things that you can do with Huginn:&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Track the weather and get an email when it’s going to rain (or snow) tomorrow (“Don’t forget your umbrella!”)&lt;/li&gt;
-&lt;li&gt;List terms that you care about and receive emails when their occurrence on Twitter changes.  (For example, want to know when something interesting has happened in the world of Machine Learning?  Huginn will watch the term “machine learning” on Twitter and tell you when there is a spike in discussion.)&lt;/li&gt;
-&lt;li&gt;Watch for air travel or shopping deals&lt;/li&gt;
-&lt;li&gt;Follow your project names on Twitter and get updates when people mention them&lt;/li&gt;
-&lt;li&gt;Scrape websites and receive emails when they change&lt;/li&gt;
-&lt;li&gt;Connect to Adioso, HipChat, Basecamp, Growl, FTP, IMAP, Jabber, JIRA, MQTT, nextbus, Pushbullet, Pushover, RSS, Bash, Slack, StubHub, translation APIs, Twilio, Twitter, Wunderground, and Weibo, to name a few.&lt;/li&gt;
-&lt;li&gt;Send digest emails with things that you care about at specific times during the day&lt;/li&gt;
-&lt;li&gt;Track counts of high frequency events and send an SMS within moments when they spike, such as the term “san francisco emergency”&lt;/li&gt;
-&lt;li&gt;Send and receive WebHooks&lt;/li&gt;
-&lt;li&gt;Run custom JavaScript or CoffeeScript functions&lt;/li&gt;
-&lt;li&gt;Track your location over time&lt;/li&gt;
-&lt;li&gt;Create Amazon Mechanical Turk workflows as the inputs, or outputs, of agents (the Amazon Turk Agent is called the “HumanTaskAgent”). For example: “Once a day, ask 5 people for a funny cat photo; send the results to 5 more people to be rated; send the top-rated photo to 5 people for a funny caption; send to 5 final people to rate for funniest caption; finally, post the best captioned photo on my blog.”&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;https://gitter.im/cantino/huginn?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&amp;amp;utm_content=badge&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;https://badges.gitter.im/Join%20Chat.svg&quot; alt=&quot;Gitter&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://changelog.com/199&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/changelog-%23199-lightgrey.svg&quot; alt=&quot;Changelog #199&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Join us in our &lt;a href=&quot;https://gitter.im/cantino/huginn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Gitter room&lt;/a&gt; to discuss the project and follow &lt;a href=&quot;https://twitter.com/tectonic&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;@tectonic&lt;/a&gt; for updates as Huginn evolves.&lt;/p&gt;
-&lt;h3 id=&quot;Join_us_21&quot;&gt;&lt;a href=&quot;#Join_us_21&quot; class=&quot;headerlink&quot; title=&quot;Join us!&quot;&gt;&lt;/a&gt;Join us!&lt;/h3&gt;&lt;p&gt;Want to help with Huginn?  All contributions are encouraged!  You could make UI improvements, &lt;a href=&quot;https://github.com/cantino/huginn/wiki/Creating-a-new-agent&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;add new Agents&lt;/a&gt;, write &lt;a href=&quot;https://github.com/cantino/huginn/wiki&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation and tutorials&lt;/a&gt;, or try tackling &lt;a href=&quot;https://github.com/cantino/huginn/issues?direction=desc&amp;amp;labels=help-wanted&amp;amp;page=1&amp;amp;sort=created&amp;amp;state=open&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;issues tagged with #help-wanted&lt;/a&gt;.  Please fork, add specs, and send pull requests!&lt;/p&gt;
-&lt;p&gt;Really want a fix or feature? Want to solve some community issues and earn some extra coffee money? Take a look at the &lt;a href=&quot;https://www.bountysource.com/trackers/282580-huginn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;current bounties on Bountysource&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Have an awesome idea but not feeling quite up to contributing yet? Head over to our &lt;a href=&quot;https://github.com/cantino/huginn/issues/353&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Official ‘suggest an agent’ thread &lt;/a&gt; and tell us!&lt;/p&gt;
-&lt;h2 id=&quot;Examples&quot;&gt;&lt;a href=&quot;#Examples&quot; class=&quot;headerlink&quot; title=&quot;Examples&quot;&gt;&lt;/a&gt;Examples&lt;/h2&gt;&lt;p&gt;Please checkout the &lt;a href=&quot;http://vimeo.com/61976251&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Huginn Introductory Screencast&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;And now, some example screenshots.  Below them are instructions to get you started.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/your-agents.png&quot; alt=&quot;Example list of agents&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/diagram.png&quot; alt=&quot;Event flow diagram&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/peaks.png&quot; alt=&quot;Detecting peaks in Twitter&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/my-locations.png&quot; alt=&quot;Logging your location over time&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/new-agent.png&quot; alt=&quot;Making a new agent&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Getting_Started&quot;&gt;&lt;a href=&quot;#Getting_Started&quot; class=&quot;headerlink&quot; title=&quot;Getting Started&quot;&gt;&lt;/a&gt;Getting Started&lt;/h2&gt;&lt;h3 id=&quot;Docker&quot;&gt;&lt;a href=&quot;#Docker&quot; class=&quot;headerlink&quot; title=&quot;Docker&quot;&gt;&lt;/a&gt;Docker&lt;/h3&gt;&lt;p&gt;The quickest and easiest way to check out Huginn is to use the official Docker image. Have a look at the &lt;a href=&quot;https://github.com/cantino/huginn/blob/master/doc/docker/install.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;Local_Installation&quot;&gt;&lt;a href=&quot;#Local_Installation&quot; class=&quot;headerlink&quot; title=&quot;Local Installation&quot;&gt;&lt;/a&gt;Local Installation&lt;/h3&gt;&lt;p&gt;If you just want to play around, you can simply fork this repository, then perform the following steps:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Run &lt;code&gt;git remote add upstream https://github.com/cantino/huginn.git&lt;/code&gt; to add the main repository as a remote for your fork.&lt;/li&gt;
-&lt;li&gt;Copy &lt;code&gt;.env.example&lt;/code&gt; to &lt;code&gt;.env&lt;/code&gt; (&lt;code&gt;cp .env.example .env&lt;/code&gt;) and edit &lt;code&gt;.env&lt;/code&gt;, at least updating the &lt;code&gt;APP_SECRET_TOKEN&lt;/code&gt; variable.&lt;/li&gt;
-&lt;li&gt;Make sure that you have MySQL or PostgreSQL installed. (On a Mac, the easiest way is with &lt;a href=&quot;http://brew.sh/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Homebrew&lt;/a&gt;. If you’re going to use PostgreSQL, you’ll need to prepend all commands below with &lt;code&gt;DATABASE_ADAPTER=postgresql&lt;/code&gt;.)&lt;/li&gt;
-&lt;li&gt;Run &lt;code&gt;bundle&lt;/code&gt; to install dependencies&lt;/li&gt;
-&lt;li&gt;Run &lt;code&gt;bundle exec rake db:create&lt;/code&gt;, &lt;code&gt;bundle exec rake db:migrate&lt;/code&gt;, and then &lt;code&gt;bundle exec rake db:seed&lt;/code&gt; to create a development database with some example Agents.&lt;/li&gt;
-&lt;li&gt;Run &lt;code&gt;bundle exec foreman start&lt;/code&gt;, visit &lt;a href=&quot;http://localhost:3000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:3000/&lt;/a&gt;, and login with the username of &lt;code&gt;admin&lt;/code&gt; and the password of &lt;code&gt;password&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Setup some Agents!&lt;/li&gt;
-&lt;li&gt;Read the &lt;a href=&quot;https://github.com/cantino/huginn/wiki&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wiki&lt;/a&gt; for usage examples and to get started making new Agents.&lt;/li&gt;
-&lt;li&gt;Periodically run &lt;code&gt;git fetch upstream&lt;/code&gt; and then &lt;code&gt;git checkout master &amp;amp;&amp;amp; git merge upstream/master&lt;/code&gt; to merge in the newest version of Huginn.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Note: By default, emails are intercepted in the &lt;code&gt;development&lt;/code&gt; Rails environment, which is what you just setup.  You can view&lt;br&gt;them at &lt;a href=&quot;http://localhost:3000/letter_opener&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:3000/letter_opener&lt;/a&gt;. If you’d like to send real emails via SMTP when playing&lt;br&gt;with Huginn locally, set &lt;code&gt;SEND_EMAIL_IN_DEVELOPMENT&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your &lt;code&gt;.env&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;If you need more detailed instructions, see the &lt;a href=&quot;https://github.com/cantino/huginn/wiki/Novice-setup-guide&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Novice setup guide&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;Develop&quot;&gt;&lt;a href=&quot;#Develop&quot; class=&quot;headerlink&quot; title=&quot;Develop&quot;&gt;&lt;/a&gt;Develop&lt;/h3&gt;&lt;p&gt;All agents have specs! And there’s also acceptance tests that simulate running Huginn in a headless browser. &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Install PhantomJS 2.1.1 or greater: &lt;ul&gt;
-&lt;li&gt;Using &lt;a href=&quot;https://www.npmjs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Node Package Manager&lt;/a&gt;: &lt;code&gt;npm install phantomjs&lt;/code&gt; &lt;/li&gt;
-&lt;li&gt;Using &lt;a href=&quot;http://brew.sh/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Homebrew&lt;/a&gt; on OSX &lt;code&gt;brew install phantomjs&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Run all specs with &lt;code&gt;bundle exec rspec&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Run a specific spec with &lt;code&gt;bundle exec rspec path/to/specific/test_spec.rb&lt;/code&gt;. &lt;/li&gt;
-&lt;li&gt;Read more about rspec for rails &lt;a href=&quot;https://github.com/rspec/rspec-rails&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;Deployment&quot;&gt;&lt;a href=&quot;#Deployment&quot; class=&quot;headerlink&quot; title=&quot;Deployment&quot;&gt;&lt;/a&gt;Deployment&lt;/h2&gt;&lt;h3 id=&quot;Heroku&quot;&gt;&lt;a href=&quot;#Heroku&quot; class=&quot;headerlink&quot; title=&quot;Heroku&quot;&gt;&lt;/a&gt;Heroku&lt;/h3&gt;&lt;p&gt;Try Huginn on Heroku: &lt;a href=&quot;https://heroku.com/deploy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;https://www.herokucdn.com/deploy/button.png&quot; alt=&quot;Deploy&quot;&gt;&lt;/a&gt; (Takes a few minutes to setup. Read the &lt;a href=&quot;https://github.com/cantino/huginn/blob/master/doc/heroku/install.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; while you are waiting and be sure to click ‘View it’ after launch!)&lt;/p&gt;
-&lt;p&gt;Huginn works on the free version of Heroku &lt;a href=&quot;https://github.com/cantino/huginn/blob/master/doc/heroku/install.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;with significant limitations&lt;/a&gt;. For non-experimental use, we strongly recommend Heroku’s cheapest paid plan or our Docker container.&lt;/p&gt;
-&lt;p&gt;Please see &lt;a href=&quot;https://github.com/cantino/huginn/wiki#deploying-huginn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;the Huginn Wiki&lt;/a&gt; for detailed deployment strategies for different providers.&lt;/p&gt;
-&lt;h3 id=&quot;Manual_installation_on_any_server&quot;&gt;&lt;a href=&quot;#Manual_installation_on_any_server&quot; class=&quot;headerlink&quot; title=&quot;Manual installation on any server&quot;&gt;&lt;/a&gt;Manual installation on any server&lt;/h3&gt;&lt;p&gt;Have a look at the &lt;a href=&quot;https://github.com/cantino/huginn/blob/master/doc/manual/README.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;installation guide&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;Optional_Setup&quot;&gt;&lt;a href=&quot;#Optional_Setup&quot; class=&quot;headerlink&quot; title=&quot;Optional Setup&quot;&gt;&lt;/a&gt;Optional Setup&lt;/h3&gt;&lt;h4 id=&quot;Setup_for_private_development&quot;&gt;&lt;a href=&quot;#Setup_for_private_development&quot; class=&quot;headerlink&quot; title=&quot;Setup for private development&quot;&gt;&lt;/a&gt;Setup for private development&lt;/h4&gt;&lt;p&gt;See &lt;a href=&quot;https://github.com/cantino/huginn/wiki/Private-development-instructions&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;private development instructions&lt;/a&gt; on the wiki.&lt;/p&gt;
-&lt;h4 id=&quot;Enable_the_WeatherAgent&quot;&gt;&lt;a href=&quot;#Enable_the_WeatherAgent&quot; class=&quot;headerlink&quot; title=&quot;Enable the WeatherAgent&quot;&gt;&lt;/a&gt;Enable the WeatherAgent&lt;/h4&gt;&lt;p&gt;In order to use the WeatherAgent you need an &lt;a href=&quot;http://www.wunderground.com/weather/api/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;API key with Wunderground&lt;/a&gt;. Signup for one and then change the value of &lt;code&gt;api_key: your-key&lt;/code&gt; in your seeded WeatherAgent.&lt;/p&gt;
-&lt;h4 id=&quot;Disable_SSL&quot;&gt;&lt;a href=&quot;#Disable_SSL&quot; class=&quot;headerlink&quot; title=&quot;Disable SSL&quot;&gt;&lt;/a&gt;Disable SSL&lt;/h4&gt;&lt;p&gt;We assume your deployment will run over SSL. This is a very good idea! However, if you wish to turn this off, you’ll probably need to edit &lt;code&gt;config/initializers/devise.rb&lt;/code&gt; and modify the line containing &lt;code&gt;config.rememberable_options = { :secure =&amp;gt; true }&lt;/code&gt;.  You will also need to edit &lt;code&gt;config/environments/production.rb&lt;/code&gt; and modify the value of &lt;code&gt;config.force_ssl&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;License&quot;&gt;&lt;a href=&quot;#License&quot; class=&quot;headerlink&quot; title=&quot;License&quot;&gt;&lt;/a&gt;License&lt;/h2&gt;&lt;p&gt;Huginn is provided under the MIT License.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://travis-ci.org/cantino/huginn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;https://travis-ci.org/cantino/huginn.svg&quot; alt=&quot;Build Status&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://coveralls.io/r/cantino/huginn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;https://coveralls.io/repos/cantino/huginn/badge.svg&quot; alt=&quot;Coverage Status&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://gemnasium.com/cantino/huginn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;https://gemnasium.com/cantino/huginn.svg&quot; alt=&quot;Dependency Status&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://www.bountysource.com/trackers/282580-huginn?utm_source=282580&amp;amp;utm_medium=shield&amp;amp;utm_campaign=TRACKER_BADGE&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;https://www.bountysource.com/badge/tracker?tracker_id=282580&quot; alt=&quot;Bountysource&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn&#39;s Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data.  You do.
-    
-    </summary>
-    
-      <category term="测试" scheme="http://blog.greenwicher.com/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>Codeforces科学刷题指南，一图一表便够了</title>
