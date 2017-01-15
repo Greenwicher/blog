@@ -1614,7 +1614,7 @@
     <link href="http://blog.greenwicher.com/2016/12/24/drl-from_mab_to_mcts/"/>
     <id>http://blog.greenwicher.com/2016/12/24/drl-from_mab_to_mcts/</id>
     <published>2016-12-24T00:00:00.000Z</published>
-    <updated>2016-12-30T06:24:09.000Z</updated>
+    <updated>2017-01-15T03:31:24.000Z</updated>
     
     <content type="html">
 
@@ -1969,7 +1969,7 @@ OCBA&amp;#x7684;&amp;#x6838;&amp;#x5FC3;&amp;#x601D;&amp;#x8DEF;&amp;#x662F;&amp
     
     <summary type="html">
     
-      两个重要的增强学习问题：多臂赌博机问题和蒙特卡洛树搜索
+      两个重要的增强学习（强化学习）问题：多臂赌博机问题和蒙特卡洛树搜索
     
     </summary>
     
@@ -1995,7 +1995,7 @@ OCBA&amp;#x7684;&amp;#x6838;&amp;#x5FC3;&amp;#x601D;&amp;#x8DEF;&amp;#x662F;&amp
     <link href="http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/"/>
     <id>http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/</id>
     <published>2016-12-18T00:00:00.000Z</published>
-    <updated>2016-12-30T06:59:06.000Z</updated>
+    <updated>2017-01-15T03:31:07.000Z</updated>
     
     <content type="html">
 
@@ -2339,7 +2339,7 @@ Reinforcement Learning defines the objective. Deep Learning gives the mechanism.
     
     <summary type="html">
     
-      深度增强学习的基本介绍以及对实现通用人工智能的探讨
+      深度增强学习/深度强化学习的基本介绍以及对实现通用人工智能的探讨
     
     </summary>
     
