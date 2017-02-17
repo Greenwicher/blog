@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://blog.greenwicher.com/2017/01/01/hello-2017/</loc>
+    <lastmod>2017-02-17T09:42:37.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello 2017</title>
+        <pubTime>2017-01-01T00:00:00.000Z</pubTime>
+        
+        <tag>规划</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="http://blog.greenwicher.com/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/</loc>
     <lastmod>2017-02-06T01:47:41.000Z</lastmod>
     <data>
@@ -80,26 +100,6 @@
            
              
               <breadCrumb title="如何写算法" url="http://blog.greenwicher.com/categories/%E5%A6%82%E4%BD%95%E5%86%99%E7%AE%97%E6%B3%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.greenwicher.com/2017/01/01/hello-2017/</loc>
-    <lastmod>2017-01-03T08:01:31.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello 2017</title>
-        <pubTime>2017-01-01T00:00:00.000Z</pubTime>
-        
-        <tag>规划</tag>
-         
-         
-           
-             
-              <breadCrumb title="随笔" url="http://blog.greenwicher.com/categories/%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>

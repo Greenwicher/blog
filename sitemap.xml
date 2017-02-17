@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.greenwicher.com/2017/01/01/hello-2017/</loc>
+    
+    <lastmod>2017-02-17T09:42:37.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.greenwicher.com/2016/12/18/drl-general_ai-intro/</loc>
     
     <lastmod>2017-02-06T01:47:41.000Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://blog.greenwicher.com/2017/01/03/codeforces-problemset/</loc>
     
     <lastmod>2017-01-03T10:06:15.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.greenwicher.com/2017/01/01/hello-2017/</loc>
-    
-    <lastmod>2017-01-03T08:01:31.000Z</lastmod>
     
   </url>
   
