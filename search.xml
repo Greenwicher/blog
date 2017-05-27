@@ -258,7 +258,7 @@
 <input type="checkbox" onclick="return false;"> &#x8D62;&#x5F97;Crazy Stone 9x9&#x7684;25&#x4E2A;medal challenge<br>
 <input type="checkbox" onclick="return false;"> &#x505A;&#x5B8C;Smart Go Kifu 15k&#xFF08;&#x5305;&#x62EC;&#xFF09;&#x4E4B;&#x524D;&#x7684;&#x6240;&#x6709;&#x6B7B;&#x6D3B;&#x9898;<br>
 <input type="checkbox" onclick="return false;"> &#x53C2;&#x52A0;&#x82E5;&#x5E72;&#x573A;&#x535A;&#x7269;&#x9986;&#x5C55;&#x89C8; <br>
-<input type="checkbox" onclick="return false;"> &#x53C2;&#x52A0;CELC&#x7684;Oral Communication Camp<br>
+<input type="checkbox" onclick="return false;" checked> &#x53C2;&#x52A0;CELC&#x7684;Oral Communication Camp<br>
 <hr>
 <input type="checkbox" onclick="return false;"> &#x81F3;&#x5C11;&#x9605;&#x8BFB;6&#x672C;&#x5173;&#x4E8E;&#x6295;&#x8D44;&#x65B9;&#x9762;&#x7684;&#x4E66; <br>
 <input type="checkbox" onclick="return false;"> &#x7B5B;&#x9009;&#x4FE1;&#x606F;&#x6E90;&#xFF0C;&#x5E76;&#x5F62;&#x6210;&#x56FA;&#x5B9A;&#x65F6;&#x95F4;&#x7684;&#x9605;&#x8BFB;&#x4E60;&#x60EF; <br>
@@ -267,7 +267,7 @@
 <input type="checkbox" onclick="return false;"> &#x5B8C;&#x5584;PR-OCBA&#x7684;&#x7406;&#x8BBA;&#x548C;&#x6570;&#x503C;&#x5DE5;&#x4F5C; <br>
 <input type="checkbox" onclick="return false;"> &#x660E;&#x786E;&#x4E4B;&#x540E;&#x7684;&#x7814;&#x7A76;&#x65B9;&#x5411;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x521D;&#x6B65;&#x63A2;&#x7D22; <br>
 <hr>
-<input type="checkbox" onclick="return false;"> &#x5B8C;&#x6210;&#x5BF9;&#x300A;Accelerated C++&#x300B;&#x7B2C;12-16&#x7AE0;&#x7684;&#x603B;&#x7ED3; <br>
+<input type="checkbox" onclick="return false;" checked> &#x5B8C;&#x6210;&#x5BF9;&#x300A;Accelerated C++&#x300B;&#x7B2C;12-16&#x7AE0;&#x7684;&#x603B;&#x7ED3; <br>
 <input type="checkbox" onclick="return false;"> &#x540C;&#x65F6;&#x7528;Python&#x548C;C++&#x7EC3;&#x4E60;Codeforces&#x7B49;OJ&#x5E73;&#x53F0;&#x4E0A;&#x7684;&#x7B97;&#x6CD5;&#x9898; <br>
 <hr>
 <input type="checkbox" onclick="return false;"> &#x5728;&#x535A;&#x5BA2;&#x4E0A;&#x603B;&#x7ED3;David Silver&#x589E;&#x5F3A;&#x5B66;&#x4E60;&#x516C;&#x5F00;&#x8BFE;&#x7684;Lecture2-7<br>
