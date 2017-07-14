@@ -329,7 +329,7 @@
 <input type="checkbox" onclick="return false;"> &#x9605;&#x8BFB;&#x5434;&#x519B;&#x535A;&#x58EB;&#x7684;&#x300A;&#x6587;&#x660E;&#x4E4B;&#x5149;&#x300B;&#x524D;&#x4E09;&#x518C;&#x3001;&#x300A;&#x667A;&#x80FD;&#x65F6;&#x4EE3;&#x300B;&#x3001;&#x300A;&#x6570;&#x5B66;&#x4E4B;&#x7F8E;&#x300B;&#x4EE5;&#x53CA;&#x300A;&#x6D6A;&#x6F6E;&#x4E4B;&#x5DC5;&#x300B; <br>
 <input type="checkbox" onclick="return false;"> &#x65F6;&#x95F4;&#x5145;&#x8DB3;&#x7684;&#x8BDD;&#xFF0C;&#x81F3;&#x5C11;&#x9605;&#x8BFB;&#x6BCF;&#x5468;&#x300A;&#x8D22;&#x65B0;&#x5468;&#x520A;&#x300B;&#x7684;&#x5934;&#x6761;<br>
 <hr>
-<input type="checkbox" onclick="return false;"> &#x8BD5;&#x7740;&#x7528;MOPRS&#x7684;&#x6587;&#x7AE0;&#x6765;&#x7533;&#x8BF7;ICS Student Paper Award<br>
+<input type="checkbox" onclick="return false;" checked> &#x8BD5;&#x7740;&#x7528;MOPRS&#x7684;&#x6587;&#x7AE0;&#x6765;&#x7533;&#x8BF7;ICS Student Paper Award<br>
 <input type="checkbox" onclick="return false;"> &#x3010;&#x4F18;&#x5148;&#x3011;&#x5B8C;&#x5584;PR-OCBA&#x7684;&#x7406;&#x8BBA;&#x548C;&#x6570;&#x503C;&#x5DE5;&#x4F5C;&#xFF0C;&#x5E76;&#x8003;&#x8651;&#x98CE;&#x9669;&#x6D4B;&#x5EA6; <br>
 <input type="checkbox" onclick="return false;"> &#x3010;&#x4F18;&#x5148;&#x3011;&#x660E;&#x786E;MGOS&#x7684;&#x7814;&#x7A76;&#x95EE;&#x9898; <br>
 <hr>

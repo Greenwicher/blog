@@ -169,7 +169,7 @@
     <link href="http://blog.greenwicher.com/2017/01/01/hello-2017/"/>
     <id>http://blog.greenwicher.com/2017/01/01/hello-2017/</id>
     <published>2017-01-01T00:00:00.000Z</published>
-    <updated>2017-06-30T14:22:18.000Z</updated>
+    <updated>2017-07-05T10:41:23.000Z</updated>
     
     <content type="html">
 
@@ -367,7 +367,7 @@
 &lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x9605;&amp;#x8BFB;&amp;#x5434;&amp;#x519B;&amp;#x535A;&amp;#x58EB;&amp;#x7684;&amp;#x300A;&amp;#x6587;&amp;#x660E;&amp;#x4E4B;&amp;#x5149;&amp;#x300B;&amp;#x524D;&amp;#x4E09;&amp;#x518C;&amp;#x3001;&amp;#x300A;&amp;#x667A;&amp;#x80FD;&amp;#x65F6;&amp;#x4EE3;&amp;#x300B;&amp;#x3001;&amp;#x300A;&amp;#x6570;&amp;#x5B66;&amp;#x4E4B;&amp;#x7F8E;&amp;#x300B;&amp;#x4EE5;&amp;#x53CA;&amp;#x300A;&amp;#x6D6A;&amp;#x6F6E;&amp;#x4E4B;&amp;#x5DC5;&amp;#x300B; &lt;br&gt;
 &lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x65F6;&amp;#x95F4;&amp;#x5145;&amp;#x8DB3;&amp;#x7684;&amp;#x8BDD;&amp;#xFF0C;&amp;#x81F3;&amp;#x5C11;&amp;#x9605;&amp;#x8BFB;&amp;#x6BCF;&amp;#x5468;&amp;#x300A;&amp;#x8D22;&amp;#x65B0;&amp;#x5468;&amp;#x520A;&amp;#x300B;&amp;#x7684;&amp;#x5934;&amp;#x6761;&lt;br&gt;
 &lt;hr&gt;
-&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x8BD5;&amp;#x7740;&amp;#x7528;MOPRS&amp;#x7684;&amp;#x6587;&amp;#x7AE0;&amp;#x6765;&amp;#x7533;&amp;#x8BF7;ICS Student Paper Award&lt;br&gt;
+&lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot; checked&gt; &amp;#x8BD5;&amp;#x7740;&amp;#x7528;MOPRS&amp;#x7684;&amp;#x6587;&amp;#x7AE0;&amp;#x6765;&amp;#x7533;&amp;#x8BF7;ICS Student Paper Award&lt;br&gt;
 &lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x3010;&amp;#x4F18;&amp;#x5148;&amp;#x3011;&amp;#x5B8C;&amp;#x5584;PR-OCBA&amp;#x7684;&amp;#x7406;&amp;#x8BBA;&amp;#x548C;&amp;#x6570;&amp;#x503C;&amp;#x5DE5;&amp;#x4F5C;&amp;#xFF0C;&amp;#x5E76;&amp;#x8003;&amp;#x8651;&amp;#x98CE;&amp;#x9669;&amp;#x6D4B;&amp;#x5EA6; &lt;br&gt;
 &lt;input type=&quot;checkbox&quot; onclick=&quot;return false;&quot;&gt; &amp;#x3010;&amp;#x4F18;&amp;#x5148;&amp;#x3011;&amp;#x660E;&amp;#x786E;MGOS&amp;#x7684;&amp;#x7814;&amp;#x7A76;&amp;#x95EE;&amp;#x9898; &lt;br&gt;
 &lt;hr&gt;
