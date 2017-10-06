@@ -1,0 +1,579 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>QuantCon@SG，你想知道的所有细节都在这里了 | Greenwicher&#39;s Blog</title>
+  <meta name="author" content="LIU Weizhi">
+  
+  <meta name="description" content="Quantopian2017年新加坡会议总结">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="QuantCon@SG，你想知道的所有细节都在这里了"/>
+  <meta property="og:site_name" content="Greenwicher&#39;s Blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="Greenwicher&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/themes/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-42890116-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="http://greenwicher.com">Greenwicher&#39;s Blog</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href= "/" title="Blog homepage"> 
+			  <i class="fa fa-home"></i>首页
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/archives" title="All the articles."> 
+			  <i class="fa fa-archive"></i>归档
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/categories" title="All the categories."> 
+			  <i class="fa fa-folder"></i>分类
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/tags" title="All the tags."> 
+			  <i class="fa fa-tags"></i>标签
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "/subscribe" title="Subscribe"> 
+			  <i class="fa fa-rss"></i>订阅
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href= "https://book.douban.com/people/Greenwicher/" title="Douban"> 
+			  <i class="fa fa-book"></i>读书
+			</a>			
+	          </li>
+		  <li>
+			<a href= "http://wiki.greenwicher.com" title="Wiki"> 
+                           <i class="fa fa-slack"></i>维基
+                        </a>
+                  </li>
+                  <li>
+			<a href= "http://greenwicher.com/me/resume-en.pdf" title="Resume"> 
+                           <i class="fa fa-user"></i>Resume
+			</a>		                
+	          </li>
+		</ul>
+                <!--subscriber-->
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+<form action="//greenwicher.us14.list-manage.com/subscribe/post?u=8da47f8ec088ffc8c8d5b6b88&amp;id=d8da6d2b40" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll" class="navbar-form navbar-right" role="form" >
+        <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="请输入您的邮箱" required>
+        <button type="submit" class="btn btn-success">一键订阅</button>
+
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8da47f8ec088ffc8c8d5b6b88_d8da6d2b40" tabindex="-1" value=""></div>
+
+    </div>
+
+</form>
+
+
+
+<!--End mc_embed_signup-->
+<!--end of subscriber-->
+
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header page-header-inverse ">		
+			<h1 class="title title-inverse "> QuantCon@SG，你想知道的所有细节都在这里了</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta">
+        </div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">
+          <!--subscriber-->
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//greenwicher.us14.list-manage.com/subscribe/post?u=8da47f8ec088ffc8c8d5b6b88&amp;id=d8da6d2b40" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL">一键订阅 | Greenwicher's Newsletter </label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="输入邮箱，为您科普 人工智能|量化交易|算法之美" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8da47f8ec088ffc8c8d5b6b88_d8da6d2b40" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="订阅" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+<!--end of subscriber-->
+
+<hr>
+
+	  
+		 <div class="alert alert-success description">
+			<i class="fa fa-info-circle"></i> <p>Quantopian2017年新加坡会议总结</p>
+			
+		 </div> <!-- alert -->
+	  		
+
+	  <p>本科的时候就听说XJC师兄想要从零开始搭建一套量化交易系统，当时也是特别佩服。虽然周围金工的同学或多或少也在用SAS然后连接Wind来开发与回测投资策略，少部分同学也试着实盘去操作，但真正从一砖一瓦去搭建整个量化交易系统就是另一回事了。 后来大概在我大四的时候，<a href="http://www.yucezhe.com/" target="_blank" rel="external">预测者网</a>诞生了。一开始其核心在于抓取大V以及分析师们的预测观点并进行评级，之后逐步开始卖量化投资策略和高频数据。 之所以以这个引子开头，是为了契合Quantopian这次的量化投资大会。一来，随着2016年国内各大量化策略平台（RiceQuant, Uqer, JoinQuant, 果仁网）雨后春笋般的出现，人人皆为宽客的时代已然来临，预测者网虽然没有很快的转型，但也是这波浪潮的冲锋号。二来，alternative data近来也比较火，正如有着GIC九年工作经验的keynote主讲人Yi Li大神提到用分析师数据来预测宏观市场状态，预测者网也有试图整合所有分析师的预测观点来最大化集体智慧。三来，机器学习/人工智能也算是在各个行业都大放异彩，这次<a href="quantconsingapore2017.splashthat.com">QuantCon</a>有很多演讲都和机器学习、增强学习有关。另外，文末有福利放送哦~</p>
+<a id="more"></a>
+<h2 id="QuantCon@SG"><a href="#QuantCon@SG" class="headerlink" title="QuantCon@SG"></a>QuantCon@SG</h2><p><img src="QuantCon@SG.JPG" alt="QuantCon@SG"></p>
+<p>最早接触QuantCon是在2015年，当时Dr. Anthony NG在和Quantopian一起打算在新加坡筹办一次短期的workshp（<a href="http://twiecki.github.io/bayesian_risk_perf_v3.slides.html#/" target="_blank" rel="external">Probabilistic Programming in Quantitative Finance</a>）。但是觉得离学校太远，就懒得没去。再后来，和BL兄一起参加了WorldQuant的全球量化投资交易比赛（特别巧的是这次会议还碰到了新加坡WorldQuant的CEO，没想到他还记得我）。当时BL兄提到了16年首届新加坡QuantCon，觉得还不错。于是今年我就报了名，打算了解下业界目前的热点，顺便认识认识各种大神。</p>
+<p>今年的会议分成了三个部分，先是28号的三场workshop（顺便推荐下<a href="https://www.quantopian.com/lectures" target="_blank" rel="external">Quantopian的Lecture</a>，感觉比国内类似平台做的详细些），然后29号的正式会议，最后30号有个Hackathon。正式会议的议程安排还是蛮紧张的，总共两个主旨演讲，还有20个报告（具体细节请看最后一部分），覆盖了Quant职业生涯建议、机器学习、另类数据、投资组合优化、投资模型以及金融市场。总的来说，考虑到今年只是第二届，参会体验已经很不错了。另外QuantCon也有在纽约举办，YouTube上有2015、2016年的会议视频。</p>
+<p>虽然是在新加坡的会议，但无论是报告人还是参与者，很多都是从海外专门打飞的过来。甚至碰到了和我同岁目前在北京做Quant的JCM同学，刚来新加坡不到一周的韩国大哥Harold，之前在读书会遇到的师弟SZH，以及专门从外蒙古飞过来的今年纽约Hackathon的冠军。正如一位报告人所讲，这么多人从五湖四海同聚一堂，短时间高密度的交流，确实是难得的机会。更何况量化投资本身就像武林秘籍一样，各家『流派』能够互相交流学习，更新信息，实属不易。虽然参会那一段时间睡眠不足，导致开会那天整个人昏昏沉沉的，感觉没有特别深刻的收获，但还是总结一二，以期日后有新的领悟。</p>
+<h2 id="u89C1_u95FB"><a href="#u89C1_u95FB" class="headerlink" title="见闻"></a>见闻</h2><h3 id="u5BFB_u627E_u963F_u5C14_u6CD5"><a href="#u5BFB_u627E_u963F_u5C14_u6CD5" class="headerlink" title="寻找阿尔法"></a>寻找阿尔法</h3><blockquote>
+<p>投资者把钱交给基金经理的唯一原因，是经理可以给予投资者比市场更好的回报。而这个更好的回报，我们就把它称之为超额回报，简称阿尔法。</p>
+</blockquote>
+<p>Fama三因子模型提出股价会受到市场系统风险、市净率以及公司规模的影响，从此越来越多的因子模型被提出来来解释股价。据说WorldQuant内部就有很大的因子库，覆盖了流动性、动量、质量、市值、价值、波动性、成长性以及宏观状态各个方面。所以当大部分因子都为人所知的时候，下一步该怎么做？最直接的思路便是提出新的因子，而产生新因子的最直接办法就是用别人从来都没用过的数据（alternative data）。比如像下图，实际可以收集以及利用的数据有很多。</p>
+<p><img src="alternative-data.gif" alt="alternative-data"></p>
+<p>这次会议也有人问GIC目前为什么要用卫星数据，一个简单的场景就是通过卫星地图来探查某一个地方的石油产量或者矿产产量。通过分析拍照时太阳的位置，存储罐内外阴影大小及其地理位置来计算石油储存量。也可以分析港口物流的繁忙程度来提前预测宏观经济景气程度。</p>
+<p><img src="Planet-Labs-Mailiao-Refinery.png" alt="Planet-Labs-Mailiao-Refinery"></p>
+<p>其实这个思路并不新，像谷歌很早就用搜索数据来预测流行病的爆发。但难点在于另类数据的获取，以及从中提取有用的因子出来。其中一位演讲者Emmett Kilduff创办了另类数据提供商公司Eagle Alpha，在其网站上有详细的<a href="https://s3-eu-west-1.amazonaws.com/ea-paperclip-production/attachments/files/000/001/652/original/Alternative_Data_Report_-_Version_2.pdf?1506338903" target="_blank" rel="external">白皮书</a>。其实从本质上讲，投资就是利用信息不对称来获取收益，无论这种信息是靠才智或者内幕或者金钱获得的。但由此带来的问题是，如果alternative  data变得普遍，容易获得了，实际也就没什么意义了。因此，另类数据提供商其实面临一个很艰难的抉择，如果定价高，那么客户少，但至少因子被少部分人使用，因而保持有效；但如果定价低，那么客户多，导致alternative data不那么另类，那么产品也就没什么价值了。所以这些另类数据提供商似乎得要像石油输出国组织一样，控制另类数据的释放，以保证其有效性。</p>
+<h3 id="u673A_u5668_u5B66_u4E60"><a href="#u673A_u5668_u5B66_u4E60" class="headerlink" title="机器学习"></a>机器学习</h3><p>很多报告也提到了机器学习在量化投资中的应用，包括如何用深度增强学习来优化下单、实时投资情绪分析、策略参数优化、基于供应链网络扩散模型来预测上下游收益影响。主旨演讲Yi Li大神也是一位kaggler，这次的报告主要是讲用ensemble approach来预测宏观经济状态，并且减少高频和低频数据之间的鸿沟。虽然听部分朋友说目前机器学习在业界还处于研究阶段，甚至有些基金经理吐槽机器学习完全没用，但至少正如一位CIO所说，机器学习在量化投资界俨然是一种趋势。虽然个人觉得金融市场过于复杂，信噪比过低，而且一直在变化；但总归参与者要么是人，要么是机器，一定是有规律可寻的，只不过可能要从另一个层次或者角度上去看问题。下图中Dr. Anthony NG总结了各类机器学习方法适用的投资决策问题（或者反过来说），也可以关注下他的<a href="http://www.algo-hunter.com" target="_blank" rel="external">个人博客</a>。</p>
+<p><img src="ml1.png" alt="1"></p>
+<p><img src="ml2.png" alt="2"></p>
+<p><img src="ml3.png" alt="3"></p>
+<h3 id="u6295_u8D44_u7EC4_u5408_u4F18_u5316"><a href="#u6295_u8D44_u7EC4_u5408_u4F18_u5316" class="headerlink" title="投资组合优化"></a>投资组合优化</h3><p>听JCM同学说国内目前做投资组合优化的还比较少，可能会是一个好的方向，这次会议也有四个相关的报告。基本含义是马科维茨的均值方差模型虽然漂亮，但均值方差很难准确估计，其次高阶矩的信息有所损失。由此带来的方案是，如何构建更鲁棒的投资组合，如何利用整个分布信息来优化投资组合（Dr. Li Haksun基于此改进了夏普比率）。值得一提的是，Quantopian目前也提供了Optimization的API。</p>
+<h3 id="u4EBA_u4EBA_u7686_u4E3A_u5BBD_u5BA2"><a href="#u4EBA_u4EBA_u7686_u4E3A_u5BBD_u5BA2" class="headerlink" title="人人皆为宽客"></a>人人皆为宽客</h3><p><img src="open-source-quantitative-trading.png" alt="open-source-quantitative-trading"></p>
+<p>这个其实也没什么好说的。现在国内各种量化交易平台，提供了数据、回测、研发、实盘交易一条龙服务。整个量化投资的门槛低了好多，只要会写python，很容易能设计一些[有效利用噪声的]策略。而且像vn.py, tushare, rqalpha, zipline这些开源工具，也极大方便了Quant们的二次开发。这里不得不吐槽，Quantopian的回测速度实在是太慢了（也有可能是调用了optimization api，并且第一次用Quantopian的平台，有很多东西还不太熟悉）。其实感觉这次WorldQuant的CEO来听报告，一个很重要的因素是这些平台和他们本身的websim平台有些重叠。</p>
+<h2 id="u9898_u5916_u8BDD"><a href="#u9898_u5916_u8BDD" class="headerlink" title="题外话"></a>题外话</h2><h3 id="u4E2D_u56FD_u5E02_u573A_u7684_u673A_u4F1A"><a href="#u4E2D_u56FD_u5E02_u573A_u7684_u673A_u4F1A" class="headerlink" title="中国市场的机会"></a>中国市场的机会</h3><p>先放陈晓优大神的观点，在中国市场做量化交易未来很光明。虽然很多人觉得国内是政策市，而且监管严重，可交易品种不多。但与其忽视中国市场，不如去想如何利用这些特点来设计策略，当时陈总提到了幻方的一个策略，但现在有些记不大清了。另外，国内市场股票（3300只）、ETF（160只）、期权（1个股指、2个商品）、期货（43个商品、3个股指、2个债券）应有尽有，而且也可以做空。最关键的是，机构投资者相对较少，市场有效性还可以进一步提高。据说Citadel在中国曾经一个月的利润占了整个公司年利润的1/3，而且越来越多的HF也要进驻中国市场了。</p>
+<p><img src="opportunity_china_market.png" alt="opportunity_china_market"></p>
+<h3 id="u673A_u5668_u5B66_u4E60_uFF0C_u7136_u540E_u5462_uFF1F"><a href="#u673A_u5668_u5B66_u4E60_uFF0C_u7136_u540E_u5462_uFF1F" class="headerlink" title="机器学习，然后呢？"></a>机器学习，然后呢？</h3><p><img src="analytic-value-escalator.png" alt="analytic-value-escalator"></p>
+<p>其实说白了，机器学习就是为了让我们更好的认识这个世界，而从数据中生成的模型。好的模型能够解释过去以及预测未来，但更进一步模型作为客观世界的替代，需要能够更好的优化我们的决策或者行为。这样的模型可以是基于数据提取（机器学习、统计模型），也可以基于假设进行仿真（系统动力学、离散事件仿真、multi-agent），但最终的落脚点都是在于优化我们的决策。这也是为什么我觉得深度增强学习（其实还应该把仿真加进去，无论是产生已有或者未知的数据）未来一定会有更广泛的应用。</p>
+<h3 id="u7ADE_u4E89_u4F18_u52BF"><a href="#u7ADE_u4E89_u4F18_u52BF" class="headerlink" title="竞争优势"></a>竞争优势</h3><p>想要在量化投资界存活，其实很简单。要么比别人聪明，要么比别人快，要么比别人敢作弊（并且不被发现）。后来听朋友说，这是大空头里面的话，感觉还要再看一遍回忆下。。总而言之，随大流就只能成为大流了。</p>
+<h3 id="u5B58_u5728_u662F_u5426_u5B58_u5728"><a href="#u5B58_u5728_u662F_u5426_u5B58_u5728" class="headerlink" title="存在是否存在"></a>存在是否存在</h3><blockquote>
+<p>这正如地上的路；其实地上本没有路，走的人多了，也便成了路。</p>
+</blockquote>
+<p>其实存在也分客观和主观。我感觉一个策略如果赚钱或者说有价值，要么是先于别人发现了客观存在的真理（比如某种规律、制度上的漏洞或者套利），要么是引导了主观的存在（比如各种虚拟货币、对敲、巴菲特这种大V）。但身在金融市场中，投资者受到金融市场这个存在的影响，同时其观测以及操作认为的存在会进一步导致金融市场的存在，这也就是索罗斯所说的反身性。</p>
+<h2 id="u798F_u5229"><a href="#u798F_u5229" class="headerlink" title="福利"></a>福利</h2><p>以下是这次会议各个报告的slides，部分还是蛮有价值和启发的。</p>
+<ul>
+<li>Building a Career in Quant Finance<ul>
+<li><a href="http://quantopian.us5.list-manage1.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=a911950f93&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Quant Trading for a Living – Lessons from a Life in the Trenches”</strong> </a> by Andreas F. Clenow, Chief Investment Officer for ACIES Asset Management</li>
+<li><a href="http://quantopian.us5.list-manage1.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=9d3cb58738&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“How to Run a Quantitative Trading Business in China with Python”</strong></a> by Xiaoyou Chen, Head of Option Trading at Shanghai Junzhi Asset Management Ltd.</li>
+</ul>
+</li>
+<li>Machine Learning<ul>
+<li><a href="http://quantopian.us5.list-manage1.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=73bcfb333d&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Applied Reinforcement Learning in Trading Algorithms”</strong></a> by Pierre Maarek, Vice President, Linear Quantitative Research at J.P. Morgan</li>
+<li><a href="http://quantopian.us5.list-manage.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=7d97acc9aa&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“A Machine Learning Odyssey”</strong></a> by Anthony Ng, Senior Lecturer</li>
+<li><a href="http://quantopian.us5.list-manage.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=47dba09348&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Real-Time Machine Learning Architecture and Sentiment Analysis Applied to Finance”</strong></a>  by Dr. Juan Cheng, Data Scientist at InfoTrie</li>
+<li><a href="http://quantopian.us5.list-manage.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=0fbd10d2e1&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Deep Reinforcement Learning for Optimal Order Placement in a Limit Order Book”</strong></a> by Ilija Ilievski, Ph.D. Candidate, NUS</li>
+<li><a href="http://quantopian.us5.list-manage.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=4767f4edfb&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Demonstration of Machine-Learning Based Strategy Parameter Selection in Python”</strong></a>  by Dr. Thomas Starke, Quantitative Trader at Vivienne Court</li>
+</ul>
+</li>
+<li>Alternative Data<ul>
+<li><a href="http://quantopian.us5.list-manage.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=cec5f742bb&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Three-Dimensional Time: Working with Alternative Data”</strong></a>  by Kathryn Glowinski, Engineer at Quantopian</li>
+<li><a href="http://quantopian.us5.list-manage1.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=2dc45119a5&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Alpha from Alternative Data”</strong></a> by Emmett Kilduff, Founder and CEO of Eagle Alpha</li>
+</ul>
+</li>
+<li>Portfolio Optimization<ul>
+<li><a href="http://quantopian.us5.list-manage1.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=522d2fbe77&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Beyond Markowitz Portfolio Optimization”</strong></a>  by Haksun Li, Founder and CEO of NM LTD.</li>
+<li><a href="http://quantopian.us5.list-manage1.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=c5c1e82dc8&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Seeking Alpha Through Asset Rotation: An Alternative Way of Applying Modern Portfolio Theory”</strong></a>  by Danielle Jiang, Founder and CEO of Hedga Technology</li>
+<li><a href="http://quantopian.us5.list-manage1.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=71cef8ed7e&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Portfolio Optimization When You Don’t Know the Future (Or The Past)”</strong></a> by Rob Carver, Independent Systematic Futures Trader, Writer, and Research Consultant</li>
+<li><a href="http://quantopian.us5.list-manage.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=a044668c5d&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“From Alpha Discovery to Portfolio Construction: Pitfalls and Solutions”</strong></a>  by Dr. Oleg Ruban, Executive Director And Head of Analytics Applied Research for Asia Pacific At MSCI</li>
+</ul>
+</li>
+<li>Models, Forecasts, and Factors<ul>
+<li><a href="http://quantopian.us5.list-manage2.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=655c3cc026&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Supply Chain Earnings Diffusion”</strong></a> by Josh Holcroft, Head of Quantitative Research, Asia at UBS Investment Bank</li>
+<li><a href="http://quantopian.us5.list-manage.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=aceb53ac41&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Behavioral Factors and Their Performance in Emerging Markets: An Illustration Using China A-Shares Data”</strong></a> by Dr. Jason Hsu, Founder and CIO of Rayliant Global Advisors</li>
+<li><a href="http://quantopian.us5.list-manage.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=28291820fa&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Fundamental Forecasts: Methods and Timing”</strong></a> by Vinesh Jha, CEO, ExtractAlpha</li>
+<li><a href="http://quantopian.us5.list-manage.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=6c951f8eeb&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“How Much Do You Pay for the Price Impact of Your Trade?”</strong></a>  by Dr Christopher Ting, Associate Professor of Quantitative Finance Practice at SMU</li>
+<li><a href="http://quantopian.us5.list-manage1.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=ddc5bdb635&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Maximize Alpha with Systematic Factor Testing”</strong></a>  by Cheng Peng, Software Engineer at Betterment</li>
+</ul>
+</li>
+<li>Markets<ul>
+<li><a href="http://quantopian.us5.list-manage1.com/track/click?u=4c1d0cf4959586b47ef210e9c&amp;id=3cde64cdb1&amp;e=3e97cada6b" target="_blank" rel="external"><strong>“Market Insights Through the Lens of a Risk Model”</strong></a>  by Olivier d’Assier, Head of Applied Research, APAC for Axioma</li>
+<li><strong>“Order &amp; Randomness in Asian Market Microstructure”</strong> by Kerr Hatrick, Executive Director of the Electronic Trading Strategist Group at Morgan Stanley</li>
+</ul>
+</li>
+</ul>
+
+
+          <p class="bg-warning"><a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external"><a href="http://i.creativecommons.org/l/by/2.5/cn/88x31.png" title="知识共享许可协议" rel="fancy-group" class="fancy-ctn fancybox"><img src="http://i.creativecommons.org/l/by/2.5/cn/88x31.png" title="知识共享许可协议"></a></a>本作品采用<a href="http://creativecommons.org/licenses/by/2.5/cn/" target="_blank" rel="external">知识共享署名 2.5 中国大陆许可协议</a>进行许可。欢迎转载，但请注明来自<a href="http://greenwicher.github.io/" target="_blank" rel="external">Mount Greenwicher</a>的文章<a href="http://blog.greenwicher.com/2017/10/05/2017-QuantCon-SG/index.html">《QuantCon@SG，你想知道的所有细节都在这里了》</a>，并保持转载后文章内容的完整与无歧义。本人保留所有版权相关权利。</p>
+        <!--subscriber-->
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//greenwicher.us14.list-manage.com/subscribe/post?u=8da47f8ec088ffc8c8d5b6b88&amp;id=d8da6d2b40" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL">一键订阅 | Greenwicher's Newsletter </label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="输入邮箱，为您科普 人工智能|量化交易|算法之美" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8da47f8ec088ffc8c8d5b6b88_d8da6d2b40" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="订阅" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+<!--end of subscriber-->
+
+<hr>
+
+	</div>
+        
+        <!--Donate-->
+          <style type="text/css">
+            #rewardButton{cursor:pointer;border:0;outline:0;border-radius:100%;padding:0;margin:0;letter-spacing:normal;text-transform:none;text-indent:0px;text-shadow:none;}
+            #rewardButton span{display:inline-block;width:80px;height:25px;border-radius:5px;color:#fff;font-weight:400;font-style:normal;font-variant:normal;font-stretch:normal;font-size:18px;font-family:"Microsoft Yahei";background:#f44336;}
+            #rewardButton span:hover{background:#f7877f;}#QR{padding-top:20px;}#QR a{border:0;}#QR img{width:180px;max-width:100%;display:inline-block;margin:0.8em 2em 0 2em;}#wechat:hover p{animation:roll 0.1s infinite linear;-webkit-animation:roll 0.1s infinite linear;-moz-animation:roll 0.1s infinite linear;}#alipay:hover p{animation:roll 0.1s infinite linear;-webkit-animation:roll 0.1s infinite linear;-moz-animation:roll 0.1s infinite linear;}
+            @-moz-keyframes roll{from{-webkit-transform:rotateZ(30deg);-moz-transform:rotateZ(30deg);-ms-transform:rotateZ(30deg);-o-transform:rotateZ(30deg);transform:rotateZ(30deg);}to{-webkit-transform:rotateZ(-30deg);-moz-transform:rotateZ(-30deg);-ms-transform:rotateZ(-30deg);-o-transform:rotateZ(-30deg);transform:rotateZ(-30deg);}}@-webkit-keyframes roll{from{-webkit-transform:rotateZ(30deg);-moz-transform:rotateZ(30deg);-ms-transform:rotateZ(30deg);-o-transform:rotateZ(30deg);transform:rotateZ(30deg);}to{-webkit-transform:rotateZ(-30deg);-moz-transform:rotateZ(-30deg);-ms-transform:rotateZ(-30deg);-o-transform:rotateZ(-30deg);transform:rotateZ(-30deg);}}@-o-keyframes roll{from{-webkit-transform:rotateZ(30deg);-moz-transform:rotateZ(30deg);-ms-transform:rotateZ(30deg);-o-transform:rotateZ(30deg);transform:rotateZ(30deg);}to{-webkit-transform:rotateZ(-30deg);-moz-transform:rotateZ(-30deg);-ms-transform:rotateZ(-30deg);-o-transform:rotateZ(-30deg);transform:rotateZ(-30deg);}}@keyframes roll{from{-webkit-transform:rotateZ(30deg);-moz-transform:rotateZ(30deg);-ms-transform:rotateZ(30deg);-o-transform:rotateZ(30deg);transform:rotateZ(30deg);}to{-webkit-transform:rotateZ(-30deg);-moz-transform:rotateZ(-30deg);-ms-transform:rotateZ(-30deg);-o-transform:rotateZ(-30deg);transform:rotateZ(-30deg);}}
+        </style>
+        
+        <div>
+          <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+            <div>据说爱打赏的人运气都不会差</div>
+            <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+              <span>谢主隆恩</span>
+            </button>
+            <div id="QR" style="display: block;">
+              <div id="wechat" style="display: inline-block">
+                <a href="" class="fancybox" rel="group"><img id="wechat_qr" src="/imgs/wechatpay.PNG"></a>
+                <p>微信打赏</p>
+              </div>
+              <div id="wechat" style="display: inline-block">
+                <a href="" class="fancybox" rel="group"><img id="alipay_qr" src="/imgs/alipay.PNG"></a>
+                <p>支付宝打赏</p>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <!--End of Donate-->
+
+        <!--Adsense-->
+        <div class="widget tag">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 文末横幅 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4230509553120128"
+     data-ad-slot="1153059496"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+        <!--End of Adsense-->
+
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
+
+        <li><a href="/"><i class="fa fa-archive"></i>首页</a></li>
+
+		
+		   <li class="next"><a href="/2017/01/03/codeforces-problemset/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+
+        
+
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  
+  	 <div id="disqus_thread">
+     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  	 </div>
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+           <span id="busuanzi_container_page_pv">
+             新大陆被发现了<span id="busuanzi_value_page_pv" class="badge badge-success"></span>次！
+          </span>
+
+		<div class="col-md-3 scrollspy" id="post_meta"> 
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	Oct 5 2017 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/如何做投资/">如何做投资<span>3</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div id="tagsblock" class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/Quant/">Quant<span>1</span></a></li> <li><a href="/tags/Quantopian/">Quantopian<span>1</span></a></li> <li><a href="/tags/记录/">记录<span>2</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+        <script type="text/javascript">
+        $(document).ready(function(){
+          $("#tocaffix").affix({
+            offset: { 
+              top: $("#tagsblock").offset().top
+            }
+          });
+        });
+        </script>
+
+        <style>
+          .affix{position:fixed;top:40px;}
+          .affix-bottom{position:absolute;}
+        </style>
+        
+	<div id="tocaffix" class="meta-widget affix-top">
+        <!--<div class="meta-widget">-->
+	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#QuantCon@SG"><span class="toc-article-text">QuantCon@SG</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u89C1_u95FB"><span class="toc-article-text">见闻</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#u5BFB_u627E_u963F_u5C14_u6CD5"><span class="toc-article-text">寻找阿尔法</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#u673A_u5668_u5B66_u4E60"><span class="toc-article-text">机器学习</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#u6295_u8D44_u7EC4_u5408_u4F18_u5316"><span class="toc-article-text">投资组合优化</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#u4EBA_u4EBA_u7686_u4E3A_u5BBD_u5BA2"><span class="toc-article-text">人人皆为宽客</span></a></li></ol></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u9898_u5916_u8BDD"><span class="toc-article-text">题外话</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#u4E2D_u56FD_u5E02_u573A_u7684_u673A_u4F1A"><span class="toc-article-text">中国市场的机会</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#u673A_u5668_u5B66_u4E60_uFF0C_u7136_u540E_u5462_uFF1F"><span class="toc-article-text">机器学习，然后呢？</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#u7ADE_u4E89_u4F18_u52BF"><span class="toc-article-text">竞争优势</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#u5B58_u5728_u662F_u5426_u5B58_u5728"><span class="toc-article-text">存在是否存在</span></a></li></ol></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#u798F_u5229"><span class="toc-article-text">福利</span></a></li></ol>
+		</div>
+	
+	</div>
+
+
+
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+<script type="text/javascript">
+var disqus_shortname = 'Greenwicher';
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2017 LIU Weizhi
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.
+</br>
+本站共迎来了<span id="busuanzi_value_site_uv"></span>个小伙伴，总计<span id="busuanzi_value_site_pv"></span>次站点流量.
+
+</p>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+
+
+<!-- UJian Button BEGIN -->
+<!--
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?type=slide&fade=1&uid=2123572"></script>
+<a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
+-->
+<!-- UJian Button END -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+   </html>
