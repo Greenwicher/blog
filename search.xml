@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[QuantCon@SG，你想知道的所有细节都在这里了]]></title>
-      <url>http://blog.greenwicher.com/2017/10/05/2017-QuantCon-SG/</url>
+      <url>http://blog.greenwicher.com/2017/10/06/2017-QuantCon-SG/</url>
       <content type="html"><![CDATA[<p>本科的时候就听说XJC师兄想要从零开始搭建一套量化交易系统，当时也是特别佩服。虽然周围金工的同学或多或少也在用SAS然后连接Wind来开发与回测投资策略，少部分同学也试着实盘去操作，但真正从一砖一瓦去搭建整个量化交易系统就是另一回事了。 后来大概在我大四的时候，<a href="http://www.yucezhe.com/" target="_blank" rel="external">预测者网</a>诞生了。一开始其核心在于抓取大V以及分析师们的预测观点并进行评级，之后逐步开始卖量化投资策略和高频数据。 之所以以这个引子开头，是为了契合Quantopian这次的量化投资大会。一来，随着2016年国内各大量化策略平台（RiceQuant, Uqer, JoinQuant, 果仁网）雨后春笋般的出现，人人皆为宽客的时代已然来临，预测者网虽然没有很快的转型，但也是这波浪潮的冲锋号。二来，alternative data近来也比较火，正如有着GIC九年工作经验的keynote主讲人Yi Li大神提到用分析师数据来预测宏观市场状态，预测者网也有试图整合所有分析师的预测观点来最大化集体智慧。三来，机器学习/人工智能也算是在各个行业都大放异彩，这次<a href="quantconsingapore2017.splashthat.com">QuantCon</a>有很多演讲都和机器学习、增强学习有关。另外，文末有福利放送哦~</p>
 <a id="more"></a>
 <h2 id="QuantCon@SG"><a href="#QuantCon@SG" class="headerlink" title="QuantCon@SG"></a>QuantCon@SG</h2><p><img src="QuantCon@SG.JPG" alt="QuantCon@SG"></p>
